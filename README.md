@@ -37,6 +37,6 @@ npm start
 
 After a while, it will start your server, usually on localhost:3000
 
-### Please check out contributor guidelines.
+## Please check out contributor guidelines.
 
 -- added practice branch joan
