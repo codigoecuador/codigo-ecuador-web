@@ -12,11 +12,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Step 1: Fork This Repository
 
-<img src="https://hisham.hm/img/posts/github-fork.png" alt="Fork Button" width="300px" />
+<img src="https://hisham.hm/img/posts/github-fork.png" alt="Fork Button" width="500px" />
 
 ### Step 2: Clone This Repository
 
-<img src="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/DownloadZip2.jpg" alt="Download" width="300px" />
+<img src="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/DownloadZip2.jpg" alt="Download" width="500px" />
 
 
 ### Step 3: Install Dependencies
