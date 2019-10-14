@@ -2,6 +2,40 @@
 
 Welcome to the ReadMe for the new website for Codigo Ecuador, which is under construction.
 
-Please check out contributor guidelines.
+## Prerequisites
+
+You will need npm installed. To install, go [here](https://www.npmjs.com/get-npm)
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Step 1: Fork This Repository
+
+![Fork This Repository Image](https://hisham.hm/img/posts/github-fork.png)
+
+### Step 2: Clone This Repository
+
+![Clone This Repository Image](https://cdn.sparkfun.com/assets/learn_tutorials/1/1/DownloadZip2.jpg)
+
+### Step 3: Install Dependencies
+
+To install all the dependencies, in your root folder, enter:
+
+```
+npm install
+```
+
+### Step 4: Start The Server
+
+To start the server, in your root folder, enter:
+
+```
+npm start
+```
+
+After a while, it will start your server, usually on localhost:3000
+
+### Please check out contributor guidelines.
 
 -- added practice branch joan
