@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import ReactHtmlParser from 'react-html-parser'
+import {Link} from 'react-router-dom'
 
 class Blog  extends Component {
     constructor(props){
@@ -19,24 +20,42 @@ class Blog  extends Component {
 
     render(){
              console.log("are my blogs in?",this.state)
-            debugger
+       
            
              if(this.state.blogs.items){
                 const {items} = this.state.blogs
                 return(
-                     <div>
-                         <h1><a href={`${this.state.blogs.feed.url}`}>{this.state.blogs.feed.title}</a></h1>
-                         <ul>
-                             {items.map((blog,index) =>(
-                                 <div>  <li> <h1> <i>{blog.title}</i></h1>{ ReactHtmlParser (blog.description) }</li>
-                            <p>-------------------------------------------------------------------------------------------------------------------------</p>
-                                </div>
-                             ))}
-                         </ul>
-        
 
+                    
+                    
+                    <div class="ui link cards">
+                         {items.map((blog,index)=>(
+                    <div class="card">
+                      <div class="image">
+                        <img src={`${blog.thumbnail}`}/>
                       </div>
-                    )}else{
+                      <div class="content">
+                        <div class="header"><a href={`${blog.link}`} target="_blank" rel="noopener noreferrer">{blog.title}</a></div>
+                        <div class="meta">
+                          <a></a>
+                        </div>
+                        <div class="description">
+                          #{blog.categories.join('# ')}}
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <span class="right floated">
+                          {blog.pubDate}
+                        </span>
+                        <span>
+                          <i class="user icon"></i>
+                          {blog.author}
+                        </span>
+                      </div>
+                    </div>
+                         ))}
+                    </div>
+                        )}else{
                  return (
                 <div>No blogs</div>
             )
