@@ -1,47 +1,54 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+	height: 40vmin;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #09d3ac;
+	color: #09d3ac;
 }
 
-.banner{
-  position: absolute;
-  size: cover;
-  left: 0;
-  top: 0;
+.banner {
+	position: absolute;
+	size: cover;
+	left: 0;
+	top: 0;
+	/* height: 100%; */
+	width: 100%;
+	z-index: -1;
+	/* Center and scale the image nicely */
+	/* background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; */
 }
 
 .middle {
-  position: absolute;
-  width: 15%;
-  height: 15%;
-  left: 0;
-  top: 0;
-  z-index: .5;
+	position: absolute;
+	width: 15%;
+	height: 15%;
+	left: 0;
+	top: 0;
+	z-index: 0.5;
 }
 
 .top {
-  position: absolute;
-  width: 15%;
-  height: 15%;
-  left: 0;
-  top: 0;
-  z-index: -1;
+	position: absolute;
+	width: 15%;
+	height: 15%;
+	left: 0;
+	top: 0;
+	z-index: 1;
 }
