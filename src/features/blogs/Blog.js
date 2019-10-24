@@ -16,19 +16,22 @@ class Blog  extends Component {
                         .then(blogs =>   this.setState({blogs: blogs})
                             );
                 }
+                
 
 
     render(){
              console.log("are my blogs in?",this.state)
-       
+         
            
              if(this.state.blogs.items){
                 const {items} = this.state.blogs
                 return(
-
+                    <div className="background-img">
+                             
                     
-                    
-                    <div class="ui link cards">
+                  
+                    <div id='card-container' class="ui link cards">
+                             
                          {items.map((blog,index)=>(
                     <div class="card">
                       <div class="image">
@@ -54,6 +57,7 @@ class Blog  extends Component {
                       </div>
                     </div>
                          ))}
+                    </div>
                     </div>
                         )}else{
                  return (
