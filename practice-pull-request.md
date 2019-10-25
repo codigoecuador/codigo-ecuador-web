@@ -2,7 +2,7 @@ folks, if you're not used to making pull requests, here is your chance to practi
 
 ##Instructions
 
-1. Fork and clone this repository.
+1. If you are NOT an official contributor on this project, Fork and clone this repository. If you ARE an official contributor, clone the repository.
 
 2. Make sure you have the latest version of repository
   git pull origin master
