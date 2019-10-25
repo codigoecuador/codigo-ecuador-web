@@ -1,22 +1,21 @@
-import React, {Component} from 'react'
-import { Card } from 'semantic-ui-react'
-import ActivityData from './ActivityData'
+import React from 'react'
+import { Card, Container } from 'semantic-ui-react'
+import {activities} from './ActivitiesData'
+import ActivityCard from './ActivityCard'
 
-class ActivitiesContainer extends Component {
-  render(){
+const ActivitiesContainer = () => {
     return (
         <div>
-
+          <Container>
               <Card.Group itemsPerRow={2}>
-                  {projects.map(project =>
+                  {activities.map(activity =>
                       <ActivityCard
-                        key={project.id} project={project} padding="20px"/>
+                        key={activity.id} {...activity} padding="20px"/>
                       )}
               </Card.Group>
-
+          </Container>
         </div>
     )
-  }
 }
 
 export default ActivitiesContainer

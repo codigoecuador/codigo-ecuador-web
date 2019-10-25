@@ -1,6 +1,3 @@
-import React from 'react'
-
-const ActivitiesData = () => {
   const programming = {
     id: 1,
     title: "Computer Programming Education",
@@ -25,12 +22,4 @@ const entrepreneurship = {
   buttonLink: "Get in Touch"
 }
 
-let projects = [programming, internship, entrepreneurship]
-    return (
-        <div>
-          {projects}
-        </div>
-    )
-}
-
-export default ActivitiesData
+export const activities = [programming, internship, entrepreneurship]

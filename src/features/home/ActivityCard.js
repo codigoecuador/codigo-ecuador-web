@@ -1,15 +1,16 @@
-import React, {Component} from 'react'
+import React from 'react'
 import { Card } from 'semantic-ui-react'
-import ActivityData from './ActivityData'
 
-class ActivityCard extends Component {
-  render(){
+
+const ActivityCard = ({id, title, subtitle, description, buttonLink}) => {
+
     return (
-        <div>
-
-        </div>
+        <Card
+           header={title}
+           meta={subtitle}
+           description={description}
+         />
     )
-  }
 }
 
 export default ActivityCard
