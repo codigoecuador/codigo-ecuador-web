@@ -11,9 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.background-img{
-  background-image: url('./custom.jpg');
-  background-size: cover;
+.aboutImage{
+  z-index: -1;
+  position: absolute;
+}
+
+.topAboutImage{
+  z-index: 1;
+  position: absolute;
+  margin: 40px;
 }
 #card-container{
 padding:30px;

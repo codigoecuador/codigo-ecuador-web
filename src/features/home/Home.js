@@ -7,6 +7,11 @@ const Home = () => {
         <div>
             <h1>Home!</h1>
             <AboutBlurb />
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
             <ActivitiesContainer />
         </div>
     )
