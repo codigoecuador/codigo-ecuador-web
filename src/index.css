@@ -13,6 +13,13 @@ code {
 }
 .aboutImage{
   z-index: -1;
+  position: absolute;
+}
+
+.topAboutImage{
+  z-index: 1;
+  position: absolute;
+  margin: 40px;
 }
 #card-container{
 padding:30px;
