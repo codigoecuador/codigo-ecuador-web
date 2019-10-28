@@ -5,9 +5,13 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
 
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+     <ParallaxProvider>
+       <App />
+     </ParallaxProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );
