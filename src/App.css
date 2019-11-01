@@ -65,6 +65,15 @@ html, body {
   width: auto;
 }
 
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 70%;
+  width: 50%;
+  margin: auto;
+  z-index: 3;
+}
+
 .massive {
   font-size: 5vw;
 }
