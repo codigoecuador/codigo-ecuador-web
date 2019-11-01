@@ -7,21 +7,14 @@ import NavBar from '../nav/Navbar'
 const Activities = () => {
     return (
         <div>
-<<<<<<< HEAD
-          <NavBar />
-=======
->>>>>>> a7e3133a354880fdbb2904487da96c4ad903bdb8
           <br/>
           <br/>
           <br/>
           <br/>
-<<<<<<< HEAD
           <div className="big center">
             <br/>
             Our work makes a difference.
           </div>
-=======
->>>>>>> a7e3133a354880fdbb2904487da96c4ad903bdb8
           <br/>
           <br/>
           <Container>
