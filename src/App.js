@@ -12,13 +12,15 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Switch>
-        <Route exact path="/" render={() => <Home />} />
-        <Route exact path="/about" render={() => <About />} />
-        <Route exact path="/blog" render={() => <Blog />} />
-        <Route exact path="/donate" render={() => <Donate />} />
-        <Route exact path="/contact" render={() => <Contact />} />
-      </Switch>
+              <Switch>
+                  <Route exact path="/" render={() => <Home />} />
+                  <Route exact path="/about" render={() => <About />} />
+                  <Route exact path="/blog" render={() => <Blog />} />
+                  <Route exact path="/donate" render={() => <Donate />} />
+                  <Route exact path="/contact" render={() => <Contact />} />
+              </Switch>
+      
+     
     </div>
   );
 }
