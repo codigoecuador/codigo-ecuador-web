@@ -16,4 +16,4 @@ const card3 = {
   image: 'https://static.wixstatic.com/media/4f8f5a805e504f0c95afe05b01d26d77.jpg/v1/fill/w_612,h_452,al_c,q_80,usm_0.66_1.00_0.01/Modern%20Work%20Space.webp'
 }
 
-export const donateCards = [card1, card2, card3]
+export const donateData = [card1, card2, card3]
