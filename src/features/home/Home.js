@@ -8,7 +8,6 @@ import Navbar from '../nav/Navbar.js'
 const Home = () => {
     return (
       <>
-        <Navbar />
         <CoverPic />
         <div className="about">
           <AboutBlurb/>
