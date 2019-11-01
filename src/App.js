@@ -7,13 +7,12 @@ import About from "./features/about/About";
 import Blog from "./features/blog/Blog";
 import Donate from "./features/donate/Donate";
 import Contact from "./features/contact/Contact";
+import Activities from './features/activities/Activities'
 
 function App() {
   return (
     <div>
       <Home />
-             
-     
     </div>
   );
 }
