@@ -1,11 +1,11 @@
 import React from 'react'
 
-const News = () => {
+const Donate = () => {
     return (
         <div>
-           <h1>News!</h1> 
+           <h1>Donate!</h1>
         </div>
     )
 }
 
-export default News
+export default Donate
