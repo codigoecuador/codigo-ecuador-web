@@ -17,7 +17,7 @@ const Navbar = () => {
                   <Link exact className="active" to="/about">About</Link>
                   <Link exact className="active" to="/activities">Activities</Link>
                   <Link exact className="active" to="/blog">Blog</Link>
-                  <Link exact className="active" to="/donate">Donate</Link>
+                  <Link exact className="active" to="/donate">Donate or Contact</Link>
                 </div>
 
           );
