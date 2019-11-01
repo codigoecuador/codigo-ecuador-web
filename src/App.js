@@ -6,7 +6,7 @@ import Home from "./features/home/Home";
 import About from "./features/about/About";
 import Blog from "./features/blog/Blog";
 import Donate from "./features/donate/Donate";
-import Contact from "./features/contact/Contact";
+import Resources from "./features/resources/Resources";
 
 import Activities from './features/activities/Activities'
 
@@ -20,6 +20,7 @@ function App() {
                    <Route exact path='/' render={()=>(<Home />)}></Route>
                    <Route exact path='/about' render={()=>(<About />)}></Route>
                    <Route exact path='/activities' render={()=>(<Activities />)}></Route>
+                   <Route exact path='/resources' render={()=>(<Resources />)}></Route>
                    <Route exact path='/blog' render={()=>(<Blog />)}></Route>
                    <Route exact path='/donate' render={()=>(<Donate />)}></Route>
              </Switch>
