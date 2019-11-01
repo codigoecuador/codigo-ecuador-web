@@ -11,7 +11,7 @@ class Blog  extends Component {
     }
 
             componentDidMount(){
-                        return fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@burakkocak884`)
+                        return fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@codigoecuador`)
                         .then(response => response.json())
                         .then(blogs =>   this.setState({blogs: blogs})
                             );
