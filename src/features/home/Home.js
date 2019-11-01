@@ -8,8 +8,12 @@ const Home = () => {
     return (
       <>
         <CoverPic />
-        <AboutBlurb className="about"/>
-        <Logo />
+        <div className="about">
+          <AboutBlurb/>
+        </div>
+        <div className="banner">
+          <Logo className="logo"/>
+        </div>
       </>
     )
 }

@@ -1,9 +1,10 @@
 import React from 'react'
+import womenCodigo from './womenCodigo.jpg'
 
 const CoverPic = () => {
     return (
-      <div className="coverPic">
-        <img src="https://images.unsplash.com/photo-1498661694102-0a3793edbe74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1893&q=80" alt="young women in a field, smiling as they face the camera"/>
+      <div >
+        <img src={womenCodigo} alt="young women in a field, smiling as they face the camera" className="coverPic"/>
       </div>
     )
 }
