@@ -33,6 +33,7 @@ html, body {
 .image{
   position: relative;
   width: 100%;
+  height: auto;
 }
 
 .overlay {
@@ -53,7 +54,16 @@ html, body {
 
 .about {
   position: absolute;
-  top: 100px;
-  left: 100;
-  width: 30%;
+  top: 650px;
+  left: 100px;
+  width: 80%;
+  text-align: center;
+  background-color: rgb(255,255,255,0.8)
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 20%;
 }
