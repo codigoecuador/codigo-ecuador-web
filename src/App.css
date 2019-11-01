@@ -70,8 +70,8 @@ html, body {
 .navbar {
   position: absolute;
   background-color: white;
-  top: 5%;
-  left: 50%;
+  top: 10%;
+  left: 45%;
   width: 50%;
   margin: auto;
   z-index: 3;
