@@ -7,7 +7,6 @@ import About from "./features/about/About";
 import Blog from "./features/blog/Blog";
 import Donate from "./features/donate/Donate";
 import Contact from "./features/contact/Contact";
-import { Form } from 'semantic-ui-react'
 
 import Activities from './features/activities/Activities'
 
@@ -25,7 +24,7 @@ function App() {
                    <Route exact path='/donate' render={()=>(<Donate />)}></Route>
              </Switch>
     <br/>
-    <div className="copyright center">©2019 by Código Ecuador.</div>      
+    <div className="copyright center">©2019 by Código Ecuador.</div>
     </div>
     </Router>
   );
