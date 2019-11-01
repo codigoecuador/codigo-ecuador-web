@@ -77,10 +77,6 @@ html, body {
   z-index: 3;
 }
 
-.navbar:hover{
-  background-color: rgb(245, 250, 251);
-}
-
 .active{
   padding :20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
