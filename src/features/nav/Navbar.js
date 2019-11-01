@@ -6,41 +6,55 @@ import Donate from '../donate/Donate'
 import Home from '../home/Home'
 import Contact from '../contact/Contact'
 
-const Navbar = () => {
+const NavBar = () => {
 
 
 
           return (
             <Router>
-                 <div>
-             <Navbar>
-                  <Link exact activeClassName="active" to="/about">
+           
+                 <div className='main-navbar'>
+                   <Link className="active" to='/'>Home</Link>
+              
+                  <Link exact className="active" to="/about">
                     About
                   </Link>
 
-                  <Link exact activeClassName="active" to="/programs">
+                  <Link exact className="active" to="/programs">
                     Programs
                   </Link>
 
-                  <Link exact activeClassName="active" to="/blog">
+                  <Link exact className="active" to="/blog">
                     Blog
                   </Link>
 
-                  <Link exact activeClassName="active" to="/donate">
+                  <Link exact className="active" to="/donate">
                     Donate
                   </Link>
-              </Navbar>
 
+                  <Switch>
+                    <Route exact path='/'r ender={()=>(<Home />)}></Route>
+                    <Route path='/about' render={()=>(<About />)}></Route>
+                    <Route path='/prgorams'></Route>
+                    <Route path='/blog' render={()=>(<Blog />)}></Route>
+                    <Route path='/donate' render={()=>(<Donate />)}></Route>
+                  </Switch>
+                 
+              
+
+            
+      
+              </div>
              
 
-                  
+              </Router>
 
                   
 
-                    </div>
-            </Router>
+                
+           
             
           );
         };
 
-export default Navbar;
+export default NavBar;

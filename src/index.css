@@ -24,3 +24,34 @@ code {
 #card-container{
 padding:30px;
 }
+.main-navbar{
+  width: 80px;
+  height: 70px;
+  margin: 30px;
+  padding: 15px;
+
+  background-color: rgb(245, 250, 251);
+  
+  
+}
+.main-navbar:hover{
+  background-color: rgb(245, 250, 251);
+  
+
+}
+.active{
+  padding :20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color:  rgb(73, 73, 41);
+  border-radius: 10px 20px;
+  border: 2px solid rgb(196, 193, 193);
+  margin: 30px 20px 10px;
+  width: 200px;
+  height: 150px;
+ }
+.active:hover{
+
+color: goldenrod;
+background-color: rgb(224, 219, 219);
+}
