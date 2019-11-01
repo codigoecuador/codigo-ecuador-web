@@ -3,7 +3,7 @@ import { Card, Container } from 'semantic-ui-react'
 import {activities} from './ActivitiesData'
 import ActivityCard from './ActivityCard'
 
-const ActivitiesContainer = () => {
+const Activities = () => {
     return (
         <div>
           <Container>
@@ -18,4 +18,4 @@ const ActivitiesContainer = () => {
     )
 }
 
-export default ActivitiesContainer
+export default Activities

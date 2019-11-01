@@ -7,7 +7,7 @@ const Navbar = () => {
       <NavLink exact activeClassName="active" to="/about">
         About
       </NavLink>
-      <NavLink exact activeClassName="active" to="/about">
+      <NavLink exact activeClassName="active" to="/activities">
         Activities
       </NavLink>
       <NavLink exact activeClassName="active" to="/blog">
