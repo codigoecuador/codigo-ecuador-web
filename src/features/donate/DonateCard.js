@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card} from 'semantic-ui-react'
+import {Image, Card} from 'semantic-ui-react'
 
 
 
@@ -7,8 +7,11 @@ const DonateCard = ({topic, summary, image}) => {
 
     return (
         <Card >
-          {topic}
-          {summary}
+          <Image src={image}/>
+          <Card.Content >
+              <Card.Header>{topic}</Card.Header>
+              <Card.Description>{summary}</Card.Description>
+          </Card.Content>
         </Card>
     )
 }
