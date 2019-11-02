@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import {Link} from 'react-router-dom';
+import { Card, Image} from 'semantic-ui-react'
 
 
 class Blog  extends Component {
@@ -34,25 +35,32 @@ class Blog  extends Component {
                 var settings = {
                   dots: true,
                   infinite: true,
-                  speed: 2000,
+                  speed: 4000,
                   slidesToShow: 2,
-                  slidesToScroll: 2,
+                  slidesToScroll: 1,
                   autoplay: true,
-                  autoplayspeed: 4000
+                  autoplayspeed: 8000
                 };
                 return (
                   <div className='blog-container'>
+                    <h1 className='blog-account'><i>{this.state.blogs.feed.title}</i></h1>
                   <Slider {...settings}>
                     {items.map((blog,index)=>(
-                    <div className='card'>
-                      <a href={blog.link}><img src={blog.thumbnail} className='blog-card-image'/></a>
-                      <p className='blog-title'>{blog.title}</p>
-                      <p><span className='blog-author'>{blog.author}</span>  Published on: <span className='blog-date'>{blog.pubDate}</span></p>
-                    </div>
+                    <Card className="card">
+                    <a href={blog.link} target='_blank'><Image src={blog.thumbnail} className='blog-card-image'/></a> 
+                     <Card.Content>
+                      <Card.Header ><span className='blog-title'>{blog.title}</span></Card.Header>
+                      <Card.Description> </Card.Description>
+                      <p>Published by <span className='blog-author'>{blog.author}</span></p>
+                        <p>Date: <span className='blog-date'>{blog.pubDate}</span></p>
+                      </Card.Content>
+                      </Card>
+                      
                      
                    
                     
                     ))}
+                    <br></br>
                   </Slider>
                   </div>
                 );
