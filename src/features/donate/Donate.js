@@ -23,7 +23,7 @@ const Donate = () => {
            <h2 className='center'>You can promote technology careers for women in Ecuador by
              helping us with supplies, equipment, and space from which to work.</h2>
            <br/>
-                 <div>need to put an action like hover over this</div>
+
            <Card.Group itemsPerRow={3}>
              {donateData.map(donate =>
                  <DonateCard
