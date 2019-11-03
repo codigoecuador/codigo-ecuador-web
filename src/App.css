@@ -96,7 +96,15 @@ html, body {
 
 /* resources  */
 .resources {
+  postion: absolute;
   margin-left: 10%;
+  margin-top: 15%;
+  margin-right: 15%
+}
+
+.showing {
+  position: absolute;
+  margin-left: 25%;
   margin-top: 15%;
 }
 
