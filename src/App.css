@@ -88,10 +88,18 @@ html, body {
   width: 200px;
   height: 150px;
  }
+
 .active:hover{
   color: goldenrod;
   background-color: rgb(224, 219, 219);
 }
+
+/* resources  */
+.resources {
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
 
 /* fonts */
 .massive {
