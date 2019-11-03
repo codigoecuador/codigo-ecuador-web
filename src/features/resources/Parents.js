@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Courses = () => {
+const Parents = () => {
     return (
         <div>
-            <h1>Courses!</h1>
+            <h1>Parents!</h1>
         </div>
     )
 }
 
-export default Courses
+export default Parents

@@ -1,25 +1,40 @@
 import React, { Component } from 'react'
 import { Button } from 'semantic-ui-react'
-import Courses from './Courses'
+import Entrepreneurs from './Entrepreneurs'
+import Students from './Students'
+import Parents from './Parents'
+import Educators from './Educators'
 
 
 class Resources extends Component {
-    state = {
-      showing: ""
-    }
+  state = {
+    showing: ""
+  }
 
-    handleClick = (event) => {
-      this.setState({ showing: event.target.value})
-    }
-
+  handleClick = (event) => {
+    this.setState({ showing: event.target.value})
+  }
 
 
   render(){
 
     let content
 
-    if(this.state.showing === "students"){
-      content = <Courses />
+    switch(this.state.showing) {
+    case "students":
+      content = <Students />
+      break;
+    case "parents":
+      content = <Parents />
+      break;
+    case "educators":
+      content = <Educators />
+      break;
+    case "entrepreneurs":
+      content = <Entrepreneurs />
+      break;
+    default:
+      content = <h3>Pick a button</h3>
     }
 
 
@@ -45,13 +60,14 @@ class Resources extends Component {
 
         <div className="showing">
           { content }
+          <br/>
+          <br/>
+
         </div>
       </>
     )
-
   }
-
-
 }
+
 
 export default Resources
