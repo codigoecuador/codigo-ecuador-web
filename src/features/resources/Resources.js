@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Button } from 'semantic-ui-react'
 import Entrepreneurs from './Entrepreneurs'
-import Students from './Students'
+import Students from './Students/Students'
 import Parents from './Parents'
 import Educators from './Educators'
 

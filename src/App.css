@@ -101,7 +101,7 @@ html, body {
   margin-top: 15%;
   margin-right: 65%;
   margin-bottom: 5%;
-  background-color: red;
+
 }
 
 .showing {
@@ -110,6 +110,7 @@ html, body {
   margin-top: 15%;
   margin-right: 15%;
   margin-bottom: 5%;
+  padding: 5%;
   background-color: lightblue;
 }
 
