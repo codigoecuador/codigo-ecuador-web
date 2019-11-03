@@ -9,8 +9,8 @@ const Navbar = () => {
 			<Menu>
 				<Menu.Item
 					as={Link}
-					active={activeItem === "home"}
-					onClick={() => setActiveItem("home")}
+					active={activeItem === "home"} //set to active if {activeItem} is equal to string.
+					onClick={() => setActiveItem("home")} //set value of {activeItem} in local state.
 					to="/"
 				>
 					Home
