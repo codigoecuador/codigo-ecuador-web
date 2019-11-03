@@ -5,9 +5,6 @@ import { courses } from './StudentsData'
 const Students = () => {
     return (
         <div>
-            <br/>
-            <br/>
-            <br/>
             {courses.map(course=>
               <div className="course">
                 <h1>{course.title}</h1>

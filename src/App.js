@@ -7,8 +7,8 @@ import About from "./features/about/About";
 import Blog from "./features/blog/Blog";
 import Donate from "./features/donate/Donate";
 import Resources from "./features/resources/Resources";
-
 import Activities from './features/activities/Activities'
+import Logo from './features/Logo/Logo'
 
 
 function App() {
@@ -27,6 +27,9 @@ function App() {
 
 
 
+    </div>
+    <div className="banner">
+      <Logo className="logo"/>
     </div>
     </Router>
   );
