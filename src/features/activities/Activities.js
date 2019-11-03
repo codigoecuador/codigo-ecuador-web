@@ -11,6 +11,10 @@ const Activities = () => {
           <br/>
           <br/>
           <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <div className="big center">
             <br/>
             Our work makes a difference.
