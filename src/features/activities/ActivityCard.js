@@ -5,9 +5,6 @@ import { Card, Button, Image} from 'semantic-ui-react'
 
 class ActivityCard extends Component {
 
-
-
-
     handleChange = () => {
       alert('you hovered here')
     }
