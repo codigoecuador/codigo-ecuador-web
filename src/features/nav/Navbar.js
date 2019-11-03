@@ -5,7 +5,7 @@ import { Menu } from "semantic-ui-react"
 const Navbar = () => {
 	const [activeItem, setActiveItem] = useState("home")
 	return (
-		<div>
+		<div style={{ paddingBottom: "1em" }}>
 			<Menu>
 				<Menu.Item
 					as={Link}
