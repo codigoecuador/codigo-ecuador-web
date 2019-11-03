@@ -96,16 +96,21 @@ html, body {
 
 /* resources  */
 .resources {
-  postion: absolute;
+  position: absolute;
   margin-left: 10%;
   margin-top: 15%;
-  margin-right: 15%
+  margin-right: 65%;
+  margin-bottom: 5%;
+  background-color: red;
 }
 
 .showing {
   position: absolute;
   margin-left: 25%;
   margin-top: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  background-color: lightblue;
 }
 
 
