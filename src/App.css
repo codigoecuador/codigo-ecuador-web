@@ -95,24 +95,45 @@ html, body {
 }
 
 /* resources  */
-.resources {
+
+.resourcesHeadline {
+  position: absolute;
+  margin-left: 40%;
+  margin-right: 20%;
+  margin-top: 15%;
+  margin-bottom: 45%;
+}
+
+
+.resourcesButtons {
   position: absolute;
   margin-left: 10%;
-  margin-top: 15%;
+  margin-top: 20%;
   margin-right: 65%;
   margin-bottom: 5%;
+}
 
+.resourcesButton {
+  background-color: blue;
+}
+
+.resourcesButton:hover {
+  background-color: blue;
 }
 
 .showing {
   position: absolute;
   margin-left: 25%;
-  margin-top: 15%;
+  margin-top: 22%;
   margin-right: 15%;
   margin-bottom: 5%;
   padding: 5%;
   background-color: lightblue;
 }
+
+
+
+
 
 
 /* fonts */

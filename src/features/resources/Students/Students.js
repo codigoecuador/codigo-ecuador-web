@@ -5,8 +5,11 @@ import { courses } from './StudentsData'
 const Students = () => {
     return (
         <div>
+            <br/>
+            <br/>
+            <br/>
             {courses.map(course=>
-              <div>
+              <div className="course">
                 <h1>{course.title}</h1>
                 <h3>{course.subtitle}</h3>
                 <Button><a href={course.buttonLink}>Learn More</a></Button>
