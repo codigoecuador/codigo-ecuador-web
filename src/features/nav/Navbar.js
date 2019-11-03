@@ -1,32 +1,76 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react"
+import { Menu } from "semantic-ui-react"
 
 const Navbar = () => {
-  return (
-    <div>
-      <NavLink exact activeClassName="active" to="/">
-        Home
-      </NavLink>
-      <NavLink exact activeClassName="active" to="/about">
-        About
-      </NavLink>
-      <NavLink exact activeClassName="active" to="/blogs">
-        Blogs
-      </NavLink>
-      <NavLink exact activeClassName="active" to="/news">
-        News
-      </NavLink>
-      <NavLink exact activeClassName="active" to="/partners">
-        Partners
-      </NavLink>
-      <NavLink exact activeClassName="active" to="/team">
-        Meet The Team
-      </NavLink>
-      <NavLink exact activeClassName="active" to="/contact">
-        Contact Us!
-      </NavLink>
-    </div>
-  );
-};
+	const [activeItem, setActiveItem] = useState("home")
+	return (
+		<div>
+			<Menu>
+				<Menu.Item
+					as={Link}
+					active={activeItem === "home"}
+					onClick={() => setActiveItem("home")}
+					to="/"
+				>
+					Home
+				</Menu.Item>
 
-export default Navbar;
+				<Menu.Item
+					as={Link}
+					active={activeItem === "about"}
+					onClick={() => setActiveItem("about")}
+					to="/about"
+				>
+					About
+				</Menu.Item>
+
+				<Menu.Item
+					as={Link}
+					active={activeItem === "blogs"}
+					onClick={() => setActiveItem("blogs")}
+					to="/blogs"
+				>
+					Blogs
+				</Menu.Item>
+
+				<Menu.Item
+					as={Link}
+					active={activeItem === "news"}
+					onClick={() => setActiveItem("news")}
+					to="/news"
+				>
+					News
+				</Menu.Item>
+
+				<Menu.Item
+					as={Link}
+					active={activeItem === "partners"}
+					onClick={() => setActiveItem("partners")}
+					to="/partners"
+				>
+					Partners
+				</Menu.Item>
+
+				<Menu.Item
+					as={Link}
+					active={activeItem === "team"}
+					onClick={() => setActiveItem("team")}
+					to="/team"
+				>
+					Meet The Team
+				</Menu.Item>
+
+				<Menu.Item
+					as={Link}
+					active={activeItem === "contact"}
+					onClick={() => setActiveItem("contact")}
+					to="/contact"
+				>
+					Contact Us!
+				</Menu.Item>
+			</Menu>
+		</div>
+	)
+}
+
+export default Navbar
