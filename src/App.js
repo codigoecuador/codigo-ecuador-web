@@ -9,7 +9,8 @@ import Donate from "./features/donate/Donate"
 import Resources from "./features/resources/Resources"
 import Activities from "./features/activities/Activities"
 import Logo from "./features/Logo/Logo"
-import Partners from "./features/partners/Partners"
+import Partners from "./features/about/partners/Partners"
+import Team from "./features/about/team/Team"
 
 function App() {
 	return (
@@ -19,21 +20,10 @@ function App() {
 				<Switch>
 					<Route exact path="/" render={() => <Home />}></Route>
 					<Route exact path="/about" render={() => <About />}></Route>
-					<Route
-						exact
-						path="/activities"
-						render={() => <Activities />}
-					></Route>
-					<Route
-						exact
-						path="/partners"
-						render={() => <Partners />}
-					></Route>
-					<Route
-						exact
-						path="/resources"
-						render={() => <Resources />}
-					></Route>
+					<Route exact path="/activities" render={() => <Activities />}></Route>
+					<Route exact path="/about/partners" render={() => <Partners />} ></Route>
+          <Route exact path="/about/team" render={() => <Team />} ></Route>
+					<Route exact path="/resources" render={() => <Resources />}></Route>
 					<Route exact path="/blog" render={() => <Blog />}></Route>
 					<Route exact path="/donate" render={() => <Donate />}></Route>
 				</Switch>
