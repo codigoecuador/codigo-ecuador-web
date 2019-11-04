@@ -3,7 +3,6 @@ import React from 'react'
 const OurStory = () => {
     return (
         <div>
-          <br/>
           <h1>
           Our Story
           </h1>

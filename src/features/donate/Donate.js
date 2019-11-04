@@ -1,10 +1,11 @@
 import React from 'react'
+import { Container } from 'semantic-ui-react'
 
 const Donate = () => {
     return (
-        <div>
+        <Container className="donate center">
            <h1>Donate!</h1>
-        </div>
+        </Container>
     )
 }
 
