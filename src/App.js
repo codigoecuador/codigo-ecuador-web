@@ -10,7 +10,7 @@ import Blog from "./features/blog/Blog"
 import Donate from "./features/donate/Donate"
 import Resources from "./features/resources/Resources"
 import Activities from "./features/activities/Activities"
-import Logo from "./features/Logo/Logo"
+import Logo from "./features/logo/Logo"
 
 
 function App() {
@@ -34,7 +34,6 @@ function App() {
 				<Logo className="logo" />
 			</div>
       <br/>
-      <div className="copyright center">©2019 by Código Ecuador.</div>
 		</Router>
 	)
 }
