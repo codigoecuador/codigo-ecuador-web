@@ -1,6 +1,5 @@
 import React from 'react'
-import { Container } from 'semantic-ui-react'
-import Partners from './partners/Partners'
+import LeafPic from '../LeafPic'
 import OurStory from './OurStory'
 
 
@@ -9,11 +8,12 @@ import OurStory from './OurStory'
 const About = () => {
 
     return (
-      <Container className="AboutPage">
-        <Partners />
-
-
-      </Container>
+      <>
+        <LeafPic />
+        <div className="ourStory">
+          <OurStory />
+        </div>
+      </>
     )
   }
 
