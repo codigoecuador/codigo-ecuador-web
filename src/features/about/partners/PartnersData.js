@@ -1,19 +1,13 @@
-import kodluyoruz from "./kodluyoruz.webp"
-import greatAdventureLab from "./greatAdventureLab.webp"
-const kodluyoruzData = {
+import kodluyoruzLogo  from "./kodluyoruz.webp"
+
+const kodluyoruz = {
 	name: "Kodluyoruz",
-	image: kodluyoruz,
+	image: kodluyoruzLogo,
 	content: [
 		"Kodluyoruz.org is a software movement that promotes code literacy and adds value to the future of young people in the software field in order to improve every segment of society by using technology."
 	]
 }
-const greatAdventureLabData = {
-	name: "The Great Adventure Lab",
-	image: greatAdventureLab,
-	content: [
-		"The Great Adventure Lab is a fun, educational after school program that serves schools in the DC-area with an on-going mission to make STEM fun for the next generation."
-	]
-}
+
 
 const juventud = {
 	name: "Juventud del Mañana",
@@ -26,4 +20,4 @@ const juventud = {
 	]
 }
 
-export const data = [kodluyoruzData, greatAdventureLabData, juventud]
+export const data = [kodluyoruz, juventud]
