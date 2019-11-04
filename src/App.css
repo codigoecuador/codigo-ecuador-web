@@ -62,8 +62,10 @@ html, body {
   position: absolute;
   top: 20%;
   left: 4%;
-  height: 10%;
-  width: auto;
+  width: 100%;
+  max-width: 35%;
+  height: auto;
+  z-index: 3;
 }
 
 /* navbar */
@@ -72,7 +74,9 @@ html, body {
   background-color: white;
   top: 10%;
   left: 43%;
-  width: 50%;
+  height: auto;
+  width: 100%;
+  max-width: 40%;
   margin: auto;
   z-index: 3;
 }

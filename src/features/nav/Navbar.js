@@ -10,7 +10,7 @@ import Activities from '../activities/Activities'
 const Navbar = () => {
 
           return (
-                 <div className='navbar'>
+                 <div className="navbar">
                   <Link className="active" to='/'>Home</Link>
                   <Link exact className="active" to="/about">About</Link>
                   <Link exact className="active" to="/activities">Activities</Link>
