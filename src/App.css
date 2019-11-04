@@ -84,8 +84,9 @@ html, body {
 .active{
   padding :20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 20px;
-  color:  rgb(73, 73, 41);
+  font-size: 1.4vw;
+  color: rgb(197,158,85);
+  background-color: white;
   border-radius: 10px 20px;
   border: 2px solid rgb(196, 193, 193);
   margin: 30px 20px 10px;
@@ -94,8 +95,9 @@ html, body {
  }
 
 .active:hover{
-  color: goldenrod;
-  background-color: rgb(224, 219, 219);
+  color:  rgb(40, 65, 99);
+  background-color: rgb(197,158,85);
+
 }
 
 /* about */
