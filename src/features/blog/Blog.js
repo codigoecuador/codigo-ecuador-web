@@ -1,6 +1,4 @@
 import React, {Component} from 'react'
-//react carousel imported
-import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -23,7 +21,7 @@ class Blog extends Component {
 
   render(){
     if(!this.state.blogs.items){
-      return <div className='blog-container massive center'>No blog posts at the moment!</div>
+      return <div className='blog-container'>No blog posts at the moment!</div>
     } else {
 
       const {items} = this.state.blogs
