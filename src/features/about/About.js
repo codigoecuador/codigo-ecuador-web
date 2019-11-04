@@ -1,5 +1,5 @@
 import React from 'react'
-import LeafPic from '../LeafPic'
+import LeafPic from './LeafPic'
 import OurStory from './OurStory'
 
 

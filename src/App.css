@@ -25,7 +25,7 @@ html, body {
   left: 0;
   width: 100%;
   height: 25%;
-  background-color: rgb(255,255,255);
+  background-color: rgb(255,255,255,0.5);
   z-index: 2;
 }
 
@@ -54,7 +54,6 @@ html, body {
 /* navbar */
 .navbar {
   position: absolute;
-  background-color: white;
   font-weight: bold;
   top: 10%;
   left: 41%;
@@ -108,7 +107,19 @@ html, body {
 /* activities */
 
 .activitiesCards {
-  margin-top: 15%;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  right: 10%;
+  z-index: 2;
+}
+
+.tealPic{
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 1800px;
+  z-index: -1
 }
 
 
