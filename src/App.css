@@ -2,24 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
-}
 .center{
   text-align: center;
 }
@@ -34,6 +16,7 @@ html, body {
   position: relative;
   width: 100%;
   height: auto;
+  z-index: -1
 }
 
 .banner {
@@ -41,12 +24,11 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 30%;
-  background-color: rgb(255,255,255);
+  height: 20%;
   z-index: 2;
 }
 
-.about {
+.aboutBlurb {
   position: absolute;
   top: 70%;
   left: 10%;
@@ -58,21 +40,24 @@ html, body {
 
 
 .logo {
-  background-color: rgb(255,255,255);
   position: absolute;
-  top: 0;
-  left: 5%;
-  height: 10%;
-  width: auto;
+  top: 26%;
+  left: 4%;
+  width: 100%;
+  max-width: 35%;
+  height: auto;
+  z-index: 3;
 }
 
 /* navbar */
 .navbar {
   position: absolute;
-  background-color: white;
-  top: 5%;
-  left: 50%;
-  width: 90%;
+  font-weight: bold;
+  top: 10%;
+  left: 43%;
+  height: auto;
+  width: 100%;
+  max-width: 40%;
   margin: auto;
   z-index: 3;
 }
@@ -80,17 +65,166 @@ html, body {
 .active{
   padding :20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 20px;
-  color:  rgb(73, 73, 41);
+  font-size: 1.2vw;
+  color: rgb(197,158,85);
+  background-color: white;
   border-radius: 10px 20px;
-  border: 2px solid rgb(196, 193, 193);
-  margin: 30px 20px 10px;
-  width: 200px;
-  height: 150px;
+  border: 3px solid rgb(196, 193, 193);
+  margin: 3% 1% 1%;
+  width: 5%;
+  height: 4%;
  }
-.active:hover{
-  color: goldenrod;
-  background-color: rgb(224, 219, 219);
+
+.active:hover {
+  color: rgb(40, 65, 99);
+  background-color: rgb(197,158,85);
+
+}
+
+/* about */
+.aboutPage {
+  margin-top: 15%;
+}
+
+.leafPic{
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: -1
+}
+
+
+.ourStory{
+  position: absolute;
+  top: 40%;
+  left: 26%;
+  width: 50%;
+  text-align: center;
+  background-color: rgb(255,255,255,0.8);
+  border-radius: 28%;
+  padding: 2%;
+}
+
+/* partners */
+.partners {
+  margin-top: 15%;
+}
+
+/* activities */
+
+.activitiesCards {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  z-index: 2;
+}
+
+.background{
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 1800px;
+  z-index: -1
+}
+
+
+/* resources  */
+
+.resources {
+  position: absolute;
+  top: 35%;
+  z-index: 3;
+}
+
+.resourcesHeadline {
+  position: absolute;
+  margin-left: 35%;
+  margin-right: 20%;
+  margin-top: 15%;
+  margin-bottom: 45%;
+}
+
+
+.resourcesButtons {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 20%;
+  margin-right: 65%;
+  margin-bottom: 5%;
+}
+
+
+.resourcesButton:hover {
+  background-color: blue;
+}
+
+.showing {
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 22%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  padding: 5%;
+  background-color: lightblue;
+}
+
+/* blog */
+
+.blog-container {
+   margin: 10%;
+   padding: 2%;
+}
+
+.blog-card-image {
+  width: 100%;
+  max-height: 25%;
+  height: auto;
+}
+
+.card Card{
+  width: 10vw;
+  height: auto;
+  padding: 2vw;
+  border: 1px solid black;
+  border-radius: 15%;
+  background-color: rgb(245, 244, 243);
+  box-shadow: 20px 20px rgb(0,0,0,0.6)
+
+
+}
+.blog-title{
+  font-size: 1.3vw;
+  font-weight: bold;
+  color:rgba(46, 46, 87, 0.897);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.blog-author{
+  font-family: fantasy;
+  float: bottom;
+  font-size: 1.5vw;
+  top: 20%;
+}
+
+.blog-date{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.slick-list div{
+  padding: 2vw;
+  width: 90%;
+  max-height: 50%;
+}
+.blog-account{
+  padding: 0% 25%;
+}
+
+/* donate  */
+.donate {
+  position: absolute;
+  top: 35%;
+  z-index: 3;
 }
 
 /* fonts */
@@ -100,4 +234,25 @@ html, body {
 
 .center {
   text-align: center;
+}
+
+/* font-size */
+.huge {
+  font-size: 4.5vw;
+}
+
+.massive {
+  font-size: 3vw;
+}
+
+.big {
+  font-size: 2.3vw;
+}
+
+.large{
+  font-size: 2vw;
+}
+
+.small {
+  font-size: 1vw;
 }
