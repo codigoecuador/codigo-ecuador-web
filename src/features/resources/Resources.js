@@ -4,19 +4,16 @@ import Entrepreneurs from './Entrepreneurs'
 import Students from './Students/Students'
 import Parents from './Parents'
 import Educators from './Educators'
-import ActivitiesBackground from '../activities/ActivitiesBackground'
 
 
 class Resources extends Component {
   state = {
     showing: "",
-    color: ""
   }
 
   handleClick = (event) => {
     this.setState({ showing: event.target.value})
   }
-
 
   render(){
 
