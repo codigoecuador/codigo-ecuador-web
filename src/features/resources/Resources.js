@@ -17,8 +17,6 @@ class Resources extends Component {
   }
 
 
-
-
   render(){
 
     let content

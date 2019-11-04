@@ -2,26 +2,18 @@ import React from 'react'
 import { Card, Container } from 'semantic-ui-react'
 import {activities} from './ActivitiesData'
 import ActivityCard from './ActivityCard'
-import NavBar from '../nav/Navbar'
 
 const Activities = () => {
     return (
-        <div>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <div className="big center">
-            <br/>
-            Our work makes a difference.
-          </div>
-          <br/>
-          <br/>
-          <Container>
+        <>
+          <Container className="activitiesCards">
+              <div className="massive center">
+                Our work makes a difference
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
               <Card.Group itemsPerRow={2}>
                   {activities.map(activity =>
                       <ActivityCard
@@ -31,7 +23,7 @@ const Activities = () => {
           </Container>
           <br/>
           <br/>
-        </div>
+        </>
     )
 }
 
