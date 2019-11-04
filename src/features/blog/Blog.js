@@ -1,72 +1,64 @@
-import React, {Component} from 'react'
-import ReactHtmlParser from 'react-html-parser'
-import {Link} from 'react-router-dom'
+import React, { Component } from 'react'
 
-class Blog  extends Component {
-    constructor(props){
-        super(props)
-        this.state={
-            blogs: []
-        }
+class Blog extends Component {
+    state = {
+        blogs: []
     }
 
-            componentDidMount(){
-                        return fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@codigoecuador`)
-                        .then(response => response.json())
-                        .then(blogs =>   this.setState({blogs: blogs})
-                            );
-                }
-                
+  componentDidMount(){
+    return fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@codigoecuador`)
+    .then(response => response.json())
+    .then(blogs => this.setState({blogs: blogs})
+    );
+  }
 
+  render(){
+    if(!this.state.blogs.items){
+      return <div>No blog posts at the moment!</div>
+    } else {
 
-    render(){
-             console.log("are my blogs in?",this.state)
-         
-           
-             if(this.state.blogs.items){
-                const {items} = this.state.blogs
-                return(
-                    <div className="background-img">
-                             
-                    
-                  
-                    <div id='card-container' class="ui link cards">
-                             
-                         {items.map((blog,index)=>(
-                    <div class="card">
-                      <div class="image">
-                        <img src={`${blog.thumbnail}`}/>
-                      </div>
-                      <div class="content">
-                        <div class="header"><a href={`${blog.link}`} target="_blank" rel="noopener noreferrer">{blog.title}</a></div>
-                        <div class="meta">
-                          <a></a>
-                        </div>
-                        <div class="description">
-                          #{blog.categories.join('# ')}}
-                        </div>
-                      </div>
-                      <div class="extra content">
-                        <span class="right floated">
-                          {blog.pubDate}
-                        </span>
-                        <span>
-                          <i class="user icon"></i>
-                          {blog.author}
-                        </span>
-                      </div>
-                    </div>
-                         ))}
-                    </div>
-                    </div>
-                        )}else{
-                 return (
-                <div>No blogs</div>
-            )
-        }
-    }}
-    
+      const {items} = this.state.blogs
 
+      return(
+        <div className="background-img">
+          <div id='card-container' className="ui link cards">
+              {items.map((blog,index)=>(
+            <div className="card">
 
+              <div className="image">
+                <img src={`${blog.thumbnail}`} alt="thumbnail for blog post"/>
+              </div>
+
+              <div className="content">
+                <div className="header">
+                  <a href={`${blog.link}`} target="_blank" rel="noopener noreferrer">
+                    {blog.title}
+                  </a>
+                </div>
+
+                <div className="description">
+                  #{blog.categories.join('# ')}}
+                </div>
+              </div>
+
+              <div className="extra content">
+                <span class="right floated">
+                  {blog.pubDate}
+                </span>
+
+                <span>
+                  <i class="user icon"></i>
+                  {blog.author}
+                </span>
+              </div>
+
+            </div>
+            ))}
+
+          </div>
+        </div>
+      )}
+    }
+}
 
 export default Blog
