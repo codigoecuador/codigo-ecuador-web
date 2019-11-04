@@ -1,25 +1,33 @@
-import React from 'react'
+import React, { Component }  from 'react'
 import { Card, Button, Image} from 'semantic-ui-react'
 
 
 
-const ActivityCard = ({id, title, subtitle, description, buttonText, buttonLink,image}) => {
+class ActivityCard extends Component {
 
-    return (
-        <Card >
-            <Image src={image}/>
-            <Card.Content >
-                <Card.Header>{title}</Card.Header>
-                <h3><i>{subtitle}</i></h3>
-                <Card.Description>{description}</Card.Description>
+    handleChange = () => {
+      alert('you hovered here')
+    }
+
+    render(){
+
+      return (
+          <Card onmouseover={this.handleChange}>
+              <Image src={this.props.image}/>
+              <Card.Content >
+                  <Card.Header>{this.props.title}</Card.Header>
+                  <h3><i>{this.props.subtitle}</i></h3>
+                  <Card.Description>{this.props.description}</Card.Description>
+              </Card.Content>
+              <Card.Content className='center' extra >
+                  <Button ><a href={this.props.buttonLink}>{this.props.buttonText}</a></Button>
+              </Card.Content>
+          </Card>
+      )
+
+    }
 
 
-            </Card.Content>
-            <Card.Content className='center' extra >
-                <Button ><a href={buttonLink}>{buttonText}</a></Button>
-            </Card.Content>
-        </Card>
-    )
 }
 
 export default ActivityCard
