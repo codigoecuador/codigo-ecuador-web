@@ -11,14 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.aboutImage{
-  z-index: -1;
-  position: absolute;
-}
-
-.topAboutImage{
-  z-index: 1;
-  position: absolute;
-  margin: 40px;
-}

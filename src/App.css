@@ -6,11 +6,21 @@
   text-align: center;
 }
 
+/* brand colors */
+.navy {
+  color: rgb(8,37,78)
+}
+
+.gold {
+  color: rgb(197, 158, 85);
+}
+
 /* home */
 html, body {
     margin: 0;
     height: 100%;
 }
+
 
 .coverPic{
   position: relative;
@@ -169,7 +179,7 @@ html, body {
 }
 
 
-.resourcesButtons {
+.resourcesButtonGroup {
   position: absolute;
   margin-left: 10%;
   margin-top: 20%;
@@ -177,19 +187,29 @@ html, body {
   margin-bottom: 5%;
 }
 
+.resourceButton {
+  background-color: rgb(8,37,78);
+  width: 300px;
+  color: white;
+  font-size: 1.1vw;
+  padding: 3.5%;
+}
 
-.resourcesButton:hover {
-  background-color: blue;
+
+.resourceButton:hover {
+  /* gold */
+  background-color: rgb(197,158,85);
+  color: rgb(8,37,78);
 }
 
 .showing {
   position: absolute;
-  margin-left: 35%;
+  margin-left: 33%;
   margin-top: 22%;
   margin-right: 15%;
   margin-bottom: 5%;
   padding: 5%;
-  background-color: lightblue;
+  background-color: rgb(8,37,28,0.1);
 }
 
 /* blog */
