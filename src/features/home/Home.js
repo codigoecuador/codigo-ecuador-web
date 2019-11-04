@@ -7,7 +7,7 @@ const Home = () => {
     return (
       <>
         <CoverPic />
-        <div className="about">
+        <div className="aboutBlurb">
           <AboutBlurb/>
         </div>
 

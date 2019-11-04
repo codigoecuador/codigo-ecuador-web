@@ -1,6 +1,6 @@
 import React from "react"
 import { Grid, Header, Button, Form } from "semantic-ui-react"
-import { data } from "./partners_data"
+import { data } from "./PartnersData"
 import PartnerGrid from "./PartnerGrid"
 
 const Partners = () => {

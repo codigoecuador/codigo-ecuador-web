@@ -6,7 +6,7 @@ const About = () => {
 
     return (
       <div className="massive">
-        <h1>About!</h1>
+        About!
 
       </div>
     )

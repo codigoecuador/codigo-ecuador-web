@@ -46,7 +46,7 @@ html, body {
   z-index: 2;
 }
 
-.about {
+.aboutBlurb {
   position: absolute;
   top: 70%;
   left: 10%;
@@ -97,6 +97,12 @@ html, body {
   color: goldenrod;
   background-color: rgb(224, 219, 219);
 }
+
+/* about */
+.about {
+  font-size: massive;
+}
+
 
 /* resources  */
 
