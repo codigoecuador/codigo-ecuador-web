@@ -1,74 +1,72 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
+//react carousel imported
+import Carousel, { Dots } from '@brainhubeu/react-carousel';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import {Link} from 'react-router-dom';
+import { Card, Image} from 'semantic-ui-react'
 import { Container } from 'semantic-ui-react'
+
 
 class Blog extends Component {
     state = {
         blogs: []
     }
+    
+    componentDidMount(){
+      return fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@burakkocak884`)
+      .then(response => response.json())
+      .then(blogs =>   this.setState({blogs: blogs})
+          );
+     }
+     //react carousel installed with < npm i @brainhubeu/react-carousel > in the terminal          
 
-  componentDidMount(){
-    return fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@codigoecuador`)
-    .then(response => response.json())
-    .then(blogs => this.setState({blogs: blogs})
-    );
-  }
 
   render(){
     if(!this.state.blogs.items){
       return <div>No blog posts at the moment!</div>
     } else {
-
+      
       const {items} = this.state.blogs
-
-      return(
-        <div className="center">
-          <Container className="blogPosts">
-            <div className="massive">
+      var settings = {
+        dots: true,
+        infinite: true,
+        speed: 4000,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplayspeed: 8000
+      }
+                     
+        return (
+            <div className="massive center">
               Blog Posts
             </div>
-            <br/>
-            <br/>
-            <div className="background-img">
-              <div id='card-container' className="ui link cards">
+                  
+              <div className='blog-container'>
+                <h1 className='blog-account'><i>{this.state.blogs.feed.title}</i></h1>
+                <Slider {...settings}>
                   {items.map((blog,index)=>(
-                <div className="card">
 
-                  <div className="image">
-                    <img src={`${blog.thumbnail}`} alt="thumbnail for blog post"/>
-                  </div>
+                  <Card className="card">
+                    <a href={blog.link} target='_blank'><Image src={blog.thumbnail} className='blog-card-image'/></a> 
 
-                  <div className="content">
-                    <div className="header">
-                      <a href={`${blog.link}`} target="_blank" rel="noopener noreferrer">
-                        {blog.title}
-                      </a>
-                    </div>
+                    <Card.Content>
+                      <Card.Header ><span className='blog-title'>{blog.title}</span></Card.Header>
+                      <Card.Description></Card.Description>
+                      <p>Published by <span className='blog-author'>{blog.author}</span></p>
+                      <p>Date: <span className='blog-date'>{blog.pubDate}</span></p>
+                    </Card.Content>
+                   </Card>
+                  ))}
 
-                    <div className="description">
-                      #{blog.categories.join('# ')}}
-                    </div>
-                  </div>
-
-                  <div className="extra content">
-                    <span class="right floated">
-                      {blog.pubDate}
-                    </span>
-
-                    <span>
-                      <i class="user icon"></i>
-                      {blog.author}
-                    </span>
-                  </div>
-
-                </div>
-                ))}
-
-              </div>
-            </div>
-          </Container>
-        </div>
-      )}
-    }
+                  <br/>
+                </Slider>
+             </div>
+          );     
+       }                                       
+    }    
 }
 
 export default Blog
