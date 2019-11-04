@@ -99,8 +99,14 @@ html, body {
 }
 
 /* about */
-.about {
-  font-size: massive;
+.aboutPage {
+  margin-top: 15%;
+
+}
+
+/* partners */
+.partners {
+  margin-top: 15%;
 }
 
 /* activities */

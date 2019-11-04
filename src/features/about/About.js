@@ -1,14 +1,18 @@
 import React from 'react'
+import { Container } from 'semantic-ui-react'
+import Partners from './partners/Partners'
+
 
 
 
 const About = () => {
 
     return (
-      <div className="massive">
-        About!
+      <Container className="AboutPage">
+        <Partners />
 
-      </div>
+
+      </Container>
     )
   }
 
