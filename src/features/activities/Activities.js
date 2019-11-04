@@ -1,11 +1,11 @@
 import React from 'react'
 import ActivitiesCards from './ActivitiesCards'
-import TealPic from './TealPic'
+import ActivitiesBackground from './ActivitiesBackground'
 
 const Activities = () => {
     return (
         <>
-          <TealPic/>
+          <ActivitiesBackground/>
           <ActivitiesCards className="activitiesCards"/>
           <br/>
           <br/>

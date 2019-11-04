@@ -8,7 +8,7 @@ const ActivitiesCards = () => {
     return (
         <Container className="activitiesCards">
             <div className="massive center">
-              Our work makes a difference
+              Our Work
             </div>
             <br/>
             <br/>

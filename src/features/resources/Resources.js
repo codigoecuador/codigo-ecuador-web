@@ -4,6 +4,7 @@ import Entrepreneurs from './Entrepreneurs'
 import Students from './Students/Students'
 import Parents from './Parents'
 import Educators from './Educators'
+import ActivitiesBackground from '../activities/ActivitiesBackground'
 
 
 class Resources extends Component {
@@ -40,7 +41,7 @@ class Resources extends Component {
       headline = "Resources for Entrepreneurs"
       break;
     default:
-      content = <h3>Pick a button</h3>
+      content = <h1>Click any button on the left to see resources.</h1>
       headline = "Coding Resources"
     }
 
@@ -55,21 +56,27 @@ class Resources extends Component {
           <br/>
           <br/>
           <Button.Group vertical>
-            <Button onClick={this.handleClick} className="ui green button" value="entrepreneurs">For Entrepreneurs</Button>
+            <Button onClick={this.handleClick} className="ui green button massive" value="entrepreneurs">For Entrepreneurs</Button>
             <br/>
             <br/>
-            <Button onClick={this.handleClick}  className="ui purple button" value="students">For Students</Button>
+            <Button onClick={this.handleClick}  className="ui purple button massive" value="students">For Students</Button>
             <br/>
             <br/>
-            <Button onClick={this.handleClick}  className="ui blue button" value="parents">For Parents</Button>
+            <Button onClick={this.handleClick}  className="ui blue button massive" value="parents">For Parents</Button>
             <br/>
             <br/>
-            <Button onClick={this.handleClick} className="ui orange button" value="educators">For Educators</Button>
+            <Button onClick={this.handleClick} className="ui orange button massive" value="educators">For Educators</Button>
           </Button.Group>
         </div>
 
         <div className="showing">
           { content }
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <br/>
           <br/>
 
