@@ -53,9 +53,6 @@ class Resources extends Component {
           <br/>
           <br/>
           <Button.Group vertical>
-            <Button onClick={this.handleClick} className="ui green button massive" value="entrepreneurs">For Entrepreneurs</Button>
-            <br/>
-            <br/>
             <Button onClick={this.handleClick}  className="ui purple button massive" value="students">For Students</Button>
             <br/>
             <br/>
@@ -63,6 +60,11 @@ class Resources extends Component {
             <br/>
             <br/>
             <Button onClick={this.handleClick} className="ui orange button massive" value="educators">For Educators</Button>
+            <br/>
+            <br/>
+            <Button onClick={this.handleClick} className="ui green button massive" value="entrepreneurs">For Entrepreneurs</Button>
+            <br/>
+            <br/>
           </Button.Group>
         </div>
 
