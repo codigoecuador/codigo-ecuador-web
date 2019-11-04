@@ -23,6 +23,11 @@ class Blog extends Component {
       return(
         <div className="center">
           <Container className="blogPosts">
+            <div className="massive">
+              Blog Posts
+            </div>
+            <br/>
+            <br/>
             <div className="background-img">
               <div id='card-container' className="ui link cards">
                   {items.map((blog,index)=>(
