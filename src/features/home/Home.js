@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutBlurb from './AboutBlurb'
 import CoverPic from './CoverPic'
+import Activities from '../activities/Activities'
 
 
 const Home = () => {
@@ -10,6 +11,8 @@ const Home = () => {
         <div className="aboutBlurb">
           <AboutBlurb/>
         </div>
+
+        <Activities id="activities" />
 
       </>
     )

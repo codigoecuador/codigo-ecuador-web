@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { Button } from 'semantic-ui-react'
 
 const OurStory = () => {
     return (
-        <div>
+        <div className="bubble">
           <h1>Our Story</h1>
           <p>
-          At Código Ecuador, we care about creating a more equal world, between countries and across genders.
+          At Código Ecuador, we care about creating a more equal world<br/> between countries and across genders.
           <br/>
           We want to train young women to take on technology careers in Ecuador.
           </p>

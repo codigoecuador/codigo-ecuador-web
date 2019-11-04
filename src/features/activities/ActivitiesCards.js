@@ -6,7 +6,8 @@ import ActivityCard from './ActivityCard'
 
 const ActivitiesCards = () => {
     return (
-        <Container className="activitiesCards">
+      <>
+        <Container className="activitiesCardGroup">
             <div className="massive center">
               Our Work
             </div>
@@ -14,13 +15,19 @@ const ActivitiesCards = () => {
             <br/>
             <br/>
             <br/>
-            <Card.Group itemsPerRow={2}>
+            <Card.Group itemsPerRow={3}>
                 {activities.map(activity =>
                     <ActivityCard
                       key={activity.id} {...activity} padding="20px"/>
                     )}
             </Card.Group>
         </Container>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+      </>
 
     )
 }
