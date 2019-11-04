@@ -4,7 +4,7 @@ import ecuadorLeaf from './ecuadorLeaf.jpg'
 const LeafPic = () => {
     return (
       <div >
-        <img src={ecuadorLeaf} alt="large leaf by Jose Danilo on Unsplash.com" className="coverPic"/>
+        <img src={ecuadorLeaf} alt="large leaf by Jose Danilo on Unsplash.com" className="leafPic"/>
       </div>
     )
 }
