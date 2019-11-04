@@ -103,6 +103,12 @@ html, body {
   font-size: massive;
 }
 
+/* activities */
+
+.activitiesCards {
+  margin-top: 15%;
+}
+
 
 /* resources  */
 
@@ -141,15 +147,12 @@ html, body {
   background-color: lightblue;
 }
 
-/* activities */
-
-.activitiesCards {
+/* blog */
+.blogPosts {
   margin-top: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
-
-
-
-
 
 
 /* fonts */

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Container } from 'semantic-ui-react'
 
 class Blog extends Component {
     state = {
@@ -20,42 +21,46 @@ class Blog extends Component {
       const {items} = this.state.blogs
 
       return(
-        <div className="background-img">
-          <div id='card-container' className="ui link cards">
-              {items.map((blog,index)=>(
-            <div className="card">
+        <div className="center">
+          <Container className="blogPosts">
+            <div className="background-img">
+              <div id='card-container' className="ui link cards">
+                  {items.map((blog,index)=>(
+                <div className="card">
 
-              <div className="image">
-                <img src={`${blog.thumbnail}`} alt="thumbnail for blog post"/>
-              </div>
+                  <div className="image">
+                    <img src={`${blog.thumbnail}`} alt="thumbnail for blog post"/>
+                  </div>
 
-              <div className="content">
-                <div className="header">
-                  <a href={`${blog.link}`} target="_blank" rel="noopener noreferrer">
-                    {blog.title}
-                  </a>
+                  <div className="content">
+                    <div className="header">
+                      <a href={`${blog.link}`} target="_blank" rel="noopener noreferrer">
+                        {blog.title}
+                      </a>
+                    </div>
+
+                    <div className="description">
+                      #{blog.categories.join('# ')}}
+                    </div>
+                  </div>
+
+                  <div className="extra content">
+                    <span class="right floated">
+                      {blog.pubDate}
+                    </span>
+
+                    <span>
+                      <i class="user icon"></i>
+                      {blog.author}
+                    </span>
+                  </div>
+
                 </div>
+                ))}
 
-                <div className="description">
-                  #{blog.categories.join('# ')}}
-                </div>
               </div>
-
-              <div className="extra content">
-                <span class="right floated">
-                  {blog.pubDate}
-                </span>
-
-                <span>
-                  <i class="user icon"></i>
-                  {blog.author}
-                </span>
-              </div>
-
             </div>
-            ))}
-
-          </div>
+          </Container>
         </div>
       )}
     }
