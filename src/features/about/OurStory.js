@@ -1,16 +1,15 @@
 import React from 'react'
 import { Container } from 'semantic-ui-react'
 import Partners from './partners/Partners'
-import OurStory from './OurStory'
 
 
 
 
-const About = () => {
+const OurStory = () => {
 
     return (
-      <Container className="AboutPage">
-        <Partners />
+      <Container>
+        <h1>Once up on a time ... </h1>
 
 
       </Container>
@@ -19,4 +18,4 @@ const About = () => {
 
 
 
-export default About
+export default OurStory
