@@ -14,6 +14,7 @@ import Logo from "./features/logo/Logo"
 
 
 function App() {
+
 	return (
 		<Router>
 			<div>
@@ -32,6 +33,8 @@ function App() {
 			<div className="banner">
 				<Logo className="logo" />
 			</div>
+      <br/>
+      <div className="copyright center">©2019 by Código Ecuador.</div>
 		</Router>
 	)
 }
