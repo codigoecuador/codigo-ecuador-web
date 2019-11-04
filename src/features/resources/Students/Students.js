@@ -9,7 +9,7 @@ const Students = () => {
               <div className="course">
                 <h1>{course.title}</h1>
                 <h3>{course.subtitle}</h3>
-                <Button><a href={course.buttonLink}>Learn More</a></Button>
+                <button className="studentButton"><a href={course.buttonLink}>Learn More</a></button>
                 <br/>
                 <br/>
                 <Divider />

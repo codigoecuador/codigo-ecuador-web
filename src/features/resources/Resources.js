@@ -46,7 +46,7 @@ class Resources extends Component {
 
     return (
       <>
-        <div className="resourcesHeadline massive">
+        <div className="resourcesHeadline big">
           { headline }
           <br/>
         </div>

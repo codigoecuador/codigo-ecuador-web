@@ -1,12 +1,31 @@
-.App {
-  text-align: center;
-}
-
 .center{
   text-align: center;
 }
 
+/* font-size */
+.huge {
+  font-size: 4.5vw;
+}
+
+.massive {
+  font-size: 3vw;
+}
+
+.big {
+  font-size: 2.8vw;
+}
+
+.large{
+  font-size: 2vw;
+}
+
+.small {
+  font-size: 1vw;
+}
+
+
 /* brand colors */
+
 .navy {
   color: rgb(8,37,78)
 }
@@ -15,12 +34,14 @@
   color: rgb(197, 158, 85);
 }
 
+
+
 /* home */
+
 html, body {
     margin: 0;
     height: 100%;
 }
-
 
 .coverPic{
   position: relative;
@@ -59,7 +80,10 @@ html, body {
   z-index: 3;
 }
 
+
+
 /* navbar */
+
 .navbar {
   position: absolute;
   font-weight: bolder;
@@ -91,7 +115,10 @@ html, body {
 
 }
 
+
+
 /* about */
+
 .aboutPage {
   margin-top: 15%;
 }
@@ -102,7 +129,6 @@ html, body {
   height: auto;
   z-index: -1
 }
-
 
 .ourStory{
   position: absolute;
@@ -122,7 +148,7 @@ html, body {
 
 
 .bubble h1 {
-  font-size: 2vw;
+  font-size: 3vw;
   color: rgb(8,37,78)
 }
 
@@ -133,10 +159,15 @@ html, body {
 }
 
 
+
+
 /* partners */
+
 .partners {
   margin-top: 15%;
 }
+
+
 
 /* activities */
 
@@ -148,18 +179,6 @@ html, body {
   z-index: 2;
 }
 
-.activityCard {
-  height: 10vw;
-  width: auto;
-}
-
-.background{
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-height: 1800px;
-  z-index: -1
-}
 
 
 /* resources  */
@@ -176,6 +195,7 @@ html, body {
   margin-right: 20%;
   margin-top: 15%;
   margin-bottom: 45%;
+  font-weight: bold;
 }
 
 
@@ -189,7 +209,7 @@ html, body {
 
 .resourceButton {
   background-color: rgb(8,37,78);
-  width: 300px;
+  width: 15vw;
   color: white;
   font-size: 1.1vw;
   padding: 3.5%;
@@ -209,8 +229,34 @@ html, body {
   margin-right: 15%;
   margin-bottom: 5%;
   padding: 5%;
-  background-color: rgb(8,37,28,0.1);
+  background-color: rgb(198, 151, 86, 0.1);
 }
+
+/* student */
+.studentButton {
+  background-color: rgb(197,158,85);
+  width: 8vw;
+  font-size: .8vw;
+  padding: 1%;
+}
+
+.studentButton a {
+    color: white;
+}
+
+
+.studentButton:hover {
+  /* gold */
+  background-color: rgb(8,37,78);
+  color: rgb(197,158,85);
+}
+
+
+.studentButton:hover 1 {
+  /* navy */
+  color: rgb(8,37,78);
+}
+
 
 /* blog */
 
@@ -267,7 +313,7 @@ html, body {
 /* donate  */
 .donate {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 24%;
   z-index: 3;
 }
@@ -282,6 +328,12 @@ html, body {
   width: auto;
 }
 
+.hiddenContent {
+  padding: 5%;
+  background-color: rgb(8,37,78);
+  color: white;
+}
+
 /* fonts */
 .massive {
   font-size: 5vw;
@@ -289,25 +341,4 @@ html, body {
 
 .center {
   text-align: center;
-}
-
-/* font-size */
-.huge {
-  font-size: 4.5vw;
-}
-
-.massive {
-  font-size: 3vw;
-}
-
-.big {
-  font-size: 2.3vw;
-}
-
-.large{
-  font-size: 2vw;
-}
-
-.small {
-  font-size: 1vw;
 }
