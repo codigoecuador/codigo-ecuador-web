@@ -10,7 +10,7 @@ import Blog from "./features/blog/Blog"
 import Donate from "./features/donate/Donate"
 import Resources from "./features/resources/Resources"
 import Activities from "./features/activities/Activities"
-import Logo from "./features/logo/Logo"
+import Logo from "./features/Logo/Logo"
 
 
 function App() {
