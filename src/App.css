@@ -224,7 +224,19 @@ html, body {
 .donate {
   position: absolute;
   top: 35%;
+  left: 27%;
   z-index: 3;
+  background-color: red;
+}
+
+.donateCardsGroup {
+  margin-left: 3%;
+  padding: 2%;
+}
+
+.donateCard {
+  height: 10vw;
+  width: auto;
 }
 
 /* fonts */
