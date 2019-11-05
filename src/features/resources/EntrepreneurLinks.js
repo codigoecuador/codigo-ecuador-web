@@ -27,4 +27,4 @@ const amazon = {
   }
 
 
-export const entrepreneurLinks = [upwork, fiverr, udemy, amazon ]
+export const entrepreneurLinks = [upwork, fiverr, udemy, amazon]

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Button } from 'semantic-ui-react'
 import ResourceLinks from './ResourceLinks'
+import BannerVideo from './BannerVideo'
 
 
 
@@ -19,8 +20,12 @@ class ResourcesContainer extends Component {
 
     return (
       <>
-        <div className="resourcesHeadline big">
-          <span className="gold">{this.state.showing}</span><span className="navy"> Resources</span>
+        <BannerVideo />
+        <div className="resourcesHeadlineContainer">
+          <br/>
+          <br/>
+          <br/>
+          <span className="big gold">{this.state.showing}</span><span className="big navy"> Resources</span>
           <br/>
         </div>
 
