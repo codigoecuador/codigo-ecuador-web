@@ -12,6 +12,7 @@ const AboutBlurb = () => {
           </p>
           <p>We believe that improving access to computer science curricula promotes global equity,<br/> and that collective action makes great changes in this world.
           </p>
+          
           <br/>
         </div>
     )
