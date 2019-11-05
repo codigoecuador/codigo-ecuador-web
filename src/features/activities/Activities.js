@@ -11,7 +11,7 @@ const Activities = () => {
         <>
           <BrickWallPic />
           <QuitoPic />
-          <h1>need to make this link to anchor on home page</h1>
+
           <div className="educationBlurb">
             <EducationBlurb/>
           </div>
