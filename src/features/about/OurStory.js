@@ -7,8 +7,7 @@ const OurStory = () => {
           <div className="headline">
             <span className="gold">Our</span><span className="navy"> Story</span>
           </div>
-          <br/>
-          <br/>
+
 
           <p>
           At Código Ecuador, we care about creating a more equal world<br/> between countries and across genders.

@@ -8,13 +8,10 @@ const ActivitiesCards = () => {
     return (
       <>
         <Container className="activitiesCardGroup">
-            <div className="massive center">
-              Our Work
+            <div className="headline">
+              <span className="gold">Our</span><span className="navy"> Work</span>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+
             <Card.Group itemsPerRow={3}>
                 {activities.map(activity =>
                     <ActivityCard

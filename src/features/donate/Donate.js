@@ -11,8 +11,7 @@ const Donate = () => {
         <div className="headline">
           <span className='gold'>Donate</span>
         </div>
-        <br/>
-        <br/>
+  
 
         <div className="subhead">You can promote technology careers for women in Ecuador<br/> by helping us with supplies, equipment, and space from which to work.</div>
         <br/>

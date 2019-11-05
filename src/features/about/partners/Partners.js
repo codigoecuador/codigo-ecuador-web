@@ -1,6 +1,7 @@
 import React from "react"
 import { Grid,  Container } from "semantic-ui-react"
-import { data } from "./PartnersData"
+import { partnersData } from "./PartnersData"
+import { minorPartnersData } from './MinorPartnersData'
 import PartnerGrid from "./PartnerGrid"
 
 const Partners = () => {
@@ -13,8 +14,7 @@ const Partners = () => {
 			<div className="headline">
 				<span className="gold">Our</span><span className="navy"> Partners</span>
 			</div>
-			<br/>
-			<br/>
+
 
 			<div className="subhead">
 				We are grateful to our partners who share expertise and resources to help us succeed.
@@ -29,10 +29,15 @@ const Partners = () => {
 				<br/>
 				<br/>
 				<br/>
-				{data.map(partner => (
+				{partnersData.map(partner => (
 					<PartnerGrid {...partner} key={partner.name} />
 				))}
 			</Grid>
+
+
+
+
+
 
 
 

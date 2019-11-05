@@ -18,10 +18,7 @@ const DonateCard = ({topic, summary, image}) => {
             </div>
           </Card>
 
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+
         <br/>
         <br/>
         <br/>

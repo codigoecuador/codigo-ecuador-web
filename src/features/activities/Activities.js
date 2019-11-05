@@ -5,8 +5,7 @@ const Activities = () => {
     return (
         <>
           <ActivitiesCards />
-          <br/>
-          <br/>
+
         </>
     )
 }

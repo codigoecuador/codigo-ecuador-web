@@ -27,7 +27,7 @@ class ResourcesContainer extends Component {
           <div className="headline">
             <span className="gold">{this.state.showing}</span><span className="navy"> Resources</span>
           </div>
-          <br/>
+
         </div>
 
         <div className="resourcesButtonGroup">

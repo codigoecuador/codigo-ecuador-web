@@ -1,22 +1,26 @@
 import React from "react"
-import { Grid, Header, Image } from "semantic-ui-react"
+import { Grid, Image } from "semantic-ui-react"
 
 const PartnerGrid = ({ content, image, name }) => {
 	return (
 		<Grid.Row columns={2}>
+			<br/>
+
 			<Grid.Column verticalAlign="center">
-				<Image src={image} />
+				<Image className="partnerImage" src={image} />
 			</Grid.Column>
+
 			<Grid.Column verticalAlign="center">
-				<div>
-					<Header as="h1" textAlign="center">
-						<Header.Content className="navy-font">{name}</Header.Content>
-					</Header>
+				<div className="partnerHeadline">
+					{ name }
+				</div>
+				<div className="partnerDescription">
 					{content.map(info => (
 						<p>{info}</p>
 					))}
 				</div>
 			</Grid.Column>
+
 		</Grid.Row>
 	)
 }

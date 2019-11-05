@@ -11,7 +11,7 @@ class Blog extends Component {
     }
 
   componentDidMount(){
-    return fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@burakkocak884`)
+    return fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@codigoecuador`)
     .then(response => response.json())
     .then(blogs =>   this.setState({blogs: blogs})
     );
@@ -39,7 +39,7 @@ class Blog extends Component {
         <>
           <div className='blog-container'>
             <div className='headline'>
-              <span className="gold">Our</span><span className="navy"> Blog</span>
+              <span className="gold">Recent</span><span className="navy"> Blog Posts</span>
             </div>
 
             <Slider {...settings}>
