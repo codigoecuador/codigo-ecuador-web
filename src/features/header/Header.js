@@ -9,7 +9,7 @@ import Team from "../about/team/Team"
 import Blog from "../blog/Blog"
 import Donate from "../donate/Donate"
 import ResourcesContainer from "../resources/ResourcesContainer"
-import ResearchLinks from '../resources/ResearchLinks'
+import ResearchContainer from '../resources/ResearchContainer'
 import Activities from "../activities/Activities"
 import Logo from "./Logo"
 
@@ -27,7 +27,7 @@ const Header = () => {
 					<Route exact path="/about/partners" render={() => <Partners />} ></Route>
           <Route exact path="/about/team" render={() => <Team />} ></Route>
 					<Route exact path="/resources" render={() => <ResourcesContainer />}></Route>
-					<Route exact path="/resources/research" render={() => <ResearchLinks />}></Route>
+					<Route exact path="/resources/research" render={() => <ResearchContainer />}></Route>
 					<Route exact path="/blog" render={() => <Blog />}></Route>
 					<Route exact path="/donate" render={() => <Donate />}></Route>
 				</Switch>

@@ -188,6 +188,10 @@ html, body {
   padding: 2%;
 }
 
+.researchContainer{
+  position: absolute;
+  top: 20%;
+}
 
 
 

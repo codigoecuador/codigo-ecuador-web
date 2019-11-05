@@ -19,4 +19,4 @@ const guide = {
 
 
 
-export const research = [buildingSkills, guide ]
+export const researchLinks = [buildingSkills, guide ]

@@ -1,7 +1,7 @@
 import React from 'react'
 import LeafPic from './LeafPic'
 import OurStory from './OurStory'
-import CeoLetter from './CeoLetter'
+import CeoLetter from './ceoLetter'
 
 
 

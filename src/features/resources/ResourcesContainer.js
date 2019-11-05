@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Button } from 'semantic-ui-react'
 import ResourceLinks from './ResourceLinks'
-import BannerVideo from './BannerVideo'
-
 
 
 class ResourcesContainer extends Component {
