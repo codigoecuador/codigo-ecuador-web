@@ -67,7 +67,9 @@ html, body {
   text-align: center;
   background-color: rgb(255,255,255,0.8);
   border-radius: 85px;
+  border: 3px solid rgb(197, 158, 85);
 }
+
 
 
 .logo {
@@ -252,9 +254,9 @@ html, body {
 }
 
 
-.studentButton:hover 1 {
+.studentButton:hover a {
   /* navy */
-  color: rgb(8,37,78);
+  color:rgb(8,37,78);
 }
 
 
@@ -313,8 +315,9 @@ html, body {
 /* donate  */
 .donate {
   position: absolute;
+  display: inline-block;
+  left: 20%;
   top: 30%;
-  left: 24%;
   z-index: 3;
 }
 
@@ -332,6 +335,25 @@ html, body {
   padding: 5%;
   background-color: rgb(8,37,78);
   color: white;
+}
+
+.donateButton {
+  height: 3vw;
+  width: 15vw;
+  background-color: rgb(8,37,78);
+  border-radius: 15%;
+
+}
+
+.donateButton a {
+  color: white;
+  font-size: 2vw;
+}
+
+
+/* contact */
+.contact {
+  font-size: 1.1vw;
 }
 
 /* fonts */

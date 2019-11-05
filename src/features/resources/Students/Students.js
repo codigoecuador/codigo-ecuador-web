@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Divider } from 'semantic-ui-react'
+import { Divider } from 'semantic-ui-react'
 import { courses } from './StudentsData'
 
 const Students = () => {

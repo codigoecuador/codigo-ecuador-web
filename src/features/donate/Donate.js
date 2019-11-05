@@ -21,10 +21,8 @@ const Donate = () => {
                    {...donate} padding="20px"/>
                  )}
              </Card.Group>
-             <Contact />
-
-            <br/>
-
+             <Contact className="contact"/>
+          <br/>
            </Container>
 
 
