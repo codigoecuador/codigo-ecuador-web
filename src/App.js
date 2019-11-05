@@ -1,7 +1,7 @@
 import React from "react"
 import "./App.css"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import Navbar from "./features/nav/Navbar"
+import Navbar from "./features/header/Navbar"
 import Home from "./features/home/Home"
 import About from "./features/about/About"
 import Partners from "./features/about/partners/Partners"
@@ -10,7 +10,7 @@ import Blog from "./features/blog/Blog"
 import Donate from "./features/donate/Donate"
 import ResourcesContainer from "./features/resources/ResourcesContainer"
 import Activities from "./features/activities/Activities"
-import Logo from "./features/logo/Logo"
+import Logo from "./features/header/Logo"
 
 
 function App() {
