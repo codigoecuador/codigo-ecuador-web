@@ -5,20 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.aboutImage{
-  z-index: -1;
-  position: absolute;
-}
-
-.topAboutImage{
-  z-index: 1;
-  position: absolute;
-  margin: 40px;
 }

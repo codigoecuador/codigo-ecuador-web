@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from 'semantic-ui-react'
+import { Divider } from 'semantic-ui-react'
 import { courses } from './StudentsData'
 
 const Students = () => {
@@ -9,10 +9,10 @@ const Students = () => {
               <div className="course">
                 <h1>{course.title}</h1>
                 <h3>{course.subtitle}</h3>
-                <Button><a href={course.buttonLink}>Learn More</a></Button>
+                <button className="studentButton"><a href={course.buttonLink}>Learn More</a></button>
                 <br/>
                 <br/>
-                <hr/>
+                <Divider />
               </div>
 
             )}

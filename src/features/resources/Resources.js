@@ -12,6 +12,7 @@ class Resources extends Component {
   }
 
   handleClick = (event) => {
+    debugger
     this.setState({ showing: event.target.value})
   }
 
@@ -23,46 +24,46 @@ class Resources extends Component {
     switch(this.state.showing) {
     case "students":
       content = <Students />
-      headline = "Student Resources"
+      headline = <><span className="gold">Student</span><span className="navy"> Resources</span></>
       break;
     case "parents":
       content = <Parents />
-      headline = "Parent Resources"
+      headline = <><span className="gold">Parent</span><span className="navy"> Resources</span></>
       break;
     case "educators":
       content = <Educators />
-      headline = "Teaching Resources"
+      headline = <><span className="gold">Teaching</span><span className="navy"> Resources</span></>
       break;
     case "entrepreneurs":
       content = <Entrepreneurs />
-      headline = "Resources for Entrepreneurs"
+      headline = <><span className="gold">Resources</span><span className="navy"> for Entrepreneurs</span></>
       break;
     default:
       content = <h1>Click any button on the left to see resources.</h1>
-      headline = "Coding Resources"
+      headline = <><span className="gold">Coding</span><span className="navy"> Resources </span></>
     }
 
 
     return (
       <>
-        <div className="resourcesHeadline massive">
+        <div className="resourcesHeadline big">
           { headline }
           <br/>
         </div>
-        <div className="resourcesButtons">
+        <div className="resourcesButtonGroup">
           <br/>
           <br/>
           <Button.Group vertical>
-            <Button onClick={this.handleClick}  className="ui purple button massive" value="students">For Students</Button>
+            <button onClick={this.handleClick}  className="resourceButton" value="students">For Students</button>
             <br/>
             <br/>
-            <Button onClick={this.handleClick}  className="ui blue button massive" value="parents">For Parents</Button>
+            <button onClick={this.handleClick}  className="resourceButton" value="parents">For Parents</button>
             <br/>
             <br/>
-            <Button onClick={this.handleClick} className="ui orange button massive" value="educators">For Educators</Button>
+            <button onClick={this.handleClick} className="resourceButton" value="educators">For Educators</button>
             <br/>
             <br/>
-            <Button onClick={this.handleClick} className="ui green button massive" value="entrepreneurs">For Entrepreneurs</Button>
+            <button onClick={this.handleClick} className="resourceButton" value="entrepreneurs">For Entrepreneurs</button>
             <br/>
             <br/>
           </Button.Group>

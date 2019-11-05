@@ -38,7 +38,7 @@ class Blog extends Component {
       return (
         <>
           <div className='blog-container'>
-            <h1 className='blog-account massive center'>Our Blog</h1>
+            <h1 className='blog-account big center'><span className="gold">Our</span><span className="navy"> Blog</span></h1>
             <Slider {...settings}>
               {items.map((blog,index)=>(
 

@@ -12,7 +12,7 @@ class ActivityCard extends Component {
     render(){
 
       return (
-          <Card onmouseover={this.handleChange} className="activityCard">
+          <Card onmouseover={this.handleChange} >
               <Image src={this.props.image}/>
               <Card.Content >
                   <Card.Header>{this.props.title}</Card.Header>

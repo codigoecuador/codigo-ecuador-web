@@ -10,12 +10,22 @@ const DonateCard = ({topic, summary, image}) => {
 
           <Card>
             <div class="ui massive fade reveal image">
-              <img class="visible content donateCard" src={image}/>
-              <div class="hidden content"><h2>{topic}</h2> {summary}</div>
+              <img className="visible content donateCard" src={image} alt="laptop, building or meeting space"/>
+              <div className="hiddenContent"><h1 className="gold">{topic}</h1>
+                <h3>{summary}</h3>
+                <br/>
+              </div>
             </div>
           </Card>
 
-        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </div>
     )
 }
