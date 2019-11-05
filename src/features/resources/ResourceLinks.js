@@ -19,19 +19,19 @@ class ResourceLinks extends Component {
     let resourceItems
 
     switch(this.props.type){
-      case("students"):
+      case("Student"):
       resourceItems = studentLinks
       break;
 
-      case("parents"):
+      case("Parent"):
       resourceItems = parentLinks
       break;
 
-      case("educators"):
+      case("Educator"):
       resourceItems = educatorLinks
       break;
 
-      case("entrepreneurs"):
+      case("Entrepreneur"):
       resourceItems = entrepreneurLinks
       break;
 
@@ -46,12 +46,19 @@ class ResourceLinks extends Component {
         <div>
             {resourceItems.map(resource=>
               <div className="resource">
-                <h1>{resource.title}</h1>
-                <h3>{resource.subtitle}</h3>
-                <button className="resourceItemButton"><a href={resource.buttonLink}>Learn More</a></button>
+                <br/>
+                <div className="large resourceItemTitle">{resource.title}</div>
+                <br/>
+                <div className="resourceItemSubtitle">{resource.subtitle}</div>
+
                 <br/>
                 <br/>
-                <Divider />
+
+                <div className="right">
+                  <button className="resourceItemButton"><a href={resource.buttonLink}>Learn More</a></button>
+                </div>
+                <br/>
+                <Divider className="resourcesItemDivider"/>
               </div>
 
             )}

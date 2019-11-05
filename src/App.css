@@ -1,5 +1,9 @@
-.center{
+.center {
   text-align: center;
+}
+
+.right {
+  text-align: right;
 }
 
 /* font-size */
@@ -185,26 +189,30 @@ html, body {
 
 /* resources  */
 
+
 .resources {
   position: absolute;
   top: 35%;
   z-index: 3;
 }
 
-.resourcesHeadline {
+.resourcesHeadlineContainer {
+  font-family: 'Bree Serif', serif;
   position: absolute;
-  margin-left: 35%;
-  margin-right: 20%;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-bottom: 45%;
+  text-align: center;
   font-weight: bold;
+  height: 10vw;
+  width: 100%;
+  background-color: lightgrey;
 }
 
 
 .resourcesButtonGroup {
   position: absolute;
-  margin-left: 10%;
-  margin-top: 20%;
+  margin-left: 5%;
+  margin-top: 25%;
   margin-right: 65%;
   margin-bottom: 5%;
 }
@@ -212,6 +220,7 @@ html, body {
 .resourceButton {
   background-color: rgb(8,37,78);
   width: 15vw;
+  height: 2.5vw;
   color: white;
   font-size: 1.1vw;
   padding: 3.5%;
@@ -226,20 +235,36 @@ html, body {
 
 .showing {
   position: absolute;
-  margin-left: 33%;
+  margin-left: 25%;
   margin-top: 22%;
-  margin-right: 15%;
+  margin-right: 10%;
   margin-bottom: 5%;
   padding: 5%;
-  background-color: rgb(198, 151, 86, 0.1);
 }
 
-/* student */
+/* resourceLinks */
+
+.resourceItemTitle {
+  font-family: 'Bree Serif', serif;
+}
+
+.resourceItemSubtitle {
+  color: grey;
+  font-size: 1.2vw;
+  line-height: 1.3vw
+}
+
+.resourceItemContainer {
+    background-color: rgb(198, 151, 86, 0.05);
+}
+
 .resourceItemButton {
-  background-color: rgb(197,158,85);
+  background-color: black;
   width: 8vw;
+  height: 2.5vw;
   font-size: .8vw;
   padding: 1%;
+  display: inline-block;
 }
 
 .resourceItemButton a {
@@ -249,14 +274,19 @@ html, body {
 
 .resourceItemButton:hover {
   /* gold */
-  background-color: rgb(8,37,78);
+  background-color: rgb(197,158,85);
   color: rgb(197,158,85);
 }
 
 
 .resourceItemButton:hover a {
-  /* navy */
-  color:rgb(8,37,78);
+  color:white;
+}
+
+.resourceItemDivider {
+  color: black;
+  border: 3px;
+
 }
 
 

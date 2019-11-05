@@ -1,65 +1,31 @@
-const microsoftEdX = {
+const codeCombat = {
   id: 1,
-  title: "Microsoft edX Free Online Courses",
-  subtitle: "Microsoft offers free online courses in data science, artificial intelligence, and machine learning.",
-  buttonLink: 'https://www.edx.org/school/microsoft'
+  title: "CodeCombat for Teachers",
+  subtitle: "Helps educators teach students how to code in either JavaScript or Python, the most popular coding languages.",
+  buttonLink: 'https://codecombat.com/'
 }
 
-const harvard = {
+const google = {
   id: 2,
-  title: "Harvard Open Learning Initiative",
-  subtitle: "Harvard offers free data science and computer programming courses online through its online learning initiative.",
-  buttonLink: "https://online-learning.harvard.edu/subject/data-science"
+  title: "Google Resources for Educators",
+  subtitle: "Code with Google provides technical curriculum for classrooms no matter what the students' future goals may be.",
+  buttonLink: "https://edu.google.com/code-with-google/?modal_active=none&story-card_activeEl=enhance-any-subject"
 }
 
-const mit = {
+const mobile = {
   id: 3,
-  title: "MIT OpenCourseWare",
-  subtitle: "All the coding materials at the leading MIT university are available online.",
-  buttonLink:"https://ocw.mit.edu/courses/intro-programming/"
+  title: "Mobile Computer Science Principles Curriculum",
+  subtitle: "An NSF-funded effort to introduce computer science curricula based on a coding language to create mobile apps.",
+  buttonLink:"https://course.mobilecsp.org/mobilecsp/course"
   }
 
-const freeCodeCamp = {
+const apple = {
   id: 4,
-  title: "freeCodeCamp Online Community",
-  subtitle: "A nonprofit community to help people learn to code for free.",
-  buttonLink:"https://www.freecodecamp.org/"
-  }
-
-const codeOrg = {
-  id: 5,
-  title: "Code.org Free Online K-12 Coding Curriculum",
-  subtitle: "Code.org is a nonprofit dedicated to expanding access to computer science in schools.",
-  buttonLink:"https://code.org/"
-  }
-
-const codePlayer= {
-  id: 6,
-  title: "TheCodePlayer Coding Case Studies",
-  subtitle: "Free video presentation walk-throughs about real-world code created by others.",
-  buttonLink:"http://thecodeplayer.com/"
-  }
-
-const codeEasy = {
-  id: 7,
-  title: "Codeasy.net Free Introductory C# Course",
-  subtitle: "Free interactive adventure game with coding tutorials and exercises.",
-  buttonLink:"https://codeasy.net/"
-  }
-
-const codeCademy = {
-  id: 8,
-  title: "Codecademy Coding Courses",
-  subtitle: "Codecademy has some free content and also a monthly fee for unlimited course access.",
-  buttonLink:"https://www.codecademy.com/"
-  }
-
-const udemy = {
-  id: 9,
-  title: "Udemy (inexpensive) Online Courses",
-  subtitle: "Udemy connects global students to inexpensive online information technology courses.",
-  buttonLink:"https://www.udemy.com/"
+  title: "Apple Teacher Guides",
+  subtitle: "Downloadable coding curriculum built by the leading technology firm, Apple.",
+  buttonLink:"https://www.apple.com/education/teaching-code/"
   }
 
 
-export const educatorLinks = [microsoftEdX, harvard, mit, freeCodeCamp, codeOrg, codePlayer, codeEasy, codeCademy, udemy  ]
+
+export const educatorLinks = [codeCombat, google, mobile, apple]

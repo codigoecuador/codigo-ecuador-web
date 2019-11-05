@@ -56,4 +56,4 @@ const hopscotch = {
 
 
 
-export const parentLinks = [hourOfCode, scratch, madeWithCode, khanAcademy, codeDojo, csUnplugged, codeEasy, hopscotch  ]
+export const parentLinks = [hourOfCode, scratch, madeWithCode, khanAcademy, codeDojo, csUnplugged, codeEasy, hopscotch]
