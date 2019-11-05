@@ -102,6 +102,44 @@ html, body {
   border: 3px solid rgb(197, 158, 85);
 }
 
+.educationBlurb {
+  position: absolute;
+  top: 135%;
+  left: 45%;
+  width: 45%;
+  text-align: center;
+  background-color: rgb(255,255,255,0.8);
+  border-radius: 105px;
+  border: 3px solid rgb(197, 158, 85);
+  padding: 2%;
+}
+
+.internshipBlurb {
+  position: absolute;
+  top: 210%;
+  left: 15%;
+  width: 45%;
+  text-align: center;
+  background-color: rgb(255,255,255,0.6);
+  border-radius: 105px;
+  border: 3px solid rgb(197, 158, 85);
+  padding: 2%;
+}
+
+.entrepreneurshipBlurb {
+  position: absolute;
+  top: 280%;
+  left: 45%;
+  width: 45%;
+  text-align: center;
+  background-color: rgb(255,255,255,0.8);
+  border-radius: 105px;
+  border: 3px solid rgb(197, 158, 85);
+  padding: 2%;
+}
+
+
+
 
 
 .logo {
@@ -227,7 +265,7 @@ html, body {
 
 .activitiesCardGroup {
   position: absolute;
-  top: 140%;
+  top: 260%;
   left: 10%;
   right: 10%;
   z-index: 2;
@@ -368,7 +406,7 @@ html, body {
   height: auto;
 }
 
-.card Card{
+.card {
   width: 10vw;
   height: auto;
   padding: 2vw;

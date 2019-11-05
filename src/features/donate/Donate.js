@@ -4,6 +4,7 @@ import {donateData} from './DonateData'
 import DonateCard from './DonateCard'
 import Contact from '../contact/Contact'
 
+
 const Donate = () => {
 
     return (

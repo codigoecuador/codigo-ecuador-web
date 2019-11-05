@@ -8,9 +8,12 @@ const Home = () => {
     return (
       <>
         <CoverPic />
+
         <div className="aboutBlurb">
           <AboutBlurb/>
         </div>
+
+
 
         <Activities id="activities" />
 
