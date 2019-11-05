@@ -236,7 +236,7 @@ html, body {
 
 /* student */
 .resourceItemButton {
-  background-color: rgb(197,158,85);
+  background-color: black;
   width: 8vw;
   font-size: .8vw;
   padding: 1%;
@@ -249,14 +249,13 @@ html, body {
 
 .resourceItemButton:hover {
   /* gold */
-  background-color: rgb(8,37,78);
+  background-color: rgb(197,158,85);
   color: rgb(197,158,85);
 }
 
 
 .resourceItemButton:hover a {
-  /* navy */
-  color:rgb(8,37,78);
+  color:white;
 }
 
 

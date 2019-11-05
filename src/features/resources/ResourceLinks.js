@@ -19,19 +19,19 @@ class ResourceLinks extends Component {
     let resourceItems
 
     switch(this.props.type){
-      case("students"):
+      case("Student"):
       resourceItems = studentLinks
       break;
 
-      case("parents"):
+      case("Parent"):
       resourceItems = parentLinks
       break;
 
-      case("educators"):
+      case("Educator"):
       resourceItems = educatorLinks
       break;
 
-      case("entrepreneurs"):
+      case("Entrepreneur"):
       resourceItems = entrepreneurLinks
       break;
 
