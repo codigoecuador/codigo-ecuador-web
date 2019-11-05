@@ -190,7 +190,13 @@ html, body {
 
 .researchContainer{
   position: absolute;
-  top: 20%;
+  top: 35%;
+  left: 20%;
+}
+
+.resourceItemTitle{
+  font-size: 2vw;
+  line-height: 2vw;
 }
 
 

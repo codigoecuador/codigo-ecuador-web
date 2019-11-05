@@ -44,7 +44,7 @@ class ResourceLinks extends Component {
 
     return (
         <div>
-            {resourceItems.map(resource=>
+            {resourceItems.map(resource =>
               <div className="resource">
                 <br/>
                 <div className="large resourceItemTitle">{resource.title}</div>
