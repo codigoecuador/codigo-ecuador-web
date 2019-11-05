@@ -340,12 +340,12 @@ html, body {
 .resourceItemButton:hover {
   /* gold */
   background-color: rgb(197,158,85);
-  color: rgb(197,158,85);
+  color: rgb(8,37,78);
 }
 
 
 .resourceItemButton:hover a {
-  color:white;
+  color: rgb(8,37,78)
 }
 
 .resourceItemDivider {
@@ -442,7 +442,7 @@ html, body {
 
 .donateButton a {
   color: white;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 

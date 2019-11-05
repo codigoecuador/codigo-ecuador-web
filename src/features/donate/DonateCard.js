@@ -1,5 +1,5 @@
 import React from 'react'
-import {Image, Card, Reveal} from 'semantic-ui-react'
+import { Card } from 'semantic-ui-react'
 
 
 
