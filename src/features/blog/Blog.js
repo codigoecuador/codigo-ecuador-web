@@ -38,12 +38,15 @@ class Blog extends Component {
       return (
         <>
           <div className='blog-container'>
-            <h1 className='blog-account big center'><span className="gold">Our</span><span className="navy"> Blog</span></h1>
+            <div className='headline'>
+              <span className="gold">Our</span><span className="navy"> Blog</span>
+            </div>
+
             <Slider {...settings}>
               {items.map((blog,index)=>(
 
               <Card className="card">
-                <a href={blog.link} target='_blank'><Image src={blog.thumbnail} className='blog-card-image'/></a>
+                <a href={blog.link}><Image src={blog.thumbnail} className='blog-card-image'/></a>
 
                 <Card.Content>
                   <Card.Header ><span className='blog-title'>{blog.title}</span></Card.Header>

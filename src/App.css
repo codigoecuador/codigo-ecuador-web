@@ -7,6 +7,23 @@
 }
 
 /* font-size */
+
+.headline {
+  font-family: 'Bree Serif', serif;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subhead {
+  font-size: 1.2vw;
+  text-align: center;
+  line-height: 1.2vw;
+  color: grey;
+}
+
+
+
 .huge {
   font-size: 4.5vw;
 }
@@ -160,18 +177,20 @@ html, body {
 
 .bubble h2 {
   font-size: 1.5vw;
-  color: rgb(8,37,78)
+  color: rgb(8,37,78);
 
 }
 
 
 
 
-/* partners */
+/* about/partners */
 
 .partners {
   margin-top: 15%;
 }
+
+
 
 
 
@@ -197,12 +216,9 @@ html, body {
 }
 
 .resourcesHeadlineContainer {
-  font-family: 'Bree Serif', serif;
   position: absolute;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 45%;
-  text-align: center;
-  font-weight: bold;
   height: 10vw;
   width: 100%;
   background-color: lightgrey;

@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom';
 const OurStory = () => {
     return (
         <div className="bubble">
-          <h1><span className="gold">Our</span><span className="navy"> Story</span></h1>
+          <div className="headline">
+            <span className="gold">Our</span><span className="navy"> Story</span>
+          </div>
+          <br/>
+          <br/>
+
           <p>
           At Código Ecuador, we care about creating a more equal world<br/> between countries and across genders.
           <br/>

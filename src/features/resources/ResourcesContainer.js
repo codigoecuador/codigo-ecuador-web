@@ -20,12 +20,13 @@ class ResourcesContainer extends Component {
 
     return (
       <>
-        <BannerVideo />
         <div className="resourcesHeadlineContainer">
           <br/>
           <br/>
           <br/>
-          <span className="big gold">{this.state.showing}</span><span className="big navy"> Resources</span>
+          <div className="headline">
+            <span className="gold">{this.state.showing}</span><span className="navy"> Resources</span>
+          </div>
           <br/>
         </div>
 

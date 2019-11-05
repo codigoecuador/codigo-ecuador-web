@@ -7,24 +7,27 @@ import Contact from '../contact/Contact'
 const Donate = () => {
 
     return (
-          <Container className="donate center">
-           <h1 className='blog-account big center gold'>Donate</h1>
-           <h2 >You can promote technology careers for women in Ecuador
-           <br/>
-           by helping us with supplies, equipment, and space from which to work.</h2>
-           <br/>
-           <br/>
+      <Container className="donate center">
+        <div className="headline">
+          <span className='gold'>Donate</span>
+        </div>
+        <br/>
+        <br/>
 
-           <Card.Group itemsPerRow={3} className="center">
-             {donateData.map(donate =>
-                 <DonateCard
-                   {...donate} padding="20px"/>
-                 )}
-             </Card.Group>
-             <Contact className="contact"/>
-          <br/>
-           </Container>
+        <div className="subhead">You can promote technology careers for women in Ecuador<br/> by helping us with supplies, equipment, and space from which to work.</div>
+        <br/>
+        <br/>
 
+        <Card.Group itemsPerRow={3} className="center">
+          {donateData.map(donate =>
+            <DonateCard
+              {...donate} padding="20px"/>
+            )}
+        </Card.Group>
+
+        <Contact className="contact"/>
+        <br/>
+      </Container>
 
     )
 }
