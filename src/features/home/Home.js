@@ -14,8 +14,10 @@ const Home = () => {
         </div>
 
 
+        <div id= "activities">
+          <Activities id="activities" />
+        </div>
 
-        <Activities id="activities" />
 
       </>
     )

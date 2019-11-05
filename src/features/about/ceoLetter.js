@@ -3,11 +3,10 @@ import React from 'react'
 const CeoLetter = () => {
     return (
         <div className="bubble">
-          <div className="headline">
+          <div className="ceoLetterHeadline">
             <span className="gold">Letter From</span><span className="navy"> Our CEO</span>
           </div>
-          <div className="ceoLetterText">
-            <i>
+            <i className="ceoLetterText">
               <p>
               Dear Partners and Friends,
               </p>
@@ -26,7 +25,6 @@ const CeoLetter = () => {
 
               <p>Founder and CEO  of Código Ecuador</p>
             </i>
-          </div>
 
           <br/>
         </div>

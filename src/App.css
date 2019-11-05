@@ -247,8 +247,18 @@ html, body {
   font-family: 'Cormorant Garamond', serif;
 }
 
-.ceoLetterText {
+.ceoLetterHeadline {
   font-size: big;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 4%;
+  font-weight: bold;
+  text-align: center;
+
+
+}
+
+.ceoLetterText {
+  font-size: 2vw;
 }
 
 
