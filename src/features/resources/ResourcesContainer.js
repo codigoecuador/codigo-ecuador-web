@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import { Button } from 'semantic-ui-react'
-import Entrepreneurs from './Entrepreneurs'
-import Students from './Students/Students'
-import Parents from './Parents'
-import Educators from './Educators'
+import ResourceLinks from './ResourceLinks'
 
 
-class Resources extends Component {
+
+class ResourcesContainer extends Component {
+
   state = {
     showing: "",
   }
@@ -23,21 +22,25 @@ class Resources extends Component {
 
     switch(this.state.showing) {
     case "students":
-      content = <Students />
+      content = <ResourceLinks type={this.state.showing}/>
       headline = <><span className="gold">Student</span><span className="navy"> Resources</span></>
       break;
+
     case "parents":
-      content = <Parents />
+      content = <ResourceLinks type={this.state.showing}/>
       headline = <><span className="gold">Parent</span><span className="navy"> Resources</span></>
       break;
+
     case "educators":
-      content = <Educators />
+      content = <ResourceLinks type={this.state.showing} />
       headline = <><span className="gold">Teaching</span><span className="navy"> Resources</span></>
       break;
+
     case "entrepreneurs":
-      content = <Entrepreneurs />
+      content = <ResourceLinks type={this.state.showing} />
       headline = <><span className="gold">Resources</span><span className="navy"> for Entrepreneurs</span></>
       break;
+
     default:
       content = <h1>Click any button on the left to see resources.</h1>
       headline = <><span className="gold">Coding</span><span className="navy"> Resources </span></>
@@ -87,4 +90,4 @@ class Resources extends Component {
 }
 
 
-export default Resources
+export default ResourcesContainer

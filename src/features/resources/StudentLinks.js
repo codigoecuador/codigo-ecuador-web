@@ -62,4 +62,4 @@ const udemy = {
   }
 
 
-export const courses = [microsoftEdX, harvard, mit, freeCodeCamp, codeOrg, codePlayer, codeEasy, codeCademy, udemy  ]
+export const studentLinks = [microsoftEdX, harvard, mit, freeCodeCamp, codeOrg, codePlayer, codeEasy, codeCademy, udemy  ]
