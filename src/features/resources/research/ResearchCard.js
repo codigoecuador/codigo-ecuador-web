@@ -12,16 +12,16 @@ class ResearchCard extends Component  {
 
     return (
       <>
-        <Card className="research-card">
+        <Card>
           <Image src={research.image} className="researchImage"/>
 
-          <Card.Content className="researchContent">
+          <Card.Content>
             <Card.Header>
-              <br/>
               <div className="large">{research.title}</div>
-              <br/>
-              <div className="subtitle">{research.subtitle}</div>
             </Card.Header>
+            <Card.Meta>
+              {research.subtitle}
+            </Card.Meta>
 
             <Card.Description className="researchDescription">
               {research.description}
