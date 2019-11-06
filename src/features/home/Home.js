@@ -1,26 +1,23 @@
-import React from 'react'
-import AboutBlurb from './AboutBlurb'
-import CoverPic from './CoverPic'
-import Activities from '../activities/Activities'
-
+import React from "react"
+import "./Home.css"
+import AboutBlurb from "./AboutBlurb"
+import CoverPic from "./CoverPic"
+import Activities from "../activities/Activities"
 
 const Home = () => {
-    return (
-      <>
-        <CoverPic />
+	return (
+		<>
+			<CoverPic />
 
-        <div className="aboutBlurb">
-          <AboutBlurb/>
-        </div>
+			<div className="aboutBlurb">
+				<AboutBlurb />
+			</div>
 
-
-        <div id= "activities">
-          <Activities id="activities" />
-        </div>
-
-
-      </>
-    )
+			<div id="activities">
+				<Activities id="activities" />
+			</div>
+		</>
+	)
 }
 
 export default Home
