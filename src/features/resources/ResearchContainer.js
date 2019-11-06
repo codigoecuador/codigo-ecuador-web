@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Divider, Image } from 'semantic-ui-react'
+import { Card } from 'semantic-ui-react'
 import { researchLinks } from './ResearchLinks'
+import ResearchCard from './ResearchCard'
 
 
 
@@ -29,17 +30,12 @@ class ResearchContainer extends Component {
         <br/>
 
         <br/>
-        {researchLinks.map(research =>
-          <>
-            <h1 className="center">{research.title}</h1>
-            <h2 className="center">{research.subtitle}</h2>
-            <a href={research.link}><Image src={research.image} className="researchImage"/></a>
-            <div className="researchText">{research.description}</div>
-            <Divider />
-            <br/>
-            <br/>
-          </>
-        )}
+        <Card.Group itemsPerRow={2}>
+            {researchLinks.map(research =>
+              <ResearchCard
+                key={research.id} research={research} padding="20px"/>
+              )}
+          </Card.Group>
 
       </div>
 
