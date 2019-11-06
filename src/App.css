@@ -195,13 +195,15 @@ html, body {
 
 .researchContainer{
   position: absolute;
-  top: 35%;
-  left: 20%;
+  top: 30%;
+  left: 10%;
+  right: 10%;
   float: left;
 }
 
-.researchHeadline {
-  background-color: red;
+.researchBanner {
+  background-color: rgb(197,158,85,0.1);
+  padding: 2%;
 }
 
 .researchImage {
@@ -210,11 +212,12 @@ html, body {
   text-align: center;
 }
 
-.researchDescription {
-  font-size: 1vw;
-  line-height: 1.1vw;
+.researchText {
+  font-size: 1.3vw;
+  line-height: 1.3vw;
   padding-bottom: 3vw;
 }
+
 
 
 /* about */
