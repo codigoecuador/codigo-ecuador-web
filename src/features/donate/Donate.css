@@ -1,0 +1,36 @@
+/* donate  */
+.donate {
+	position: absolute;
+	display: inline-block;
+	left: 20%;
+	top: 25%;
+	z-index: 3;
+}
+
+.donateCardsGroup {
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.donateCard {
+	height: 10vw;
+	width: auto;
+}
+
+.hiddenContent {
+	padding: 5%;
+	background-color: rgb(8, 37, 78);
+	color: white;
+}
+
+.donateButton {
+	height: 3vw;
+	width: 15vw;
+	background-color: rgb(8, 37, 78);
+	border-radius: 15%;
+}
+
+.donateButton a {
+	color: white;
+	font-size: 1.5vw;
+}
