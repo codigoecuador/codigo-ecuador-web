@@ -1,0 +1,38 @@
+/* resources/ research */
+
+.researchContainer {
+	position: absolute;
+	top: 25%;
+	left: 5%;
+	right: 5%;
+}
+
+.researchBanner {
+	background-color: rgb(197, 158, 85, 0.1);
+	padding: 2%;
+}
+
+.researchImage {
+	height: auto;
+	width: auto;
+}
+
+.researchText {
+	font-size: 1.3vw;
+	line-height: 1.3vw;
+	padding-bottom: 2vw;
+}
+
+.researchDescription {
+	font-size: 1.1vw;
+	line-height: 1.1vw;
+	padding-bottom: 1.5vw;
+}
+
+/* .researchCard{
+  min-width: 500px;
+} */
+
+/* .researchContent {
+  
+} */
