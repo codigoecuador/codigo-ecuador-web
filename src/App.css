@@ -460,6 +460,12 @@ html, body {
 
 }
 
+/* resources/research */
+
+.researchCard{
+  min-width: 500px;
+}
+
 
 /* blog */
 
@@ -555,13 +561,4 @@ html, body {
 /* contact */
 .contact {
   font-size: 1.1vw;
-}
-
-/* fonts */
-.massive {
-  font-size: 5vw;
-}
-
-.center {
-  text-align: center;
 }

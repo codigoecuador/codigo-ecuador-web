@@ -25,7 +25,7 @@ class Blog extends Component {
     } else {
 
       const {items} = this.state.blogs
-      var settings = {
+      let settings = {
         dots: true,
         infinite: true,
         speed: 4000,
