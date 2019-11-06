@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { Card, Image} from 'semantic-ui-react'
+import BlogCard from './BlogCard'
 
 
 class Blog extends Component {
@@ -45,17 +45,10 @@ class Blog extends Component {
             <Slider {...settings}>
               {items.map((blog,index)=>(
 
-              <Card className="card">
-                <a href={blog.link}><Image src={blog.thumbnail} className='blog-card-image'/></a>
+                  <BlogCard
+                    key={index} blog={blog}/>
+                  ))}
 
-                <Card.Content>
-                  <Card.Header ><span className='blog-title'>{blog.title}</span></Card.Header>
-                  <Card.Description></Card.Description>
-                  <p>Published by <span className='blog-author'>{blog.author}</span></p>
-                  <p>Date: <span className='blog-date'>{blog.pubDate}</span></p>
-                </Card.Content>
-               </Card>
-              ))}
 
               <br/>
             </Slider>

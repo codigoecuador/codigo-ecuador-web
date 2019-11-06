@@ -25,12 +25,9 @@ class ResearchContainer extends Component {
 
             <p>Coding education is making a huge impact throughout the developing world. People are learning the technical skills necessary to build tomorrow's cutting-edge applications. From Colombia to Lebanon, nonprofit education is opening doors in high paying technology careers for thousands of women and individuals. The work our organizations do are sparking a new wave of research in how we can create a more equal world.</p>
           </div>
-        </div>
 
-        <br/>
-
-        <br/>
-        <Card.Group itemsPerRow={4}>
+          <br/>
+          <Card.Group itemsPerRow={2}>
             {researchLinks.map(research =>
               <ResearchCard
                 key={research.id} research={research} padding="20px"/>
@@ -39,6 +36,11 @@ class ResearchContainer extends Component {
           <br/>
           <br/>
           <br/>
+        </div>
+
+        <br/>
+
+
 
       </div>
 

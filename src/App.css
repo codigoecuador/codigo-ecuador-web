@@ -209,9 +209,8 @@ html, body {
 }
 
 .researchImage {
-  height: 20vw;
+  height: auto;
   width: auto;
-  text-align: center;
 }
 
 .researchText {
