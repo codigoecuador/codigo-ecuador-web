@@ -18,11 +18,12 @@ class ResearchCard extends Component  {
           <Card.Content>
             <Card.Header>
               <br/>
-              <div className="medium">{research.title}</div>
-              <h3>{research.subtitle}</h3>
+              <div className="large">{research.title}</div>
+              <br/>
+              <div className="subtitle">{research.subtitle}</div>
             </Card.Header>
 
-            <Card.Description className="description">
+            <Card.Description className="researchDescription">
               {research.description}
               <br/>
             </Card.Description>

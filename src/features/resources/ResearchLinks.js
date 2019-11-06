@@ -39,4 +39,4 @@ const guide = {
 
 
 
-export const researchLinks = [youth, women, skills, guide ]
+export const researchLinks = [skills, youth, women, guide ]

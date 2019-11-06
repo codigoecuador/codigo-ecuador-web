@@ -52,7 +52,8 @@
 }
 
 .large{
-  font-size: 2vw;
+  font-size: 1.5vw;
+  line-height: 1.6vw;
 }
 
 .small {
@@ -193,12 +194,13 @@ html, body {
   line-height: 2vw;
 }
 
+/* resources/ research */
+
 .researchContainer{
   position: absolute;
-  top: 30%;
-  left: 10%;
-  right: 10%;
-  float: left;
+  top: 25%;
+  left: 5%;
+  right: 5%;
 }
 
 .researchBanner {
@@ -207,7 +209,7 @@ html, body {
 }
 
 .researchImage {
-  height: 30vw;
+  height: 20vw;
   width: auto;
   text-align: center;
 }
@@ -215,8 +217,15 @@ html, body {
 .researchText {
   font-size: 1.3vw;
   line-height: 1.3vw;
-  padding-bottom: 3vw;
+  padding-bottom: 2vw;
 }
+
+.researchDescription {
+  font-size: 1.1vw;
+  line-height: 1.1vw;
+  padding-bottom: 1.5vw;
+}
+
 
 
 
