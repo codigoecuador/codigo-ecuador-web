@@ -2,7 +2,6 @@ import React from "react"
 import "./App.css"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 // import { HashLink as Link } from 'react-router-hash-link';
-import Navbar from "./features/navbar/Navbar"
 import Home from "./features/home/Home"
 import About from "./features/about/About"
 import Partners from "./features/about/partners/Partners"
@@ -12,7 +11,7 @@ import Donate from "./features/donate/Donate"
 import CodingContainer from "./features/resources/coding/CodingContainer"
 import ResearchContainer from './features/resources/research/ResearchContainer'
 import Activities from "./features/activities/Activities"
-import Logo from "./features/logo/Logo"
+import Header from './features/header/Header'
 
 
 
@@ -21,7 +20,7 @@ function App() {
 	return (
 		<Router>
 			<div>
-				<Navbar />
+				<Header />
 				<Switch>
 					<Route exact path="/" render={() => <Home />}></Route>
 					<Route exact path="/about" render={() => <About />}></Route>
@@ -34,9 +33,7 @@ function App() {
 					<Route exact path="/donate" render={() => <Donate />}></Route>
 				</Switch>
 
-        <div className="banner">
-					<Logo className="logo" />
-				</div>
+
 			</div>
     </Router>
 	)
