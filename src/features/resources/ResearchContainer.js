@@ -11,8 +11,8 @@ class ResearchContainer extends Component {
 
     return (
       <>
-        <div className="headline">
-          <span className="gold">Research</span>
+        <div className="researchHeadline">
+          <span className="gold headline">Research</span>
         </div>
 
 
@@ -20,7 +20,8 @@ class ResearchContainer extends Component {
           <br/>
           {researchLinks.map(research =>
             <>
-              <Image src={research.image} className="researchImage"/>
+              <a href={research.link}><Image src={research.image} className="researchImage"/></a>
+              <div className="researchDescription">{research.description}</div>
               <Divider />
               <br/>
               <br/>

@@ -196,13 +196,24 @@ html, body {
 .researchContainer{
   position: absolute;
   top: 35%;
-  left: 10%;
+  left: 20%;
   float: left;
+}
+
+.researchHeadline {
+  background-color: red;
 }
 
 .researchImage {
   height: 30vw;
   width: auto;
+  text-align: center;
+}
+
+.researchDescription {
+  font-size: 1vw;
+  line-height: 1.1vw;
+  padding-bottom: 3vw;
 }
 
 
