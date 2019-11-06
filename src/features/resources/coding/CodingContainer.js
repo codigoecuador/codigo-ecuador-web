@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Button } from 'semantic-ui-react'
-import ResourceLinks from './ResourceLinks'
+import CodingLinks from './CodingLinks'
 
 
-class ResourcesContainer extends Component {
+class CodingContainer extends Component {
 
   state = {
     showing: "",
@@ -48,7 +48,7 @@ class ResourcesContainer extends Component {
         </div>
 
         <div className="showing">
-          <ResourceLinks type={this.state.showing} />
+          <CodingLinks type={this.state.showing} />
           <br/>
           <br/>
           <br/>
@@ -65,4 +65,4 @@ class ResourcesContainer extends Component {
 }
 
 
-export default ResourcesContainer
+export default CodingContainer
