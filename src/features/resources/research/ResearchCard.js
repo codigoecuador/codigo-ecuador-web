@@ -12,7 +12,7 @@ class ResearchCard extends Component  {
 
     return (
       <>
-        <Card className="researchCard">
+        <Card className="research-card">
           <Image src={research.image} className="researchImage"/>
 
           <Card.Content className="researchContent">
