@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { Card } from 'semantic-ui-react'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import { researchLinks } from './ResearchLinks'
 import ResearchCard from './ResearchCard'
 
@@ -9,6 +11,17 @@ import ResearchCard from './ResearchCard'
 class ResearchContainer extends Component {
 
   render(){
+
+    let settings = {
+      dots: true,
+      infinite: true,
+      speed: 4000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplayspeed: 8000
+    }
+
 
     return (
 
@@ -27,12 +40,17 @@ class ResearchContainer extends Component {
           </div>
 
           <br/>
-          <Card.Group itemsPerRow={2}>
-            {researchLinks.map(research =>
-              <ResearchCard
-                key={research.id} research={research} padding="20px"/>
-              )}
-          </Card.Group>
+          <Slider {...settings}>
+            {researchLinks.map((research,index)=>(
+
+                <ResearchCard
+                  key={index} research={research} padding="20px"/>
+                ))}
+
+
+            <br/>
+          </Slider>
+
           <br/>
           <br/>
           <br/>
