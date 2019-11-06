@@ -515,6 +515,10 @@ html, body {
   max-height: 50%;
 }
 
+.slick-track div{
+ min-width: 40vw;
+}
+
 .blog-account{
   padding: 0% 25%;
 }
