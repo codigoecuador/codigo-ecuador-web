@@ -188,17 +188,22 @@ html, body {
   padding: 2%;
 }
 
-.researchContainer{
-  position: absolute;
-  top: 35%;
-  left: 20%;
-}
-
 .resourceItemTitle{
   font-size: 2vw;
   line-height: 2vw;
 }
 
+.researchContainer{
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  float: left;
+}
+
+.researchImage {
+  height: 30vw;
+  width: auto;
+}
 
 
 /* about */
