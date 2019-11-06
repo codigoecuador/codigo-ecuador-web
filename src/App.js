@@ -1,5 +1,5 @@
 import React from "react"
-import "./App.css" 
+import "./App.css"
 import Header from './features/header/Header'
 
 
@@ -7,7 +7,7 @@ import Header from './features/header/Header'
 function App() {
 
 	return (
-		<Header />
+			<Header />
 	)
 }
 
