@@ -8,8 +8,8 @@ import Partners from "../about/partners/Partners"
 import Team from "../about/team/Team"
 import Blog from "../blog/Blog"
 import Donate from "../donate/Donate"
-import ResourcesContainer from "../resources/ResourcesContainer"
-import ResearchContainer from '../resources/ResearchContainer'
+import CodingContainer from "../resources/coding/CodingContainer"
+import ResearchContainer from '../resources/research/ResearchContainer'
 import Activities from "../activities/Activities"
 import Logo from "./Logo"
 
@@ -26,7 +26,7 @@ const Header = () => {
 					<Route exact path="/activities" render={() => <Activities />}></Route>
 					<Route exact path="/about/partners" render={() => <Partners />} ></Route>
           <Route exact path="/about/team" render={() => <Team />} ></Route>
-					<Route exact path="/resources" render={() => <ResourcesContainer />}></Route>
+					<Route exact path="/resources" render={() => <CodingContainer />}></Route>
 					<Route exact path="/resources/research" render={() => <ResearchContainer />}></Route>
 					<Route exact path="/blog" render={() => <Blog />}></Route>
 					<Route exact path="/donate" render={() => <Donate />}></Route>

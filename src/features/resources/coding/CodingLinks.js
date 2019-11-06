@@ -5,7 +5,7 @@ import { entrepreneurLinks } from './EntrepreneurLinks'
 import { educatorLinks } from './EducatorLinks'
 import { parentLinks } from './ParentLinks'
 
-class ResourceLinks extends Component {
+class CodingLinks extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -69,4 +69,4 @@ class ResourceLinks extends Component {
 
 }
 
-export default ResourceLinks
+export default CodingLinks
