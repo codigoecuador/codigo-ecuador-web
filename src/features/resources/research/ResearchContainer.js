@@ -16,7 +16,7 @@ class ResearchContainer extends Component {
       dots: true,
       infinite: true,
       speed: 4000,
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
       autoplay: true,
       autoplayspeed: 8000

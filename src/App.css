@@ -294,8 +294,10 @@ html, body {
 
 }
 
-.ceoLetterText {
-  font-size: 2vw;
+.ceoLetterText p {
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: grey;
 }
 
 
@@ -516,7 +518,7 @@ html, body {
 }
 
 .slick-track div{
- min-width: 40vw;
+ min-width: 30vw;
 }
 
 .blog-account{
