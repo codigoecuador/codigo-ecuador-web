@@ -25,6 +25,15 @@
 
 /* headlines */
 
+.headline-container {
+	position: absolute;
+	margin-top: 10%;
+	margin-bottom: 45%;
+	height: 10vw;
+	width: 100%;
+	background-color: rgb(15,37,75,0.1);
+}
+
 
 .headline {
 	font-family: "Bree Serif", serif;

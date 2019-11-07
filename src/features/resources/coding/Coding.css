@@ -6,14 +6,6 @@
 	z-index: 3;
 }
 
-.coding-container-headline {
-	position: absolute;
-	margin-top: 10%;
-	margin-bottom: 45%;
-	height: 10vw;
-	width: 100%;
-	background-color: lightgrey;
-}
 
 .coding-button-group {
 	position: absolute;

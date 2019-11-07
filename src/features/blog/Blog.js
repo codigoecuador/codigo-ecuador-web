@@ -43,6 +43,8 @@ class Blog extends Component {
 							<span className="gold">Recent</span>
 							<span className="navy"> Blog Posts</span>
 						</div>
+						<br/>
+						<br/>
 
 						<Slider {...settings}>
 							{items.map((blog, index) => (

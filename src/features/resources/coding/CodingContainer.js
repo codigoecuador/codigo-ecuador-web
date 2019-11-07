@@ -16,7 +16,7 @@ class CodingContainer extends Component {
 	render() {
 		return (
 			<>
-				<div className="coding-container-headline">
+				<div className="headline-container">
 					<br />
 					<br />
 					<br />
