@@ -12,15 +12,15 @@ const Activities = () => {
 			<BrickWallPic />
 			<QuitoPic />
 
-			<div className="education-blurb">
+			<div className="blurb education">
 				<EducationBlurb />
 			</div>
 
-			<div className="internship-blurb">
+			<div className="blurb internship">
 				<InternshipBlurb />
 			</div>
 
-			<div className="entrepreneurship-blurb">
+			<div className="blurb entrepreneurship">
 				<EntrpeneurshipBlurb />
 			</div>
 		</>
