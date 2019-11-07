@@ -3,30 +3,48 @@
 .navbar {
 	position: absolute;
 	font-weight: bolder;
-	top: 10%;
-	left: 43%;
 	height: auto;
+	margin: auto;
 	width: 100%;
 	max-width: 40%;
-	margin: auto;
 	z-index: 3;
 }
 
-.active {
-	padding: 20px;
+.navbar-desktop{
+	top: 10%;
+	left: 43%;
+}
+
+.navbar-mobile {
+	top: 14%;
+	left: 5%;
+}
+
+.nav-button-active {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
-	font-size: 1.2vw;
 	color: rgb(8, 37, 78);
 	background-color: white;
-	border-radius: 10px 20px;
-	border: 3px solid rgb(197, 158, 85);
 	margin: 3% 1% 1%;
 	width: 5%;
 	height: 4%;
 }
 
-.active:hover {
+.nav-button-desktop {
+	font-size: 1.2vw;
+	padding: 20px;
+	border-radius: 10px 20px;
+	border: 3px solid rgb(197, 158, 85);
+}
+
+.nav-button-mobile {
+	font-size: 1.6vw;
+	padding: 10px;
+	border-radius: 5px 10px;
+	border: 1px solid rgb(197, 158, 85);
+}
+
+.nav-button-active:hover {
 	color: white;
 	background-color: rgb(8, 37, 78);
 }
