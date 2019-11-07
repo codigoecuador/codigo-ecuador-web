@@ -45,4 +45,4 @@ const scraping = {
 
 
 
-export const researchLinks = [skills, youth, women, guide ]
+export const researchLinks = [beginner, fundamentals, intermediate, databases, scraping ]
