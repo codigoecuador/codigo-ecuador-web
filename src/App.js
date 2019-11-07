@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import { Sticky} from "semantic-ui-react"
 import Home from "./features/home/Home"
 import About from "./features/about/About"
+import Classes from "./features/classes/Classes"
 import Partners from "./features/about/partners/Partners"
 import Team from "./features/about/team/Team"
 import Blog from "./features/blog/Blog"
@@ -27,7 +28,7 @@ function App() {
 				<Switch>
 					<Route exact path="/" render={() => <Home />}></Route>
 					<Route exact path="/about" render={() => <About />}></Route>
-					<Route exact path="/activities" render={() => <Activities />}></Route>
+					<Route exact path="/classes" render={() => <Classes />}></Route>
 					<Route exact path="/about/partners" render={() => <Partners />} ></Route>
           <Route exact path="/about/team" render={() => <Team />} ></Route>
 					<Route exact path="/resources" render={() => <CodingContainer />}></Route>

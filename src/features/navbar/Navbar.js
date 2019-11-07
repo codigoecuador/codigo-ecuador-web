@@ -43,6 +43,9 @@ class Navbar extends Component {
 					<Link exact className={buttonStyle} to="/about">
 						About
 					</Link>
+					<Link exact className={buttonStyle} to="/classes">
+						Classes
+					</Link>
 					<Link exact className={buttonStyle} to="/resources">
 						Resources
 					</Link>
@@ -51,9 +54,6 @@ class Navbar extends Component {
 					</Link>
 					<Link exact className={buttonStyle} to="/donate">
 						Donate
-					</Link>
-					<Link exact className={buttonStyle} to="/donate">
-						Contact
 					</Link>
 				</Container>
 
