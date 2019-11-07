@@ -7,30 +7,18 @@
 	z-index: 3;
 }
 
-.donateCardsGroup {
+.donate-cards-group {
 	margin-left: 3%;
 	padding: 2%;
 }
 
-.donateCard {
+.donate-card {
 	height: 10vw;
 	width: auto;
 }
 
-.hiddenContent {
+.hidden-content {
 	padding: 5%;
 	background-color: rgb(8, 37, 78);
 	color: white;
-}
-
-.donateButton {
-	height: 3vw;
-	width: 15vw;
-	background-color: rgb(8, 37, 78);
-	border-radius: 15%;
-}
-
-.donateButton a {
-	color: white;
-	font-size: 1.5vw;
 }
