@@ -10,6 +10,12 @@
 	z-index: 3;
 }
 
+.nav-buttons {
+	position: absolute;
+	padding-bottom: 10%;
+	padding-top: 10%;
+}
+
 .navbar-desktop{
 	top: 10%;
 	left: 43%;

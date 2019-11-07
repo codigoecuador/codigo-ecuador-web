@@ -1,7 +1,7 @@
 import React from "react"
 import "./App.css"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-// import { Sticky} from "semantic-ui-react"
+import { Sticky} from "semantic-ui-react"
 import Home from "./features/home/Home"
 import About from "./features/about/About"
 import Partners from "./features/about/partners/Partners"
@@ -20,8 +20,9 @@ function App() {
 	return (
 		<Router>
 			<div>
-
+			<Sticky>
 				<Header />
+			</Sticky>
 
 				<Switch>
 					<Route exact path="/" render={() => <Home />}></Route>
