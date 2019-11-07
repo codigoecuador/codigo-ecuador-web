@@ -7,14 +7,14 @@ const PartnerGrid = ({ content, image, name }) => {
 			<br/>
 
 			<Grid.Column verticalAlign="center">
-				<Image className="partnerImage" src={image} />
+				<Image className="partner-image" src={image} />
 			</Grid.Column>
 
 			<Grid.Column verticalAlign="center">
-				<div className="partnerHeadline">
+				<div className="partner-headline">
 					{ name }
 				</div>
-				<div className="partnerDescription">
+				<div className="partner-description">
 					{content.map(info => (
 						<p>{info}</p>
 					))}

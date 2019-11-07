@@ -24,7 +24,7 @@ const Partners = () => {
 			<br/>
 			<br/>
 
-			<Grid divided="vertically" className="partnersGrid">
+			<Grid divided="vertically" className="partners-grid">
 				<br/>
 				<br/>
 				<br/>

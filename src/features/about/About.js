@@ -8,10 +8,10 @@ const About = () => {
 	return (
 		<>
 			<LeafPic />
-			<div className="ourStory">
+			<div className="our-story">
 				<OurStory />
 			</div>
-			<div className="big ceoLetter">
+			<div className="big ceo-letter">
 				<CeoLetter />
 			</div>
 		</>
