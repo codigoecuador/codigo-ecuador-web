@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import './Research.css'
 import Slider from "react-slick"
 import { researchLinks } from "./ResearchLinks"
 import ResearchCard from "./ResearchCard"
@@ -18,15 +19,15 @@ class ResearchContainer extends Component {
 		}
 
 		return (
-			<div className="researchContainer">
+			<div className="research-container">
 				<br />
 
-				<div className="researchBanner">
+				<div className="research-banner">
 					<div className="center">
 						<span className="gold headline">Research</span>
 					</div>
 					<br />
-					<div className="researchText">
+					<div className="research-text">
 						<h1 className="center">
 							We model Código Ecuador on research and insights from
 							reputable economic development experts.

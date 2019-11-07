@@ -16,23 +16,23 @@ class CodingContainer extends Component {
 	render() {
 		return (
 			<>
-				<div className="resourcesHeadlineContainer">
+				<div className="coding-container-headline">
 					<br />
 					<br />
 					<br />
 					<div className="headline">
-						<span className="gold">{this.state.showing}</span>
+						<span className="gold">{this.state.showing || "Coding"}</span>
 						<span className="navy"> Resources</span>
 					</div>
 				</div>
 
-				<div className="resourcesButtonGroup">
+				<div className="coding-button-group">
 					<br />
 					<br />
 					<Button.Group vertical>
 						<button
 							onClick={this.handleClick}
-							className="resourceButton"
+							className="coding-button"
 							value="Student"
 						>
 							For Students
@@ -41,7 +41,7 @@ class CodingContainer extends Component {
 						<br />
 						<button
 							onClick={this.handleClick}
-							className="resourceButton"
+							className="coding-button"
 							value="Parent"
 						>
 							For Parents
@@ -50,7 +50,7 @@ class CodingContainer extends Component {
 						<br />
 						<button
 							onClick={this.handleClick}
-							className="resourceButton"
+							className="coding-button"
 							value="Educator"
 						>
 							For Educators
@@ -59,7 +59,7 @@ class CodingContainer extends Component {
 						<br />
 						<button
 							onClick={this.handleClick}
-							className="resourceButton"
+							className="coding-button"
 							value="Entrepreneur"
 						>
 							For Entrepreneurs

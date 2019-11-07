@@ -16,49 +16,45 @@ class CodingLinks extends Component {
   render(){
     console.log(this.props)
 
-    let resourceItems
+    let codingItems
 
     switch(this.props.type){
       case("Student"):
-      resourceItems = studentLinks
+      codingItems = studentLinks
       break;
 
       case("Parent"):
-      resourceItems = parentLinks
+      codingItems = parentLinks
       break;
 
       case("Educator"):
-      resourceItems = educatorLinks
+      codingItems = educatorLinks
       break;
 
       case("Entrepreneur"):
-      resourceItems = entrepreneurLinks
+      codingItems = entrepreneurLinks
       break;
 
       default:
-      resourceItems = studentLinks
+      codingItems = studentLinks
     }
-
-
-
 
     return (
         <div>
-            {resourceItems.map(resource =>
+            {codingItems.map(resource =>
               <div className="resource">
                 <br/>
-                <div className="large resourceItemTitle">{resource.title}</div>
+                <div className="large coding-item-title">{resource.title}</div>
                 <br/>
-                <div className="resourceItemSubtitle">{resource.subtitle}</div>
-
+                <div className="coding-item-subtitle">{resource.subtitle}</div>
                 <br/>
                 <br/>
 
                 <div className="right">
-                  <button className="resourceItemButton"><a href={resource.buttonLink}>Learn More</a></button>
+                  <button className="coding-item-button"><a href={resource.buttonLink}>Learn More</a></button>
                 </div>
                 <br/>
-                <Divider className="resourcesItemDivider"/>
+                <Divider className="coding-item-divider"/>
               </div>
 
             )}

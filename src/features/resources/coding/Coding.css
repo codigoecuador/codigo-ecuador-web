@@ -6,7 +6,7 @@
 	z-index: 3;
 }
 
-.resourcesHeadlineContainer {
+.coding-container-headline {
 	position: absolute;
 	margin-top: 10%;
 	margin-bottom: 45%;
@@ -15,7 +15,7 @@
 	background-color: lightgrey;
 }
 
-.resourcesButtonGroup {
+.coding-button-group {
 	position: absolute;
 	margin-left: 5%;
 	margin-top: 25%;
@@ -23,7 +23,7 @@
 	margin-bottom: 5%;
 }
 
-.resourceButton {
+.coding-button {
 	background-color: rgb(8, 37, 78);
 	width: 15vw;
 	height: 2.5vw;
@@ -32,7 +32,7 @@
 	padding: 3.5%;
 }
 
-.resourceButton:hover {
+.coding-button:hover {
 	/* gold */
 	background-color: rgb(197, 158, 85);
 	color: rgb(8, 37, 78);
@@ -47,23 +47,23 @@
 	padding: 5%;
 }
 
-/* resourceLinks */
+/* coding resource links */
 
-.resourceItemTitle {
+.coding-item-title {
 	font-family: "Bree Serif", serif;
 }
 
-.resourceItemSubtitle {
+.coding-item-subtitle {
 	color: grey;
 	font-size: 1.2vw;
 	line-height: 1.3vw;
 }
 
-.resourceItemContainer {
+.coding-item-container {
 	background-color: rgb(198, 151, 86, 0.05);
 }
 
-.resourceItemButton {
+.coding-item-button {
 	background-color: black;
 	width: 8vw;
 	height: 2.5vw;
@@ -72,21 +72,21 @@
 	display: inline-block;
 }
 
-.resourceItemButton a {
+.coding-item-button a {
 	color: white;
 }
 
-.resourceItemButton:hover {
+.coding-item-button:hover {
 	/* gold */
 	background-color: rgb(197, 158, 85);
 	color: rgb(8, 37, 78);
 }
 
-.resourceItemButton:hover a {
+.coding-item-button:hover a {
 	color: rgb(8, 37, 78);
 }
 
-.resourceItemDivider {
+.coding-item-divider {
 	color: black;
 	border: 3px;
 }
