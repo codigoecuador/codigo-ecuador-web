@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from 'semantic-ui-react'
 import "./Contact.css"
 
 const Contact = () => {
@@ -7,17 +6,30 @@ const Contact = () => {
       <>
         <div className="center large">Contact us if you can help!</div>
         <br/>
-        <b>Email:</b> info@codigoecuador.com<a href="mailto:info@codigoecuador.com"> <i class="envelope outline icon"></i></a><br/>
-              <b>Twitter:</b> @CodigoEC<a href="https://twitter.com/CodigoEC"> <i class="twitter icon"></i></a><br/>
-              <br/>
-              <button className="donate-button" ><a href='https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@codigoecuador.com&item_name=Imagina%20C%C3%B3digo%20Ecuador&currency_code=USD' >Donate Now</a></button>
-          <br/>
-          <br/>
+        <b>Email:</b> info@codigoecuador.com
+        <a href="mailto:info@codigoecuador.com">
+          <i class="envelope outline icon"></i>
+        </a>
+        <br/>
 
-          <div className="center">
-            Código Ecuador is a 501(C)(3) organization under the  International Intellectual Exchange Initiative Inc.
-          </div>
-        </>
+        <b>Twitter:</b> @CodigoEC<a href="https://twitter.com/CodigoEC">
+          <i class="twitter icon"></i>
+        </a>
+        <br/>
+        <br/>
+
+        <button className="donate-button" >
+          <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@codigoecuador.com&item_name=Imagina%20C%C3%B3digo%20Ecuador&currency_code=USD' >
+            Donate Now
+          </a>
+        </button>
+        <br/>
+        <br/>
+
+        <div className="center">
+          Código Ecuador is a 501(C)(3) organization under the  International Intellectual Exchange Initiative Inc.
+        </div>
+      </>
 
   )
 }

@@ -1,8 +1,8 @@
 .donate-button {
+  background-color: rgb(8, 37, 78);
+	border-radius: 5%;
 	height: 3vw;
 	width: 15vw;
-	background-color: rgb(8, 37, 78);
-	border-radius: 5%;
 }
 
 .donate-button a {
