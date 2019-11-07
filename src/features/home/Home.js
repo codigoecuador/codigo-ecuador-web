@@ -3,7 +3,6 @@ import "./Home.css"
 import AboutBlurb from "./AboutBlurb"
 import CoverPic from "./CoverPic"
 import Activities from "../activities/Activities"
-import { HashLink as Link } from 'react-router-hash-link';
 
 const Home = () => {
 	return (
@@ -14,8 +13,10 @@ const Home = () => {
 				<AboutBlurb />
 			</div>
 
+		
+
 			<div id="activities">
-				<Activities id="activities" />
+				<Activities />
 			</div>
 		</>
 	)

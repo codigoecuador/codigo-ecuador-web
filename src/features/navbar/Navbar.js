@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import "./Navbar.css"
 import { Container } from "semantic-ui-react"
 import { Link } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link';
 
 class Navbar extends Component {
 	constructor(props) {
@@ -41,9 +42,9 @@ class Navbar extends Component {
 				<Link exact className={buttonStyle} to="/about">
 					About
 				</Link>
-				<Link exact className={buttonStyle} to="/activities">
+				<HashLink exact className={buttonStyle} to="/#activities">
 					Activities
-				</Link>
+				</HashLink>
 				<Link exact className={buttonStyle} to="/resources">
 					Resources
 				</Link>

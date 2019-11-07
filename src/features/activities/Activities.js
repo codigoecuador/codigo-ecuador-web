@@ -9,7 +9,7 @@ import EntrpeneurshipBlurb from "./EntrepreneurshipBlurb"
 const Activities = () => {
 	return (
 		<>
-			<BrickWallPic />
+			<BrickWallPic id="brick-wall-pic"/>
 			<QuitoPic />
 
 			<div className="blurb education">

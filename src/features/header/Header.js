@@ -36,7 +36,7 @@ class Header extends Component  {
 
 
   	return (
-  		<>
+  		<div className="header">
         <div className={navStyle}>
   			   <Navbar/>
         </div>
@@ -44,7 +44,7 @@ class Header extends Component  {
         <div className="banner">
           <Logo className="logo" />
         </div>
-  		</>
+  		</div>
   	)
   }
 }

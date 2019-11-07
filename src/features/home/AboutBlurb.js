@@ -4,7 +4,7 @@ const AboutBlurb = () => {
     return (
         <div className="bubble">
           <br/>
-          <div className="home-headline">
+          <div className="home-headline empower">
             We empower the women of Ecuador by teaching them to code.
           </div>
           <p>
