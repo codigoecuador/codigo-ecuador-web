@@ -26,8 +26,8 @@ class ResearchContainer extends Component {
 					<div className="center">
 						<span className="gold headline">Research</span>
 					</div>
-					<br />
-					<div className="research-text">
+			
+					<div className="research-container-text">
 						<h1 className="center">
 							We model Código Ecuador on research and insights from
 							reputable economic development experts.

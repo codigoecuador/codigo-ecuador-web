@@ -40,15 +40,11 @@
 }
 
 .slick-list div {
-	padding: 2vw;
+	/* padding: 2vw;
 	width: 90%;
-	max-height: 50%;
+	max-height: 50%; */
 }
 
 .slick-track div {
-	min-width: 30vw;
-}
-
-.blog-account {
-	padding: 0% 25%;
+	min-width: 40vw;
 }

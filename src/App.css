@@ -6,6 +6,11 @@
 	text-align: right;
 }
 
+.left {
+	text-align: left;
+}
+
+
 /* brand colors */
 
 .navy {
@@ -16,9 +21,8 @@
 	color: rgb(197, 158, 85);
 }
 
-/* font-size */
+/* headlines */
 
-/* global headline styles */
 
 .headline {
 	font-family: "Bree Serif", serif;
@@ -72,9 +76,4 @@ html,
 body {
 	margin: 0;
 	height: 100%;
-}
-
-/* contact */
-.contact {
-	font-size: 1.1vw;
 }
