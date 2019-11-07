@@ -3,8 +3,11 @@ import { Card, Image  } from "semantic-ui-react"
 import './Research.css'
 
 class ResearchCard extends Component {
+
+
 	render() {
 		let research = this.props.research
+
 
 		return (
 			<>

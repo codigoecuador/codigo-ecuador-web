@@ -17,6 +17,12 @@
 	width: auto;
 }
 
+.research-image-mobile {
+	max-height: 20vw;
+	width: auto;
+
+}
+
 .research-headline {
 	text-align: center;
 	line-height: 2vw;
