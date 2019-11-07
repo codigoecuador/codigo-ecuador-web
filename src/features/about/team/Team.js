@@ -1,9 +1,10 @@
 import React from 'react'
+import './Team.css'
 
 const Team = () => {
     return (
-        <div>
-            <h1>Team!</h1>
+        <div className="massive team center">
+            team!
         </div>
     )
 }

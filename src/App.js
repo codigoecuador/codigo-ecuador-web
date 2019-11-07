@@ -1,7 +1,6 @@
 import React from "react"
 import "./App.css"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-// import { HashLink as Link } from 'react-router-hash-link';
 import Home from "./features/home/Home"
 import About from "./features/about/About"
 import Partners from "./features/about/partners/Partners"

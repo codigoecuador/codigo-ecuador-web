@@ -1,0 +1,19 @@
+/* about/partners */
+
+.team {
+	margin-top: 15%;
+
+}
+
+.team-headline {
+	font-family: "Bree Serif", serif;
+	font-size: 2vw;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.team-description {
+	font-size: 1vw;
+	text-align: left;
+}
