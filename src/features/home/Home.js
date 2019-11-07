@@ -9,7 +9,7 @@ const Home = () => {
 		<>
 			<CoverPic />
 
-			<div className="aboutBlurb">
+			<div className="about-blurb">
 				<AboutBlurb />
 			</div>
 

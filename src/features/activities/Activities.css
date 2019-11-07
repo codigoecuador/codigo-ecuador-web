@@ -1,29 +1,37 @@
 /* activities */
 
-.activitiesCardGroup {
+.education-blurb {
 	position: absolute;
-	top: 260%;
-	left: 10%;
-	right: 10%;
-	z-index: 2;
-}
-
-.activityCard {
-	height: 100%;
-	width: auto;
-	max-width: 80vw;
-	padding: 10%;
-}
-
-.activityCardHeadline {
-	font-family: "Bree Serif", serif;
-	font-size: 2.2vw;
+	top: 135%;
+	left: 45%;
+	width: 45%;
 	text-align: center;
-	margin-bottom: 5%;
-	margin-top: 2%;
+	background-color: rgb(255, 255, 255, 0.8);
+	border-radius: 105px;
+	border: 3px solid rgb(197, 158, 85);
+	padding: 2%;
 }
 
-.activityCardText {
-	font-size: 1.1vw;
-	line-height: 1.2vw;
+.internship-blurb {
+	position: absolute;
+	top: 210%;
+	left: 15%;
+	width: 45%;
+	text-align: center;
+	background-color: rgb(255, 255, 255, 0.6);
+	border-radius: 105px;
+	border: 3px solid rgb(197, 158, 85);
+	padding: 2%;
+}
+
+.entrepreneurship-blurb {
+	position: absolute;
+	top: 280%;
+	left: 45%;
+	width: 45%;
+	text-align: center;
+	background-color: rgb(255, 255, 255, 0.8);
+	border-radius: 105px;
+	border: 3px solid rgb(197, 158, 85);
+	padding: 2%;
 }

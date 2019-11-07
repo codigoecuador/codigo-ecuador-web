@@ -4,7 +4,7 @@ const EducationBlurb = () => {
     return (
         <div className="bubble">
           <br/>
-          <div className="homePageHeadline">
+          <div className="home-headline">
             Computer Programming Education
           </div>
           <p>

@@ -4,7 +4,7 @@ const EntrepreneurshipBlurb = () => {
     return (
         <div className="bubble">
           <br/>
-          <div className="homePageHeadline">
+          <div className="home-headline">
             Encourage Entrepreneurship
           </div>
           <p>

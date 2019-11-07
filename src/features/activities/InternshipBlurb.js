@@ -4,7 +4,7 @@ const InternshipBlurb = () => {
     return (
         <div className="bubble">
           <br/>
-          <div className="homePageHeadline">
+          <div className="home-headline">
             Internship Placement
           </div>
           <p>
