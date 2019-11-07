@@ -46,8 +46,8 @@
 }
 
 .about-blurb {
-	position: absolute;
-	top: 70%;
+	position: fixed;
+	top: 60%;
 	left: 15%;
 	width: 70%;
 	text-align: center;
