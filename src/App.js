@@ -21,9 +21,9 @@ function App() {
 	return (
 		<Router>
 			<div>
-			<Sticky>
+
 				<Header />
-			</Sticky>
+
 
 				<Switch>
 					<Route exact path="/" render={() => <Home />}></Route>

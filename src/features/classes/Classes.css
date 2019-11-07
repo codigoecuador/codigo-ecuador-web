@@ -1,11 +1,25 @@
 
 
-.classes {
+.courses{
 	margin-top: 15%;
 
 }
 
-.classes p {
+.courses p {
   font-size: 1.2vw;
   line-height: 1.2vw;
+}
+
+.python-title {
+	font-weight: bold;
+}
+
+.python-description, .python-bullets {
+	font-size: 1.2vw;
+	line-height: 1.5vw;
+}
+
+.python-duration {
+	font-size: 1vw;
+	line-height: 1.2vw;
 }

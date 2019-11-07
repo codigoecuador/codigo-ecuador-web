@@ -45,4 +45,4 @@ const scraping = {
 
 
 
-export const researchLinks = [beginner, fundamentals, intermediate, databases, scraping ]
+export const pythonClasses = [beginner, fundamentals, intermediate, databases, scraping ]
