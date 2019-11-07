@@ -1,6 +1,7 @@
 import React from 'react'
 
 const AboutBlurb = () => {
+
     return (
         <div className="bubble">
           <br/>
@@ -17,6 +18,8 @@ const AboutBlurb = () => {
           <br/>
         </div>
     )
+
+
 }
 
 export default AboutBlurb

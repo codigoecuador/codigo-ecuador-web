@@ -1,25 +1,41 @@
-import React from "react"
+import React, { Component } from "react"
 import "./Home.css"
 import AboutBlurb from "./AboutBlurb"
+import AboutBlurbES from "./AboutBlurbES"
 import CoverPic from "./CoverPic"
 import Activities from "../activities/Activities"
 
-const Home = () => {
-	return (
-		<>
-			<CoverPic />
+class Home extends Component {
+	state = {
+		language: "EN"
+	}
 
-			<div className="about-blurb">
-				<AboutBlurb />
-			</div>
 
-		
 
-			<div id="activities">
-				<Activities />
-			</div>
-		</>
-	)
+	render(){
+		let about
+		this.state.language === "EN" ? about = <AboutBlurb /> : about = <AboutBlurbES />
+
+
+
+		return (
+			<>
+				<CoverPic />
+
+				<div className="about-blurb">
+					{about}
+				</div>
+
+				<div id="activities">
+					<Activities />
+				</div>
+			</>
+		)
+
+	}
+
+
+
 }
 
 export default Home
