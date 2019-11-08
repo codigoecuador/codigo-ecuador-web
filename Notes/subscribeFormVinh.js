@@ -9,5 +9,3 @@
     <Button type="submit">Submit</Button>
   </Form>
 </div>
-
-<span>+1 571-216-5441</span>

@@ -7,7 +7,7 @@ import Activities from "../activities/Activities"
 
 class Home extends Component {
 	state = {
-		language: "EN"
+		language: "ES"
 	}
 
 

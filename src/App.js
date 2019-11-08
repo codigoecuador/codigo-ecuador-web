@@ -17,12 +17,13 @@ import Header from './features/header/Header'
 
 
 function App() {
-
+//render if this.state.language === EN ---> language = "EN"
 	return (
 		<Router>
 			<div>
-
-				<Header />
+				<Sticky>
+					<Header />
+				</Sticky>
 
 
 				<Switch>
