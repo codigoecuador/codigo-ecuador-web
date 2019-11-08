@@ -30,7 +30,7 @@ function App() {
 					<Route exact path="/about" render={() => <About />}></Route>
 					<Route exact path="/classes" render={() => <Classes />}></Route>
 					<Route exact path="/about/partners" render={() => <Partners />} ></Route>
-          <Route exact path="/about/team" render={() => <Team />} ></Route>
+          			<Route exact path="/about/team" render={() => <Team />} ></Route>
 					<Route exact path="/resources" render={() => <CodingContainer />}></Route>
 					<Route exact path="/resources/research" render={() => <ResearchContainer />}></Route>
 					<Route exact path="/blog" render={() => <Blog />}></Route>
