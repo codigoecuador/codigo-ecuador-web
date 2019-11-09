@@ -10,7 +10,7 @@ class Team extends Component {
     return (
         
         <Container className="team center" justified>
-                    {/* <br /> */}
+                
                 <div className="headline">
 					<span className="gold">Our Team</span>
 				</div>
@@ -24,18 +24,11 @@ class Team extends Component {
 					<span className="navy">Meet the Team</span>
 				</div>
                     <br />
-                <div class="ui grid" columns={3} fluid>
-                {/* <Grid class="ui grid" padded columns={3} fluid> */}
-                    <div className='ui fluid cards' justified fluid columns={3}>
-                    <Card.Group centered fluid justified>
-                        {teamData.map(member => 
-                            <TeamCard {...member} />
-                        )}
-                    </Card.Group>
-                    </div>
-                {/* </Grid> */}
-                </div>
-            
+                <Card.Group centered justified>
+                    {teamData.map(member => 
+                                <TeamCard {...member} />
+                    )}
+                </Card.Group>
         </Container>
         
     )
@@ -43,3 +36,16 @@ class Team extends Component {
 }
 
 export default Team
+
+
+{/* <div class="ui grid" columns={3} fluid>
+                <Grid class="ui grid" padded columns={3} fluid>
+                    <div className='ui fluid cards' justified fluid columns={3}>
+                    <Card.Group centered fluid justified>
+                        {teamData.map(member => 
+                            <TeamCard {...member} />
+                        )}
+                    </Card.Group>
+                    </div>
+                </Grid> */}
+                {/* </div> */}
