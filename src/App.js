@@ -1,4 +1,5 @@
-import React from "react"
+import React, { Component } from "react"
+import { connect } from 'react-redux'
 import "./App.css"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import { Sticky} from "semantic-ui-react"
@@ -11,20 +12,53 @@ import Blog from "./features/blog/Blog"
 import Donate from "./features/donate/Donate"
 import CodingContainer from "./features/resources/coding/CodingContainer"
 import ResearchContainer from './features/resources/research/ResearchContainer'
-import Activities from "./features/activities/Activities"
 import Header from './features/header/Header'
+import { setSize } from './actions.js'
+
+
+class App extends Component {
+	constructor(props) {
+    super(props)
+
+		this.state = {
+				width: window.innerWidth,
+				size: "",
+			}
+		}
+
+		componentDidMount() {
+			window.addEventListener('resize', this.handleWindowSizeChange);
+		}
+
+		componentWillUnmount() {
+			window.removeEventListener('resize', this.handleWindowSizeChange);
+		}
+
+		handleWindowSizeChange = () => {
+			this.setState({ width: window.innerWidth });
+
+			let isMobile
+			const width = this.state.width
+			width <= 760 ? isMobile = true : isMobile = false
+
+			let size
+			isMobile ? size = "mobile" :  size = "desktop"
+			this.setState({ size: size })
+
+			this.props.setSize(this.state.size)
+
+		}
+
+		render(){
 
 
 
-function App() {
+
 //render if this.state.language === EN ---> language = "EN"
 	return (
 		<Router>
 			<div>
-				<Sticky>
-					<Header />
-				</Sticky>
-
+				<Header/>
 
 				<Switch>
 					<Route exact path="/" render={() => <Home />}></Route>
@@ -42,6 +76,13 @@ function App() {
 			</div>
     </Router>
 	)
+
+		}
+
 }
 
-export default App
+const mapStateToProps = state => {  return {  size: state.size  } }
+const mapDispatchToProps = dispatch => ({ 
+	setSize: setSize => dispatch({type: "SET_SIZE", setSize})   }) 
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)

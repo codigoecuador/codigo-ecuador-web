@@ -6,12 +6,18 @@ import CoverPic from "./CoverPic"
 import Activities from "../activities/Activities"
 
 class Home extends Component {
-	state = {
-		language: "ES"
+	constructor(props){
+		super(props)
+
+		this.state = {
+		language: "ES",
+		size: this.props.size
 	}
+}
 
 
 	render(){
+		console.log(this.state.size)
 		let about
 		this.state.language === "EN" ? about = <AboutBlurb /> : about = <AboutBlurbES />
 

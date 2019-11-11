@@ -2,37 +2,16 @@ import React, { Component } from "react"
 import "./Navbar.css"
 import { Container } from "semantic-ui-react"
 import { Link } from "react-router-dom"
-// import { HashLink } from 'react-router-hash-link';
+import { connect } from 'react-redux'
 
 class Navbar extends Component {
-	constructor(props) {
-	super()
 
-		this.state = {
-				width: window.innerWidth
-			}
-		}
-
-		componentDidMount() {
-			window.addEventListener('resize', this.handleWindowSizeChange);
-		}
-
-		componentWillUnmount() {
-			window.removeEventListener('resize', this.handleWindowSizeChange);
-		}
-
-		handleWindowSizeChange = () => {
-			this.setState({ width: window.innerWidth });
-		}
 
 		render(){
-			let isMobile
-			const width = this.state.width
-			width <= 760 ? isMobile = true : isMobile = false
 
 			let buttonStyle
 
-			isMobile ? buttonStyle = "nav-button-active nav-button-mobile" : buttonStyle = "nav-button-active nav-button-desktop"
+			this.props.size === "mobile" ? buttonStyle = "nav-button-active nav-button-mobile" : buttonStyle = "nav-button-active nav-button-desktop"
 
 		return (
 
@@ -61,8 +40,6 @@ class Navbar extends Component {
 	}
 }
 
-export default Navbar
+const mapStateToProps = state => {  return {  size: state.size  } }
 
-// <HashLink exact className={buttonStyle} to="/#activities">
-// 	Activities
-// </HashLink>
+export default connect(mapStateToProps)(Navbar)
