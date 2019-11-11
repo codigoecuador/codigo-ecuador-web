@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { connect } from 'react-redux'
 import "./Blog.css"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -20,17 +21,22 @@ class Blog extends Component {
 	//react carousel installed with < npm i @brainhubeu/react-carousel > in the terminal
 
 	render() {
+
+		let num
+		this.props.size === "mobile" ?  num = 1 : num = 2
+
 		if (!this.state.blogs.items) {
 			return (
 				<div className="blog-container">No blog posts at the moment!</div>
 			)
 		} else {
 			const { items } = this.state.blogs
+
 			let settings = {
 				dots: true,
 				infinite: true,
 				speed: 4000,
-				slidesToShow: 2,
+				slidesToShow: num,
 				slidesToScroll: 1,
 				autoplay: true,
 				autoplayspeed: 8000
@@ -60,4 +66,6 @@ class Blog extends Component {
 	}
 }
 
-export default Blog
+const mapStateToProps = state => {  return {  size: state.size  } }
+
+export default connect(mapStateToProps)(Blog)

@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Navbar from '../navbar/Navbar'
 import Logo from '../logo/Logo'
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 
 
 class Header extends Component  {

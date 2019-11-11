@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { connect } from 'react-redux'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import './Research.css'
@@ -7,19 +8,11 @@ import { researchLinks } from "./ResearchLinks"
 import ResearchCard from "./ResearchCard"
 
 class ResearchContainer extends Component {
-	constructor(props) {
-	super()
-
-		this.state = {
-
-			}
-		}
 
 		render(){
 
 			let num
-
-			this.state.size === "mobile" ?  num = 1 : num = 2
+			this.props.size === "mobile" ?  num = 1 : num = 2
 
 
 			let settings = {
@@ -80,4 +73,5 @@ class ResearchContainer extends Component {
 	}
 }
 
-export default ResearchContainer
+const mapStateToProps = state => {  return {  size: state.size  } }
+export default connect(mapStateToProps)(ResearchContainer)

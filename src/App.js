@@ -22,7 +22,7 @@ class App extends Component {
 
 		this.state = {
 				width: window.innerWidth,
-				size: ""
+				size: "",
 			}
 		}
 
