@@ -58,10 +58,7 @@ class App extends Component {
 	return (
 		<Router>
 			<div>
-				<Sticky>
-					<Header/>
-				</Sticky>
-
+				<Header/>
 
 				<Switch>
 					<Route exact path="/" render={() => <Home />}></Route>
