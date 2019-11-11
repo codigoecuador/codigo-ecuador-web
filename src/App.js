@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { connect } from 'react-redux';
 import "./App.css"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import { Sticky} from "semantic-ui-react"
@@ -14,7 +15,37 @@ import ResearchContainer from './features/resources/research/ResearchContainer'
 import Header from './features/header/Header'
 
 
+class App extends Component {
+	constructor(props) {
+    super(props)
 
+		this.state = {
+				width: window.innerWidth,
+				size: ""
+			}
+		}
+
+		componentDidMount() {
+			window.addEventListener('resize', this.handleWindowSizeChange);
+		}
+
+		componentWillUnmount() {
+			window.removeEventListener('resize', this.handleWindowSizeChange);
+		}
+
+		handleWindowSizeChange = () => {
+			this.setState({ width: window.innerWidth });
+		}
+
+		render(){
+			let isMobile
+			const width = this.state.width
+			width <= 760 ? isMobile = true : isMobile = false
+
+			let size
+			isMobile ? this.setState({ size: "mobile" }) : this.setState({ size: "desktop" })
+
+<<<<<<< Updated upstream
 class App extends Component {
 	constructor(props) {
 	super()
@@ -72,7 +103,38 @@ class App extends Component {
 
 		}
 //render if this.state.language === EN ---> language = "EN"
+=======
+//render if this.state.language === EN ---> language = "EN"
+	return (
+		<Router>
+			<div>
+				<Sticky>
+					<Header/>
+				</Sticky>
+
+
+				<Switch>
+					<Route exact path="/" render={() => <Home />}></Route>
+					<Route exact path="/about" render={() => <About />}></Route>
+					<Route exact path="/classes" render={() => <Classes />}></Route>
+					<Route exact path="/about/partners" render={() => <Partners />} ></Route>
+          <Route exact path="/about/team" render={() => <Team />} ></Route>
+					<Route exact path="/resources" render={() => <CodingContainer />}></Route>
+					<Route exact path="/resources/research" render={() => <ResearchContainer />}></Route>
+					<Route exact path="/blog" render={() => <Blog />}></Route>
+					<Route exact path="/donate" render={() => <Donate />}></Route>
+				</Switch>
+
+
+			</div>
+    </Router>
+	)
+
+		}
+>>>>>>> Stashed changes
 
 }
 
-export default App
+const mapStateToProps = state => {  return {  size: state.size  } }
+
+export default connect(mapStateToProps)(App)
