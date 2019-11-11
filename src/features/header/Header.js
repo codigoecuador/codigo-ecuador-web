@@ -31,7 +31,6 @@ class Header extends Component  {
 
     let navStyle
 
-    let header
     isMobile ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
 
 

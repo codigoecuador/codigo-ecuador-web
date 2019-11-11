@@ -11,12 +11,9 @@ class Home extends Component {
 	}
 
 
-
 	render(){
 		let about
 		this.state.language === "EN" ? about = <AboutBlurb /> : about = <AboutBlurbES />
-
-
 
 		return (
 			<>

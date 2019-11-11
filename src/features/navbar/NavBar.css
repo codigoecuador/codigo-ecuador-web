@@ -22,7 +22,7 @@
 }
 
 .navbar-mobile {
-	top: 14%;
+	top: 8%;
 	left: 5%;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .nav-button-mobile {
-	font-size: 1.6vw;
+	font-size: 1.3vw;
 	padding: 10px;
 	border-radius: 5px 10px;
 	border: 1px solid rgb(197, 158, 85);
