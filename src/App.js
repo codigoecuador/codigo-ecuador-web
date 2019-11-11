@@ -13,6 +13,7 @@ import Donate from "./features/donate/Donate"
 import CodingContainer from "./features/resources/coding/CodingContainer"
 import ResearchContainer from './features/resources/research/ResearchContainer'
 import Header from './features/header/Header'
+import { setSize } from './actions.js'
 
 
 class App extends Component {
@@ -35,10 +36,14 @@ class App extends Component {
 
 		handleWindowSizeChange = () => {
 			this.setState({ width: window.innerWidth });
+
 			let isMobile
 			const width = this.state.width
 			width <= 760 ? isMobile = true : isMobile = false
 			isMobile ? this.setState({ size: "mobile" }) : this.setState({ size: "desktop" })
+
+			this.props.setSize(this.state.size)
+
 		}
 
 		render(){
@@ -77,5 +82,7 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {  return {  size: state.size  } }
+const mapDispatchToProps = dispatch => ({ 
+	setSize: setSize => dispatch({type: "SET_SIZE", setSize})   }) 
 
-export default connect(mapStateToProps)(App)
+export default connect(mapStateToProps, mapDispatchToProps)(App)

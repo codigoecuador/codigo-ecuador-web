@@ -1,22 +1,15 @@
 import React, { Component } from "react"
 import Navbar from '../navbar/Navbar'
 import Logo from '../logo/Logo'
+import { connect } from 'react-redux';
 
 
 class Header extends Component  {
-  constructor(props) {
-  super()
-
-    this.state = {
-        // size: this.props.size
-    }
-  }
-
 
   render(){
     let navStyle
-    // 
-    // this.state.size === "mobile" ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
+    console.log('header props', this.props.size)
+    this.props.size === "mobile" ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
 
 
   	return (
@@ -33,4 +26,6 @@ class Header extends Component  {
   }
 }
 
-export default Header
+
+const mapStateToProps = state => {  return {  size: state.size  } }
+export default connect(mapStateToProps)(Header)

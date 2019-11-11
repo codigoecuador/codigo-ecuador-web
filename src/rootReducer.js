@@ -1,6 +1,14 @@
 
 
-export default function rootReducer (state = {}, action) { 
+export default function rootReducer (state = {size: ""}, action) { 
 
-  return state 
-} 
+  switch(action.type){
+    case "SET_SIZE": 
+      let x = {...state, size: action.setSize} 
+      return x;
+
+
+      default:
+        return state
+
+} }
