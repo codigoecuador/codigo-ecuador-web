@@ -35,75 +35,17 @@ class App extends Component {
 
 		handleWindowSizeChange = () => {
 			this.setState({ width: window.innerWidth });
-		}
-
-		render(){
 			let isMobile
 			const width = this.state.width
 			width <= 760 ? isMobile = true : isMobile = false
-
-			let size
 			isMobile ? this.setState({ size: "mobile" }) : this.setState({ size: "desktop" })
-
-<<<<<<< Updated upstream
-class App extends Component {
-	constructor(props) {
-	super()
-
-		this.state = {
-				width: window.innerWidth,
-				size: ""
-			}
-		}
-
-		componentDidMount() {
-			window.addEventListener('resize', this.handleWindowSizeChange);
-		}
-
-		componentWillUnmount() {
-			window.removeEventListener('resize', this.handleWindowSizeChange);
-		}
-
-		handleWindowSizeChange = () => {
-			this.setState({ width: window.innerWidth });
 		}
 
 		render(){
-			let isMobile
-			const width = this.state.width
-			width <= 760 ? isMobile = true : isMobile = false
 
 
-			isMobile ? this.setState({ size: "mobile" }) : this.setState({ size: "desktop" })
-
-			return (
-				<Router>
-					<div>
-						<Sticky>
-							<Header size={this.state.size}/>
-						</Sticky>
 
 
-						<Switch>
-							<Route exact path="/" render={() => <Home size={this.state.size} />}></Route>
-							<Route exact path="/about" render={() => <About size={this.state.size} />}></Route>
-							<Route exact path="/classes" render={() => <Classes size={this.state.size} />}></Route>
-							<Route exact path="/about/partners" render={() => <Partners size={this.state.size}/>} ></Route>
-		          <Route exact path="/about/team" render={() => <Team size={this.state.size}/>} ></Route>
-							<Route exact path="/resources" render={() => <CodingContainer size={this.state.size}/>}></Route>
-							<Route exact path="/resources/research" render={() => <ResearchContainer size={this.state.size}/>}></Route>
-							<Route exact path="/blog" render={() => <Blog size={this.state.size}/>}></Route>
-							<Route exact path="/donate" render={() => <Donate size={this.state.size}/>}></Route>
-						</Switch>
-
-
-					</div>
-		    </Router>
-			)
-
-		}
-//render if this.state.language === EN ---> language = "EN"
-=======
 //render if this.state.language === EN ---> language = "EN"
 	return (
 		<Router>
@@ -131,7 +73,6 @@ class App extends Component {
 	)
 
 		}
->>>>>>> Stashed changes
 
 }
 

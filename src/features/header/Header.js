@@ -8,15 +8,15 @@ class Header extends Component  {
   super()
 
     this.state = {
-        size: this.props.size
+        // size: this.props.size
     }
   }
 
 
   render(){
     let navStyle
-
-    this.state.size === "mobile" ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
+    // 
+    // this.state.size === "mobile" ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
 
 
   	return (

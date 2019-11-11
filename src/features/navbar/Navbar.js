@@ -9,7 +9,7 @@ class Navbar extends Component {
 	super()
 
 		this.state = {
-				size: this.props.size
+				// size: this.props.size
 			}
 		}
 
@@ -17,8 +17,8 @@ class Navbar extends Component {
 		render(){
 
 			let buttonStyle
-
-			this.state.size === "mobile" ? buttonStyle = "nav-button-active nav-button-mobile" : buttonStyle = "nav-button-active nav-button-desktop"
+			// 
+			// this.state.size === "mobile" ? buttonStyle = "nav-button-active nav-button-mobile" : buttonStyle = "nav-button-active nav-button-desktop"
 
 		return (
 
