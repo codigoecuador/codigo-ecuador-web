@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 import "./App.css"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import { Sticky} from "semantic-ui-react"
@@ -40,7 +40,10 @@ class App extends Component {
 			let isMobile
 			const width = this.state.width
 			width <= 760 ? isMobile = true : isMobile = false
-			isMobile ? this.setState({ size: "mobile" }) : this.setState({ size: "desktop" })
+
+			let size
+			isMobile ? size = "mobile" :  size = "desktop"
+			this.setState({ size: size })
 
 			this.props.setSize(this.state.size)
 
