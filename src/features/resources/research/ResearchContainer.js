@@ -11,30 +11,15 @@ class ResearchContainer extends Component {
 	super()
 
 		this.state = {
-				width: window.innerWidth
+
 			}
 		}
 
-		componentDidMount() {
-			window.addEventListener('resize', this.handleWindowSizeChange);
-		}
-
-		componentWillUnmount() {
-			window.removeEventListener('resize', this.handleWindowSizeChange);
-		}
-
-		handleWindowSizeChange = () => {
-			this.setState({ width: window.innerWidth });
-		}
-
 		render(){
-			let isMobile
-			const width = this.state.width
-			width <= 760 ? isMobile = true : isMobile = false
 
 			let num
 
-			isMobile? num = 1 : num = 2
+			this.state.size === "mobile" ?  num = 1 : num = 2
 
 
 			let settings = {

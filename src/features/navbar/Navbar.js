@@ -9,30 +9,16 @@ class Navbar extends Component {
 	super()
 
 		this.state = {
-				width: window.innerWidth
+				size: this.props.size
 			}
 		}
 
-		componentDidMount() {
-			window.addEventListener('resize', this.handleWindowSizeChange);
-		}
-
-		componentWillUnmount() {
-			window.removeEventListener('resize', this.handleWindowSizeChange);
-		}
-
-		handleWindowSizeChange = () => {
-			this.setState({ width: window.innerWidth });
-		}
 
 		render(){
-			let isMobile
-			const width = this.state.width
-			width <= 760 ? isMobile = true : isMobile = false
 
 			let buttonStyle
 
-			isMobile ? buttonStyle = "nav-button-active nav-button-mobile" : buttonStyle = "nav-button-active nav-button-desktop"
+			this.state.size === "mobile" ? buttonStyle = "nav-button-active nav-button-mobile" : buttonStyle = "nav-button-active nav-button-desktop"
 
 		return (
 

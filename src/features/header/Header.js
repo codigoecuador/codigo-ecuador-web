@@ -8,30 +8,15 @@ class Header extends Component  {
   super()
 
     this.state = {
-        width: window.innerWidth
+        size: this.props.size
     }
   }
 
-  componentDidMount() {
-    window.addEventListener('resize', this.handleWindowSizeChange);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowSizeChange);
-  }
-
-  handleWindowSizeChange = () => {
-    this.setState({ width: window.innerWidth });
-  }
 
   render(){
-    let isMobile
-    const width = this.state.width
-    width <= 1100 ? isMobile = true : isMobile = false
-
     let navStyle
 
-    isMobile ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
+    this.state.size === "mobile" ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
 
 
   	return (
