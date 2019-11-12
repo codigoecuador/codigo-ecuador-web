@@ -6,6 +6,16 @@
 	z-index: 3;
 }
 
+.headline-container-desktop {
+	margin-top: 10%;
+	/* background-color: aqua; */
+}
+
+.headline-container-mobile {
+	/* top: 20%; */
+	margin-top: 20%;
+	/* background-color: aqua; */
+}
 
 .coding-button-group {
 	position: absolute;
@@ -30,10 +40,19 @@
 	color: rgb(8, 37, 78);
 }
 
-.showing {
+.showing-desktop {
 	position: absolute;
 	margin-left: 25%;
 	margin-top: 22%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+	padding: 5%;
+}
+
+.showing-mobile {
+	position: absolute;
+	margin-left: 25%;
+	margin-top: 35%;
 	margin-right: 10%;
 	margin-bottom: 5%;
 	padding: 5%;
@@ -43,12 +62,14 @@
 
 .coding-item-title {
 	font-family: "Bree Serif", serif;
+	font-size: 2.5em;
+	line-height: 1em;
 }
 
 .coding-item-subtitle {
 	color: grey;
-	font-size: 1.2vw;
-	line-height: 1.3vw;
+	font-size: 1.2em;
+	line-height: 1.3em;
 }
 
 .coding-item-container {
