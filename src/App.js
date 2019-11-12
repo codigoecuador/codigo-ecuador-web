@@ -39,7 +39,7 @@ class App extends Component {
 
 			let isMobile
 			const width = this.state.width
-			width <= 1025 ? isMobile = true : isMobile = false
+			width <= 700 ? isMobile = true : isMobile = false
 
 			let size
 			isMobile ? size = "mobile" :  size = "desktop"
@@ -82,7 +82,9 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {  return {  size: state.size  } }
+
 const mapDispatchToProps = dispatch => ({ 
 	setSize: setSize => dispatch({type: "SET_SIZE", setSize})   }) 
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)

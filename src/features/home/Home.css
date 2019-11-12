@@ -8,7 +8,7 @@
 	z-index: -1;
 }
 
-
+/* at top of page, container for navbar and logo */
 .banner {
 	position: absolute;
 	top: 0;
@@ -30,7 +30,8 @@
 }
 
 .home-headline-desktop {
-		font-size: 2vw;
+		font-size: 2em;
+		line-height: 1.5em;
 }
 
 .home-headline-mobile {
@@ -61,10 +62,11 @@
 	width: 70%;
 	border-radius: 85px;
 	border: 3px solid rgb(197, 158, 85);
+	padding: 1%;
 }
 
 .about-blurb-mobile{
-	top: 42%;
+	top: 45%;
 	left: 5%;
 	right: 5%;
 	width: 90;
@@ -73,11 +75,11 @@
 
 .bubble p,
 a {
-	font-size: 1vw;
+	font-size: 1.3em;
 }
 
-.bubble-mobile p, 1 {
-	font-size: 2vw;
+.bubble-mobile p, a {
+	font-size: 2.8vw;
 }
 
 .bubble h1 {
