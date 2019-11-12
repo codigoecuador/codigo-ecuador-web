@@ -18,11 +18,9 @@ const Contact = () => {
         <br/>
         <br/>
 
-        <button className="donate-button" >
-          <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@codigoecuador.com&item_name=Imagina%20C%C3%B3digo%20Ecuador&currency_code=USD' >
+          <a className="donate-button" href='https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@codigoecuador.com&item_name=Imagina%20C%C3%B3digo%20Ecuador&currency_code=USD' >
             Donate Now
           </a>
-        </button>
         <br/>
         <br/>
 
