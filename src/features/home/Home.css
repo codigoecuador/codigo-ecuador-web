@@ -34,7 +34,7 @@
 }
 
 .home-headline-mobile {
-		font-size: 1vw;
+		font-size: 4vw;
 }
 
 .empower {
@@ -51,15 +51,16 @@
 .about-blurb {
 	position: absolute;
 	text-align: center;
-	background-color: rgb(255, 255, 255, 0.8);
-	border: 3px solid rgb(197, 158, 85);
+	background-color: rgba(255, 255, 255, 0.8);
+
 }
 
 .about-blurb-desktop {
-	top: 60%;
+	top: 65%;
 	left: 15%;
 	width: 70%;
 	border-radius: 85px;
+	border: 3px solid rgb(197, 158, 85);
 }
 
 .about-blurb-mobile{
@@ -73,6 +74,10 @@
 .bubble p,
 a {
 	font-size: 1vw;
+}
+
+.bubble-mobile p, 1 {
+	font-size: 2vw;
 }
 
 .bubble h1 {

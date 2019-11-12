@@ -21,33 +21,33 @@
 }
 
 .education-desktop {
-	top: 115%;
+	top: 125%;
 	left: 5%;
 }
 
 .education-mobile{
-	top: 65%;
+	top: 75%;
 	left: 5%;
 }
 
 .internship-desktop{
-	top: 160%;
+	top: 170%;
 	left: 25%;
 }
 
 .internship-mobile{
-	top: 85%;
+	top: 95%;
 	left: 5%;
 }
 
 .entrepreneurship-desktop {
-	top: 205%;
+	top: 215%;
 	left: 50%;
 	margin-bottom: 5%;
 }
 
 .entrepreneurship-mobile {
-	top: 105%;
+	top: 115%;
 	left: 5%;
 	margin-bottom: 5%;
 }

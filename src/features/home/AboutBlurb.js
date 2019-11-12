@@ -5,11 +5,21 @@ class AboutBlurb extends Component {
   render(){
 
     let headlineStyle
-    this.props.size === "mobile" ? headlineStyle = "home-headline home-headline-mobile" : headlineStyle = "home-headline home-headline-desktop"
+    let bubbleStyle
+    let readMore
+
+    if(this.props.size === "mobile"){
+      headlineStyle = "home-headline home-headline-mobile"
+      bubbleStyle = "bubble-mobile"
+    } else {
+      headlineStyle = "home-headline home-headline-desktop"
+      bubbleStyle = "bubble"
+      readMore = <h2>Read more about our work below ...</h2>
+    }
 
 
     return (
-        <div className="bubble">
+        <div className={bubbleStyle}>
           <br/>
           <div className={headlineStyle}>
             We empower the women of Ecuador by teaching them to code.
@@ -19,7 +29,7 @@ class AboutBlurb extends Component {
 
           <p>We believe that improving access to computer science curricula promotes global equity,<br/> and that collective action makes great changes in this world.</p>
 
-          <h2>Read more about our work below ...</h2>
+          {readMore}
 
           <br/>
         </div>
