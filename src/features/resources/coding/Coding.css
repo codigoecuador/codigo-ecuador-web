@@ -20,7 +20,7 @@
 .coding-button-group {
 	position: absolute;
 	margin-left: 5%;
-	margin-top: 25%;
+	margin-top: 4%;
 	margin-right: 65%;
 	margin-bottom: 5%;
 }
@@ -43,7 +43,7 @@
 .showing-desktop {
 	position: absolute;
 	margin-left: 25%;
-	margin-top: 22%;
+	/* margin-top: %; */
 	margin-right: 10%;
 	margin-bottom: 5%;
 	padding: 5%;
@@ -52,7 +52,7 @@
 .showing-mobile {
 	position: absolute;
 	margin-left: 25%;
-	margin-top: 35%;
+	margin-top: 10%;
 	margin-right: 10%;
 	margin-bottom: 5%;
 	padding: 5%;
@@ -78,9 +78,9 @@
 
 .coding-item-button {
 	background-color: black;
-	width: 8vw;
-	height: 2.5vw;
-	font-size: 0.8vw;
+	width: 12em;
+	height: 2.5em;
+	font-size: 0.8em;
 	padding: 1%;
 	display: inline-block;
 }
