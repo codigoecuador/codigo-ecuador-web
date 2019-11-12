@@ -1,15 +1,13 @@
 /* home */
 
 .cover-pic {
-	position: relative;
+	position: absolute;
+	top: 15%;
 	width: 100%;
 	height: auto;
 	z-index: -1;
 }
 
-.top {
-		top: 0;
-}
 
 .banner {
 	position: absolute;
@@ -25,17 +23,22 @@
 
 .home-headline {
 	font-family: "Bree Serif", serif;
-	font-size: 2vw;
 	color: rgb(8, 37, 78);
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 3%;
+}
 
+.home-headline-desktop {
+		font-size: 2vw;
+}
+
+.home-headline-mobile {
+		font-size: 1vw;
 }
 
 .empower {
 	font-size: 2vw;
-
 }
 
 .activities {
@@ -46,12 +49,38 @@
 }
 
 .about-blurb {
-	position: fixed;
+	position: absolute;
+	text-align: center;
+	background-color: rgb(255, 255, 255, 0.8);
+	border: 3px solid rgb(197, 158, 85);
+}
+
+.about-blurb-desktop {
 	top: 60%;
 	left: 15%;
 	width: 70%;
-	text-align: center;
-	background-color: rgb(255, 255, 255, 0.8);
 	border-radius: 85px;
-	border: 3px solid rgb(197, 158, 85);
+}
+
+.about-blurb-mobile{
+	top: 42%;
+	left: 5%;
+	right: 5%;
+	width: 90;
+	border-radius: 35px;
+}
+
+.bubble p,
+a {
+	font-size: 1vw;
+}
+
+.bubble h1 {
+	font-size: 3vw;
+	color: rgb(8, 37, 78);
+}
+
+.bubble h2 {
+	font-size: 1.5vw;
+	color: rgb(8, 37, 78);
 }

@@ -39,7 +39,7 @@ class App extends Component {
 
 			let isMobile
 			const width = this.state.width
-			width <= 760 ? isMobile = true : isMobile = false
+			width <= 1025 ? isMobile = true : isMobile = false
 
 			let size
 			isMobile ? size = "mobile" :  size = "desktop"

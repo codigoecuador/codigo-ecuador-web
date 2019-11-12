@@ -24,20 +24,7 @@
 	padding: 2%;
 }
 
-.bubble p,
-a {
-	font-size: 1vw;
-}
 
-.bubble h1 {
-	font-size: 3vw;
-	color: rgb(8, 37, 78);
-}
-
-.bubble h2 {
-	font-size: 1.5vw;
-	color: rgb(8, 37, 78);
-}
 
 .ceo-letter {
 	position: absolute;

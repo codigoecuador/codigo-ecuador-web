@@ -1,30 +1,49 @@
-import React from "react"
+import React, { Component } from "react"
+import { connect } from 'react-redux'
 import "./Activities.css"
-import BrickWallPic from "./BrickWallPic"
-import QuitoPic from "./QuitoPic"
 import EducationBlurb from "./EducationBlurb"
 import InternshipBlurb from "./InternshipBlurb"
 import EntrpeneurshipBlurb from "./EntrepreneurshipBlurb"
 
-const Activities = () => {
-	return (
-		<>
-			<BrickWallPic id="brick-wall-pic"/>
-			<QuitoPic />
+class Activities extends Component {
+	render(){
 
-			<div className="blurb education">
-				<EducationBlurb />
-			</div>
+		//need to DRY this up
+		let education
+		let internship
+		let entrepreneurship
 
-			<div className="blurb internship">
-				<InternshipBlurb />
-			</div>
+		if(this.props.size === "mobile"){
+			education = "blurb blurb-mobile education-mobile"
+			internship = "blurb blurb-mobile internship-mobile"
+			entrepreneurship = "blurb blurb-mobile entrepreneurship-mobile"
+		} else {
+			education = "blurb blurb-desktop education-desktop"
+			internship = "blurb blurb-desktop internship-desktop"
+			entrepreneurship = "blurb blurb-desktop entrepreneurship-desktop"
+		}
 
-			<div className="blurb entrepreneurship">
-				<EntrpeneurshipBlurb />
-			</div>
-		</>
-	)
+		return (
+			<>
+
+				<div className={education}>
+					<EducationBlurb />
+				</div>
+
+				<div className={internship}>
+					<InternshipBlurb />
+				</div>
+
+				<div className={entrepreneurship}>
+					<EntrpeneurshipBlurb />
+				</div>
+			</>
+		)
+
+	}
+
 }
 
-export default Activities
+const mapStateToProps = state => {  return {  size: state.size  } }
+
+export default connect(mapStateToProps)(Activities)

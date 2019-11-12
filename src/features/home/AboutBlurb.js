@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-const AboutBlurb = () => {
+class AboutBlurb extends Component {
+  render(){
+
+    let headlineStyle
+    this.props.size === "mobile" ? headlineStyle = "home-headline home-headline-mobile" : headlineStyle = "home-headline home-headline-desktop"
+
 
     return (
         <div className="bubble">
           <br/>
-          <div className="home-headline empower">
+          <div className={headlineStyle}>
             We empower the women of Ecuador by teaching them to code.
           </div>
 
@@ -19,7 +25,13 @@ const AboutBlurb = () => {
         </div>
     )
 
+  }
+
+
+
 
 }
 
-export default AboutBlurb
+const mapStateToProps = state => {  return {  size: state.size  } }
+
+export default connect(mapStateToProps)(AboutBlurb)
