@@ -6,7 +6,7 @@ const CeoLetter = () => {
           <div className="ceo-letter-headline">
             <span className="gold">Letter From</span><span className="navy"> Our CEO</span>
           </div>
-            <i className="ceo-letter-text">
+            <i>
               <p>
               Dear Partners and Friends,
               </p>

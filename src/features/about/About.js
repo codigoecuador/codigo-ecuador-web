@@ -7,13 +7,27 @@ import CeoLetter from "./ceoLetter"
 
 class About extends Component {
 	render(){
+
+		let ourStoryStyle
+		let ceoStyle
+
+		if(this.props.size === "mobile"){
+			ourStoryStyle = "our-story our-story-mobile"
+			ceoStyle = "big ceo-letter ceo-letter-mobile"
+
+		} else {
+			ourStoryStyle = "our-story our-story-desktop"
+			ceoStyle = "big ceo-letter ceo-letter-desktop"
+		}
+
+
 		return (
 			<>
 				<LeafPic />
-				<div className="our-story">
+				<div className={ourStoryStyle}>
 					<OurStory />
 				</div>
-				<div className="big ceo-letter">
+				<div className={ceoStyle}>
 					<CeoLetter />
 				</div>
 			</>
