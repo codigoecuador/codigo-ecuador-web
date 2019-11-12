@@ -3,6 +3,7 @@ import "./Coding.css";
 import CodingLinks from "./CodingLinks";
 import { connect } from "react-redux";
 import CodingButtonGroup from "./CodingButtonGroup"
+import CodingMenu from "./CodingMenu"
 
 class CodingContainer extends Component {
   state = {
@@ -15,13 +16,16 @@ class CodingContainer extends Component {
 
   render() {
     let showing;
-    let headlineContainer;
+	let headlineContainer;
+	let codingButtonGroup;
     if (this.props.size === "mobile") {
       showing = "showing-mobile";
-      headlineContainer = "headline-container-mobile";
+	  headlineContainer = "headline-container-mobile";
+	  codingButtonGroup = <CodingMenu handleClick={this.handleClick} showing={showing} />
     } else {
       showing = "showing-desktop";
-      headlineContainer = "headline-container-desktop";
+	  headlineContainer = "headline-container-desktop";
+	  codingButtonGroup = <CodingButtonGroup handleClick={this.handleClick} showing={showing}/>
     }
     return (
       <>
@@ -35,7 +39,7 @@ class CodingContainer extends Component {
           </div>
         </div>
 
-		<CodingButtonGroup handleClick={this.handleClick}/>
+		{codingButtonGroup}
 
         <div className={showing}>
           <CodingLinks type={this.state.showing} />
