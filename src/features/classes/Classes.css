@@ -1,32 +1,38 @@
 
 
-.courses{
+.courses-desktop{
 	margin-top: 15%;
+}
 
+.courses-mobile{
+	margin-top: 35%;
 }
 
 .courses p {
-  font-size: 1.2vw;
-  line-height: 1.4vw;
+  font-size: 1.2em;
+  line-height: 1.4em;
 }
 
 .python-title {
 	font-weight: bold;
+	font-size: 2em;
+	line-height: 2.1em;
 }
 
 .python-description {
-	font-size: 1.3vw;
-	line-height: 1.5vw;
+	font-size: 1.4em;
+	line-height: 1.4em;
 }
 
+
 .python-bullets {
-	font-size: 1.2vw;
-	line-height: 1.2
+	font-size: 1.2em;
+	line-height: 1.2em;
 }
 
 .python-duration {
-	font-size: 1vw;
-	line-height: 1.2vw;
+	font-size: 1em;
+	line-height: 1.2em;
 }
 
 .course-info {
