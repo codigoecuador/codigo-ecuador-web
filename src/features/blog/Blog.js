@@ -22,6 +22,14 @@ class Blog extends Component {
 
 	render() {
 
+		let blogContainerStyle
+		if(this.props.size === "mobile"){
+			blogContainerStyle = "blog-container-mobile"
+		} else {
+			blogContainerStyle = "blog-container-desktop"
+
+		}
+
 		let num
 		this.props.size === "mobile" ?  num = 1 : num = 2
 
@@ -44,7 +52,7 @@ class Blog extends Component {
 
 			return (
 				<>
-					<div className="blog-container">
+					<div className={blogContainerStyle}>
 						<div className="headline">
 							<span className="gold">Recent</span>
 							<span className="navy"> Blog Posts</span>

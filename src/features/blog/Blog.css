@@ -1,9 +1,16 @@
 /* blog */
 
-.blog-container {
+.blog-container-desktop {
 	margin: 10%;
 	padding: 2%;
 }
+
+.blog-container-mobile {
+	margin-top: 40%;
+	padding: 2%;
+}
+
+
 
 .blog-card-image {
 	width: 100%;
