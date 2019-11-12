@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./Coding.css";
-import { Button, Sticky } from "semantic-ui-react";
 import CodingLinks from "./CodingLinks";
 import { connect } from "react-redux";
+import CodingButtonGroup from "./CodingButtonGroup"
 
 class CodingContainer extends Component {
   state = {
@@ -35,50 +35,7 @@ class CodingContainer extends Component {
           </div>
         </div>
 
-        <Sticky>
-          <div className="coding-button-group">
-            <br />
-            <br />
-            <Button.Group vertical>
-              <button
-                onClick={this.handleClick}
-                className="coding-button"
-                value="Student"
-              >
-                For Students
-              </button>
-              <br />
-              <br />
-              <button
-                onClick={this.handleClick}
-                className="coding-button"
-                value="Parent"
-              >
-                For Parents
-              </button>
-              <br />
-              <br />
-              <button
-                onClick={this.handleClick}
-                className="coding-button"
-                value="Educator"
-              >
-                For Educators
-              </button>
-              <br />
-              <br />
-              <button
-                onClick={this.handleClick}
-                className="coding-button"
-                value="Entrepreneur"
-              >
-                For Entrepreneurs
-              </button>
-              <br />
-              <br />
-            </Button.Group>
-          </div>
-        </Sticky>
+		<CodingButtonGroup handleClick={this.handleClick}/>
 
         <div className={showing}>
           <CodingLinks type={this.state.showing} />
