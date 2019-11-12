@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Coding.css";
-import { Button } from "semantic-ui-react";
+import { Button, Sticky } from "semantic-ui-react";
 import CodingLinks from "./CodingLinks";
 import { connect } from "react-redux";
 
@@ -14,14 +14,14 @@ class CodingContainer extends Component {
   };
 
   render() {
-	let showing;
-	let headlineContainer;
+    let showing;
+    let headlineContainer;
     if (this.props.size === "mobile") {
-	  showing = "showing-mobile";
-	  headlineContainer = "headline-container-mobile"
+      showing = "showing-mobile";
+      headlineContainer = "headline-container-mobile";
     } else {
-	  showing = "showing-desktop";
-	  headlineContainer = "headline-container-desktop"
+      showing = "showing-desktop";
+      headlineContainer = "headline-container-desktop";
     }
     return (
       <>
@@ -35,48 +35,50 @@ class CodingContainer extends Component {
           </div>
         </div>
 
-        <div className="coding-button-group">
-          <br />
-          <br />
-          <Button.Group vertical>
-            <button
-              onClick={this.handleClick}
-              className="coding-button"
-              value="Student"
-            >
-              For Students
-            </button>
+        <Sticky>
+          <div className="coding-button-group">
             <br />
             <br />
-            <button
-              onClick={this.handleClick}
-              className="coding-button"
-              value="Parent"
-            >
-              For Parents
-            </button>
-            <br />
-            <br />
-            <button
-              onClick={this.handleClick}
-              className="coding-button"
-              value="Educator"
-            >
-              For Educators
-            </button>
-            <br />
-            <br />
-            <button
-              onClick={this.handleClick}
-              className="coding-button"
-              value="Entrepreneur"
-            >
-              For Entrepreneurs
-            </button>
-            <br />
-            <br />
-          </Button.Group>
-        </div>
+            <Button.Group vertical>
+              <button
+                onClick={this.handleClick}
+                className="coding-button"
+                value="Student"
+              >
+                For Students
+              </button>
+              <br />
+              <br />
+              <button
+                onClick={this.handleClick}
+                className="coding-button"
+                value="Parent"
+              >
+                For Parents
+              </button>
+              <br />
+              <br />
+              <button
+                onClick={this.handleClick}
+                className="coding-button"
+                value="Educator"
+              >
+                For Educators
+              </button>
+              <br />
+              <br />
+              <button
+                onClick={this.handleClick}
+                className="coding-button"
+                value="Entrepreneur"
+              >
+                For Entrepreneurs
+              </button>
+              <br />
+              <br />
+            </Button.Group>
+          </div>
+        </Sticky>
 
         <div className={showing}>
           <CodingLinks type={this.state.showing} />
