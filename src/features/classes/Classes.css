@@ -4,25 +4,30 @@
 	margin-top: 35%;
 }
 
+.courses-desktop{
+	margin-top: 15%;
+}
+
 .courses-mobile{
-	margin-top: 45%;
+	margin-top: 35%;
 }
 
 .courses p {
   font-size: 1.2em;
-  line-height: 1em;
+  line-height: 1.4em;
 }
 
 .python-title {
 	font-weight: bold;
-	font-size: 2.5em;
-	line-height: 1em;
+	font-size: 2em;
+	line-height: 2.1em;
 }
 
 .python-description {
-	font-size: 1.3em;
-	line-height: 1.5em;
+	font-size: 1.4em;
+	line-height: 1.4em;
 }
+
 
 .python-bullets {
 	font-size: 1.2em;

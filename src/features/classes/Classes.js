@@ -10,6 +10,10 @@ class Classes extends Component {
     let coursesStyle
     this.props.size === "mobile" ? coursesStyle = "courses-mobile" : coursesStyle = "courses-desktop"
 
+    let courses
+    this.props.size === "mobile" ? courses = "courses-mobile" : courses = "courses-desktop"
+
+
 
     return (
       <Container className={coursesStyle}>
@@ -52,7 +56,6 @@ class Classes extends Component {
 
 
 }
-
 
 const mapStateToProps = state => {  return {  size: state.size  } }
 
