@@ -10,15 +10,12 @@ class Classes extends Component {
     let coursesStyle
     this.props.size === "mobile" ? coursesStyle = "courses-mobile" : coursesStyle = "courses-desktop"
 
-    let courses
-    this.props.size === "mobile" ? courses = "courses-mobile" : courses = "courses-desktop"
-
-
-
     return (
       <Container className={coursesStyle}>
         <div className="courses-text">
-          <div className="center headline">Our Curriculum</div>
+          <div className="center headline">
+            <span className="gold">Our</span><span className="navy"> Curriculum</span>
+          </div>
           {text}
         </div>
         <br/>

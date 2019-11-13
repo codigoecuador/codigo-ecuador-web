@@ -9,7 +9,6 @@ class CodingContainer extends Component {
 	}
 
 	handleClick = event => {
-		debugger
 		this.setState({ showing: event.target.value })
 	}
 
