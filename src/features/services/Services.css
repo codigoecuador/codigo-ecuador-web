@@ -1,7 +1,28 @@
 .services-container {
+  margin-top: 15%;
+}
+
+.services-button-group-desktop {
   margin-top: 20%;
 }
 
-.services-menu {
-  background-color: red;
+.services-button-group-mobile {
+  margin-top: 45%;
+}
+
+.services-button {
+  width: 50%;
+  height: 4em;
+  font-size: 1.7em;
+}
+
+.classes-button {
+  background-color: rgb(8,37,78);
+  color: white;
+
+}
+
+.mentorship-button {
+  background-color: rgb(197,158,85);
+  color: rgb(8,37,78);
 }

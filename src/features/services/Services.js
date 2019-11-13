@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { connect } from 'react-redux'
 import './Services.css'
 import { Container } from "semantic-ui-react"
 import Classes from './classes/Classes'
@@ -24,17 +25,24 @@ class Services extends Component {
       showing = <Mentorship />
     }
 
+    let buttonGroup
+    this.props.size === "mobile" ? buttonGroup = "services-button-group-mobile" : buttonGroup = "services-button-group-desktop"
+
+
+
+
     return (
 
 			<Container className="services-container">
-
-          <button onClick={this.handleClick} value="classes">
+        <div className={buttonGroup}>
+          <button className="services-button classes-button" onClick={this.handleClick} value="classes">
             Classes
           </button>
 
-          <button onClick={this.handleClick} value="mentorship">
+          <button className="services-button mentorship-button " onClick={this.handleClick} value="mentorship">
             Mentorship
           </button>
+        </div>
 
           {showing}
 
@@ -46,11 +54,9 @@ class Services extends Component {
   }
 
 
-
-
-
-
 }
 
 
-export default Services
+const mapStateToProps = state => {  return {  size: state.size  } }
+
+export default connect(mapStateToProps)(Services)
