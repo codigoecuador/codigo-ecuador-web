@@ -8,9 +8,9 @@
 	color: white;
 	display: inline-block;
 	height: 3em;
-	width: 10em;
-	font-size: 1.5em;
+	width: 11em;
+	font-size: 1em;
 	vertical-align: middle;
-	padding: 3%;
+	padding: 1em;
 	border-radius: 5%;
 }
