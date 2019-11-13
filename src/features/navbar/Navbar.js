@@ -15,6 +15,7 @@ class Navbar extends Component {
 
 		return (
 
+
 				<Container className="nav-buttons">
 					<Link className={buttonStyle} to="/">
 						Home
@@ -22,8 +23,8 @@ class Navbar extends Component {
 					<Link exact className={buttonStyle} to="/about">
 						About
 					</Link>
-					<Link exact className={buttonStyle} to="/classes">
-						Classes
+					<Link exact className={buttonStyle} to="/services">
+						Services
 					</Link>
 					<Link exact className={buttonStyle} to="/resources">
 						Resources
