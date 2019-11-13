@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import "./Navbar.css"
+import "./NavBar.css"
+// Capitalized B in above link to make it work
 import { Container } from "semantic-ui-react"
 import { Link } from "react-router-dom"
 import { connect } from 'react-redux'
