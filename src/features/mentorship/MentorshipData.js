@@ -14,4 +14,4 @@ const three = {
 }
 
 
-export mentorData  = [one, two, three ]
+export const mentorshipData = [one, two, three ]
