@@ -32,7 +32,7 @@ class Mentorship extends Component {
               <br/>
 
               <div className="tip-description">
-                <p>{tip.text}</p>
+                <span><h1>{tip.id}.</h1><p>{tip.text}</p></span>
               </div>
               <br/>
             </div>
