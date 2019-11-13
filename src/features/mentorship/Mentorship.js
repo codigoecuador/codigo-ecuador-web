@@ -21,9 +21,11 @@ class Mentorship extends Component {
       return (
         <Container className={mentorContainer}>
         <img className="boss-photo" src={likeABoss} alt="woman's hand's holding mug with the words 'like a boss' by Brooke Lark on unsplash.com"/>
-          <div className="center headline">Career Mentorship</div>
+        <div className="headline">
+          <span className="gold">Career</span><span className="navy"> Mentorship</span>
+        </div>
           <br/>
-          <h2>We provide women with the resources they need to succeed! </h2>
+          <h2 className="center">We provide women with the resources they need to succeed! </h2>
           <br/>
           <div className="mentor-text">
             <p>
