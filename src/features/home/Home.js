@@ -6,6 +6,7 @@ import AboutBlurbES from "./AboutBlurbES"
 import CoverPic from "./CoverPic"
 import Activities from "../activities/Activities"
 
+
 class Home extends Component {
 
 	render(){
@@ -15,6 +16,7 @@ class Home extends Component {
 
 		return (
 			<>
+
 				<CoverPic />
 
 				<div className={size}>

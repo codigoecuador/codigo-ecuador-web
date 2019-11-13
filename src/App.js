@@ -86,7 +86,10 @@ class App extends Component {
 const mapStateToProps = state => {  return {  size: state.size  } }
 
 const mapDispatchToProps = dispatch => ({ 
-	setSize: setSize => dispatch({type: "SET_SIZE", setSize})   }) 
+	setSize: size => dispatch({type: "SET_SIZE", size}) ,
+	setLanguage: language => dispatch({type: "SET_LANGUAGE", language}) 
+
+}) 
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)
