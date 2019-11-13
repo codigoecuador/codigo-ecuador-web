@@ -26,7 +26,22 @@ class Services extends Component {
     }
 
     let buttonGroup
-    this.props.size === "mobile" ? buttonGroup = "services-button-group-mobile" : buttonGroup = "services-button-group-desktop"
+    let classesButtonStyle
+    let mentorButtonStyle
+    let servicesShowing
+
+//need to DRY this up
+    if(this.props.size === "mobile"){
+      buttonGroup = "services-button-group-mobile"
+      classesButtonStyle = "services-button-mobile classes-button"
+      mentorButtonStyle = "services-button-mobile mentorship-button"
+      servicesShowing = "services-showing-mobile"
+    } else {
+      buttonGroup = "services-button-group-desktop"
+      classesButtonStyle = "services-button-desktop classes-button"
+      mentorButtonStyle = "services-button-desktop mentorship-button"
+      servicesShowing = "services-showing-desktop"
+    }
 
 
 
@@ -35,16 +50,18 @@ class Services extends Component {
 
 			<Container className="services-container">
         <div className={buttonGroup}>
-          <button className="services-button classes-button" onClick={this.handleClick} value="classes">
+          <button className={classesButtonStyle} onClick={this.handleClick} value="classes">
             Classes
           </button>
 
-          <button className="services-button mentorship-button " onClick={this.handleClick} value="mentorship">
+          <button className={mentorButtonStyle} onClick={this.handleClick} value="mentorship">
             Mentorship
           </button>
         </div>
 
+        <div className={servicesShowing}>
           {showing}
+        </div>
 
 			</Container>
 

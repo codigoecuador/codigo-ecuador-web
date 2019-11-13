@@ -7,13 +7,19 @@
 }
 
 .services-button-group-mobile {
-  margin-top: 45%;
+  margin-top: 50%;
 }
 
-.services-button {
+.services-button-desktop {
   width: 50%;
-  height: 4em;
+  height: 3em;
   font-size: 1.7em;
+}
+
+.services-button-mobile {
+  width: 50%;
+  height: 2.2em;
+  font-size: 1.2em;
 }
 
 .classes-button {
@@ -25,4 +31,14 @@
 .mentorship-button {
   background-color: rgb(197,158,85);
   color: rgb(8,37,78);
+}
+
+.services-showing-desktop {
+
+}
+
+/* not reaching element */
+.services-showing-mobile {
+  top: 5%;
+
 }
