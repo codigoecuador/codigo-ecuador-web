@@ -1,27 +1,50 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { Container } from "semantic-ui-react"
 import "./Mentorship.css"
 import { mentorshipData } from './MentorshipData'
+import { mentorshipIntro } from './MentorshipIntro'
 
-const Mentorship = () => {
-    return (
-      <Container className="mentorship">
-        <div className="center headline">Career Mentorship</div>
-        <br/>
-        <br/>
+class Mentorship extends Component {
 
-        {mentorshipData.map(tip =>
-          <div className="tip">
-            <br/>
+  render(){
+    let mentorContainer
 
-            <div className="tip-description">
-              {tip.text}
-            </div>
-            <br/>
+      if(this.props.size === "mobile"){
+        mentorContainer = "mentor-container-mobile"
+      } else {
+        mentorContainer = "mentor-container-desktop"
+      }
+
+      return (
+        <Container className={mentorContainer}>
+          <div className="center headline">Career Mentorship</div>
+          <br/>
+          <div className="mentor-text">
+            <p>
+            {mentorshipIntro.text}
+            </p>
           </div>
-          )}
-          </Container>
-    )
+          <br/>
+
+          {mentorshipData.map(tip =>
+            <div className="tip-info">
+              <br/>
+
+              <div className="tip-description">
+                <p>{tip.text}</p>
+              </div>
+              <br/>
+            </div>
+            )}
+            </Container>
+      )
+
+  }
+
+
 }
 
-export default Mentorship
+const mapStateToProps = state => {  return {  size: state.size  } }
+
+export default connect(mapStateToProps)(Mentorship)
