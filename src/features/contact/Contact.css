@@ -3,14 +3,14 @@
 	font-size: 1.1vw;
 }
 
-.donate-button {
-  background-color: rgb(8, 37, 78);
-	border-radius: 5%;
-	height: 3vw;
-	width: 15vw;
-}
-
-.donate-button a {
+ a.donate-button {
+	background-color: rgb(8, 37, 78);
 	color: white;
-	font-size: 1.5vw;
+	display: inline-block;
+	height: 3em;
+	width: 11em;
+	font-size: 1em;
+	vertical-align: middle;
+	padding: 1em;
+	border-radius: 5%;
 }

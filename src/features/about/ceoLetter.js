@@ -3,7 +3,7 @@ import React from 'react'
 const CeoLetter = () => {
     return (
         <div className="bubble">
-          <div className="ceo-letter-headline">
+          <div className=" headline ceo-letter-headline">
             <span className="gold">Letter From</span><span className="navy"> Our CEO</span>
           </div>
             <i className="ceo-letter-text">

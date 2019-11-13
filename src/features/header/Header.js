@@ -1,38 +1,15 @@
 import React, { Component } from "react"
 import Navbar from '../navbar/Navbar'
 import Logo from '../logo/Logo'
+import { connect } from 'react-redux'
 
 
 class Header extends Component  {
-  constructor(props) {
-  super()
-
-    this.state = {
-        width: window.innerWidth
-    }
-  }
-
-  componentDidMount() {
-    window.addEventListener('resize', this.handleWindowSizeChange);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowSizeChange);
-  }
-
-  handleWindowSizeChange = () => {
-    this.setState({ width: window.innerWidth });
-  }
 
   render(){
-    let isMobile
-    const width = this.state.width
-    width <= 1100 ? isMobile = true : isMobile = false
-
     let navStyle
-
-    let header
-    isMobile ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
+    console.log('header props', this.props.size)
+    this.props.size === "mobile" ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
 
 
   	return (
@@ -49,4 +26,6 @@ class Header extends Component  {
   }
 }
 
-export default Header
+
+const mapStateToProps = state => {  return {  size: state.size  } }
+export default connect(mapStateToProps)(Header)

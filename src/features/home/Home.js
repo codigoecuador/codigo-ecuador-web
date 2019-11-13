@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { connect } from 'react-redux'
 import "./Home.css"
 import AboutBlurb from "./AboutBlurb"
 import AboutBlurbES from "./AboutBlurbES"
@@ -6,36 +7,33 @@ import CoverPic from "./CoverPic"
 import Activities from "../activities/Activities"
 
 class Home extends Component {
-	state = {
-		language: "ES"
-	}
-
-
 
 	render(){
-		let about
-		this.state.language === "EN" ? about = <AboutBlurb /> : about = <AboutBlurbES />
 
-
+		let size
+		this.props.size === "mobile" ? size = "about-blurb about-blurb-mobile" : size = "about-blurb about-blurb-desktop"
 
 		return (
 			<>
 				<CoverPic />
 
-				<div className="about-blurb">
-					{about}
+				<div className={size}>
+					<AboutBlurb />
 				</div>
 
-				<div id="activities">
+				<div >
 					<Activities />
 				</div>
+
 			</>
 		)
 
 	}
 
-
-
 }
 
-export default Home
+const mapStateToProps = state => {  return {  size: state.size  } }
+
+export default connect(mapStateToProps)(Home)
+
+//this.state.language === "EN" ? about = <AboutBlurb /> : about = <AboutBlurbES />

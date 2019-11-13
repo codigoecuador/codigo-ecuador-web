@@ -36,12 +36,6 @@ const Partners = () => {
 			</Grid>
 
 
-
-
-
-
-
-
 		</Container>
 	)
 }

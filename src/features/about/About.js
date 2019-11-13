@@ -1,21 +1,42 @@
-import React from "react"
+import React, { Component } from "react"
+import { connect } from 'react-redux'
 import "./About.css"
 import LeafPic from "./LeafPic"
 import OurStory from "./OurStory"
 import CeoLetter from "./ceoLetter"
 
-const About = () => {
-	return (
-		<>
-			<LeafPic />
-			<div className="our-story">
-				<OurStory />
-			</div>
-			<div className="big ceo-letter">
-				<CeoLetter />
-			</div>
-		</>
-	)
+class About extends Component {
+	render(){
+
+		let ourStoryStyle
+		let ceoStyle
+
+		if(this.props.size === "mobile"){
+			ourStoryStyle = "our-story our-story-mobile"
+			ceoStyle = "ceo-letter ceo-letter-mobile"
+
+		} else {
+			ourStoryStyle = "our-story our-story-desktop"
+			ceoStyle = "ceo-letter ceo-letter-desktop"
+		}
+
+
+		return (
+			<>
+				<LeafPic />
+				<div className={ourStoryStyle}>
+					<OurStory />
+				</div>
+				<div className={ceoStyle}>
+					<CeoLetter />
+				</div>
+			</>
+		)
+
+	}
+
 }
 
-export default About
+const mapStateToProps = state => {  return {  size: state.size  } }
+
+export default connect(mapStateToProps)(About)

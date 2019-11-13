@@ -13,38 +13,40 @@
 
 .our-story {
 	position: absolute;
-	top: 40%;
-	left: 25%;
-	width: 50%;
-	height: auto;
 	text-align: center;
 	background-color: rgb(255, 255, 255, 0.8);
 	border-radius: 28%;
 	border: 3px solid rgb(197, 158, 85);
+
+}
+
+.our-story-desktop {
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: auto;
+	padding: 1%;
+
+}
+
+.our-story-mobile {
+	top: 20%;
+	left: 10%;
+	width: 80%;
 	padding: 2%;
 }
 
-.bubble p,
-a {
-	font-size: 1vw;
+.our-story-mobile p {
+	font-size: .9em;
 }
 
-.bubble h1 {
-	font-size: 3vw;
-	color: rgb(8, 37, 78);
+.our-story a {
+	font-size: 1em;
 }
 
-.bubble h2 {
-	font-size: 1.5vw;
-	color: rgb(8, 37, 78);
-}
 
 .ceo-letter {
 	position: absolute;
-	top: 95%;
-	height: auto;
-	width: 60%;
-	left: 20%;
 	background-color: rgb(255, 255, 255, 0.9);
 	border-radius: 5%;
 	border: 3px solid rgb(197, 158, 85);
@@ -52,6 +54,27 @@ a {
 	z-index: 2;
 	font-family: "Cormorant Garamond", serif;
 }
+
+.ceo-letter-desktop {
+	top: 80%;
+	height: auto;
+	width: 80%;
+	left: 10%;
+}
+
+.ceo-letter-desktop p {
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: grey;
+}
+
+.ceo-letter-mobile {
+	top: 80%;
+	height: auto;
+	width: 90%;
+	left: 5%;
+}
+
 
 .ceo-letter-headline {
 	font-size: big;
@@ -62,11 +85,36 @@ a {
 }
 
 .ceo-letter-text p {
-	font-size: 1.2vw;
+	font-size: .4vw;
 	font-weight: bold;
 	color: grey;
 }
 
 .story-links {
 	font-size: 2.5vw;
+}
+
+.about-bubble-mobile {
+
+}
+
+.about-bubble-desktop p,
+a {
+	font-size: 1.3em;
+}
+
+
+.about-bubble-desktop h1 {
+	font-size: 3vw;
+	color: rgb(8, 37, 78);
+}
+
+.about-bubble-mobile h1 {
+	font-size: 4vw;
+	color: rgb(8, 37, 78);
+}
+
+.about-bubble-desktop h2 {
+	font-size: 1.5vw;
+	color: rgb(8, 37, 78);
 }

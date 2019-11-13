@@ -1,0 +1,46 @@
+
+
+.courses-desktop{
+	margin-top: 10%;
+}
+
+.courses-mobile{
+	margin-top: 35%;
+}
+
+.courses-text p {
+  font-size: 1.3em;
+  line-height: 1.4em;
+	margin: 1.5em;
+}
+
+.python-title {
+	font-weight: bold;
+	font-size: 2em;
+	line-height: 2.1em;
+}
+
+.python-description {
+	font-size: 1.4em;
+	line-height: 1.4em;
+}
+
+
+.python-bullets {
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+.python-duration {
+	font-size: 1em;
+	line-height: 1.2em;
+}
+
+.course-info {
+	background-color: rgb(15,37,75);
+	color: white;
+	padding: 5%;
+	margin-bottom: 5%;
+	border-radius: 4vw 8vw;
+
+}

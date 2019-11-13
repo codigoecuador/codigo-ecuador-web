@@ -5,7 +5,7 @@
 	font-weight: bolder;
 	height: auto;
 	margin: auto;
-	width: 100%;
+	width: 50%;
 	max-width: 40%;
 	z-index: 3;
 }
@@ -17,13 +17,12 @@
 }
 
 .navbar-desktop{
-	top: 10%;
+	top: 2%;
 	left: 43%;
 }
 
 .navbar-mobile {
-	top: 14%;
-	left: 5%;
+	top: 8%;
 }
 
 .nav-button-active {
@@ -44,7 +43,7 @@
 }
 
 .nav-button-mobile {
-	font-size: 1.6vw;
+	font-size: 2.6vw;
 	padding: 10px;
 	border-radius: 5px 10px;
 	border: 1px solid rgb(197, 158, 85);
