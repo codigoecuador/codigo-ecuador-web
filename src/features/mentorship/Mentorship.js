@@ -4,6 +4,8 @@ import { Container, Image } from "semantic-ui-react"
 import "./Mentorship.css"
 import { mentorshipData } from './MentorshipData'
 import { mentorshipIntro } from './MentorshipIntro'
+import likeABoss from './likeABoss.jpg'
+
 
 class Mentorship extends Component {
 
@@ -18,7 +20,7 @@ class Mentorship extends Component {
 
       return (
         <Container className={mentorContainer}>
-        <img className="boss-photo" src="https://images.unsplash.com/photo-1484981138541-3d074aa97716?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" alt="woman's hand's holding mug with the words 'like a boss'"/>
+        <img className="boss-photo" src={likeABoss} alt="woman's hand's holding mug with the words 'like a boss' by Brooke Lark on unsplash.com"/>
           <div className="center headline">Career Mentorship</div>
           <br/>
           <h2>We provide women with the resources they need to succeed! </h2>
