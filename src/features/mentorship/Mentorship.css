@@ -1,0 +1,29 @@
+.mentor-container-desktop{
+	margin-top: 15%;
+}
+
+.boss-photo {
+  width: 90%;
+  height: auto;
+}
+
+.mentor-container-mobile{
+	margin-top: 45%;
+}
+
+.mentor-text {
+  font-size: 1.5em;
+  margin-bottom: 3em;
+}
+
+.tip-info {
+	background-color: rgb(15,37,75);
+	color: white;
+	padding: 5%;
+	margin-bottom: 5%;
+	border-radius: 4vw 8vw;
+}
+
+.tip-description p {
+  font-size: 1.5em;
+}

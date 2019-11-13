@@ -13,7 +13,8 @@ import Donate from "./features/donate/Donate"
 import CodingContainer from "./features/resources/coding/CodingContainer"
 import ResearchContainer from './features/resources/research/ResearchContainer'
 import Header from './features/header/Header'
-import { setSize } from './actions.js'
+import Mentorship from './features/mentorship/Mentorship'
+// import { setSize } from './actions.js'
 
 
 class App extends Component {
@@ -61,17 +62,17 @@ class App extends Component {
 				<Header/>
 
 				<Switch>
-					<Route exact path="/" render={() => <Home />}></Route>
 					<Route exact path="/about" render={() => <About />}></Route>
-					<Route exact path="/classes" render={() => <Classes />}></Route>
-					<Route exact path="/about/partners" render={() => <Partners />} ></Route>
-          <Route exact path="/about/team" render={() => <Team />} ></Route>
-					<Route exact path="/resources" render={() => <CodingContainer />}></Route>
-					<Route exact path="/resources/research" render={() => <ResearchContainer />}></Route>
 					<Route exact path="/blog" render={() => <Blog />}></Route>
+					<Route exact path="/classes" render={() => <Classes />}></Route>
+					<Route exact path="/resources" render={() => <CodingContainer />}></Route>
 					<Route exact path="/donate" render={() => <Donate />}></Route>
+					<Route exact path="/" render={() => <Home />}></Route>
+					<Route exact path="/mentorship" render={() => <Mentorship />}></Route>					
+					<Route exact path="/about/partners" render={() => <Partners />} ></Route>
+					<Route exact path="/resources/research" render={() => <ResearchContainer />}></Route>
+					<Route exact path="/about/team" render={() => <Team />} ></Route>
 				</Switch>
-
 
 			</div>
     </Router>
