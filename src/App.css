@@ -88,3 +88,8 @@ body {
 	margin: 0;
 	height: 100%;
 }
+
+.language-dropdown {
+	top: 40%;
+	right: 5%;
+}
