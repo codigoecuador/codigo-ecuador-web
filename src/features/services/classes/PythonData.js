@@ -1,7 +1,7 @@
 const beginner = {
   id: 1,
   title: "Python Introduction: Absolute Beginner",
-  color: "blue",
+  color: "bg-navy",
   duration: "3 Hours per Week, 6 weeks",
   description: "For the first six-weeks, ​Código Ecuador uses Microsoft's online introduction to Python course for absolute beginners along with additional coding exercises. Students will spend three classroom hours per week with an instructor learning the following:",
   bulletPoints: ["Using Python in Jupyter Notebooks", "Gathering input and manipulating input/output", "Building Reusable functions with parameters and return values", "Decisions and repetition using conditional statements and loops" ]
@@ -9,7 +9,7 @@ const beginner = {
 
 const fundamentals = {
   id: 2,
-  color: "yellow",
+  color: "bg-yellow",
   title: "Python Fundamentals",
   duration: "3 Hours per Week, 6 weeks",
   description: "Students spend the second six-week block building upon those basic computer science commands in Microsoft's Python Fundamentals course. Código Ecuador immerses students further into the course concepts with exciting exercises to get them thinking about real-life applications for their new skills.",
@@ -18,7 +18,7 @@ const fundamentals = {
 
 const intermediate = {
   id: 3,
-  color: "blue",
+  color: "bg-navy",
   title: "Intermediate Python",
   duration: "3 Hours per Week, 6 weeks",
   description: "In the next part of the course, students will prepare to create full-length programs with lessons on:",
@@ -27,7 +27,7 @@ const intermediate = {
 
 const databases = {
   id: 4,
-  color: "yellow",
+  color: "bg-yellow",
   title: "Python Advanced: Databases and Visualization",
   duration: "3 Hours per Week, 6 weeks",
   description: "Students will learn how to run queries in SQL, manipulate data frames using Python Pandas, and create stunning visualizations to model relationships between variables using Matplotlib commands.",
@@ -36,7 +36,7 @@ const databases = {
 
 const scraping = {
   id: 5,
-  color: "blue",
+  color: "bg-navy",
   title: "Python Advanced: Web Scraping",
   duration: "3 Hours per Week, 6 weeks",
   description: "Students will learn how to run queries in SQL, manipulate data frames using Python Pandas, and create stunning visualizations to model relationships between variables using Matplotlib commands.",

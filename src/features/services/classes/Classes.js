@@ -6,9 +6,44 @@ import { pythonClasses } from './PythonData'
 import { text } from  './pythonClassesText.js'
 
 class Classes extends Component {
+
+  generatePythonClasses = () => {
+    return (
+    pythonClasses.map(course =>
+
+
+      <div className={`course-info ${course.color}`}>
+        <br/>
+        <div className="large python-title">{course.title}</div>
+        <br/>
+        <h2>
+          {course.duration}
+        </h2>
+
+        <div className="python-description">
+          {course.description}
+        </div>
+        <br/>
+        <div className="python-bullets">
+          {course.bulletPoints.map(point =>
+            <ul>
+              <li>{point}</li>
+            </ul>
+            )}
+        </div>
+        <br/>
+        <Divider/>
+      </div>
+      )
+    )
+  }
+
+
   render(){
     let coursesStyle
     this.props.size === "mobile" ? coursesStyle = "courses-mobile" : coursesStyle = "courses-desktop"
+
+
 
     return (
       <Container className={coursesStyle}>
@@ -21,30 +56,7 @@ class Classes extends Component {
         <br/>
         <br/>
 
-        {pythonClasses.map(course =>
-          <div className="course-info">
-            <br/>
-            <div className="large python-title">{course.title}</div>
-            <br/>
-            <h2>
-              {course.duration}
-            </h2>
-
-            <div className="python-description">
-              {course.description}
-            </div>
-            <br/>
-            <div className="python-bullets">
-              {course.bulletPoints.map(point =>
-                <ul>
-                  <li>{point}</li>
-                </ul>
-                )}
-            </div>
-            <br/>
-            <Divider/>
-          </div>
-          )}
+        {this.generatePythonClasses()}
 
           </Container>
         )
