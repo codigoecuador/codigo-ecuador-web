@@ -13,11 +13,11 @@ class About extends Component {
 
 		if(this.props.size === "mobile"){
 			ourStoryStyle = "our-story our-story-mobile"
-			ceoStyle = "big ceo-letter ceo-letter-mobile"
+			ceoStyle = "ceo-letter ceo-letter-mobile"
 
 		} else {
 			ourStoryStyle = "our-story our-story-desktop"
-			ceoStyle = "big ceo-letter ceo-letter-desktop"
+			ceoStyle = "ceo-letter ceo-letter-desktop"
 		}
 
 

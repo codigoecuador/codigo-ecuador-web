@@ -7,8 +7,10 @@
 	background-color: rgb(8, 37, 78);
 	color: white;
 	display: inline-block;
-	height: 3vw;
-	width: 15vw;
-	font-size: 1.5vw;
+	height: 3em;
+	width: 10em;
+	font-size: 1.5em;
 	vertical-align: middle;
+	padding: 3%;
+	border-radius: 5%;
 }
