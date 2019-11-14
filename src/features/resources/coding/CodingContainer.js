@@ -10,9 +10,9 @@ class CodingContainer extends Component {
     showing: ""
   };
 
-  handleClick = event => {
-    this.setState({ showing: event.target.value });
-  };
+	handleClick = event => {
+		this.setState({ showing: event.target.value })
+	}
 
   handleMobileClick = event => {
     this.setState({ showing: event });

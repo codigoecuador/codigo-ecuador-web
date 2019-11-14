@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import "./Navbar.css"
+import "./NavBar.css"
+// Capitalized B in above link to make it work
 import { Container } from "semantic-ui-react"
 import { Link } from "react-router-dom"
 import { connect } from 'react-redux'
@@ -15,6 +16,7 @@ class Navbar extends Component {
 
 		return (
 
+
 				<Container className="nav-buttons">
 					<Link className={buttonStyle} to="/">
 						Home
@@ -22,8 +24,8 @@ class Navbar extends Component {
 					<Link exact className={buttonStyle} to="/about">
 						About
 					</Link>
-					<Link exact className={buttonStyle} to="/classes">
-						Classes
+					<Link exact className={buttonStyle} to="/services">
+						Services
 					</Link>
 					<Link exact className={buttonStyle} to="/resources">
 						Resources

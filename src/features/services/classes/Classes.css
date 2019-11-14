@@ -1,20 +1,30 @@
 
-/* top won't show up on page */
-.courses-dektop{
-	margin-top: 35%;
-}
 
 .courses-desktop{
-	margin-top: 15%;
+	margin-top: 10%;
 }
+
+.bg-navy {
+	background-color: rgb(8, 37, 78);
+}
+
+.bg-yellow {
+	background-color: rgb(197, 158, 85);
+	color: rgb(8, 37, 78)!important;
+}
+
+
+
+
 
 .courses-mobile{
 	margin-top: 35%;
 }
 
-.courses p {
-  font-size: 1.2em;
+.courses-text p {
+  font-size: 1.3em;
   line-height: 1.4em;
+	margin: 1.5em;
 }
 
 .python-title {
@@ -40,7 +50,7 @@
 }
 
 .course-info {
-	background-color: rgb(15,37,75);
+
 	color: white;
 	padding: 5%;
 	margin-bottom: 5%;

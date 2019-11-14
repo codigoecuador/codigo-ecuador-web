@@ -30,7 +30,7 @@
 }
 
 .home-headline-desktop {
-		font-size: 2em;
+		font-size: 3em;
 		line-height: 1.5em;
 }
 
@@ -58,8 +58,8 @@
 
 .about-blurb-desktop {
 	top: 65%;
-	left: 15%;
-	width: 70%;
+	left: 10%;
+	width: 80%;
 	border-radius: 85px;
 	border: 3px solid rgb(197, 158, 85);
 	padding: 1%;

@@ -25,7 +25,6 @@ class Activities extends Component {
 
 		return (
 			<>
-
 				<div className={education}>
 					<EducationBlurb />
 				</div>

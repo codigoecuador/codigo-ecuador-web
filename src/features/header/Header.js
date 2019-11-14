@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Navbar from '../navbar/Navbar'
 import Logo from '../logo/Logo'
 import { connect } from 'react-redux'
+import LanguageToggle from './LanguageToggle'
 
 
 class Header extends Component  {
@@ -20,6 +21,10 @@ class Header extends Component  {
 
         <div className="banner">
           <Logo className="logo" />
+        </div>
+
+        <div>
+          <LanguageToggle />
         </div>
   		</div>
   	)
