@@ -8,22 +8,26 @@ const CodingMenu = props => {
         <Menu.Item
           name="Students"
           active={props.showing === "Student"}
-          onClick={props.handleClick}
+          onClick={() => props.handleMobileClick("Student")}
+          value="Student"
         />
         <Menu.Item
           name="Parents"
           active={props.showing === "Parent"}
-          onClick={props.handleClick}
+          onClick={() => props.handleMobileClick("Parent")}
+          value="Parent"
         />
         <Menu.Item
           name="Educators"
           active={props.showing === "Educator"}
-          onClick={props.handleClick}
+          onClick={() => props.handleMobileClick("Educator")}
+          value="Educator"
         />
         <Menu.Item
           name="Entrepeneurs"
           active={props.showing === "Entrepeneur"}
-          onClick={props.handleClick}
+          onClick={() => props.handleMobileClick("Entrepeneur")}
+          value="Entrepeneur"
         />
       </Menu>
     </div>
