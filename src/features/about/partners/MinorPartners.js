@@ -8,6 +8,7 @@ import { minorPartnersData } from "./MinorPartnersData"
 const minorPartners = () => {
 	return (
 		<Container>
+			<div class="ui divider"></div><br/>
 				<Card.Group itemsPerRow={4} className="center">
 					{minorPartnersData.map(partner =>
 						<Card>
