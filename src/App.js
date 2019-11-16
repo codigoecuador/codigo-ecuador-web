@@ -11,7 +11,7 @@ import Donate from "./features/donate/Donate"
 import Header from './features/header/Header'
 import Home from "./features/home/Home"
 import Mentorship from './features/services/mentorship/Mentorship'
-import Partners from "./features/about/partners/Partners"
+import PartnersContainer from "./features/about/partners/PartnersContainer"
 import ResearchContainer from './features/resources/research/ResearchContainer'
 import Services from './features/services/Services'
 import Team from "./features/about/team/Team"
@@ -69,7 +69,7 @@ class App extends Component {
 					<Route exact path="/donate" render={() => <Donate />}></Route>
 					<Route exact path="/" render={() => <Home />}></Route>
 					<Route exact path="/services/mentorship" render={() => <Mentorship />}></Route>
-					<Route exact path="/about/partners" render={() => <Partners />} ></Route>
+					<Route exact path="/about/partners" render={() => <PartnersContainer />} ></Route>
 					<Route exact path="/resources/research" render={() => <ResearchContainer />}></Route>
 					<Route exact path="/services" render={() => <Services />}></Route>
 					<Route exact path="/about/team" render={() => <Team />} ></Route>
