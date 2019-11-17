@@ -8,7 +8,7 @@ class BoardOfDirectors extends Component {
     return (
       <Container>
         <br/><br/><br/><br/><br/><br/><br/><br/>
-        <div className="headline"><span className="gold">Board of</span><span className="navy"> Directors</span></div>
+        <div className="headline" style={{fontSize: '70px' }}><span className="gold">Board of</span><span className="navy"> Directors</span></div>
         	<Card.Group itemsPerRow={2} className="center">
             <Card className="board-card">
               <img style={{width: 420, height: 422, display: "block", margin: '0 auto'}} src="https://media.licdn.com/dms/image/C4D03AQEX65R-YqCvDw/profile-displayphoto-shrink_200_200/0?e=1579737600&v=beta&t=ZLLmNnAa_u3iCWgjD-TNNuQX4K0uhNWZJoklxttN9c0" />
@@ -21,7 +21,7 @@ class BoardOfDirectors extends Component {
                   <span className="board-meta">Founder and CEO</span>
                 </div>
                 <div class="description board-description">
-                I want to advance global economic development by sharing resources with women entering adulthood to help them become more independent.
+                "I want to advance global economic development by sharing resources with women entering adulthood to help them become more independent."
                 </div>
               </div>
             </Card>
@@ -32,7 +32,7 @@ class BoardOfDirectors extends Component {
                   <span className="board-meta">President</span>
                 </div>
                 <div class="description board-description">
-                I want to help the youth of tomorrow turn their creative ideas into reality with computer programming.
+                "I want to help the youth of tomorrow turn their creative ideas into reality with computer programming."
                 </div>
               </div>
             </Card>
