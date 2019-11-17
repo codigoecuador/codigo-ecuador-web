@@ -28,8 +28,9 @@ class OurStory extends Component {
 
           <div className="story-links">
             <Link to='/about/partners'><strong>Partners /</strong></Link>
-            <Link to='/about/team'><strong> Team</strong></Link>
-            
+            <Link to='/about/team'><strong> Team / </strong></Link>
+            <Link to='/about/board'><strong> Board of Directors</strong></Link>
+
           </div>
 
           <br/>

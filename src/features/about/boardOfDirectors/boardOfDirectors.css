@@ -1,0 +1,40 @@
+.board-bubble-mobile {
+
+}
+
+.board-bubble-desktop {
+
+}
+
+.board-card {
+	position: absolute;
+	text-align: center;
+	background-color: rgb(255, 255, 255, 0.8);
+	border-radius: 20%;
+	border: 3px solid rgb(197, 158, 85);
+}
+
+.board-header{
+  font-size: 40px;
+}
+
+.board-meta{
+  font-size: 30px;
+}
+
+.board-description{
+  font-size: 25px;
+  line-height: normal
+}
+
+.board-column {
+  float: left;
+  width: 50%;
+  padding: 40px;
+  height: 500px;
+	text-align: center;
+  vertical-align: middle;
+	background-color: rgb(255, 255, 255, 0.8);
+	border-radius: 20%;
+	border: 3px solid rgb(197, 158, 85);
+}
