@@ -27,7 +27,7 @@
   line-height: normal
 }
 
-.column {
+.board-column {
   float: left;
   width: 50%;
   padding: 40px;
