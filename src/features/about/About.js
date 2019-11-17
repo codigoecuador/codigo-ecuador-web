@@ -11,17 +11,14 @@ class About extends Component {
 
 		let ourStoryStyle
 		let ceoStyle
-		let bOfDStyle
-
+		
 		if(this.props.size === "mobile"){
 			ourStoryStyle = "our-story our-story-mobile"
 			ceoStyle = "ceo-letter ceo-letter-mobile"
-			bOfDStyle = "b-of-D b-of-D-mobile"
 
 		} else {
 			ourStoryStyle = "our-story our-story-desktop"
 			ceoStyle = "ceo-letter ceo-letter-desktop"
-			bOfDStyle = "b-of-D b-of-D-desktop"
 		}
 
 
@@ -30,9 +27,6 @@ class About extends Component {
 				<LeafPic />
 				<div className={ourStoryStyle}>
 					<OurStory />
-				</div>
-				<div className={bOfDStyle}>
-					<BoardOfDirectors />
 				</div>
 				<div className={ceoStyle}>
 					<CeoLetter />
