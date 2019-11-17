@@ -15,7 +15,7 @@ import PartnersContainer from "./features/about/partners/PartnersContainer"
 import ResearchContainer from './features/resources/research/ResearchContainer'
 import Services from './features/services/Services'
 import Team from "./features/about/team/Team"
-
+import BoardOfDirectors from "./features/about/boardOfDirectors/boardOfDirectors"
 
 class App extends Component {
 	constructor(props) {
@@ -73,6 +73,7 @@ class App extends Component {
 					<Route exact path="/resources/research" render={() => <ResearchContainer />}></Route>
 					<Route exact path="/services" render={() => <Services />}></Route>
 					<Route exact path="/about/team" render={() => <Team />} ></Route>
+					<Route exact path="/about/board" render={() => <BoardOfDirectors />} ></Route>
 				</Switch>
 
 			</div>
