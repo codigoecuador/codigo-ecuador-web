@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { Container, Card } from "semantic-ui-react"
+import "./boardOfDirectors.css"
 
-const BoardOfDirectors = () => {
+class BoardOfDirectors extends Component {
+  render(){
     return (
       <Container>
-        <h1 style={{textAlign:"center"}}><span className="gold">Board of</span><span className="navy"> Directors</span></h1>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <div className="headline"><span className="gold">Board of</span><span className="navy"> Directors</span></div>
         	<Card.Group itemsPerRow={2} className="center">
-            <Card>
+            <Card className="board-card">
               <img style={{width: 420, height: 422, display: "block", margin: '0 auto'}} src="https://media.licdn.com/dms/image/C4D03AQEX65R-YqCvDw/profile-displayphoto-shrink_200_200/0?e=1579737600&v=beta&t=ZLLmNnAa_u3iCWgjD-TNNuQX4K0uhNWZJoklxttN9c0" />
             </Card>
 
@@ -39,6 +43,9 @@ const BoardOfDirectors = () => {
           </Card.Group>
       </Container>
     )
+  }
 }
 
-export default BoardOfDirectors
+const mapStateToProps = state => {  return {  size: state.size  } }
+
+export default connect(mapStateToProps)(BoardOfDirectors)

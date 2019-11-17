@@ -1,0 +1,16 @@
+.board-bubble-mobile {
+
+}
+
+.board-bubble-desktop {
+
+}
+
+.board-card {
+	position: absolute;
+	text-align: center;
+	background-color: rgb(255, 255, 255, 0.8);
+	border-radius: 20%;
+	border: 3px solid rgb(197, 158, 85);
+
+}
