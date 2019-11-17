@@ -8,7 +8,7 @@ class BoardOfDirectors extends Component {
     return (
       <Container>
           <br/><br/><br/><br/><br/><br/>
-          <div className="headline" style={{fontSize: '60px' }}><span className="gold">Board of</span><span className="navy"> Directors</span></div>
+          <div className="headline"><span className="gold">Board of</span><span className="navy"> Directors</span></div>
 
           <div className="board-column">
             <h1 className="board-header">Debra Ray</h1>
