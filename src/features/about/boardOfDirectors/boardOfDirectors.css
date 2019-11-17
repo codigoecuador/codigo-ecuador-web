@@ -14,3 +14,16 @@
 	border: 3px solid rgb(197, 158, 85);
 
 }
+
+.board-header{
+  font-size: 60px;
+}
+
+.board-meta{
+  font-size: 40px;
+}
+
+.board-description{
+  font-size: 30px;
+  line-height: normal
+}
