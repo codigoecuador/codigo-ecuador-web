@@ -7,10 +7,11 @@ class BoardOfDirectors extends Component {
   render(){
     return (
       <Container>
-          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <br/><br/><br/><br/><br/><br/>
+          <div className="headline" style={{fontSize: '60px' }}><span className="gold">Board of</span><span className="navy"> Directors</span></div>
           <div className="column">
             <h1 className="board-header">Debra Ray</h1>
-             <div className="board-meta">Founder and CEO</div>
+             <div className="board-meta">Founder and CEO</div><br/>
                <div class="description board-description">
                   "I want to advance global economic development by sharing resources with women entering adulthood to help them become more independent."
                   </div>
@@ -22,7 +23,7 @@ class BoardOfDirectors extends Component {
 
           <div className="column">
             <h1 className="board-header">Tom Sullivan</h1>
-            <div className="board-meta">President</div>
+            <div className="board-meta">President</div><br/>
               <div class="description board-description">
               "I want to help the youth of tomorrow turn their creative ideas into reality with computer programming."
               </div>

@@ -12,19 +12,18 @@
 	background-color: rgb(255, 255, 255, 0.8);
 	border-radius: 20%;
 	border: 3px solid rgb(197, 158, 85);
-
 }
 
 .board-header{
-  font-size: 60px;
-}
-
-.board-meta{
   font-size: 40px;
 }
 
-.board-description{
+.board-meta{
   font-size: 30px;
+}
+
+.board-description{
+  font-size: 25px;
   line-height: normal
 }
 
