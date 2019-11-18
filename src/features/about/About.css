@@ -36,7 +36,7 @@
 	padding: 2%;
 }
 
-.our-story-mobile p {
+.our-story-mobile p, a {
 	font-size: .9em;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .ceo-letter-desktop p {
-	font-size: 1.5vw;
+	font-size: 1.8vw;
 	font-weight: bold;
 	color: grey;
 }
@@ -91,7 +91,7 @@
 }
 
 .story-links {
-	font-size: 2.5vw;
+	font-size: 1.8vw;
 }
 
 .about-bubble-mobile {
@@ -100,7 +100,7 @@
 
 .about-bubble-desktop p,
 a {
-	font-size: 1.3em;
+	font-size: 1.5em;
 }
 
 

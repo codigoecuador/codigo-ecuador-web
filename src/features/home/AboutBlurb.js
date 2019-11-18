@@ -17,7 +17,6 @@ class AboutBlurb extends Component {
       readMore = <h2>Read more about our work below ...</h2>
     }
 
-
     return (
         <div className={bubbleStyle}>
           <br/>
@@ -34,11 +33,7 @@ class AboutBlurb extends Component {
           <br/>
         </div>
     )
-
   }
-
-
-
 
 }
 
