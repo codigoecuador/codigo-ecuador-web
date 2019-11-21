@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { aboutBlurbText } from '../../common/aboutText'
 
 class AboutBlurb extends Component {
   render(){
@@ -21,22 +22,15 @@ class AboutBlurb extends Component {
         <div className={bubbleStyle}>
           <br/>
           <div className={headlineStyle}>
-            We empower the women of Ecuador by teaching them to code.
+            {aboutBlurbText[localStorage.getItem("language")].title}
           </div>
-
-          <p>Código Ecuador is a nonprofit organization working to promote technology skills and computer programming careers<br/> for high school students in Ecuador, with a focus on female empowerment.</p>
-
-          <p>We believe that improving access to computer science curricula promotes global equity,<br/> and that collective action makes great changes in this world.</p>
-
-          {readMore}
-
-          <br/>
+          {aboutBlurbText[localStorage.getItem("language")].text}
         </div>
     )
   }
 
 }
 
-const mapStateToProps = state => {  return {  size: state.size  } }
+const mapStateToProps = state => {  return {  language: state.language  } }
 
 export default connect(mapStateToProps)(AboutBlurb)
