@@ -4,9 +4,14 @@ import { connect } from 'react-redux'
 
 
 const languageOptions = [
-  { key: 'English', text: 'English', value: 'English' },
-  { key: 'Spanish', text: 'Spanish', value: 'Spanish' },
+  { key: 'English', text: 'English', value: 'EN' },
+  { key: 'Spanish', text: 'Spanish', value: 'ES' },
 ]
+
+const handleChange = (event, data) => {
+// debugger
+  localStorage.setItem("language", data.value)
+}
 
 const LanguageToggle = (props) => {
     return (
@@ -19,6 +24,7 @@ const LanguageToggle = (props) => {
         options={languageOptions}
         search
         text='Select Language'
+        onChange={handleChange}
       /> 
     )
 }
