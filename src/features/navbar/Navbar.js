@@ -10,30 +10,30 @@ class Navbar extends Component {
 
 		render(){
 
-			let buttonStyle
-
-			this.props.size === "mobile" ? buttonStyle = "nav-button-active nav-button-mobile" : buttonStyle = "nav-button-active nav-button-desktop"
+			// let buttonStyle
+			//
+			// this.props.size === "mobile" ? buttonStyle = "nav-button-active nav-button-mobile" : buttonStyle = "nav-button-active nav-button-desktop"
 
 		return (
 
 
 				<Container className="nav-buttons">
-					<Link className={buttonStyle} to="/">
+					<Link className="nav-button" to="/">
 						Home
 					</Link>
-					<Link exact className={buttonStyle} to="/about">
+					<Link exact className="nav-button" to="/about">
 						About
 					</Link>
-					<Link exact className={buttonStyle} to="/services">
+					<Link exact className="nav-button" to="/services">
 						Services
 					</Link>
-					<Link exact className={buttonStyle} to="/resources">
+					<Link exact className="nav-button" to="/resources">
 						Resources
 					</Link>
-					<Link exact className={buttonStyle} to="/blog">
+					<Link exact className="nav-button" to="/blog">
 						Blog
 					</Link>
-					<Link exact className={buttonStyle} to="/donate">
+					<Link exact className="nav-button" to="/donate">
 						Donate
 					</Link>
 				</Container>

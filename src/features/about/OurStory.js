@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 class OurStory extends Component {
   render(){
 
-    let bubbleStyle
-    this.props.size === "mobile" ? bubbleStyle = "about-bubble-mobile" : bubbleStyle = "about-bubble-desktop"
+    // let bubbleStyle
+    // this.props.size === "mobile" ? bubbleStyle = "about-bubble-mobile" : bubbleStyle = "about-bubble-desktop"
     return (
 
-        <div className={bubbleStyle}>
+        <div className="about-bubble">
           <div className="headline">
             <span className="gold">Our</span><span className="navy"> Story</span>
           </div>

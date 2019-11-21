@@ -4,49 +4,53 @@
 	margin-top: 15%;
 }
 
-.leafPic {
+/* .leafPic {
 	position: relative;
 	width: 100%;
 	height: auto;
 	z-index: -1;
+} */
+
+.about-container{
+	background-image: url('./ecuadorLeaf.jpg');
+	background-size: cover;
+	padding-top: 3em;
 }
 
 .our-story {
-	position: absolute;
 	text-align: center;
 	background-color: rgb(255, 255, 255, 0.8);
 	border-radius: 20%;
 	border: 3px solid rgb(197, 158, 85);
-
+	margin: 7em auto 3em auto;
 }
 
-.our-story-desktop {
-	top: 25%;
-	left: 25%;
-	width: 50%;
-	height: auto;
-	padding: 1%;
-
+@media screen and (min-width: 700px){
+	.our-story {
+		top: 25%;
+		left: 25%;
+		width: 50%;
+		height: auto;
+		padding: 1%;
+	}
 }
 
-.our-story-mobile {
-	top: 20%;
-	left: 10%;
-	width: 80%;
-	padding: 2%;
+@media screen and (max-width: 699px){
+	.our-story {
+		top: 20%;
+		left: 10%;
+		width: 80%;
+		padding: 2%;
+	}
+
+	.our-story p {
+		font-size: .9em;
+	}
 }
 
-.our-story-mobile p, a {
-	font-size: .9em;
-}
-
-.our-story a {
-	font-size: 1em;
-}
 
 
 .ceo-letter {
-	position: absolute;
 	background-color: rgb(255, 255, 255, 0.9);
 	border-radius: 5%;
 	border: 3px solid rgb(197, 158, 85);
@@ -54,27 +58,6 @@
 	z-index: 2;
 	font-family: "Cormorant Garamond", serif;
 }
-
-.ceo-letter-desktop {
-	top: 80%;
-	height: auto;
-	width: 80%;
-	left: 10%;
-}
-
-.ceo-letter-desktop p {
-	font-size: 1.8vw;
-	font-weight: bold;
-	color: grey;
-}
-
-.ceo-letter-mobile {
-	top: 80%;
-	height: auto;
-	width: 90%;
-	left: 5%;
-}
-
 
 .ceo-letter-headline {
 	font-size: big;
@@ -90,31 +73,58 @@
 	color: grey;
 }
 
+@media screen and (min-width: 700px){
+	.ceo-letter {
+		top: 80%;
+		height: auto;
+		width: 80%;
+		margin: 0 auto;
+		/* left: 10%; */
+	}
+
+	.ceo-letter p {
+		font-size: 1.8em;
+		font-weight: bold;
+		color: grey;
+	}
+
+}
+
+@media screen and (max-width: 699px){
+	.ceo-letter {
+		top: 80%;
+		height: auto;
+		width: 90%;
+		left: 5%;
+		font-size: 1.8em;
+	}
+}
+
 .story-links {
 	font-size: 1.8vw;
 }
 
-.about-bubble-mobile {
 
+@media screen and (min-width: 700px){
+	.about-bubble {
+		font-size: 1.5em;
+	}
+
+	.about-bubble h1 {
+		font-size: 3vw;
+		color: rgb(8, 37, 78);
+	}
+
+	.about-bubble h2 {
+		font-size: 1.5vw;
+		color: rgb(8, 37, 78);
+	}
 }
 
-.about-bubble-desktop p,
-a {
-	font-size: 1.5em;
-}
 
-
-.about-bubble-desktop h1 {
-	font-size: 3vw;
-	color: rgb(8, 37, 78);
-}
-
-.about-bubble-mobile h1 {
-	font-size: 4vw;
-	color: rgb(8, 37, 78);
-}
-
-.about-bubble-desktop h2 {
-	font-size: 1.5vw;
-	color: rgb(8, 37, 78);
+@media screen and (max-width: 699px){
+	.about-bubble h1 {
+		font-size: 4vw;
+		color: rgb(8, 37, 78);
+	}
 }
