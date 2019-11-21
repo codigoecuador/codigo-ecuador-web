@@ -9,29 +9,16 @@ import BoardOfDirectors from "./boardOfDirectors/boardOfDirectors"
 class About extends Component {
 	render(){
 
-		let ourStoryStyle
-		let ceoStyle
-		
-		if(this.props.size === "mobile"){
-			ourStoryStyle = "our-story our-story-mobile"
-			ceoStyle = "ceo-letter ceo-letter-mobile"
-
-		} else {
-			ourStoryStyle = "our-story our-story-desktop"
-			ceoStyle = "ceo-letter ceo-letter-desktop"
-		}
-
-
 		return (
-			<>
-				<LeafPic />
-				<div className={ourStoryStyle}>
+			<div className="about-container">
+
+				<div className="our-story">
 					<OurStory />
 				</div>
-				<div className={ceoStyle}>
+				<div className="ceo-letter">
 					<CeoLetter />
 				</div>
-			</>
+			</div>
 		)
 
 	}

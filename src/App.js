@@ -18,42 +18,39 @@ import Team from "./features/about/team/Team"
 import BoardOfDirectors from "./features/about/boardOfDirectors/boardOfDirectors"
 
 class App extends Component {
-	constructor(props) {
-    super(props)
+	// constructor(props) {
+  //   super(props)
 
-		this.state = {
-				width: window.innerWidth,
-				size: "",
-			}
-		}
+		// this.state = {
+		// 		width: window.innerWidth,
+		// 		size: "",
+		// 	}
+		// }
+		//
+		// componentDidMount() {
+		// 	window.addEventListener('resize', this.handleWindowSizeChange);
+		// }
+		//
+		// componentWillUnmount() {
+		// 	window.removeEventListener('resize', this.handleWindowSizeChange);
+		// }
+		//
+		// handleWindowSizeChange = () => {
+		// 	this.setState({ width: window.innerWidth });
+		//
+		// 	let isMobile
+		// 	const width = this.state.width
+		// 	width <= 700 ? isMobile = true : isMobile = false
+		//
+		// 	let size
+		// 	isMobile ? size = "mobile" :  size = "desktop"
+		// 	this.setState({ size: size })
+		//
+		// 	this.props.setSize(this.state.size)
 
-		componentDidMount() {
-			window.addEventListener('resize', this.handleWindowSizeChange);
-		}
-
-		componentWillUnmount() {
-			window.removeEventListener('resize', this.handleWindowSizeChange);
-		}
-
-		handleWindowSizeChange = () => {
-			this.setState({ width: window.innerWidth });
-
-			let isMobile
-			const width = this.state.width
-			width <= 700 ? isMobile = true : isMobile = false
-
-			let size
-			isMobile ? size = "mobile" :  size = "desktop"
-			this.setState({ size: size })
-
-			this.props.setSize(this.state.size)
-
-		}
+		// }
 
 		render(){
-
-
-
 
 //render if this.state.language === EN ---> language = "EN"
 	return (

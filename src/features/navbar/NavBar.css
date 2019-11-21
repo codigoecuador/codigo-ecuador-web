@@ -1,55 +1,61 @@
 /* navbar */
 
 .navbar {
-	position: absolute;
 	font-weight: bolder;
 	height: auto;
-	margin: auto;
+	float: right;
 	width: 50%;
-	max-width: 40%;
-	z-index: 3;
+	z-index: 1;
+
 }
+
+
+@media screen and (min-width: 700px){
+	.navbar{
+		top: 2%;
+		left: 43%;
+	}
+}
+
+@media screen and (max-width: 699px){
+	.navbar {
+		top: 8%;
+	}
+}
+
+
 
 .nav-buttons {
-	position: absolute;
-	padding: 10%;
-
+	padding: 2em;
 }
 
-.navbar-desktop{
-	top: 2%;
-	left: 43%;
-}
-
-.navbar-mobile {
-	top: 8%;
-}
-
-.nav-button-active {
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
+.nav-button {
 	color: rgb(8, 37, 78);
 	background-color: white;
-	margin: 3% 1% 1%;
-	width: 5%;
-	height: 4%;
-}
-
-.nav-button-desktop {
-	font-size: 1.2vw;
-	padding: 20px;
-	border-radius: 10px 20px;
-	border: 3px solid rgb(197, 158, 85);
-}
-
-.nav-button-mobile {
-	font-size: 2.6vw;
-	padding: 10px;
-	border-radius: 5px 10px;
-	border: 1px solid rgb(197, 158, 85);
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
 }
 
 .nav-button-active:hover {
 	color: white;
 	background-color: rgb(8, 37, 78);
+}
+
+@media screen and (min-width: 700px){
+	.nav-button {
+		font-size: 1.1em;
+		padding: 20px;
+		border-radius: 10px 20px;
+		border: 3px solid rgb(197, 158, 85);
+		margin: 1em;
+	}
+}
+
+@media screen and (max-width: 699px){
+	.nav-button{
+		font-size: 2.6vw;
+		padding: 10px;
+		border-radius: 5px 10px;
+		border: 1px solid rgb(197, 158, 85);
+	}
 }
