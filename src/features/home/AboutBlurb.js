@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { aboutBlurbText } from './aboutText'
+import { aboutBlurbText } from '../../common/aboutText'
 
 class AboutBlurb extends Component {
   render(){
