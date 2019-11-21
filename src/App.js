@@ -20,7 +20,8 @@ import BoardOfDirectors from "./features/about/boardOfDirectors/boardOfDirectors
 class App extends Component {
 
 	componentDidMount() {
-		if (!localStorage.getItem("language")) localStorage.setItem("language", "EN")
+		debugger
+		if (localStorage.getItem("language") === null) localStorage.setItem("language", "EN")
 		this.forceUpdate()
 	}
 

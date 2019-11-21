@@ -20,7 +20,6 @@
 	padding-bottom: 10%;
 }
 
-
 .home-headline {
 	font-family: "Bree Serif", serif;
 	color: rgb(8, 37, 78);
@@ -29,13 +28,63 @@
 	margin-bottom: 3%;
 }
 
-.home-headline-desktop {
-		font-size: 3em;
-		line-height: 1.5em;
+.sub-headline {
+	font-family: "Bree Serif", serif;
+	color: rgb(8, 37, 78);
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 3%;
 }
 
-.home-headline-mobile {
+
+.about-blurb {
+	position: absolute;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+@media screen and (min-width: 700px){
+	.home-headline {
+		font-size: 2.5em;
+		line-height: 1.5em;
+	}
+
+	.sub-headline {
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+
+	.about-blurb {
+		top: 65%;
+		left: 10%;
+		width: 80%;
+		border-radius: 85px;
+		border: 3px solid rgb(197, 158, 85);
+		padding: 1%;
+	}	
+
+	.bubble p {
+		font-size: 1.3em;
+	}	
+}
+
+@media screen and (max-width: 699px){
+	.home-headline {
 		font-size: 2vw;
+	}
+
+	.about-blurb{
+		top: 45%;
+		left: 5%;
+		right: 5%;
+		width: 90;
+		border-radius: 35px;
+	}
+	
+	.bubble p {
+		font-size: 2.8vw;
+	}	
 }
 
 .empower {
@@ -47,38 +96,6 @@
 	padding-top: 2%;
 	padding-bottom: 2%;
 
-}
-
-.about-blurb {
-	position: absolute;
-	text-align: center;
-	background-color: rgba(255, 255, 255, 0.8);
-
-}
-
-.about-blurb-desktop {
-	top: 65%;
-	left: 10%;
-	width: 80%;
-	border-radius: 85px;
-	border: 3px solid rgb(197, 158, 85);
-	padding: 1%;
-}
-
-.about-blurb-mobile{
-	top: 45%;
-	left: 5%;
-	right: 5%;
-	width: 90;
-	border-radius: 35px;
-}
-
-.bubble p {
-	font-size: 1.3em;
-}
-
-.bubble-mobile p {
-	font-size: 2.8vw;
 }
 
 .bubble h1 {

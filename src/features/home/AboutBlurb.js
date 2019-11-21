@@ -1,27 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { aboutBlurbText } from '../../common/aboutText'
+import { aboutBlurbText } from '../../common/activitiesText/aboutText'
 
 class AboutBlurb extends Component {
   render(){
-
-    let headlineStyle
-    let bubbleStyle
-    let readMore
-
-    if(this.props.size === "mobile"){
-      headlineStyle = "home-headline home-headline-mobile"
-      bubbleStyle = "bubble-mobile"
-    } else {
-      headlineStyle = "home-headline home-headline-desktop"
-      bubbleStyle = "bubble"
-      readMore = <h2>Read more about our work below ...</h2>
-    }
-
     return (
-        <div className={bubbleStyle}>
+        <div className="bubble">
           <br/>
-          <div className={headlineStyle}>
+          <div className="home-headline">
             {aboutBlurbText[localStorage.getItem("language")].title}
           </div>
           {aboutBlurbText[localStorage.getItem("language")].text}
