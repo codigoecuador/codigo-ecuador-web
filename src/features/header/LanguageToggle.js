@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useCallback } from 'react'
 import { Dropdown } from 'semantic-ui-react'
 import { connect } from 'react-redux'
 
@@ -8,12 +8,13 @@ const languageOptions = [
   { key: 'Spanish', text: 'Spanish', value: 'ES' },
 ]
 
-const handleChange = (event, data) => {
-// debugger
-  localStorage.setItem("language", data.value)
-}
-
 const LanguageToggle = (props) => {
+
+  const handleChange = (event, data) => {
+    localStorage.setItem("language", data.value)
+    props.setLanguage(data.value)
+  }  
+
     return (
       <Dropdown
         button

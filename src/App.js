@@ -19,7 +19,13 @@ import BoardOfDirectors from "./features/about/boardOfDirectors/boardOfDirectors
 
 class App extends Component {
 
-		render(){
+	componentDidMount() {
+		if (!localStorage.getItem("language")) localStorage.setItem("language", "EN")
+		this.forceUpdate()
+	}
+
+
+	render(){
 
 //render if this.state.language === EN ---> language = "EN"
 	return (
