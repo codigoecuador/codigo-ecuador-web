@@ -7,31 +7,33 @@ import { educatorLinks } from "./EducatorLinks"
 import { parentLinks } from "./ParentLinks"
 
 function CodingLinks(props) {
-  let codingItems
+  let codingLinks
+  const lang = localStorage.getItem("language")
   switch (props.type) {
     case "Student":
-      codingItems = studentLinks
+      codingLinks = studentLinks
       break
 
     case "Parent":
-      codingItems = parentLinks
+      codingLinks = parentLinks
       break
 
     case "Educator":
-      codingItems = educatorLinks
+      codingLinks = educatorLinks
       break
 
     case "Entrepreneur":
-      codingItems = entrepreneurLinks
+      codingLinks = entrepreneurLinks
       break
 
     default:
-      codingItems = studentLinks
+      codingLinks = educatorLinks
   }
-
+  debugger
+  codingLinks = codingLinks[lang]
   return (
     <div>
-      {codingItems.map(resource => (
+      {codingLinks.map(resource => (
         <div className="resource">
           <br />
           <div className="large coding-item-title">{resource.title}</div>
