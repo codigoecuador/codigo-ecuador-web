@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { ourStoryText } from '../../common/featuresText/ourStoryText' 
+import { ourStoryText } from '../../common/aboutText/ourStoryText' 
 
 class OurStory extends Component {
   render(){
