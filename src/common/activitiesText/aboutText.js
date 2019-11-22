@@ -13,7 +13,7 @@ export const aboutBlurbText = {
                 <h2>Read more about our work below ...</h2>
 
                 <br/>
-            </div>   
+            </div> 
     },
 
     "ES": {

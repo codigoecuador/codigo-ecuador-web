@@ -1,23 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { connect } from 'react-redux';
+import { internshipBlurbText } from '../../common/activitiesText/internshipText';
 
 const InternshipBlurb = () => {
     return (
         <div className="bubble">
           <br/>
-          <div className="home-headline">
-            Internship Placement
+          <div className="sub-headline">
+            {internshipBlurbText[localStorage.getItem("language")].title}            
           </div>
-          <p>
-          At Código Ecuador, we are dedicated to connecting Ecuadorian high school students to rewarding hands-on experiences. Through cooperation and global community empowerment, we believe we can facilitate access to valuable learning opportunities. We are always striving to make a difference, and invite you to learn more and lend your support.
-          </p>
-          <br/>
+          {internshipBlurbText[localStorage.getItem("language")].text}
 
-            <a className="donate-button" href='mailto:info@codigoecuador.com' >
-              Become a Partner
-            </a>
+          {internshipBlurbText[localStorage.getItem("language")].button}
 
         </div>
     )
 }
 
-export default InternshipBlurb
+const mapStateToProps = state => { return { language: state.language } }
+
+export default connect(mapStateToProps)(InternshipBlurb)

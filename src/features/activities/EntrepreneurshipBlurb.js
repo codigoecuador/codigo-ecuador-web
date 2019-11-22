@@ -1,23 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { connect } from 'react-redux';
+import { entrepreneurshipBlurbText } from '../../common/activitiesText/entrepreneurshipText'
 
 const EntrepreneurshipBlurb = () => {
     return (
         <div className="bubble">
           <br/>
-          <div className="home-headline">
-            Encourage Entrepreneurship
+          <div className="sub-headline">
+            {entrepreneurshipBlurbText[localStorage.getItem("language")].title}            
           </div>
-          <p>
-          With our organization’s mission always in mind, we strive to find new strategies to reach our goal. To preserve Ecuador's beautiful culture of entrepreneurship, Código Ecuador works to tear down walls, pave roads to resources, and encourage women to build opportunity. Contact us to learn more about how we make this happen.
-          </p>
-          <br/>
+          {entrepreneurshipBlurbText[localStorage.getItem("language")].text}
 
-            <a className="donate-button" href='mailto:info@codigoecuador.com' >
-              Get in Touch
-            </a>
+          {entrepreneurshipBlurbText[localStorage.getItem("language")].button}
 
         </div>
     )
 }
 
-export default EntrepreneurshipBlurb
+const mapStateToProps = state => { return { language: state.language } }
+
+export default connect(mapStateToProps)(EntrepreneurshipBlurb)

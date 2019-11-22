@@ -69,6 +69,7 @@ class App extends Component {
       </Router>
     )
   }
+
 }
 
 const mapStateToProps = state => {
