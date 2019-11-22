@@ -1,68 +1,60 @@
-import React, { Component } from 'react'
-import { Divider } from 'semantic-ui-react'
-import { studentLinks } from './StudentLinks'
-import { entrepreneurLinks } from './EntrepreneurLinks'
-import { educatorLinks } from './EducatorLinks'
-import { parentLinks } from './ParentLinks'
+import React from "react"
+import { connect } from "react-redux"
+import { Divider } from "semantic-ui-react"
+import { studentLinks } from "./StudentLinks"
+import { entrepreneurLinks } from "./EntrepreneurLinks"
+import { educatorLinks } from "./EducatorLinks"
+import { parentLinks } from "./ParentLinks"
 
-class CodingLinks extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      type: this.props.type
-    }
-  }
-
-  render(){
-    console.log(this.props)
-
-    let codingItems
-
-    switch(this.props.type){
-      case("Student"):
+function CodingLinks(props) {
+  let codingItems
+  switch (props.type) {
+    case "Student":
       codingItems = studentLinks
-      break;
+      break
 
-      case("Parent"):
+    case "Parent":
       codingItems = parentLinks
-      break;
+      break
 
-      case("Educator"):
+    case "Educator":
       codingItems = educatorLinks
-      break;
+      break
 
-      case("Entrepreneur"):
+    case "Entrepreneur":
       codingItems = entrepreneurLinks
-      break;
+      break
 
-      default:
+    default:
       codingItems = studentLinks
-    }
-
-    return (
-        <div>
-            {codingItems.map(resource =>
-              <div className="resource">
-                <br/>
-                <div className="large coding-item-title">{resource.title}</div>
-                <br/>
-                <div className="coding-item-subtitle">{resource.subtitle}</div>
-                <br/>
-                <br/>
-
-                <div className="right">
-                  <button className="coding-item-button"><a href={resource.buttonLink}>Learn More</a></button>
-                </div>
-                <br/>
-                <Divider className="coding-item-divider"/>
-              </div>
-
-            )}
-        </div>
-    )
-
   }
 
+  return (
+    <div>
+      {codingItems.map(resource => (
+        <div className="resource">
+          <br />
+          <div className="large coding-item-title">{resource.title}</div>
+          <br />
+          <div className="coding-item-subtitle">{resource.subtitle}</div>
+          <br />
+          <br />
+
+          <div className="right">
+            <button className="coding-item-button">
+              <a href={resource.buttonLink}>Learn More</a>
+            </button>
+          </div>
+          <br />
+          <Divider className="coding-item-divider" />
+        </div>
+      ))}
+    </div>
+  )
 }
 
-export default CodingLinks
+const mapStateToProps = state => {
+  return { language: state.language }
+}
+
+export default connect(mapStateToProps)(CodingLinks)
