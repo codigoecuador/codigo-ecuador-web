@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { connect } from 'react-redux'
-import { ceoLetterText } from '../../common/featuresText/ceoLetterText'
+import { ceoLetterText } from '../../common/aboutText/ceoLetterText'
 
 const CeoLetter = () => {
   const [language, setLanguage ] = useState("EN")
