@@ -11,21 +11,20 @@ class Activities extends Component {
         return ( <
             div className = "blurb-group" >
             <
-            div className = "blurb" > { " " } <
+            div className = "blurb" > <
             EducationBlurb / >
             <
-            /div>
-            d { " " } <
+            /div> <
             div className = "blurb" >
             <
             InternshipBlurb / >
             <
-            /div>{" "} <
+            /div><
             div className = "blurb" >
             <
             EntrpeneurshipBlurb / >
             <
-            /div>{" "} < /
+            /div>< /
             div >
         );
 
