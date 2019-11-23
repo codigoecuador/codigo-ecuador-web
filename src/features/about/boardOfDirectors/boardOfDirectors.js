@@ -27,7 +27,7 @@ class BoardOfDirectors extends Component {
           <div className='board-column'>
             <img
               className='board-photo'
-              src='https://media.licdn.com/dms/image/C4D03AQEX65R-YqCvDw/profile-displayphoto-shrink_200_200/0?e=1579737600{&}v=beta&t=ZLLmNnAa_u3iCWgjD-TNNuQX4K0uhNWZJoklxttN9c0'
+              src='https://media.licdn.com/dms/image/C4D03AQEX65R-YqCvDw/profile-displayphoto-shrink_200_200/0?e=1579737600&v=beta&t=ZLLmNnAa_u3iCWgjD-TNNuQX4K0uhNWZJoklxttN9c0'
               alt='headshot of board member Debra Ray'
             />
           </div>
