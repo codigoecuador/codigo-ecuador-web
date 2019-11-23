@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card, Link } from "semantic-ui-react";
+import { Container, Card } from "semantic-ui-react";
 import { minorPartnersData } from "./MinorPartnersData";
 //notes from lizzie
 // become a partner - on website it has a form, but I just included their email
@@ -15,7 +15,7 @@ const minorPartners = () => {
         {minorPartnersData.map(partner => (
           <Card>
             <a href={partner.link} target='_blank' class='ui medium image'>
-              <img src={partner.image} />
+              <img src={partner.image} alt='' />
             </a>
 
             <div className='content'>

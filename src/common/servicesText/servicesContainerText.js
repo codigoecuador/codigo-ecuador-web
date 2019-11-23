@@ -1,5 +1,3 @@
-import React from "react";
-
 export const servicesContainerText = {
   EN: {
     classesButton: "Classes",

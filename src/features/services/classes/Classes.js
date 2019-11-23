@@ -1,11 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { Container, Divider } from "semantic-ui-react";
 import "./Classes.css";
-import { pythonClasses } from "./PythonData";
-import { text } from "./pythonClassesText";
 import { classesText } from "../../../common/servicesText/classesText";
-import { labeledStatement } from "@babel/types";
+// import { labeledStatement } from "@babel/types";
 import { pythonText } from "../../../common/servicesText/pythonText";
 
 function Classes(props) {

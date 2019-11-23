@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Card, Divider, Grid } from "semantic-ui-react";
+import { Container, Card, Divider } from "semantic-ui-react";
 import "./Team.css";
 import { teamData } from "./TeamData";
 import TeamCard from "./TeamCard";
@@ -38,18 +38,15 @@ class Team extends Component {
 
 export default Team;
 
-{
-  /* <div class="ui grid" columns={3} fluid>
-                <Grid class="ui grid" padded columns={3} fluid>
-                    <div className='ui fluid cards' justified fluid columns={3}>
-                    <Card.Group centered fluid justified>
-                        {teamData.map(member => 
-                            <TeamCard {...member} />
-                        )}
-                    </Card.Group>
-                    </div>
-                </Grid> */
-}
-{
-  /* </div> */
-}
+// {
+//   <div class="ui grid" columns={3} fluid>
+//                 <Grid class="ui grid" padded columns={3} fluid>
+//                     <div className='ui fluid cards' justified fluid columns={3}>
+//                     <Card.Group centered fluid justified>
+//                         {teamData.map(member =>
+//                             <TeamCard {...member} />
+//                         )}
+//                     </Card.Group>
+//                     </div>
+//                 </Grid>
+// }

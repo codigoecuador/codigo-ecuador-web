@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { ceoLetterText } from "../../common/aboutText/ceoLetterText";
 
 const CeoLetter = () => {
-  const [language, setLanguage] = useState("EN");
-
   return (
     <div className='bubble'>
       <div className=' headline ceo-letter-headline'>
