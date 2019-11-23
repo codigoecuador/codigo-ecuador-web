@@ -1,22 +1,23 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { entrepreneurshipBlurbText } from '../../common/activitiesText/entrepreneurshipText'
+import React from "react";
+import { connect } from "react-redux";
+import { entrepreneurshipBlurbText } from "../../common/activitiesText/entrepreneurshipText";
 
 const EntrepreneurshipBlurb = () => {
-    return (
-        <div className="bubble">
-          <br/>
-          <div className="sub-headline">
-            {entrepreneurshipBlurbText[localStorage.getItem("language")].title}            
-          </div>
-          {entrepreneurshipBlurbText[localStorage.getItem("language")].text}
+  return (
+    <div className='bubble'>
+      <br />
+      <div className='sub-headline'>
+        {entrepreneurshipBlurbText[localStorage.getItem("language")].title}
+      </div>
+      {entrepreneurshipBlurbText[localStorage.getItem("language")].text}
 
-          {entrepreneurshipBlurbText[localStorage.getItem("language")].button}
+      {entrepreneurshipBlurbText[localStorage.getItem("language")].button}
+    </div>
+  );
+};
 
-        </div>
-    )
-}
+const mapStateToProps = state => {
+  return { language: state.language };
+};
 
-const mapStateToProps = state => { return { language: state.language } }
-
-export default connect(mapStateToProps)(EntrepreneurshipBlurb)
+export default connect(mapStateToProps)(EntrepreneurshipBlurb);

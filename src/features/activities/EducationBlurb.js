@@ -1,24 +1,23 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { educationBlurbText } from '../../common/activitiesText/educationText';
-
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { educationBlurbText } from "../../common/activitiesText/educationText";
 
 const EducationBlurb = () => {
-    return (
-        <div className="bubble">
-          <br/>
-          <div className="sub-headline">
-            {educationBlurbText[localStorage.getItem("language")].title}
-            
-          </div>
-          {educationBlurbText[localStorage.getItem("language")].text}
-          
-          {educationBlurbText[localStorage.getItem("language")].button}
+  return (
+    <div className='bubble'>
+      <br />
+      <div className='sub-headline'>
+        {educationBlurbText[localStorage.getItem("language")].title}
+      </div>
+      {educationBlurbText[localStorage.getItem("language")].text}
 
-        </div>
-    )
-}
+      {educationBlurbText[localStorage.getItem("language")].button}
+    </div>
+  );
+};
 
-const mapStateToProps = state => { return { language: state.language } }
+const mapStateToProps = state => {
+  return { language: state.language };
+};
 
-export default connect(mapStateToProps)(EducationBlurb)
+export default connect(mapStateToProps)(EducationBlurb);

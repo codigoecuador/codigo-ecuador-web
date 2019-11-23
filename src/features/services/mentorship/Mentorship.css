@@ -1,5 +1,5 @@
-.mentor-container-desktop{
-	margin-top: 10%;
+.mentor-container-desktop {
+  margin-top: 10%;
 }
 
 .boss-photo {
@@ -8,13 +8,13 @@
 }
 
 .dancing {
-	font-family: 'Dancing Script', cursive;
-	font-size: 2.5em;
-	line-height: 1em;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5em;
+  line-height: 1em;
 }
 
-.mentor-container-mobile{
-	margin-top: 45%;
+.mentor-container-mobile {
+  margin-top: 45%;
 }
 
 .mentor-text {
@@ -23,11 +23,11 @@
 }
 
 .tip-info {
-	background-color: rgb(15,37,75);
-	color: white;
-	padding: 5%;
-	margin-bottom: 5%;
-	border-radius: 4vw 8vw;
+  background-color: rgb(15, 37, 75);
+  color: white;
+  padding: 5%;
+  margin-bottom: 5%;
+  border-radius: 4vw 8vw;
 }
 
 .tip-description p {

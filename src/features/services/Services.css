@@ -23,22 +23,19 @@
 }
 
 .classes-button {
-  background-color: rgb(8,37,78);
+  background-color: rgb(8, 37, 78);
   color: white;
-
 }
 
 .mentorship-button {
-  background-color: rgb(197,158,85);
-  color: rgb(8,37,78);
+  background-color: rgb(197, 158, 85);
+  color: rgb(8, 37, 78);
 }
 
 .services-showing-desktop {
-
 }
 
 /* not reaching element */
 .services-showing-mobile {
   top: 5%;
-
 }

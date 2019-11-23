@@ -10,9 +10,9 @@ class CodingContainer extends Component {
     showing: ""
   };
 
-	handleClick = event => {
-		this.setState({ showing: event.target.value })
-	}
+  handleClick = event => {
+    this.setState({ showing: event.target.value });
+  };
 
   handleMobileClick = event => {
     this.setState({ showing: event });
@@ -26,7 +26,11 @@ class CodingContainer extends Component {
       showing = "showing-mobile";
       headlineContainer = "headline-container-mobile";
       codingButtonGroup = (
-        <CodingMenu fluid handleMobileClick={this.handleMobileClick} showing={this.state.showing} />
+        <CodingMenu
+          fluid
+          handleMobileClick={this.handleMobileClick}
+          showing={this.state.showing}
+        />
       );
     } else {
       showing = "showing-desktop";
@@ -41,9 +45,9 @@ class CodingContainer extends Component {
           <br />
           <br />
           <br />
-          <div className="headline">
-            <span className="gold">{this.state.showing || "Coding"}</span>
-            <span className="navy"> Resources</span>
+          <div className='headline'>
+            <span className='gold'>{this.state.showing || "Coding"}</span>
+            <span className='navy'> Resources</span>
           </div>
         </div>
 

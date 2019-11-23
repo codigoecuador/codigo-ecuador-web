@@ -5,23 +5,24 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
 //redux
-import { Provider } from 'react-redux'
-import { createStore, applyMiddleware, compose } from 'redux'
-import logger from 'redux-logger'
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware, compose } from "redux";
+import logger from "redux-logger";
 
-import rootReducer from './reducers/rootReducer'
+import rootReducer from "./reducers/rootReducer";
 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-
-const middleware = [logger]
-let store = createStore(rootReducer, composeEnhancers(applyMiddleware(...middleware)))
-
+const middleware = [logger];
+let store = createStore(
+  rootReducer,
+  composeEnhancers(applyMiddleware(...middleware))
+);
 
 ReactDOM.render(
   <BrowserRouter>
     <Provider store={store}>
-       <App />
+      <App />
     </Provider>
   </BrowserRouter>,
   document.getElementById("root")

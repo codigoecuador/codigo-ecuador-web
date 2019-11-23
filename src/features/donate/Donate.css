@@ -1,24 +1,24 @@
 /* donate  */
 .donate {
-	position: absolute;
-	display: inline-block;
-	left: 5%;
-	top: 25%;
-	z-index: 3;
+  position: absolute;
+  display: inline-block;
+  left: 5%;
+  top: 25%;
+  z-index: 3;
 }
 
 .donate-cards-group {
-	margin-left: 3%;
-	padding: 2%;
+  margin-left: 3%;
+  padding: 2%;
 }
 
 .donate-card {
-	height: 10vw;
-	width: auto;
+  height: 10vw;
+  width: auto;
 }
 
 .hidden-content {
-	padding: 5%;
-	background-color: rgb(8, 37, 78);
-	color: white;
+  padding: 5%;
+  background-color: rgb(8, 37, 78);
+  color: white;
 }

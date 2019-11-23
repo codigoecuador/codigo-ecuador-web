@@ -1,9 +1,9 @@
-import React, { Component } from "react"
-import "./Navbar.css"
+import React, { Component } from "react";
+import "./Navbar.css";
 // Capitalized B in above link to make it work
-import { Container } from "semantic-ui-react"
-import { Link } from "react-router-dom"
-import { connect } from "react-redux"
+import { Container } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 class Navbar extends Component {
   render() {
@@ -12,32 +12,32 @@ class Navbar extends Component {
     // this.props.size === "mobile" ? buttonStyle = "nav-button-active nav-button-mobile" : buttonStyle = "nav-button-active nav-button-desktop"
 
     return (
-      <Container className="nav-buttons">
-        <Link className="nav-button" to="/">
+      <Container className='nav-buttons'>
+        <Link className='nav-button' to='/'>
           Home
         </Link>
-        <Link exact className="nav-button" to="/about">
+        <Link exact className='nav-button' to='/about'>
           About
         </Link>
-        <Link exact className="nav-button" to="/services">
+        <Link exact className='nav-button' to='/services'>
           Services
         </Link>
-        <Link exact className="nav-button" to="/resources">
+        <Link exact className='nav-button' to='/resources'>
           Resources
         </Link>
-        <Link exact className="nav-button" to="/blog">
+        <Link exact className='nav-button' to='/blog'>
           Blog
         </Link>
-        <Link exact className="nav-button" to="/donate">
+        <Link exact className='nav-button' to='/donate'>
           Donate
         </Link>
       </Container>
-    )
+    );
   }
 }
 
 const mapStateToProps = state => {
-  return { size: state.size }
-}
+  return { size: state.size };
+};
 
-export default connect(mapStateToProps)(Navbar)
+export default connect(mapStateToProps)(Navbar);
