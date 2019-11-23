@@ -1,59 +1,50 @@
-
-
-.courses-desktop{
-	margin-top: 10%;
+.courses-desktop {
+    margin-top: 10%;
 }
 
 .bg-navy {
-	background-color: rgb(8, 37, 78);
+    background-color: rgb(8, 37, 78);
 }
 
 .bg-yellow {
-	background-color: rgb(197, 158, 85);
-	color: rgb(8, 37, 78)!important;
+    background-color: rgb(197, 158, 85);
+    color: rgb(8, 37, 78)!important;
 }
 
-
-
-
-
-.courses-mobile{
-	margin-top: 35%;
+.courses-mobile {
+    margin-top: 35%;
 }
 
 .courses-text p {
-  font-size: 1.3em;
-  line-height: 1.4em;
-	margin: 1.5em;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin: 1.5em;
 }
 
 .python-title {
-	font-weight: bold;
-	font-size: 2em;
-	line-height: 2.1em;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 2.1em;
 }
 
 .python-description {
-	font-size: 1.4em;
-	line-height: 1.4em;
+    font-size: 1.4em;
+    line-height: 1.4em;
 }
 
-
 .python-bullets {
-	font-size: 1.2em;
-	line-height: 1.2em;
+    font-size: 1.2em;
+    line-height: 1.2em;
 }
 
 .python-duration {
-	font-size: 1em;
-	line-height: 1.2em;
+    font-size: 1em;
+    line-height: 1.2em;
 }
 
 .course-info {
-
-	color: white;
-	padding: 5%;
-	margin-bottom: 5%;
-	border-radius: 4vw 8vw;
-
+    color: white;
+    padding: 5%;
+    margin-bottom: 5%;
+    border-radius: 4vw 8vw;
 }

@@ -6,30 +6,40 @@ import LanguageToggle from './LanguageToggle'
 import { Link } from "react-router-dom"
 
 
-class Header extends Component  {
+class Header extends Component {
 
-  render(){
-    // let navStyle
-    // console.log('header props', this.props.size)
-    // this.props.size === "mobile" ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
+    render() {
+        // let navStyle
+        // console.log('header props', this.props.size)
+        // this.props.size === "mobile" ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
 
 
-  	return (
-  		<div className="header">
-        <Link exact className="logo-wrapper" to='/' >
-          <Logo className="logo" />
-        </Link>
+        return ( <
+            div className = "header" >
+            <
+            Link exact className = "logo-wrapper"
+            to = '/' >
+            <
+            Logo className = "logo" / >
+            <
+            /Link>
 
-        <div className="navbar">
-  			   <Navbar/>
-        </div>
+            <
+            div className = "navbar" >
+            <
+            Navbar / >
+            <
+            /div>
 
-        <div>
-          <LanguageToggle />
-        </div>
-  		</div>
-  	)
-  }
+            <
+            div className = "language-dropdown" >
+            <
+            LanguageToggle / >
+            <
+            /div> <
+            /div>
+        )
+    }
 }
 
 

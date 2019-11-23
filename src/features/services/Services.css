@@ -1,44 +1,33 @@
 .services-container {
-  margin-top: 15%;
+    margin-top: 15%;
 }
 
 .services-button-group-desktop {
-  margin-top: 20%;
+    margin-top: 20%;
 }
 
 .services-button-group-mobile {
-  margin-top: 50%;
+    margin-top: 50%;
 }
 
 .services-button-desktop {
-  width: 50%;
-  height: 3em;
-  font-size: 1.7em;
+    width: 50%;
+    height: 3em;
+    font-size: 1.7em;
 }
 
 .services-button-mobile {
-  width: 50%;
-  height: 2.2em;
-  font-size: 1.2em;
+    width: 50%;
+    height: 2.2em;
+    font-size: 1.2em;
 }
 
 .classes-button {
-  background-color: rgb(8,37,78);
-  color: white;
-
+    background-color: rgb(8, 37, 78);
+    color: white;
 }
 
 .mentorship-button {
-  background-color: rgb(197,158,85);
-  color: rgb(8,37,78);
-}
-
-.services-showing-desktop {
-
-}
-
-/* not reaching element */
-.services-showing-mobile {
-  top: 5%;
-
+    background-color: rgb(197, 158, 85);
+    color: rgb(8, 37, 78);
 }

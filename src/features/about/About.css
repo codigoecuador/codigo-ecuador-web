@@ -1,10 +1,7 @@
         /* about */
         
-        .aboutPage {
-            margin-top: 15%;
-        }
-        
         .about-container {
+            margin-top: 8%;
             background-image: url('./ecuadorLeaf.jpg');
             background-size: cover;
             padding-top: 3em;
@@ -24,7 +21,7 @@
                 left: 25%;
                 width: 50%;
                 height: auto;
-                padding: 1%;
+                padding: 3%;
             }
         }
         
@@ -47,10 +44,11 @@
             padding: 3%;
             z-index: 2;
             font-family: "Cormorant Garamond", serif;
+            margin-bottom: 3em;
         }
         
         .ceo-letter-headline {
-            font-size: big;
+            font-size: 4em;
             font-family: "Cormorant Garamond", serif;
             padding: 4%;
             font-weight: bold;
@@ -58,7 +56,7 @@
         }
         
         .ceo-letter-text p {
-            font-size: .4vw;
+            font-size: 1.6em;
             font-weight: bold;
             color: grey;
         }
@@ -89,7 +87,7 @@
         }
         
         .story-links {
-            font-size: 1.8vw;
+            font-size: 1.4em;
         }
         
         @media screen and (min-width: 700px) {
@@ -97,18 +95,18 @@
                 font-size: 1.5em;
             }
             .about-bubble h1 {
-                font-size: 3vw;
+                font-size: 3em;
                 color: rgb(8, 37, 78);
             }
             .about-bubble h2 {
-                font-size: 1.5vw;
+                font-size: 1.5em;
                 color: rgb(8, 37, 78);
             }
         }
         
         @media screen and (max-width: 699px) {
             .about-bubble h1 {
-                font-size: 4vw;
+                font-size: 4em;
                 color: rgb(8, 37, 78);
             }
         }
