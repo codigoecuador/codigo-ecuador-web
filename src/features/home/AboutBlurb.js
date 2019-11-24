@@ -1,23 +1,18 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React from 'react'
 import { aboutBlurbText } from '../../common/activitiesText/aboutText'
 
-class AboutBlurb extends Component {
-  render(){
+const AboutBlurb = () => {
+
     return (
         <div className="bubble">
           <br/>
           <div className="home-headline">
             {aboutBlurbText[localStorage.getItem("language")].title}
           </div>
-          
-          {aboutBlurbText[localStorage.getItem("language")].text}
+
+          <p>{aboutBlurbText[localStorage.getItem("language")].text}</p>
         </div>
     )
-  }
-
 }
 
-const mapStateToProps = state => {  return {  language: state.language  } }
-
-export default connect(mapStateToProps)(AboutBlurb)
+export default AboutBlurb

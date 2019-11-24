@@ -3,17 +3,16 @@ import React from 'react'
 export const aboutBlurbText = {
     "EN": {
         "title": "We empower the women of Ecuador by teaching them to code.",
-        "text": 
+        "text":
             <div>
 
                 <p>Código Ecuador is a nonprofit organization working to promote technology skills and computer programming careers<br/> for high school students in Ecuador, with a focus on female empowerment.</p>
-                
+
                 <p>We believe that improving access to computer science curricula promotes global equity,<br/> and that collective action makes great changes in this world.</p>
                 
-                <h2>Read more about our work below ...</h2>
 
                 <br/>
-            </div> 
+            </div>
     },
 
     "ES": {
@@ -29,5 +28,5 @@ export const aboutBlurbText = {
             <br/>
         </div>
 
-    }  
+    }
 }
