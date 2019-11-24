@@ -8,20 +8,23 @@ const TeamCard = ({name, title, linkedin, description, background, image}) => {
     return (
         <Card href={linkedin} raised>
             <Image src={image} alt='Profile Pic'/>
+
             <Card.Content>
                 <Card.Header>{name}</Card.Header>
                 <Card.Description>{title}</Card.Description>
             </Card.Content>
+
             <Card.Content textAlign="left">
                 <Feed>
                     <Feed.Event>{description}</Feed.Event>
                     <Feed.Event>{background}</Feed.Event>
                 </Feed>
             </Card.Content>
+
             <Card.Content extra>Find me on LinkedIn</Card.Content>
         </Card>
-            
-      
+
+
     )
 }
 
