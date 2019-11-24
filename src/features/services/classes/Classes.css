@@ -1,5 +1,13 @@
-.courses-desktop {
-    margin-top: 10%;
+@media screen and (min-width: 700px) {
+  .courses {
+      margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .courses {
+      margin-top: 35%;
+  }
 }
 
 .bg-navy {
@@ -11,9 +19,7 @@
     color: rgb(8, 37, 78)!important;
 }
 
-.courses-mobile {
-    margin-top: 35%;
-}
+
 
 .courses-text p {
     font-size: 1.3em;
