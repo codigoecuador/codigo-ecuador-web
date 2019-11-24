@@ -1,7 +1,8 @@
   /* about */
 
   .about-container {
-      margin-top: 8%;
+      position: absolute;
+      margin-top: 5%;
       background-image: url('./ecuadorLeaf.jpg');
       background-size: cover;
       padding-top: 3em;
@@ -47,7 +48,7 @@
   }
 
   .ceo-letter-headline {
-      font-size: 4em;
+      font-size: 2em;
       font-family: "Cormorant Garamond", serif;
       padding: 4%;
       font-weight: bold;
@@ -70,7 +71,9 @@
       }
 
       .ceo-letter-headline {
-          font-size: 4em;
+          font-size: 3em;
+          margin-top: .5em;
+          margin-bottom: 1em;
       }
 
   }

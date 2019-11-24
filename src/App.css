@@ -22,7 +22,7 @@
 }
 
 .header {
-  float: left;
+  top: 0;
 }
 
 
@@ -38,20 +38,37 @@
 
 .headline {
     font-family: "Bree Serif", serif;
-    font-size: 2.5em;
     font-weight: bold;
-    line-height: 1em;
     text-align: center;
-    margin-bottom: 5%;
-    margin-top: 2%;
 }
 
 .subhead {
-    font-size: 1.2vw;
+    font-size: 1.2em;
     text-align: center;
-    line-height: 1.2vw;
+    line-height: 1.2em;
     color: grey;
 }
+
+@media screen and (min-width: 700px) {
+  .headline {
+      font-size: 2.5em;
+      line-height: 1em;
+      margin-bottom: 5%;
+      margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .headline {
+      font-size: 2em;
+      line-height: .5em;
+      margin-bottom: 5%;
+  }
+}
+
+
+
+
 
 
 /* font-sizes */
@@ -97,7 +114,8 @@ body {
 }
 
 /* not reaching element */
-.language-dropdown {
+.language-dropdown input{
+    position: relative;
     top: 10%;
     right: 5%;
 }

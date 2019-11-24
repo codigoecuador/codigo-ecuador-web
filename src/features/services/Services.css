@@ -1,11 +1,10 @@
-.services-container {
-    margin-top: 15%;
+
+.services-button-group {
+    margin-top: 10%;
 }
 
 @media screen and (min-width: 700px) {
-  .services-button-group {
-      margin-top: 20%;
-  }
+
 
   .services-button {
       width: 50%;
@@ -15,17 +14,13 @@
 }
 
 @media screen and (max-width: 699px) {
-  .services-button-group {
-      margin-top: 50%;
-  }
 
   .services-button{
       width: 50%;
       height: 2.2em;
-      font-size: 1.2em;
+      font-size: 1.4em;
   }
 }
-
 
 
 .classes-button {
