@@ -39,7 +39,7 @@
 .about-blurb {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 3px solid rgb(197, 158, 85);
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -57,6 +57,7 @@
         left: 10%;
         width: 80%;
         border-radius: 85px;
+        border: 3px solid rgb(197, 158, 85);
         padding: 1%;
     }
 }
@@ -70,8 +71,8 @@
         left: 5%;
         right: 5%;
         width: 90;
-        border-radius: 35px;
         padding: 1em;
+        margin-bottom: 3em;
     }
 }
 

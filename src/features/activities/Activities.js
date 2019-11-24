@@ -4,6 +4,7 @@ import "./Activities.css"
 import EducationBlurb from "./EducationBlurb"
 import InternshipBlurb from "./InternshipBlurb"
 import EntrpeneurshipBlurb from "./EntrepreneurshipBlurb"
+import "../home/Home.css";
 
 class Activities extends Component {
     render() {
