@@ -7,15 +7,11 @@ import Activities from "../activities/Activities";
 
 class Home extends Component {
     render() {
-        let size;
-        this.props.size === "mobile" ?
-            (size = "about-blurb about-blurb-mobile") :
-            (size = "about-blurb about-blurb-desktop");
 
         return (
           <>
             <CoverPic / >
-            <div className = { size } >
+            <div className = "about-blurb" >
             <AboutBlurb / >
             </div>
             <div >

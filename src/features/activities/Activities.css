@@ -31,19 +31,11 @@
     .blurb p {
         font-size: 2.5vw;
     }
+
 }
+
 
 
 .activities-desription p {
     font-size: 1.2em;
-}
-
-.activities h1 {
-    font-size: 3em;
-    color: rgb(8, 37, 78);
-}
-
-.activities h2 {
-    font-size: 1.3em;
-    color: rgb(8, 37, 78);
 }

@@ -6,13 +6,14 @@ import CeoLetter from "./ceoLetter";
 
 class About extends Component {
     render() {
-        return ( <
-            div className = "about-container" >
+        return (
+          <div className = "about-container" >
               <div className = "our-story" >
-              <OurStory / >
+                <OurStory / >
               </div>
+
               <div className = "ceo-letter" >
-              <CeoLetter / >
+                <CeoLetter / >
               </div>
             </div>
         );
