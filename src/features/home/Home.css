@@ -63,11 +63,18 @@
         border: 3px solid rgb(197, 158, 85);
         padding: 2%;
     }
+
+    .activities {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
 }
 
 @media screen and (max-width: 999px) {
     .home-headline {
-        font-size: 1.5em;
+        font-size: 2em;
+        line-height: 1em;
+        margin-bottom: 1em;
     }
     .about-blurb {
         top: 45%;
@@ -75,15 +82,12 @@
         right: 5%;
         width: 90;
         padding: 1em;
-        margin-bottom: 1em;
+
     }
 
 }
 
-.activities {
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
+
 
 .activities p {
     font-size: 2em;

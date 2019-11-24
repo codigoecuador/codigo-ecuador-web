@@ -10,7 +10,6 @@
 }
 
 
-
 @media screen and (min-width: 700px) {
     .blurb {
         width: 100%;
@@ -23,13 +22,13 @@
 @media screen and (max-width: 699px) {
     .blurb {
         width: 100%;
-        border-radius: 45px;
         border: 2px solid rgb(197, 158, 85);
         padding: 1%;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
+        padding: 2em;
     }
     .blurb p {
-        font-size: 2.5vw;
+        font-size: 1.5em;
     }
 
 }
@@ -38,4 +37,8 @@
 
 .activities-desription p {
     font-size: 1.2em;
+}
+
+.activities-button {
+  margin-bottom: 2em;
 }

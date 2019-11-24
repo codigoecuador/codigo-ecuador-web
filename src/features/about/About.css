@@ -39,7 +39,6 @@
 
   .ceo-letter {
       background-color: rgb(255, 255, 255, 0.9);
-      border-radius: 5%;
       border: 3px solid rgb(197, 158, 85);
       padding: 3%;
       z-index: 2;
@@ -55,8 +54,7 @@
       text-align: center;
   }
 
-  .ceo-letter-text p {
-      font-size: 1.6em;
+  .ceo-letter-text {
       font-weight: bold;
       color: grey;
   }
@@ -65,24 +63,29 @@
       .ceo-letter {
           top: 80%;
           height: auto;
+          border-radius: 5%;
           width: 80%;
           margin: 0 auto;
-          /* left: 10%; */
+          font-size: 1.5em;
       }
-      .ceo-letter p {
-          font-size: 1.8em;
-          font-weight: bold;
-          color: grey;
+
+      .ceo-letter-headline {
+          font-size: 4em;
       }
+
   }
 
   @media screen and (max-width: 699px) {
       .ceo-letter {
           top: 80%;
           height: auto;
-          width: 90%;
-          left: 5%;
+          width: 100%;
           font-size: 1.8em;
+          font-size: 1em;
+      }
+
+      .ceo-letter-headline {
+          font-size: 2em;
       }
   }
 

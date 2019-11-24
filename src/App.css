@@ -21,6 +21,10 @@
     color: rgb(197, 158, 85);
 }
 
+.header {
+  float: left;
+}
+
 
 /* headlines */
 

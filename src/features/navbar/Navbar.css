@@ -24,7 +24,7 @@
 }
 
 .nav-buttons {
-    padding: 1.5em;
+    padding: 1.4em;
 }
 
 .nav-button {
@@ -39,6 +39,10 @@
 }
 
 @media screen and (min-width: 700px) {
+  .nav-buttons {
+      padding: 1.4em;
+  }
+
     .nav-button {
         font-size: 1.4em;
         padding: .6em;
@@ -49,10 +53,12 @@
 }
 
 @media screen and (max-width: 699px) {
+
     .nav-button {
-        font-size: 1.2em;
-        padding: 10px;
+        font-size: .9em;
+        padding: 4px;
         border-radius: 5px 10px;
-        border: 1px solid rgb(197, 158, 85);
+        border: 1.5px solid rgb(197, 158, 85);
+        margin: 0 2px;
     }
 }
