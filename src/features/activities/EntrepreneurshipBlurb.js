@@ -4,10 +4,10 @@ import { entrepreneurshipBlurbText } from '../../common/activitiesText/entrepren
 
 const EntrepreneurshipBlurb = () => {
     return (
-        <div className="bubble">
+        <div className="activities-text">
           <br/>
           <div className="sub-headline">
-            {entrepreneurshipBlurbText[localStorage.getItem("language")].title}            
+            {entrepreneurshipBlurbText[localStorage.getItem("language")].title}
           </div>
           {entrepreneurshipBlurbText[localStorage.getItem("language")].text}
 

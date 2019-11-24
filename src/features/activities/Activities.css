@@ -1,33 +1,49 @@
-              /* activities */
-              
-              .blurb {
-                  text-align: center;
-                  background-color: rgb(197, 158, 85, 0.8);
-              }
-              
-              .blurb-group {
-                  margin: 0, auto;
-              }
-              
-              @media screen and (min-width: 700px) {
-                  .blurb {
-                      width: 45%;
-                      border-radius: 105px;
-                      border: 3px solid rgb(197, 158, 85);
-                      padding: 3em;
-                      margin: 3em;
-                  }
-              }
-              
-              @media screen and (max-width: 699px) {
-                  .blurb {
-                      width: 90%;
-                      border-radius: 45px;
-                      border: 2px solid rgb(197, 158, 85);
-                      padding: 1%;
-                      margin-bottom: 5%;
-                  }
-                  .blurb p {
-                      font-size: 2.5vw;
-                  }
-              }
+/* activities */
+
+.blurb {
+    text-align: center;
+    background-color: rgb(197, 158, 85, 0.8);
+}
+
+.blurb-group {
+    margin: 0, auto;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    .blurb {
+        width: 50%;
+        border: 3px solid rgb(197, 158, 85);
+        padding: 3em;
+
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .blurb {
+        width: 90%;
+        border-radius: 45px;
+        border: 2px solid rgb(197, 158, 85);
+        padding: 1%;
+        margin-bottom: 5%;
+    }
+    .blurb p {
+        font-size: 2.5vw;
+    }
+}
+
+
+.activities-text p {
+    font-size: 1.3em;
+}
+
+.activities-text h1 {
+    font-size: 3em;
+    color: rgb(8, 37, 78);
+}
+
+.activities-text h2 {
+    font-size: 1.3em;
+    color: rgb(8, 37, 78);
+}
