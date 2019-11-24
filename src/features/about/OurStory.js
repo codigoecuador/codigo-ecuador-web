@@ -9,16 +9,11 @@ class OurStory extends Component {
             <
             div className = "headline" >
             <
-            span className = "gold" > { ourStoryText[localStorage.getItem("language")].goldTitle } <
-            /span> <
-            span className = "navy" > { ourStoryText[localStorage.getItem("language")].navyTitle } <
-            /span> <
-            /div> { ourStoryText[localStorage.getItem("language")].text }
-
-            { ourStoryText[localStorage.getItem("language")].links }
-
-            <
-            br / >
+            span className = "gold" > { " " } { ourStoryText[localStorage.getItem("language")].goldTitle } { " " } <
+            /span>{" "} <
+            span className = "navy" > { " " } { ourStoryText[localStorage.getItem("language")].navyTitle } { " " } <
+            /span>{" "} <
+            /div>{" "} { ourStoryText[localStorage.getItem("language")].text } { " " } { ourStoryText[localStorage.getItem("language")].links } < br / >
             <
             /div>
         );
