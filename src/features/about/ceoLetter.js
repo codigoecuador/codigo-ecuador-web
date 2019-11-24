@@ -5,7 +5,7 @@ const CeoLetter = () => {
 
   return (
     <div className="bubble">
-      <div className=" headline ceo-letter-headline">
+      <div className=" ceo-letter-headline">
         <span className="gold">
           {ceoLetterText[localStorage.getItem("language")].goldTitle}
         </span>
