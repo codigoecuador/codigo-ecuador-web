@@ -1,9 +1,7 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { ceoLetterText } from '../../common/featuresText/ceoLetterText'
 
 const CeoLetter = () => {
-  // const [language, setLanguage ] = useState("EN")
 
   return (
     <div className="bubble">
@@ -25,6 +23,6 @@ const CeoLetter = () => {
   )
 }
 
-const mapStateToProps = state => {  return {  language: state.language  } }
 
-export default connect(mapStateToProps)(CeoLetter)
+
+export default CeoLetter
