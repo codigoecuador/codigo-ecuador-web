@@ -1,15 +1,11 @@
-import React, { Component } from "react"
+import React from "react"
 import "./Navbar.css"
 // Capitalized B in above link to make it work
 import { Container } from "semantic-ui-react"
 import { Link } from "react-router-dom"
-import { connect } from "react-redux"
 
-class Navbar extends Component {
-  render() {
-    // let buttonStyle
-    //
-    // this.props.size === "mobile" ? buttonStyle = "nav-button-active nav-button-mobile" : buttonStyle = "nav-button-active nav-button-desktop"
+
+const Navbar = () => {
 
     return (
       <Container className="nav-buttons">
@@ -33,11 +29,8 @@ class Navbar extends Component {
         </Link>
       </Container>
     )
-  }
+
 }
 
-const mapStateToProps = state => {
-  return { size: state.size }
-}
 
-export default connect(mapStateToProps)(Navbar)
+export default Navbar
