@@ -1,32 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 import Navbar from "../navbar/Navbar";
 import Logo from "../logo/Logo";
-import { connect } from "react-redux";
 import LanguageToggle from "./LanguageToggle";
 import { Link } from "react-router-dom";
 
-class Header extends Component {
-    render() {
+const Header = () => {
 
-        return (
-          <div className = "header" >
-            <Link exact className = "logo-wrapper" to = "/" >
-              <Logo className = "logo" / >
-            </Link>
+    return (
+      <div className = "header" >
+        <Link exact className = "logo-wrapper" to = "/" >
+          <Logo className = "logo" / >
+        </Link>
 
-            <div className = "navbar" >
-              <Navbar / >
-            </div>
+        <div className = "navbar" >
+          <Navbar / >
+        </div>
 
-            <div className = "language-dropdown" >
-              <LanguageToggle / >
-            </div>
-          </div>
-        );
-    }
+        <div className = "language-dropdown" >
+          <LanguageToggle / >
+        </div>
+      </div>
+    );
 }
 
-const mapStateToProps = state => {
-    return { size: state.size };
-};
-export default connect(mapStateToProps)(Header);
+
+export default Header
