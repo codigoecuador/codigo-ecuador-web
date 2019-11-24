@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React from 'react'
 import { Container } from "semantic-ui-react"
 import "./boardOfDirectors.css"
 
-class BoardOfDirectors extends Component {
-  render(){
+const BoardOfDirectors = () => {
+
     return (
       <>
         <Container className="board-container">
@@ -48,9 +47,7 @@ class BoardOfDirectors extends Component {
       </>
 
     )
-  }
 }
 
-const mapStateToProps = state => {  return {  size: state.size  } }
 
-export default connect(mapStateToProps)(BoardOfDirectors)
+export default BoardOfDirectors
