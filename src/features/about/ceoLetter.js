@@ -1,5 +1,5 @@
 import React from 'react'
-import { ceoLetterText } from '../../common/featuresText/ceoLetterText'
+import { ceoLetterText } from '../../common/aboutText/ceoLetterText'
 
 const CeoLetter = () => {
 

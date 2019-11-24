@@ -1,5 +1,5 @@
 import React from 'react'
-import { aboutBlurbText } from '../../common/activitiesText/aboutText'
+import { aboutBlurbText } from '../../common/homeText/aboutBlurbText'
 
 const AboutBlurb = () => {
 
