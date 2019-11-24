@@ -2,25 +2,31 @@
     margin-top: 15%;
 }
 
-.services-button-group-desktop {
-    margin-top: 20%;
+@media screen and (min-width: 700px) {
+  .services-button-group {
+      margin-top: 20%;
+  }
+
+  .services-button {
+      width: 50%;
+      height: 3em;
+      font-size: 1.7em;
+  }
 }
 
-.services-button-group-mobile {
-    margin-top: 50%;
+@media screen and (max-width: 699px) {
+  .services-button-group {
+      margin-top: 50%;
+  }
+
+  .services-button{
+      width: 50%;
+      height: 2.2em;
+      font-size: 1.2em;
+  }
 }
 
-.services-button-desktop {
-    width: 50%;
-    height: 3em;
-    font-size: 1.7em;
-}
 
-.services-button-mobile {
-    width: 50%;
-    height: 2.2em;
-    font-size: 1.2em;
-}
 
 .classes-button {
     background-color: rgb(8, 37, 78);
