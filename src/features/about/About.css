@@ -1,7 +1,8 @@
   /* about */
 
   .about-container {
-      margin-top: 8%;
+      position: absolute;
+      margin-top: 12%;
       background-image: url('./ecuadorLeaf.jpg');
       background-size: cover;
       padding-top: 3em;
