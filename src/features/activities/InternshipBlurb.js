@@ -4,14 +4,19 @@ import { internshipBlurbText } from '../../common/activitiesText/internshipText'
 
 const InternshipBlurb = () => {
     return (
-        <div className="activities-text">
+        <div className="activities">
           <br/>
           <div className="sub-headline">
             {internshipBlurbText[localStorage.getItem("language")].title}
           </div>
-          {internshipBlurbText[localStorage.getItem("language")].text}
 
-          {internshipBlurbText[localStorage.getItem("language")].button}
+          <div className="activities-description">
+            {internshipBlurbText[localStorage.getItem("language")].text}
+          </div>
+
+          <div className="activities-button">
+            {internshipBlurbText[localStorage.getItem("language")].button}
+          </div>
 
         </div>
     )

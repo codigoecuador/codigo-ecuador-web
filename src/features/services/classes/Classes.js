@@ -1,5 +1,4 @@
-import React,  { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react'
 import { Container, Divider } from "semantic-ui-react"
 import './Classes.css'
 import { pythonClasses } from './PythonData'
@@ -16,9 +15,9 @@ class Classes extends Component {
         <br/>
         <div className="large python-title">{course.title}</div>
         <br/>
-        <h2>
-          {course.duration}
-        </h2>
+        <h3>
+          <i>{course.duration}</i>
+        </h3>
 
         <div className="python-description">
           {course.description}
@@ -40,13 +39,9 @@ class Classes extends Component {
 
 
   render(){
-    let coursesStyle
-    this.props.size === "mobile" ? coursesStyle = "courses-mobile" : coursesStyle = "courses-desktop"
-
-
 
     return (
-      <Container className={coursesStyle}>
+      <Container className="courses">
         <div className="courses-text">
           <div className="center headline">
             <span className="gold">Our</span><span className="navy"> Curriculum</span>
@@ -60,12 +55,10 @@ class Classes extends Component {
 
           </Container>
         )
-
   }
-
 
 }
 
-const mapStateToProps = state => {  return {  size: state.size  } }
 
-export default connect(mapStateToProps)(Classes)
+
+export default Classes

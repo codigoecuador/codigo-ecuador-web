@@ -1,6 +1,15 @@
-.mentor-container-desktop{
-	margin-top: 10%;
+@media screen and (min-width: 700px) {
+	.mentor-container{
+		margin-top: 10%;
+	}
 }
+
+@media screen and (max-width: 699px) {
+	.mentor-container{
+		margin-top: 45%;
+	}
+}
+
 
 .boss-photo {
   width: 90%;
@@ -13,9 +22,7 @@
 	line-height: 1em;
 }
 
-.mentor-container-mobile{
-	margin-top: 45%;
-}
+
 
 .mentor-text {
   font-size: 1.5em;

@@ -92,7 +92,8 @@ body {
     height: 100%;
 }
 
+/* not reaching element */
 .language-dropdown {
-    top: 40%;
+    top: 10%;
     right: 5%;
 }
