@@ -1,15 +1,18 @@
 /* blog */
 
-.blog-container-desktop {
-	margin: 10%;
-	padding: 2%;
+@media screen and (min-width: 700px) {
+	.blog-container {
+		margin: 10%;
+		padding: 2%;
+	}
 }
 
-.blog-container-mobile {
-	margin-top: 40%;
-	padding: 2%;
+@media screen and (max-width: 699px) {
+	.blog-container {
+		margin-top: 40%;
+		padding: 2%;
+	}
 }
-
 
 
 .blog-card-image {
@@ -19,7 +22,7 @@
 }
 
 .card {
-	width: 10vw;
+	width: 30%;
 	height: auto;
 	padding: 2vw;
 	border: 1px solid black;
@@ -29,7 +32,7 @@
 }
 
 .blog-title {
-	font-size: 1.3vw;
+	font-size: 1.3em;
 	font-weight: bold;
 	color: rgba(46, 46, 87, 0.897);
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -38,7 +41,7 @@
 .blog-author {
 	font-family: fantasy;
 	float: bottom;
-	font-size: 1.5vw;
+	font-size: 1.5em;
 	top: 20%;
 }
 
@@ -46,12 +49,6 @@
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.slick-list div {
-	/* padding: 2vw;
-	width: 90%;
-	max-height: 50%; */
-}
-
 .slick-track div {
-	min-width: 40vw;
+	min-width: 30%;
 }

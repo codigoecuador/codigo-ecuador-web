@@ -20,12 +20,18 @@ class BoardOfDirectors extends Component {
             </div>
 
             <div className="board-column">
-              <img className="board-photo" src="https://media.licdn.com/dms/image/C4D03AQEX65R-YqCvDw/profile-displayphoto-shrink_200_200/0?e=1579737600&v=beta&t=ZLLmNnAa_u3iCWgjD-TNNuQX4K0uhNWZJoklxttN9c0" alt="headshot of board member Debra Ray" />
+              <img
+                className="board-photo"
+                src="https://media.licdn.com/dms/image/C4D03AQEX65R-YqCvDw/profile-displayphoto-shrink_200_200/0?e=1579737600&v=beta&t=ZLLmNnAa_u3iCWgjD-TNNuQX4K0uhNWZJoklxttN9c0"
+                alt="headshot of board member Debra Ray" />
             </div>
 
 
             <div className="board-column">
-              <img className="board-photo" src="https://static.wixstatic.com/media/47ab14_85e2c9c81a0a45b6b2b6ee0623d1f9f3~mv2.jpg/v1/fill/w_420,h_442,al_c,q_80,usm_0.66_1.00_0.01/Image%20from%20iOS_edited.webp" alt="headshot of board member Tom Sullivan"/>
+              <img
+                className="board-photo"
+                src="https://static.wixstatic.com/media/47ab14_85e2c9c81a0a45b6b2b6ee0623d1f9f3~mv2.jpg/v1/fill/w_420,h_442,al_c,q_80,usm_0.66_1.00_0.01/Image%20from%20iOS_edited.webp"
+                alt="headshot of board member Tom Sullivan"/>
             </div>
 
             <div className="board-column">

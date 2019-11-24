@@ -22,17 +22,6 @@ class Blog extends Component {
 
 	render() {
 
-		let blogContainerStyle
-		if(this.props.size === "mobile"){
-			blogContainerStyle = "blog-container-mobile"
-		} else {
-			blogContainerStyle = "blog-container-desktop"
-
-		}
-
-		let num
-		this.props.size === "mobile" ?  num = 1 : num = 2
-
 		if (!this.state.blogs.items) {
 			return (
 				<div className="blog-container">No blog posts at the moment!</div>
@@ -44,7 +33,7 @@ class Blog extends Component {
 				dots: true,
 				infinite: true,
 				speed: 4000,
-				slidesToShow: num,
+				slidesToShow: 1,
 				slidesToScroll: 1,
 				autoplay: true,
 				autoplayspeed: 8000
@@ -52,7 +41,7 @@ class Blog extends Component {
 
 			return (
 				<>
-					<div className={blogContainerStyle}>
+					<div className="blog-container">
 						<div className="headline">
 							<span className="gold">Recent</span>
 							<span className="navy"> Blog Posts</span>

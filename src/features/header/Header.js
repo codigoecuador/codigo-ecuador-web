@@ -7,9 +7,6 @@ import { Link } from "react-router-dom";
 
 class Header extends Component {
     render() {
-        // let navStyle
-        // console.log('header props', this.props.size)
-        // this.props.size === "mobile" ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
 
         return (
           <div className = "header" >

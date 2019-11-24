@@ -2,7 +2,6 @@ import React from "react"
 import { Grid,  Container } from "semantic-ui-react"
 import './Partners.css'
 import { partnersData } from "./PartnersData"
-import { minorPartnersData } from './MinorPartnersData'
 import PartnerGrid from "./PartnerGrid"
 
 const Partners = () => {
