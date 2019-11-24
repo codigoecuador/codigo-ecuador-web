@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Container, Card } from "semantic-ui-react"
+import { Container } from "semantic-ui-react"
 import "./boardOfDirectors.css"
 
 class BoardOfDirectors extends Component {

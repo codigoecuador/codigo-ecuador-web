@@ -8,24 +8,18 @@ import EntrpeneurshipBlurb from "./EntrepreneurshipBlurb"
 class Activities extends Component {
     render() {
 
-        return ( <
-            div className = "blurb-group" >
-            <
-            div className = "blurb" > <
-            EducationBlurb / >
-            <
-            /div> <
-            div className = "blurb" >
-            <
-            InternshipBlurb / >
-            <
-            /div><
-            div className = "blurb" >
-            <
-            EntrpeneurshipBlurb / >
-            <
-            /div>< /
-            div >
+        return (
+          <div className = "blurb-group" >
+            <div className = "blurb" >
+              <EducationBlurb / >
+            </div>
+            <div className = "blurb" >
+              <InternshipBlurb / >
+            </div>
+            <div className = "blurb" >
+              <EntrpeneurshipBlurb / >
+            </div>
+          </div >
         );
 
     }

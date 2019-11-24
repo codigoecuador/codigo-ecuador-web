@@ -11,26 +11,20 @@ class Header extends Component {
         // console.log('header props', this.props.size)
         // this.props.size === "mobile" ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
 
-        return ( <
-            div className = "header" >
-            <
-            Link exact className = "logo-wrapper"
-            to = "/" >
-            <
-            Logo className = "logo" / >
-            <
-            /Link> <
-            div className = "navbar" >
-            <
-            Navbar / >
-            <
-            /div> <
-            div className = "language-dropdown" >
-            <
-            LanguageToggle / >
-            <
-            /div>{" "} <
-            /div>
+        return (
+          <div className = "header" >
+            <Link exact className = "logo-wrapper" to = "/" >
+              <Logo className = "logo" / >
+            </Link>
+
+            <div className = "navbar" >
+              <Navbar / >
+            </div>
+
+            <div className = "language-dropdown" >
+              <LanguageToggle / >
+            </div>
+          </div>
         );
     }
 }
