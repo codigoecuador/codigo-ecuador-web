@@ -13,12 +13,10 @@
 	background-color: rgb(8, 37, 78);
 	width: 90%;
 	margin: auto;
+	margin-top: 10%;
 	margin-bottom: 1%;
 }
 
-.headline-container {
-	margin-top: 10%;
-}
 
 @media screen and (min-width: 700px) {
 	.headline-container {
@@ -37,14 +35,10 @@
 }
 
 @media screen and (max-width: 699px) {
-<<<<<<< Updated upstream
-=======
 	.headline-container {
 		height: 1.5em;
 		line-height: 1.5em;
 	}
-
->>>>>>> Stashed changes
 	.showing {
 		position: absolute;
 		margin-left: 25%;

@@ -18,15 +18,10 @@ class Blog extends Component {
 			.then((response) => response.json())
 			.then((blogs) => this.setState({ blogs: blogs }))
 	}
-	//react carousel installed with < npm i @brainhubeu/react-carousel > in the terminal
+
 
 	render() {
-		let blogContainerStyle
-		if (this.props.size === "mobile") {
-			blogContainerStyle = "blog-container-mobile"
-		} else {
-			blogContainerStyle = "blog-container-desktop"
-		}
+
 
 		if (!this.state.blogs.items) {
 			return (
@@ -50,10 +45,8 @@ class Blog extends Component {
 			return (
 				<>
 					<div className="blog-container">
-						<hr className="blog-divider" />
-						<div className="headline">
-							<span className="gold">Recent</span>
-							<span className="navy"> Blog Posts</span>
+						<div className="headline blog-headline-container">
+							<span className="gold">Recent Blog Posts</span>
 						</div>
 						<br />
 						<br />
@@ -72,8 +65,10 @@ class Blog extends Component {
 	}
 }
 
-const mapStateToProps = (state) => {
-	return { size: state.size }
-}
+export default Blog
 
-export default connect(mapStateToProps)(Blog)
+// const mapStateToProps = (state) => {
+// 	return { size: state.size }
+// }
+
+// export default connect(mapStateToProps)(Blog)

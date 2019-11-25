@@ -1,22 +1,29 @@
-/* blog */
 
-.blog-divider {
+
+.blog-container {
 	margin: auto;
-	margin-bottom: 3em;
+	width: 80%;
+	margin-top: 18%;
+	margin-bottom: 1%;
+}
+
+.blog-headline-container {
+	background-color: rgb(8, 37, 78);
+	width: 90%;
+	margin: auto;
+	margin-top: 10%;
+	margin-bottom: 5%;
 }
 
 @media screen and (min-width: 700px) {
-	.blog-container {
-		margin: 12%;
-		padding: 2%;
+	.blog-headline-container {
+		height: 2em;
+		line-height: 2em;
 	}
 }
 
 @media screen and (max-width: 699px) {
-	.blog-container {
-		margin-top: 20%;
-		padding: 2%;
-	}
+
 }
 
 .blog-card-image {
