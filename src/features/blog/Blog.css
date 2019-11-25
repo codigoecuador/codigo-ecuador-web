@@ -1,5 +1,9 @@
 /* blog */
 
+.blog-divider {
+	margin: auto;
+}
+
 @media screen and (min-width: 700px) {
 	.blog-container {
 		margin: 12%;

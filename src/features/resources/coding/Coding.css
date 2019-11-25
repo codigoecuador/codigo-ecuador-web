@@ -15,8 +15,7 @@
 	height: 2em;
 	line-height: 2em;
 	margin: auto;
-
-
+	margin-bottom: 1%;
 }
 
 @media screen and (min-width: 700px) {

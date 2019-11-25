@@ -42,6 +42,7 @@ class Blog extends Component {
 			return (
 				<>
 					<div className="blog-container">
+						<hr className="blog-divider"/>
 						<div className="headline">
 							<span className="gold">Recent</span>
 							<span className="navy"> Blog Posts</span>
