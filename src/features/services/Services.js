@@ -8,7 +8,7 @@ import Mentorship from './mentorship/Mentorship'
 class Services extends Component {
   state = {
     showing: ""
-  }
+  };
 
   handleClick = event => {
     this.setState({ showing: event.target.value })
@@ -16,11 +16,11 @@ class Services extends Component {
 
   render(){
 
-    let showing
-    if(this.state.showing === "classes"){
-      showing = <Classes />
+  renderShowing = () => {
+    if (this.state.showing === "classes") {
+      return <Classes />;
     } else {
-      showing = <Mentorship />
+      return <Mentorship />;
     }
 
     return (

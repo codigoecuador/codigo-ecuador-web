@@ -1,33 +1,33 @@
 import React from "react";
-import { Menu, Segment } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
 
 const CodingMenu = props => {
   return (
     <div>
       <Menu pointing secondary>
         <Menu.Item
-          name="Students"
+          name='Students'
           active={props.showing === "Student"}
           onClick={() => props.handleMobileClick("Student")}
-          value="Student"
+          value='Student'
         />
         <Menu.Item
-          name="Parents"
+          name='Parents'
           active={props.showing === "Parent"}
           onClick={() => props.handleMobileClick("Parent")}
-          value="Parent"
+          value='Parent'
         />
         <Menu.Item
-          name="Educators"
+          name='Educators'
           active={props.showing === "Educator"}
           onClick={() => props.handleMobileClick("Educator")}
-          value="Educator"
+          value='Educator'
         />
         <Menu.Item
-          name="Entrepeneurs"
+          name='Entrepeneurs'
           active={props.showing === "Entrepeneur"}
           onClick={() => props.handleMobileClick("Entrepeneur")}
-          value="Entrepeneur"
+          value='Entrepeneur'
         />
       </Menu>
     </div>

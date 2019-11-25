@@ -1,64 +1,61 @@
-import React, { Component } from 'react'
+import React from "react"
+import { connect } from "react-redux"
 import { Container, Divider } from "semantic-ui-react"
-import './Classes.css'
-import { pythonClasses } from './PythonData'
-import { text } from  './pythonClassesText.js'
+import "./Classes.css"
+import { classesText } from "../../../common/servicesText/classesText"
+// import { labeledStatement } from "@babel/types";
+import { pythonText } from "../../../common/servicesText/pythonText"
 
-class Classes extends Component {
+function Classes(props) {
+	const lang = localStorage.getItem("language")
+	const headline = classesText[lang]
+	const generatePythonClasses = () => {
+		return pythonText[lang].map((course) => (
+			<div className={`course-info ${course.color}`}>
+				<br />
+				<div className="large python-title">{course.title}</div>
+				<br />
+				<h2>{course.duration}</h2>
 
-  generatePythonClasses = () => {
-    return (
-    pythonClasses.map(course =>
+				<div className="python-description">{course.description}</div>
+				<br />
+				<div className="python-bullets">
+					{course.bulletPoints.map((point) => (
+						<ul>
+							<li>{point}</li>
+						</ul>
+					))}
+				</div>
+				<br />
+				<Divider />
+			</div>
+		))
+	}
 
+	let coursesStyle
+	props.size === "mobile"
+		? (coursesStyle = "courses-mobile")
+		: (coursesStyle = "courses-desktop")
 
-      <div className={`course-info ${course.color}`}>
-        <br/>
-        <div className="large python-title">{course.title}</div>
-        <br/>
-        <h3>
-          <i>{course.duration}</i>
-        </h3>
+	return (
+		<Container className={coursesStyle}>
+			<div className="courses-text">
+				<div className="center headline">
+					<span className="gold">{headline.goldTitle}</span>
+					<span className="navy">{headline.navyTitle}</span>
+				</div>
+				{headline.text}
+			</div>
+			<br />
+			<br />
 
-        <div className="python-description">
-          {course.description}
-        </div>
-        <br/>
-        <div className="python-bullets">
-          {course.bulletPoints.map(point =>
-            <ul>
-              <li>{point}</li>
-            </ul>
-            )}
-        </div>
-        <br/>
-        <Divider/>
-      </div>
-      )
-    )
-  }
-
-
-  render(){
-
-    return (
-      <Container className="courses">
-        <div className="courses-text">
-          <div className="center headline">
-            <span className="gold">Our</span><span className="navy"> Curriculum</span>
-          </div>
-          {text}
-        </div>
-        <br/>
-        <br/>
-
-        {this.generatePythonClasses()}
-
-          </Container>
-        )
-  }
-
+			{generatePythonClasses()}
+		</Container>
+	)
 }
 
+const mapStateToProps = (state) => {
+	return { language: state.language }
+}
 
-
-export default Classes
+export default connect(mapStateToProps)(Classes)

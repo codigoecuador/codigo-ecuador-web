@@ -1,92 +1,84 @@
 /* home */
 
 .cover-pic {
-    top: 90%;
-    width: 100%;
-    height: auto;
-    z-index: -1;
+	top: 90%;
+	width: 100%;
+	height: auto;
+	z-index: -1;
 }
-
 
 /* at top of page, container for navbar and logo */
 
-
-
 .home-container {
-  margin-top: 12%;
+	margin-top: 12%;
 }
 
 .home-headline {
-    font-family: "Bree Serif", serif;
-    color: rgb(8, 37, 78);
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 3%;
+	font-family: "Bree Serif", serif;
+	color: rgb(8, 37, 78);
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 3%;
 }
 
 .sub-headline {
-    font-family: "Bree Serif", serif;
-    color: rgb(8, 37, 78);
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 3%;
-    font-size: 2em;
-    line-height: 1.5em;
-
+	font-family: "Bree Serif", serif;
+	color: rgb(8, 37, 78);
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 3%;
+	font-size: 2em;
+	line-height: 1.5em;
 }
 
 .about-blurb {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 1em;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 1em;
 }
 
 .bubble p {
-  font-size: 1.2em;
+	font-size: 1.2em;
 }
 
 @media screen and (min-width: 1550px) {
-    .home-headline {
-        font-size: 2.5em;
-        line-height: 1.5em;
-    }
+	.home-headline {
+		font-size: 2.5em;
+		line-height: 1.5em;
+	}
 
-    .about-blurb {
-        position: absolute;
-        top: 80%;
-        left: 10%;
-        width: 80%;
-        border-radius: 85px;
-        border: 3px solid rgb(197, 158, 85);
-        padding: 2%;
-    }
+	.about-blurb {
+		position: absolute;
+		top: 80%;
+		left: 10%;
+		width: 80%;
+		border-radius: 85px;
+		border: 3px solid rgb(197, 158, 85);
+		padding: 2%;
+	}
 
-    .activities {
-        margin-top: 1em;
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
+	.activities {
+		margin-top: 1em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
 }
 
 @media screen and (max-width: 1549px) {
-    .home-headline {
-        font-size: 2em;
-        line-height: 1em;
-        margin-bottom: 1em;
-    }
-    .about-blurb {
-        top: 45%;
-        left: 5%;
-        right: 5%;
-        width: 90;
-        padding: 1em;
-
-    }
-
+	.home-headline {
+		font-size: 2em;
+		line-height: 1em;
+		margin-bottom: 1em;
+	}
+	.about-blurb {
+		top: 45%;
+		left: 5%;
+		right: 5%;
+		width: 90;
+		padding: 1em;
+	}
 }
 
-
-
 .activities p {
-    font-size: 2em;
+	font-size: 2em;
 }

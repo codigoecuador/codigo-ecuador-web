@@ -19,17 +19,15 @@ const minorPartners = () => {
 									alt="partner logo"/ >
 							</a>
 
-							<div className="content">
-								<div className="header">{partner.name}</div>
-							</div>
-							<div className="description">
-								{partner.content}
-							</div>
-						</Card>
-					)}
-				</Card.Group>
-		</Container>
-	)
-}
+            <div className='content'>
+              <div className='header'>{partner.name}</div>
+            </div>
+            <div className='description'>{partner.content}</div>
+          </Card>
+        ))}
+      </Card.Group>
+    </Container>
+  );
+};
 
-export default minorPartners
+export default minorPartners;

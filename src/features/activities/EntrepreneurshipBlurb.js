@@ -1,6 +1,6 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { entrepreneurshipBlurbText } from '../../common/activitiesText/entrepreneurshipText'
+import React from "react";
+import { connect } from "react-redux";
+import { entrepreneurshipBlurbText } from "../../common/activitiesText/entrepreneurshipText";
 
 const EntrepreneurshipBlurb = () => {
     return (
@@ -18,10 +18,8 @@ const EntrepreneurshipBlurb = () => {
             {entrepreneurshipBlurbText[localStorage.getItem("language")].button}
           </div>
 
-        </div>
-    )
-}
+const mapStateToProps = state => {
+  return { language: state.language };
+};
 
-const mapStateToProps = state => { return { language: state.language } }
-
-export default connect(mapStateToProps)(EntrepreneurshipBlurb)
+export default connect(mapStateToProps)(EntrepreneurshipBlurb);

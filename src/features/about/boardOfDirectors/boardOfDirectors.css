@@ -9,12 +9,11 @@
 	height: auto;
 	overflow: hidden;
 	display: "block";
-	margin: '0 auto';
+	margin: "0 auto";
 }
 
 .board-column {
 	text-align: center;
-
 }
 
 .board-card {
@@ -43,16 +42,16 @@
 		margin-right: 2em;
 	}
 
-	.board-header{
+	.board-header {
 		font-size: 3em;
 	}
-	.board-subhead{
-	  font-size: 2em;
+	.board-subhead {
+		font-size: 2em;
 		margin-bottom: 2em;
 	}
-	.board-description{
-	  font-size: 1.8em;
-	  line-height: normal
+	.board-description {
+		font-size: 1.8em;
+		line-height: normal;
 	}
 }
 
@@ -63,9 +62,9 @@
 	}
 
 	.board-column {
-	  width: 100%;
-	  padding: 40px;
-	  height: 500px;
+		width: 100%;
+		padding: 40px;
+		height: 500px;
 		border-radius: 5%;
 	}
 
@@ -76,17 +75,17 @@
 		margin-bottom: 2em;
 	}
 
-	.board-header{
-	  font-size: 1.5em;
+	.board-header {
+		font-size: 1.5em;
 	}
 
-	.board-subhead{
+	.board-subhead {
 		font-size: 1.2em;
 		line-height: 1.2em;
 		margin-bottom: 1em;
 	}
 
-	.board-description{
+	.board-description {
 		font-size: 1.4em;
 		line-height: 1em;
 		margin-bottom: 2em;

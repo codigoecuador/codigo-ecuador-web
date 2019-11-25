@@ -1,42 +1,41 @@
 /* resources/ research */
 
 .research-container {
-	position: absolute;
-	top: 25%;
-	left: 5%;
-	right: 5%;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  right: 5%;
 }
 
 .research-banner {
-	background-color: rgb(197, 158, 85, 0.1);
-	padding: 2%;
+  background-color: rgb(197, 158, 85, 0.1);
+  padding: 2%;
 }
 
 .research-image {
-	max-height: 30vw;
-	width: auto;
+  max-height: 30vw;
+  width: auto;
 }
 
 .research-image-mobile {
-	max-height: 20vw;
-	width: auto;
-
+  max-height: 20vw;
+  width: auto;
 }
 
 .research-headline {
-	text-align: center;
-	line-height: 2vw;
+  text-align: center;
+  line-height: 2vw;
 }
 
 .research-container-text {
-	font-size: 1.3vw;
-	line-height: 1.3vw;
-	padding-bottom: 4vw;
-	padding-top: 3vw;
+  font-size: 1.3vw;
+  line-height: 1.3vw;
+  padding-bottom: 4vw;
+  padding-top: 3vw;
 }
 
 .research-description {
-	font-size: 1.2vw;
-	line-height: 1.3vw;
-	padding: 5%;
+  font-size: 1.2vw;
+  line-height: 1.3vw;
+  padding: 5%;
 }

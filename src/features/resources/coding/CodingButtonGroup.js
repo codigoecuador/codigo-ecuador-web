@@ -5,14 +5,14 @@ import { Button, Sticky } from "semantic-ui-react";
 const CodingButtonGroup = props => {
   return (
     <Sticky>
-      <div className="coding-button-group">
+      <div className='coding-button-group'>
         <br />
         <br />
         <Button.Group vertical>
           <button
             onClick={props.handleClick}
-            className="coding-button"
-            value="Student"
+            className='coding-button'
+            value='Student'
           >
             For Students
           </button>
@@ -20,8 +20,8 @@ const CodingButtonGroup = props => {
           <br />
           <button
             onClick={props.handleClick}
-            className="coding-button"
-            value="Parent"
+            className='coding-button'
+            value='Parent'
           >
             For Parents
           </button>
@@ -29,8 +29,8 @@ const CodingButtonGroup = props => {
           <br />
           <button
             onClick={props.handleClick}
-            className="coding-button"
-            value="Educator"
+            className='coding-button'
+            value='Educator'
           >
             For Educators
           </button>
@@ -38,8 +38,8 @@ const CodingButtonGroup = props => {
           <br />
           <button
             onClick={props.handleClick}
-            className="coding-button"
-            value="Entrepreneur"
+            className='coding-button'
+            value='Entrepreneur'
           >
             For Entrepreneurs
           </button>
