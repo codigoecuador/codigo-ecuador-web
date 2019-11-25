@@ -4,7 +4,7 @@ import { Container } from "semantic-ui-react"
 import Classes from "./classes/Classes"
 import Mentorship from "./mentorship/Mentorship"
 
-function Services() {
+const Services = () => {
 	const [showing, setShowing] = useState("classes")
 
 	const handleClick = (event) => {

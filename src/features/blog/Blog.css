@@ -2,9 +2,6 @@
 
 .blog-container {
 	margin: auto;
-	width: 80%;
-	margin-top: 18%;
-	margin-bottom: 1%;
 }
 
 .blog-headline-container {
@@ -15,14 +12,9 @@
 	margin-bottom: 5%;
 }
 
-@media screen and (min-width: 700px) {
-	.blog-headline-container {
-		height: 2em;
-		line-height: 2em;
-	}
-}
-
-@media screen and (max-width: 699px) {
+.blog-card {
+	border: 1px solid black;
+	background-color: rgb(245, 244, 243);
 
 }
 
@@ -32,35 +24,73 @@
 	height: auto;
 }
 
-.card {
-	width: 30%;
-	height: auto;
-	padding: 2vw;
-	border: 1px solid black;
-	border-radius: 15%;
-	background-color: rgb(245, 244, 243);
-	box-shadow: 20px 20px rgb(0, 0, 0, 0.6);
-}
 
 .blog-title {
-	font-size: 1.3em;
 	font-weight: bold;
 	color: rgba(46, 46, 87, 0.897);
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
 }
 
-.blog-author {
-	font-family: fantasy;
-	float: bottom;
-	font-size: 1.5em;
-	top: 20%;
-}
 
 .blog-date {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+
+
+@media screen and (min-width: 700px) {
+	.blog-container {
+		width: 80%;
+		margin-top: 18%;
+		margin-bottom: 1%;
+	}
+
+	.blog-headline-container {
+		height: 2em;
+		line-height: 2em;
+	}
+
+	.blog-card {
+		width: 30%;
+		height: auto;
+		padding: 2em;
+		box-shadow: 20px 20px rgb(0, 0, 0, 0.6);
+	}
+
+	.blog-title {
+		font-size: 2em;
+		line-height: 1em;
+	}
+}
+
+@media screen and (max-width: 699px) {
+	.blog-container {
+		width: 80%;
+		margin-top: 55%;
+		margin-bottom: 1%;
+	}
+
+	.blog-headline-container {
+		height: 1.5em;
+		line-height: 1.5em;
+	}
+
+	.blog-card {
+		width: 20%;
+		height: auto;
+		padding: 2em;
+	}
+
+	.blog-title {
+		font-size: 1.5em;
+		line-height: 1em;
+	}
+
+}
+
+
 .slick-track div {
 	min-width: 30%;
+	max-width: 50%;
 }
