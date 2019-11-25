@@ -15,7 +15,7 @@ function Classes(props) {
 				<br />
 				<div className="large python-title">{course.title}</div>
 				<br />
-				<h2>{course.duration}</h2>
+				<h2><i>{course.duration}</i></h2>
 
 				<div className="python-description">{course.description}</div>
 				<br />

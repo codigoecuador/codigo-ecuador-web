@@ -5,9 +5,6 @@
 
 .donate-headline {
 	background-color: rgb(8, 37, 78);
-	height: 2em;
-	line-height: 2em;
-	margin-bottom: 2em;
 }
 
 .donate-cards-group {
@@ -16,8 +13,29 @@
 }
 
 .donate-card {
-	height: 10vw;
+	height: 10%;
 	width: auto;
+}
+
+@media screen and (min-width: 700px) {
+	.donate-headline {
+		height: 2em;
+		line-height: 2em;
+		margin-bottom: 2em;
+	}
+}
+
+/* trying to center donate cards for mobile, not reaching element */
+@media screen and (max-width: 699px) {
+	.donate-headline {
+		height: 1.5em;
+		line-height: 1.5em;
+		margin-bottom: 1em;
+	}
+
+	.donate-card {
+		margin: auto;
+	}
 }
 
 .hidden-content {

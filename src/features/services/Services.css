@@ -1,5 +1,6 @@
 .services-button-group {
 	margin-top: 25%;
+	margin-bottom: 3em;
 }
 
 @media screen and (min-width: 700px) {
@@ -16,6 +17,7 @@
 		height: 2.2em;
 		font-size: 1.4em;
 	}
+
 }
 
 .classes-button {

@@ -12,8 +12,6 @@
 .headline-container {
 	background-color: rgb(8, 37, 78);
 	width: 90%;
-	height: 2em;
-	line-height: 2em;
 	margin: auto;
 	margin-bottom: 1%;
 }
@@ -23,6 +21,11 @@
 }
 
 @media screen and (min-width: 700px) {
+	.headline-container {
+		height: 2em;
+		line-height: 2em;
+	}
+
 	.showing {
 		position: absolute;
 		margin-left: 25%;
@@ -34,6 +37,14 @@
 }
 
 @media screen and (max-width: 699px) {
+<<<<<<< Updated upstream
+=======
+	.headline-container {
+		height: 1.5em;
+		line-height: 1.5em;
+	}
+
+>>>>>>> Stashed changes
 	.showing {
 		position: absolute;
 		margin-left: 25%;
