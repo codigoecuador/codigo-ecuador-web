@@ -5,22 +5,22 @@
 	z-index: 1;
 }
 
-.coding-container {
-	margin-top: 5%;
-}
+
 
 .headline-container {
 	background-color: rgb(8, 37, 78);
 	width: 90%;
 	margin: auto;
+	margin-top: 10%;
 	margin-bottom: 1%;
 }
 
-.headline-container {
-	margin-top: 10%;
-}
 
 @media screen and (min-width: 700px) {
+	.coding-container {
+		margin-top: 5%;
+	}
+
 	.headline-container {
 		height: 2em;
 		line-height: 2em;
@@ -37,18 +37,19 @@
 }
 
 @media screen and (max-width: 699px) {
-<<<<<<< Updated upstream
-=======
+	.coding-container {
+		margin-top: 0%;
+	}
+
 	.headline-container {
 		height: 1.5em;
 		line-height: 1.5em;
 	}
 
->>>>>>> Stashed changes
 	.showing {
 		position: absolute;
 		margin-left: 25%;
-		margin-top: 10%;
+		margin-top: 5%;
 		margin-right: 10%;
 		margin-bottom: 5%;
 		padding: 5%;

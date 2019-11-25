@@ -5,9 +5,11 @@ class BlogCard extends Component {
 	render() {
 		let blog = this.props.blog
 
+		blog.title = blog.title.replace("&amp;", "&")
+
 		return (
 			<>
-				<Card className="card">
+				<Card className="blog-card">
 					<a href={blog.link}>
 						<Image
 							src={blog.thumbnail}
@@ -16,16 +18,10 @@ class BlogCard extends Component {
 					</a>
 
 					<Card.Content>
-						<Card.Header>
+					  <Card.Description>
 							<span className="blog-title">{blog.title}</span>
-						</Card.Header>
+						</Card.Description>
 
-						<Card.Description></Card.Description>
-
-						<p>
-							Published by{" "}
-							<span className="blog-author">{blog.author}</span>
-						</p>
 						<p>
 							Date:{" "}
 							<span className="blog-date">{blog.pubDate}</span>
