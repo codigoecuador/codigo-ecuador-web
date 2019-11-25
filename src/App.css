@@ -22,7 +22,7 @@
 
 /* contains logo, navbar and language toggle */
 .header {
-	position: fixed;
+	position: relative;
 	width: 100%;
 	top: 0;
 	background-color: white;
