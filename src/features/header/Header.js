@@ -16,6 +16,10 @@ const Header = () => {
           <Navbar / >
         </div>
 
+        <div className='ui right item'>
+          <LanguageToggle />
+        </div>
+
 
       </div>
     );

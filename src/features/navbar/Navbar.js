@@ -10,7 +10,6 @@ const Navbar = () => {
 
     return (
       <Container className="nav-buttons">
-        <div class="ui small menu">
           <Link className="nav-button" to="/">
             Home
           </Link>
@@ -29,11 +28,6 @@ const Navbar = () => {
           <Link exact className="nav-button" to="/donate">
             Donate
           </Link>
-          <div className = "language" >
-            <LanguageToggle / >
-          </div>
-        </div>
-
       </Container>
     )
 
