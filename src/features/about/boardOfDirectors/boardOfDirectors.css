@@ -1,63 +1,94 @@
-.board-bubble-mobile {
-
-}
-
-.board-bubble-desktop {
-
-}
-
 .board-container {
 	top: 20%;
 	padding-top: 10%;
-	bottom: 10%;
-}
-
-.board-headline {
-	padding: 5%;
-}
-
-.board-card {
-	position: absolute;
-	text-align: center;
-	background-color: rgb(255, 255, 255, 0.8);
-	border-radius: 20%;
-	border: 3px solid rgb(197, 158, 85);
-}
-
-.board-card:active{
-	background-color: rgb(8,37,78);
-	color: white;
+	margin-bottom: 10%;
 }
 
 .board-photo {
-	width: 25vw;
+	width: 80%;
 	height: auto;
 	overflow: hidden;
 	display: "block";
 	margin: '0 auto';
 }
 
-.board-header{
-  font-size: 40px;
-}
-
-.board-meta{
-  font-size: 30px;
-}
-
-.board-description{
-  font-size: 25px;
-  line-height: normal
-}
-
 .board-column {
-  float: left;
-  width: 50%;
-  padding: 40px;
-  height: 500px;
 	text-align: center;
-  vertical-align: middle;
+
+}
+
+.board-card {
+	vertical-align: middle;
 	background-color: rgb(255, 255, 255, 0.8);
-	border-radius: 20%;
 	border: 3px solid rgb(197, 158, 85);
+}
+
+@media screen and (min-width: 700px) {
+	.board-headline {
+		padding: 5%;
+		margin-top: 1%;
+	}
+
+	.board-column {
+		float: left;
+		width: 50%;
+	}
+
+	.board-card {
+		padding: 3em;
+		height: 40em;
+		border-radius: 20%;
+		border: 3px solid rgb(197, 158, 85);
+		margin-bottom: 2em;
+		margin-right: 2em;
+	}
+
+	.board-header{
+		font-size: 3em;
+	}
+	.board-subhead{
+	  font-size: 2em;
+		margin-bottom: 2em;
+	}
+	.board-description{
+	  font-size: 1.8em;
+	  line-height: normal
+	}
+}
+
+@media screen and (max-width: 699px) {
+	.board-headline {
+		padding: 5%;
+		margin-top: 10%;
+	}
+
+	.board-column {
+	  width: 100%;
+	  padding: 40px;
+	  height: 500px;
+		border-radius: 5%;
+	}
+
+	.board-card {
+		padding: 40px;
+		height: 500px;
+		border-radius: 5%;
+		margin-bottom: 2em;
+	}
+
+	.board-header{
+	  font-size: 1.5em;
+	}
+
+	.board-subhead{
+		font-size: 1.2em;
+		line-height: 1.2em;
+		margin-bottom: 1em;
+	}
+
+	.board-description{
+		font-size: 1.4em;
+		line-height: 1em;
+		margin-bottom: 2em;
+	}
 }
