@@ -34,13 +34,11 @@
 	font-family: "Bree Serif", serif;
 	font-weight: bold;
 	text-align: center;
-	letter-spacing: 2px;
+	letter-spacing: 1.5px;
 }
 
 .subhead {
-	font-size: 2em;
 	text-align: center;
-	line-height: 1.2em;
 	color: grey;
 }
 
@@ -61,6 +59,11 @@
 		line-height: 1em;
 		margin-bottom: 5%;
 		margin-top: 2%;
+	}
+
+	.subhead {
+		font-size: 2em;
+		line-height: 1.2em;
 	}
 
 	.language {
@@ -84,6 +87,11 @@
 		font-size: 2em;
 		line-height: 0.5em;
 		margin-bottom: 5%;
+	}
+
+	.subhead {
+		font-size: 1.5em;
+		line-height: 1.1em;
 	}
 
 	.language {
