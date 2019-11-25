@@ -4,7 +4,7 @@ import { ourStoryText } from "../../common/aboutText/ourStoryText"
 const OurStory = () => {
 	return (
 		<div className="about-bubble">
-			<div className="headline">
+			<div className="headline our-story-headline">
 				<span className="gold">
 					{ourStoryText[localStorage.getItem("language")].goldTitle}
 				</span>

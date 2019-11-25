@@ -45,6 +45,17 @@
 }
 
 @media screen and (min-width: 700px) {
+	.logo-wrapper {
+		width: 50%;
+		float: left;
+		max-width: 600px;
+	}
+
+	.logo {
+		margin: 3em;
+		width: 90%;
+	}
+
 	.headline {
 		font-size: 3em;
 		line-height: 1em;
@@ -61,6 +72,14 @@
 }
 
 @media screen and (max-width: 699px) {
+	.logo-wrapper {
+		width: 100%;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
 	.headline {
 		font-size: 2em;
 		line-height: 0.5em;
@@ -68,22 +87,18 @@
 	}
 
 	.language {
-		float: left;
+
 	}
 }
 
 .logo {
 	margin: 3em;
-	width: 100%;
+	width: 90%;
 	height: auto;
 	z-index: 1;
 }
 
-.logo-wrapper {
-	width: 50%;
-	max-width: 600px;
-	float: left;
-}
+
 
 
 html,
