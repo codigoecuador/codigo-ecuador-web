@@ -4,6 +4,13 @@
 	z-index: 3;
 }
 
+.donate-headline {
+	background-color: rgb(8, 37, 78);
+	height: 2em;
+	line-height: 2em;
+	margin-bottom: 2em;
+}
+
 .donate-cards-group {
 	margin-left: 3%;
 	padding: 2%;

@@ -9,7 +9,7 @@ const Donate = () => {
 	return (
 		<>
 			<Container className="donate center">
-				<div className="headline">
+				<div className="headline donate-headline">
 					<span className="gold">Donate</span>
 				</div>
 

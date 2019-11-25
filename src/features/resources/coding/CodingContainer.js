@@ -19,25 +19,19 @@ class CodingContainer extends Component {
   };
 
   render() {
-    let showing;
-    let headlineContainer;
     let codingButtonGroup;
     if (this.props.size === "mobile") {
-      showing = "showing-mobile";
-      headlineContainer = "headline-container-mobile";
       codingButtonGroup = (
         <CodingMenu fluid handleMobileClick={this.handleMobileClick} showing={this.state.showing} />
       );
     } else {
-      showing = "showing-desktop";
-      headlineContainer = "headline-container-desktop";
       codingButtonGroup = (
-        <CodingButtonGroup handleClick={this.handleClick} showing={showing} />
+        <CodingButtonGroup handleClick={this.handleClick} showing="showing" />
       );
     }
     return (
       <>
-        <div className={headlineContainer}>
+        <div className="headline-container">
           <br />
           <br />
           <br />
@@ -49,7 +43,7 @@ class CodingContainer extends Component {
 
         {codingButtonGroup}
 
-        <div className={showing}>
+        <div className="showing">
           <CodingLinks type={this.state.showing} />
           <br />
           <br />
