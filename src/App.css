@@ -107,6 +107,15 @@
     float: left;
 }
 
+/* trying to prevent navbar div from overlapping logo wrapper on resize - not working */
+.logo-wrapper:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
 html,
 body {
     margin: 0;
@@ -114,8 +123,7 @@ body {
 }
 
 /* not reaching element */
-.language-dropdown input{
-    position: relative;
+.language-dropdown /*input*/{
     top: 10%;
     right: 5%;
 }
