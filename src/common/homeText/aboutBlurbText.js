@@ -23,8 +23,6 @@ export const aboutBlurbText = {
 
             <p>Creemos que el mejoramiento del acceso a la ciencia de la computación puede promover la equidad global y de que la acción colectiva puede causar un gran impacto en el mundo.</p>
 
-            <h2>Lea más sobre nuestro trabajo a continuación ...</h2>
-
             <br/>
         </div>
 
