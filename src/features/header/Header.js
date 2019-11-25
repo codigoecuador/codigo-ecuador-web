@@ -15,11 +15,18 @@ const Header = () => {
 				<Navbar />
 			</div>
 
-			<div className="language">
-				<LanguageToggle />
-			</div>
-		</div>
-	)
+        <div className = "navbar" >
+          <Navbar / >
+        </div>
+
+        <div className='ui right item'>
+          <LanguageToggle />
+        </div>
+
+
+      </div>
+    );
+
 }
 
 export default Header
