@@ -49,6 +49,11 @@
     background-color: rgb(8, 37, 78);
 }
 
+.nav-button:focus {
+    color: white;
+    background-color: rgb(8, 37, 78);
+}
+
 @media screen and (min-width: 700px) {
   .nav-buttons {
       padding: 1.4em;
