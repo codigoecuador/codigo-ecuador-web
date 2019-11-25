@@ -1,15 +1,11 @@
-/* navbar */
-
 .navbar {
     font-weight: bolder;
     height: auto;
     top: 10%;
-    width: 57%;
     z-index: 1;
     max-width: 100%;
 }
 
-/* trying to prevent navbar div from overlapping logo wrapper on resize - not working */
 .navbar:before {
 	content: ".";
 	display: block;
@@ -21,6 +17,7 @@
 @media screen and (min-width: 1400px) {
 	.navbar {
 		position: relative;
+    width: 57%;
 		top: 2.4em;
 		float: right;
 		right: 5em;
@@ -30,13 +27,13 @@
 @media screen and (max-width: 1399px) {
 	.navbar {
 		top: 8%;
+    width: 100%;
 	}
 }
 
-.nav-buttons {
+.dropdown-button-group {
 	padding: 1.4em;
 }
-
 
 .dropdown-button:hover {
 	color: white;
@@ -46,12 +43,10 @@
 .dropdown-button:focus {
 	color: white;
 	background-color: rgb(8, 37, 78);
+  outline: none;
 }
 
 @media screen and (min-width: 700px) {
-	.nav-buttons {
-		padding: 1.4em;
-	}
 
   .dropdown-button {
     font-size: 1.4em;
@@ -60,18 +55,12 @@
 		border: 3px solid rgb(197, 158, 85);
 		margin: 0.5em;
   }
-
-
 }
 
 @media screen and (max-width: 699px) {
-	.nav-button {
-		font-size: 0.9em;
-		padding: 4px;
-		border-radius: 5px 10px;
-		border: 1.5px solid rgb(197, 158, 85);
-		margin: 0 2px;
-	}
+  .dropdown-button {
+    font-size: 1.5em;
+  }
 }
 
 /* Dropdown Button */

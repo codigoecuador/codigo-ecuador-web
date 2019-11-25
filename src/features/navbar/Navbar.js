@@ -8,7 +8,7 @@ const Navbar = () => {
 
 
     return (
-      <Container className="nav-buttons">
+      <Container className="dropdown-button-group">
       <div class="dropdown">
         <button class="dropdown-button">About</button>
         <div class="dropdown-content">
@@ -54,9 +54,6 @@ const Navbar = () => {
       <Link exact className="dropdown" to="/donate">
         <button className="dropdown-button">Donate</button>
       </Link>
-
-
-
 
       </Container>
     )
