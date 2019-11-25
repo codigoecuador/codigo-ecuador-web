@@ -27,13 +27,6 @@ export const ourStoryText = {
 				<br />
 			</div>
 		),
-		links: (
-			<div className="story-links">
-				<Link to="/about/partners">Partners | </Link>
-				<Link to="/about/team">Team | </Link>
-				<Link to="/about/board"> Board of Directors</Link>
-			</div>
-		)
 	},
 
 	ES: {
@@ -63,12 +56,5 @@ export const ourStoryText = {
 				<br />
 			</div>
 		),
-		links: (
-			<div className="story-links">
-				<Link to="/about/partners">(spanish) Partners | </Link>
-				<Link to="/about/team">(spanish) Team | </Link>
-				<Link to="/about/board"> (spanish)Board of Directors</Link>
-			</div>
-		)
 	}
 }

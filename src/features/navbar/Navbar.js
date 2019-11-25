@@ -42,32 +42,18 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="dropdown">
+
+      <Link exact className="dropdown" to="/resources">
         <button className="dropdown-button">Resources</button>
-        <div className="dropdown-content">
-          <a href='/resources'>
-            Our Resources
-          </a>
-        </div>
-      </div>
+      </Link>
 
-      <div class="dropdown">
-        <button class="dropdown-button">Blog</button>
-        <div class="dropdown-content">
-          <a href='/blog'>
-            Recent Blog Posts
-          </a>
-        </div>
-      </div>
+      <Link exact className="dropdown" to="/blog">
+        <button className="dropdown-button">Blog</button>
+      </Link>
 
-      <div class="dropdown">
-        <button class="dropdown-button">Donate</button>
-        <div class="dropdown-content">
-          <a href='/donate'>
-            Help us Succeed
-          </a>
-        </div>
-      </div>
+      <Link exact className="dropdown" to="/donate">
+        <button className="dropdown-button">Donate</button>
+      </Link>
 
 
 
