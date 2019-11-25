@@ -1,9 +1,8 @@
 /* resources/coding  */
 
 .resources {
-	position: absolute;
-	top: 35%;
-	z-index: 3;
+	top: 30%;
+	z-index: 1;
 }
 
 .headline-container-desktop {
