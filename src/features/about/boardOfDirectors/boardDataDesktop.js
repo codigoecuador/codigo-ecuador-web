@@ -21,7 +21,6 @@ export const boardDataDesktop =
       </div>
   </div>
 
-
   <div className="board-column">
     <div className="board-card">
       <img

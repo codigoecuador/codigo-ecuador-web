@@ -39,6 +39,8 @@
 		height: 40em;
 		border-radius: 20%;
 		border: 3px solid rgb(197, 158, 85);
+		margin-bottom: 2em;
+		margin-right: 2em;
 	}
 
 	.board-header{
