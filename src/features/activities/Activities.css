@@ -9,10 +9,14 @@
     margin: 0, auto;
 }
 
+.blurb {
+  width: 100%;
+
+}
+
 
 @media screen and (min-width: 700px) {
     .blurb {
-        width: 100%;
         border: 3px solid rgb(197, 158, 85);
         padding: 3em;
 
@@ -21,7 +25,6 @@
 
 @media screen and (max-width: 699px) {
     .blurb {
-        width: 100%;
         border: 2px solid rgb(197, 158, 85);
         padding: 1%;
         margin-bottom: 2%;
