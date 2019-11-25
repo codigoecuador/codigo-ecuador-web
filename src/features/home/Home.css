@@ -20,6 +20,11 @@
     padding-bottom: 10%;
 }
 
+trying to prevent about blurb from sliding off cover pic
+.cover-pic-wrapper {
+  /* min-width: 1400px; */
+}
+
 .home-headline {
     font-family: "Bree Serif", serif;
     color: rgb(8, 37, 78);
@@ -42,13 +47,14 @@
 .about-blurb {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1em;
 }
 
 .bubble p {
   font-size: 1.2em;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1550px) {
     .home-headline {
         font-size: 2.5em;
         line-height: 1.5em;
@@ -65,12 +71,13 @@
     }
 
     .activities {
+        margin-top: 1em;
         padding-top: 1em;
         padding-bottom: 1em;
     }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1549px) {
     .home-headline {
         font-size: 2em;
         line-height: 1em;
