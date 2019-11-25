@@ -1,17 +1,14 @@
 /* resources/coding  */
 
 .resources {
-	top: 30%;
+	margin-top: 15%;
 	z-index: 1;
 }
-
-
 
 .headline-container {
 	background-color: rgb(8, 37, 78);
 	width: 90%;
 	margin: auto;
-	margin-top: 10%;
 	margin-bottom: 1%;
 }
 

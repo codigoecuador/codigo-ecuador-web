@@ -37,12 +37,10 @@
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-
-
 @media screen and (min-width: 700px) {
 	.blog-container {
 		width: 80%;
-		margin-top: 10%;
+		margin-top: 9%;
 		margin-bottom: 1%;
 	}
 

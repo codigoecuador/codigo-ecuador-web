@@ -27,7 +27,7 @@ const Services = () => {
 					onClick={handleClick}
 					value="classes"
 				>
-					Classes
+					<h1>Classes</h1>
 				</button>
 
 				<button
@@ -35,7 +35,7 @@ const Services = () => {
 					onClick={handleClick}
 					value="mentorship"
 				>
-					Mentorship
+					<h1>Mentorship</h1>
 				</button>
 			</div>
 
