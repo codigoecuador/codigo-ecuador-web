@@ -1,23 +1,23 @@
 /* about/partners */
 
 .partners {
-	margin-top: 10%;
+  margin-top: 10%;
 }
 
 .partner-image {
-	height: 20vw;
-	width: auto;
+  height: 20vw;
+  width: auto;
 }
 
 .partner-headline {
-	font-family: "Bree Serif", serif;
-	font-size: 2vw;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 5%;
+  font-family: "Bree Serif", serif;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
 .partner-description {
-	font-size: 1vw;
-	text-align: left;
+  font-size: 1vw;
+  text-align: left;
 }

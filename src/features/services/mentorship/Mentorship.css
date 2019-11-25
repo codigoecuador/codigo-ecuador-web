@@ -1,27 +1,25 @@
-
-.mentor-container{
-		margin-top: 10%;
+.mentor-container {
+	margin-top: 10%;
 }
 
-
 .boss-photo {
-  width: 90%;
-  height: auto;
+	width: 90%;
+	height: auto;
 }
 
 .dancing {
-	font-family: 'Dancing Script', cursive;
+	font-family: "Dancing Script", cursive;
 	font-size: 2.5em;
 	line-height: 1em;
 }
 
 .mentor-text {
-  font-size: 1.5em;
-  margin-bottom: 3em;
+	font-size: 1.5em;
+	margin-bottom: 3em;
 }
 
 .tip-info {
-	background-color: rgb(15,37,75);
+	background-color: rgb(15, 37, 75);
 	color: white;
 	padding: 5%;
 	margin-bottom: 5%;
@@ -29,5 +27,5 @@
 }
 
 .tip-description p {
-  font-size: 1.5em;
+	font-size: 1.5em;
 }

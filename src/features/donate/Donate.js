@@ -15,14 +15,14 @@ const Donate = () => {
 
 				<div className="subhead">
 					You can promote technology careers for women in Ecuador
-					<br /> by helping us with supplies, equipment, and space from
-					which to work.
+					<br /> by helping us with supplies, equipment, and space
+					from which to work.
 				</div>
 				<br />
 				<br />
 
 				<Card.Group itemsPerRow={3} className="center">
-					{donateData.map(donate => (
+					{donateData.map((donate) => (
 						<DonateCard {...donate} padding="20px" />
 					))}
 				</Card.Group>

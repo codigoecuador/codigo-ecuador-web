@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { connect } from 'react-redux'
+import { connect } from "react-redux"
 import "./Blog.css"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -15,16 +15,24 @@ class Blog extends Component {
 		return fetch(
 			`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@codigoecuador`
 		)
-			.then(response => response.json())
-			.then(blogs => this.setState({ blogs: blogs }))
+			.then((response) => response.json())
+			.then((blogs) => this.setState({ blogs: blogs }))
 	}
 	//react carousel installed with < npm i @brainhubeu/react-carousel > in the terminal
 
 	render() {
+		let blogContainerStyle
+		if (this.props.size === "mobile") {
+			blogContainerStyle = "blog-container-mobile"
+		} else {
+			blogContainerStyle = "blog-container-desktop"
+		}
 
 		if (!this.state.blogs.items) {
 			return (
-				<div className="blog-container">No blog posts at the moment!</div>
+				<div className="blog-container">
+					No blog posts at the moment!
+				</div>
 			)
 		} else {
 			const { items } = this.state.blogs
@@ -42,13 +50,13 @@ class Blog extends Component {
 			return (
 				<>
 					<div className="blog-container">
-						<hr className="blog-divider"/>
+						<hr className="blog-divider" />
 						<div className="headline">
 							<span className="gold">Recent</span>
 							<span className="navy"> Blog Posts</span>
 						</div>
-						<br/>
-						<br/>
+						<br />
+						<br />
 
 						<Slider {...settings}>
 							{items.map((blog, index) => (
@@ -64,6 +72,8 @@ class Blog extends Component {
 	}
 }
 
-const mapStateToProps = state => {  return {  size: state.size  } }
+const mapStateToProps = (state) => {
+	return { size: state.size }
+}
 
 export default connect(mapStateToProps)(Blog)

@@ -1,47 +1,41 @@
 /* activities */
 
 .blurb {
-    text-align: center;
-    background-color: rgb(197, 158, 85, 0.6);
+	text-align: center;
+	background-color: rgb(197, 158, 85, 0.6);
 }
 
 .blurb-group {
-    margin: 0, auto;
+	margin: 0, auto;
 }
 
 .blurb {
-  width: 100%;
-
+	width: 100%;
 }
 
-
 @media screen and (min-width: 700px) {
-    .blurb {
-        border: 3px solid rgb(197, 158, 85);
-        padding: 3em;
-
-    }
+	.blurb {
+		border: 3px solid rgb(197, 158, 85);
+		padding: 3em;
+	}
 }
 
 @media screen and (max-width: 699px) {
-    .blurb {
-        border: 2px solid rgb(197, 158, 85);
-        padding: 1%;
-        margin-bottom: 2%;
-        padding: 2em;
-    }
-    .blurb p {
-        font-size: 1.5em;
-    }
-
+	.blurb {
+		border: 2px solid rgb(197, 158, 85);
+		padding: 1%;
+		margin-bottom: 2%;
+		padding: 2em;
+	}
+	.blurb p {
+		font-size: 1.5em;
+	}
 }
 
-
-
 .activities-desription p {
-    font-size: 1.2em;
+	font-size: 1.2em;
 }
 
 .activities-button {
-  margin-bottom: 2em;
+	margin-bottom: 2em;
 }

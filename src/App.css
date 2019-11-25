@@ -1,35 +1,33 @@
 .center {
-    text-align: center;
+	text-align: center;
 }
 
 .right {
-    text-align: right;
+	text-align: right;
 }
 
 .left {
-    text-align: left;
+	text-align: left;
 }
-
 
 /* brand colors */
 
 .navy {
-    color: rgb(8, 37, 78);
+	color: rgb(8, 37, 78);
 }
 
 .gold {
-    color: rgb(197, 158, 85);
+	color: rgb(197, 158, 85);
 }
 
 /* contains logo, navbar and language toggle */
 .header {
-  position: relative;
-  width: 100%;
-  top: 0;
-  background-color: white;
-  z-index: 2;
+	position: relative;
+	width: 100%;
+	top: 0;
+	background-color: white;
+	z-index: 2;
 }
-
 
 /* headlines */
 
@@ -41,72 +39,69 @@
     background-color: rgb(15, 37, 75, 0.1);
 } */
 
-
 .headline {
-    font-family: "Bree Serif", serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 2px;
+	font-family: "Bree Serif", serif;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
 }
 
 .subhead {
-    font-size: 2em;
-    text-align: center;
-    line-height: 1.2em;
-    color: grey;
+	font-size: 2em;
+	text-align: center;
+	line-height: 1.2em;
+	color: grey;
 }
 
 @media screen and (min-width: 700px) {
-  .headline {
-      font-size: 3em;
-      line-height: 1em;
-      margin-bottom: 5%;
-      margin-top: 2%;
-  }
+	.headline {
+		font-size: 3em;
+		line-height: 1em;
+		margin-bottom: 5%;
+		margin-top: 2%;
+	}
 }
 
 @media screen and (max-width: 699px) {
-  .headline {
-      font-size: 2em;
-      line-height: .5em;
-      margin-bottom: 5%;
-  }
+	.headline {
+		font-size: 2em;
+		line-height: 0.5em;
+		margin-bottom: 5%;
+	}
 }
 
-
-
 .logo {
-    margin: 3em;
-    width: 100%;
-    height: auto;
-    z-index: 1;
+	margin: 3em;
+	width: 100%;
+	height: auto;
+	z-index: 1;
 }
 
 .logo-wrapper {
-    width: 50%;
-    max-width: 600px;
-    float: left;
+	width: 50%;
+	max-width: 600px;
+	float: left;
 }
 
 /* trying to prevent navbar div from overlapping logo wrapper on resize - not working */
 .logo-wrapper:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
 }
 
 html,
 body {
-    margin: 0;
-    height: 100%;
+	margin: 0;
+	height: 100%;
 }
 
 /* not reaching element */
 .language {
-  margin-top: 5%;
-  float: left;
-  margin-left: 5%;
-  margin-bottom: 1%;
+	margin-top: 5%;
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 1%;
 }

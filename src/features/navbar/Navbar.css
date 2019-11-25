@@ -1,80 +1,81 @@
 /* navbar */
 
 .navbar {
+
     font-weight: bolder;
     height: auto;
     top: 10%;
     width: 57%;
     z-index: 1;
     max-width: 100%;
+
 }
 
 /* trying to prevent navbar div from overlapping logo wrapper on resize - not working */
 .navbar:before {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
 }
 
 @media screen and (min-width: 1400px) {
-    .navbar {
-        position: relative;
-        top: 4em;
-        float: right;
-        right: 5em;
-
-    }
+	.navbar {
+		position: relative;
+		top: 4em;
+		float: right;
+		right: 5em;
+	}
 }
 
 @media screen and (max-width: 1399px) {
-    .navbar {
-        top: 8%;
-    }
+	.navbar {
+		top: 8%;
+	}
 }
 
 .nav-buttons {
-    padding: 1.4em;
+	padding: 1.4em;
 }
 
 .nav-button {
-    color: rgb(8, 37, 78);
-    background-color: white;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	color: rgb(8, 37, 78);
+	background-color: white;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
 }
 
 .nav-button:hover {
-    color: white;
-    background-color: rgb(8, 37, 78);
+	color: white;
+	background-color: rgb(8, 37, 78);
 }
 
 .nav-button:focus {
-    color: white;
-    background-color: rgb(8, 37, 78);
+	color: white;
+	background-color: rgb(8, 37, 78);
 }
 
 @media screen and (min-width: 700px) {
-  .nav-buttons {
-      padding: 1.4em;
-  }
+	.nav-buttons {
+		padding: 1.4em;
+	}
 
-    .nav-button {
-        font-size: 1.4em;
-        padding: .6em;
-        border-radius: 10px 20px;
-        border: 3px solid rgb(197, 158, 85);
-        margin: .5em;
-    }
+	.nav-button {
+		font-size: 1.4em;
+		padding: 0.6em;
+		border-radius: 10px 20px;
+		border: 3px solid rgb(197, 158, 85);
+		margin: 0.5em;
+	}
 }
 
 @media screen and (max-width: 699px) {
-
-    .nav-button {
-        font-size: .9em;
-        padding: 4px;
-        border-radius: 5px 10px;
-        border: 1.5px solid rgb(197, 158, 85);
-        margin: 0 2px;
-    }
+	.nav-button {
+		font-size: 0.9em;
+		padding: 4px;
+		border-radius: 5px 10px;
+		border: 1.5px solid rgb(197, 158, 85);
+		margin: 0 2px;
+	}
 }

@@ -18,7 +18,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 <img src="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/DownloadZip2.jpg" alt="Download" width="500px" />
 
-
 ### Step 3: Install Dependencies
 
 To install all the dependencies, in your root folder, enter:

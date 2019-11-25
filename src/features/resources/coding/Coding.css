@@ -34,7 +34,6 @@
 }
 
 @media screen and (max-width: 699px) {
-
 	.showing {
 		position: absolute;
 		margin-left: 25%;
@@ -44,10 +43,6 @@
 		padding: 5%;
 	}
 }
-
-
-
-
 
 .coding-button-group {
 	position: absolute;
@@ -71,10 +66,6 @@
 	background-color: rgb(197, 158, 85);
 	color: rgb(8, 37, 78);
 }
-
-
-
-
 
 /* coding resource links */
 
