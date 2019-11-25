@@ -5,6 +5,20 @@
 	z-index: 1;
 }
 
+.coding-container {
+	margin-top: 5%;
+}
+
+.headline-container {
+	background-color: rgb(8, 37, 78);
+	width: 90%;
+	height: 2em;
+	line-height: 2em;
+	margin: auto;
+
+
+}
+
 @media screen and (min-width: 700px) {
 	.headline-container {
 		margin-top: 10%;

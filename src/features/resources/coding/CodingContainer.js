@@ -30,16 +30,14 @@ class CodingContainer extends Component {
       );
     }
     return (
-      <>
-        <div className="headline-container">
+      <div className="coding-container">
+
           <br />
           <br />
           <br />
-          <div className="headline">
-            <span className="gold">{this.state.showing || "Coding"}</span>
-            <span className="navy"> Resources</span>
+          <div className="headline headline-container">
+            <span className="gold">{this.state.showing || "Coding"} Resources</span>
           </div>
-        </div>
 
         {codingButtonGroup}
 
@@ -54,7 +52,7 @@ class CodingContainer extends Component {
           <br />
           <br />
         </div>
-      </>
+      </div>
     );
   }
 }
