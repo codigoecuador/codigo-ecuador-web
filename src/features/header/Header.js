@@ -16,9 +16,7 @@ const Header = () => {
           <Navbar / >
         </div>
 
-        <div className = "language" >
-          <LanguageToggle / >
-        </div>
+
       </div>
     );
 }
