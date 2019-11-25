@@ -21,7 +21,7 @@
 @media screen and (min-width: 1400px) {
     .navbar {
         position: relative;
-        top: 3em;
+        top: 4em;
         float: right;
         right: 5em;
 
@@ -44,7 +44,7 @@
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.nav-button-active:hover {
+.nav-button:hover {
     color: white;
     background-color: rgb(8, 37, 78);
 }
