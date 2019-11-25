@@ -3,6 +3,7 @@ import "./Navbar.css"
 // Capitalized B in above link to make it work
 import { Container } from "semantic-ui-react"
 import { Link } from "react-router-dom"
+import LanguageToggle from '../header/LanguageToggle'
 
 
 const Navbar = () => {
@@ -27,6 +28,7 @@ const Navbar = () => {
         <Link exact className="nav-button" to="/donate">
           Donate
         </Link>
+
       </Container>
     )
 

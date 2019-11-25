@@ -21,8 +21,12 @@
     color: rgb(197, 158, 85);
 }
 
+/* contains logo, navbar and language toggle */
 .header {
+  position: fixed;
   top: 0;
+  background-color: white;
+  z-index: 2;
 }
 
 
@@ -123,7 +127,8 @@ body {
 }
 
 /* not reaching element */
-.language-dropdown /*input*/{
-    top: 10%;
-    right: 5%;
+.language {
+  margin-top: 5%;
+  float: left;
+  margin-left: 5%;
 }

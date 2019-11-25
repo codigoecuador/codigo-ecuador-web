@@ -7,17 +7,15 @@ import Activities from "../activities/Activities";
 const Home = () => {
 
     return (
-      <>
-        <div className="cover-pic-wrapper">
+      <div className="home-container">
           <CoverPic / >
 
           <div className = "about-blurb" >
             <AboutBlurb / >
           </div>
-        </div>
 
         <Activities / >
-      </>
+      </div>
     );
 
 }

@@ -10,19 +10,10 @@
 
 /* at top of page, container for navbar and logo */
 
-.banner {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 15%;
-    z-index: 2;
-    background-color: rgb(12, 12, 12);
-    padding-bottom: 10%;
-}
 
-trying to prevent about blurb from sliding off cover pic
-.cover-pic-wrapper {
-  /* min-width: 1400px; */
+
+.home-container {
+  margin-top: 12%;
 }
 
 .home-headline {

@@ -16,7 +16,7 @@ const Header = () => {
           <Navbar / >
         </div>
 
-        <div className = "language-dropdown" >
+        <div className = "language" >
           <LanguageToggle / >
         </div>
       </div>
