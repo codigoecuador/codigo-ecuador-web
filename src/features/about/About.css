@@ -25,7 +25,6 @@
 	}
 }
 
-<<<<<<< Updated upstream
 @media screen and (max-width: 699px) {
 	.our-story {
 		width: 80%;
@@ -36,18 +35,6 @@
 		font-size: 0.9em;
 	}
 }
-=======
-  @media screen and (max-width: 699px) {
-      .our-story {
-          width: 80%;
-          height: auto;
-          padding: 5%;
-      }
-      .our-story p {
-          font-size: .9em;
-      }
-  }
->>>>>>> Stashed changes
 
 .ceo-letter {
 	background-color: rgb(255, 255, 255, 0.9);

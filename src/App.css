@@ -29,15 +29,6 @@
 	z-index: 2;
 }
 
-/* headlines */
-
-/* .headline-container {
-    margin-top: 10%;
-    margin-bottom: 45%;
-    height: 10vw;
-    width: 100%;
-    background-color: rgb(15, 37, 75, 0.1);
-} */
 
 .headline {
 	font-family: "Bree Serif", serif;
@@ -60,6 +51,13 @@
 		margin-bottom: 5%;
 		margin-top: 2%;
 	}
+
+	.language {
+		margin-top: 5%;
+		float: left;
+		margin-left: 5%;
+		margin-bottom: 1%;
+	}
 }
 
 @media screen and (max-width: 699px) {
@@ -67,6 +65,10 @@
 		font-size: 2em;
 		line-height: 0.5em;
 		margin-bottom: 5%;
+	}
+
+	.language {
+		float: left;
 	}
 }
 
@@ -83,25 +85,9 @@
 	float: left;
 }
 
-/* trying to prevent navbar div from overlapping logo wrapper on resize - not working */
-.logo-wrapper:after {
-	content: ".";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}
 
 html,
 body {
 	margin: 0;
 	height: 100%;
-}
-
-/* not reaching element */
-.language {
-	margin-top: 5%;
-	float: left;
-	margin-left: 5%;
-	margin-bottom: 1%;
 }
