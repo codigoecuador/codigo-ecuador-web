@@ -9,25 +9,24 @@ import { minorPartnersData } from "./MinorPartnersData"
 const minorPartners = () => {
 	return (
 		<Container>
-			<div class="ui divider"></div><br/>
-				<Card.Group itemsPerRow={4} className="center">
-					{minorPartnersData.map(partner =>
-						<Card>
-							<a href={partner.link} class="ui medium image">
-							  <img
-									src={partner.image}
-									alt="partner logo"/ >
-							</a>
+			<div class="ui divider"></div>
+			<br />
+			<Card.Group itemsPerRow={4} className="center">
+				{minorPartnersData.map((partner) => (
+					<Card>
+						<a href={partner.link} class="ui medium image">
+							<img src={partner.image} alt="partner logo" />
+						</a>
 
-            <div className='content'>
-              <div className='header'>{partner.name}</div>
-            </div>
-            <div className='description'>{partner.content}</div>
-          </Card>
-        ))}
-      </Card.Group>
-    </Container>
-  );
-};
+						<div className="content">
+							<div className="header">{partner.name}</div>
+						</div>
+						<div className="description">{partner.content}</div>
+					</Card>
+				))}
+			</Card.Group>
+		</Container>
+	)
+}
 
-export default minorPartners;
+export default minorPartners
