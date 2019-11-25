@@ -47,7 +47,7 @@
 }
 
 .subhead {
-    font-size: 1.2em;
+    font-size: 2em;
     text-align: center;
     line-height: 1.2em;
     color: grey;
@@ -55,7 +55,7 @@
 
 @media screen and (min-width: 700px) {
   .headline {
-      font-size: 2.5em;
+      font-size: 3em;
       line-height: 1em;
       margin-bottom: 5%;
       margin-top: 2%;
@@ -71,32 +71,6 @@
 }
 
 
-
-
-
-
-/* font-sizes */
-
-.huge {
-    font-size: 4.5vw;
-}
-
-.massive {
-    font-size: 3vw;
-}
-
-.big {
-    font-size: 2.8vw;
-}
-
-.large {
-    font-size: 1.5vw;
-    line-height: 1.6vw;
-}
-
-.small {
-    font-size: 1vw;
-}
 
 .logo {
     margin: 3em;
