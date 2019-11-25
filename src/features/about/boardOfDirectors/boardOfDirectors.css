@@ -1,11 +1,7 @@
 .board-container {
 	top: 20%;
 	padding-top: 10%;
-	bottom: 10%;
-}
-
-.board-headline {
-	padding: 5%;
+	margin-bottom: 10%;
 }
 
 .board-photo {
@@ -28,14 +24,19 @@
 }
 
 @media screen and (min-width: 700px) {
+	.board-headline {
+		padding: 5%;
+		margin-top: 1%;
+	}
+
 	.board-column {
 		float: left;
 		width: 50%;
 	}
 
 	.board-card {
-		padding: 40px;
-		height: 500px;
+		padding: 3em;
+		height: 40em;
 		border-radius: 20%;
 		border: 3px solid rgb(197, 158, 85);
 	}
@@ -54,6 +55,11 @@
 }
 
 @media screen and (max-width: 699px) {
+	.board-headline {
+		padding: 5%;
+		margin-top: 10%;
+	}
+
 	.board-column {
 	  width: 100%;
 	  padding: 40px;
@@ -65,6 +71,7 @@
 		padding: 40px;
 		height: 500px;
 		border-radius: 5%;
+		margin-bottom: 2em;
 	}
 
 	.board-header{
