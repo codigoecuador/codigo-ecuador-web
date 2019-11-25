@@ -39,7 +39,8 @@ class Blog extends Component {
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				autoplay: false,
-				autoplayspeed: 8000
+				autoplayspeed: 8000,
+				className: "blog-slider"
 			}
 
 			return (
@@ -55,7 +56,6 @@ class Blog extends Component {
 							{items.map((blog, index) => (
 								<BlogCard key={index} blog={blog} />
 							))}
-
 							<br />
 						</Slider>
 					</div>

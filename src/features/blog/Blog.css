@@ -42,7 +42,7 @@
 @media screen and (min-width: 700px) {
 	.blog-container {
 		width: 80%;
-		margin-top: 18%;
+		margin-top: 10%;
 		margin-bottom: 1%;
 	}
 
@@ -89,8 +89,11 @@
 
 }
 
+.blog-slider {
+	margin-bottom: 2em;
+}
 
 .slick-track div {
 	min-width: 30%;
-	max-width: 50%;
+	max-width: 80%;
 }
