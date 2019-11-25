@@ -18,11 +18,11 @@
 	margin-bottom: 1%;
 }
 
-@media screen and (min-width: 700px) {
-	.headline-container {
-		margin-top: 10%;
-	}
+.headline-container {
+	margin-top: 10%;
+}
 
+@media screen and (min-width: 700px) {
 	.showing {
 		position: absolute;
 		margin-left: 25%;
@@ -34,9 +34,6 @@
 }
 
 @media screen and (max-width: 699px) {
-	.headline-container{
-		margin-top: 20%;
-	}
 
 	.showing {
 		position: absolute;

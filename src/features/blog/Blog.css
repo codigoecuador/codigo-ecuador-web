@@ -2,6 +2,7 @@
 
 .blog-divider {
 	margin: auto;
+	margin-bottom: 3em;
 }
 
 @media screen and (min-width: 700px) {
@@ -13,7 +14,7 @@
 
 @media screen and (max-width: 699px) {
 	.blog-container {
-		margin-top: 40%;
+		margin-top: 20%;
 		padding: 2%;
 	}
 }
