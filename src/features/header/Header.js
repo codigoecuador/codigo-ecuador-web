@@ -11,10 +11,6 @@ const Header = () => {
 				<Logo className="logo" />
 			</Link>
 
-			<div className="navbar">
-				<Navbar />
-			</div>
-
         <div className = "navbar" >
           <Navbar / >
         </div>
