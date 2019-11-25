@@ -18,7 +18,6 @@ const EducationBlurb = () => {
 				{educationBlurbText[localStorage.getItem("language")].button}
 			</div>
 
-			{educationBlurbText[localStorage.getItem("language")].button}
 		</div>
 	)
 }
