@@ -10,21 +10,21 @@ function Classes(props) {
   const lang = localStorage.getItem("language");
   const headline = classesText[lang];
   const generatePythonClasses = () => {
-    return pythonText[lang].map(course => (
+    return pythonText.map(course => (
       <div className={`course-info ${course.color}`}>
         <br />
-        <div className='large python-title'>{course.title}</div>
+        <div className='large python-title'>{course[lang].title}</div>
         <br />
 
         <div className='python-duration'>
-          <i>{course.duration}</i>
+          <i>{course[lang].duration}</i>
         </div>
         <br />
 
-        <div className='python-description'>{course.description}</div>
+        <div className='python-description'>{course[lang].description}</div>
         <br />
         <div className='python-bullets'>
-          {course.bulletPoints.map(point => (
+          {course[lang].bulletPoints.map(point => (
             <ul>
               <li>{point}</li>
             </ul>
