@@ -4,6 +4,7 @@
     top: 10%;
     z-index: 1;
     max-width: 100%;
+    margin: auto;
 }
 
 .navbar:before {
