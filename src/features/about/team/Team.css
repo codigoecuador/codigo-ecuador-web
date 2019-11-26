@@ -8,6 +8,10 @@
     line-height: 2em;
     margin-bottom: 2em;
   }
+
+  .title {
+    font-size: 1.2em;
+  }
 }
 
 @media screen and (max-width: 699px) {

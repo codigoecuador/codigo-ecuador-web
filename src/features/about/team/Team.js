@@ -18,7 +18,6 @@ const Team = () => {
 				contribute their own unique experience and skills to our
 				success. Find out more about some of our team members below.
 			</div>
-			<br />
 
 			<Divider />
 			<br />

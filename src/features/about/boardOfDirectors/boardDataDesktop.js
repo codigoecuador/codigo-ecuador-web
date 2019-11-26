@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from 'semantic-ui-react'
+import { Icon, Popup } from 'semantic-ui-react'
 
 export const boardDataDesktop =
 <>
@@ -11,9 +11,14 @@ export const boardDataDesktop =
         "I want to advance global economic development by sharing resources with women entering adulthood to help them become more independent."
       </div>
       <br/>
-      <a href="https://www.linkedin.com/in/debraannray/">
-        <Icon name="linkedin" size="huge" className="blue linked-in"/>
-      </a>
+      <Popup
+        content='Find me on LinkedIn'
+        trigger={
+          <a href="https://www.linkedin.com/in/debraannray/">
+            <Icon name="linkedin" size="huge" className="blue linked-in"/>
+          </a>}
+        position="bottom center"/>
+
     </div>
   </div>
 
@@ -43,9 +48,13 @@ export const boardDataDesktop =
         "I want to help the youth of tomorrow turn their creative ideas into reality with computer programming."
       </div>
       <br/>
-      <a href="https://www.linkedin.com/in/tom-sullivan-a925421a/">
-        <Icon name="linkedin" size="huge" className="blue linked-in"/>
-      </a>
+      <Popup
+        content='Find me on LinkedIn'
+        trigger={
+          <a href="https://www.linkedin.com/in/tom-sullivan-a925421a/">
+            <Icon name="linkedin" size="huge" className="blue linked-in"/>
+          </a>}
+        position="bottom center"/>
     </div>
   </div>
   </>

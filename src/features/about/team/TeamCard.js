@@ -12,9 +12,10 @@ const TeamCard = ({
 	return (
 		<Card href={linkedin} raised className="team-card">
 			<Image src={image} alt="Profile Pic" />
-			<Card.Content>
+			<Card.Content className="center">
+				<br/>
 				<Card.Header>{name}</Card.Header>
-				<Card.Description>{title}</Card.Description>
+				<Card.Description className="title">{title}</Card.Description>
 			</Card.Content>
 			<Card.Content textAlign="left">
 				<Feed className="team-description">
