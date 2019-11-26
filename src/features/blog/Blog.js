@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { connect } from "react-redux"
+// import { connect } from "react-redux"
 import "./Blog.css"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"

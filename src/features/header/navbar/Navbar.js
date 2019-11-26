@@ -12,9 +12,9 @@ const Navbar = () => {
         <Link exact className="dropdown" to="/">
           <button className="dropdown-button">Home</button>
         </Link>
-        <div class="dropdown">
-          <button class="dropdown-button">About</button>
-          <div class="dropdown-content">
+        <div className="dropdown">
+          <button className="dropdown-button">About</button>
+          <div className="dropdown-content">
             <a href='/about'>
               Our Story
             </a>
@@ -30,9 +30,9 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div class="dropdown">
+        <div className="dropdown">
           <button className="dropdown-button">Services</button>
-          <div class="dropdown-content">
+          <div className="dropdown-content">
             <a href='/services/classes'>
               Curriculum
             </a>

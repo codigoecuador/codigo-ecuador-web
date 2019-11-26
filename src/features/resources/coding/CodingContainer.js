@@ -18,6 +18,7 @@ class CodingContainer extends Component {
 		this.setState({ showing: event })
 	}
 
+
 	render() {
 		let codingButtonGroup
 		if (this.props.size === "mobile") {

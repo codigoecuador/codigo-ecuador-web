@@ -8,35 +8,59 @@
 }
 
 @media screen and (min-width: 700px) {
+	.coding-button-group {
+		position: absolute;
+		margin-left: 5%;
+		margin-top: 4%;
+		margin-right: 65%;
+		margin-bottom: 5%;
+	}
+
+	.coding-button {
+		width: 15em;
+		height: 3em;
+		font-size: 1.1vw;
+		padding: 3.5%;
+	}
+
 }
 
 @media screen and (max-width: 699px) {
 	.showing {
 		margin-top: 5%;
 	}
+
+	.coding-button-group {
+		position: absolute;
+		margin-top: 4%;
+		margin-bottom: 5%;
+	}
+
+	.coding-button {
+		width: 15em;
+		height: 3em;
+		font-size: 1.1vw;
+		padding: 3.5%;
+	}
 }
 
-.coding-button-group {
-	position: absolute;
-	margin-left: 5%;
-	margin-top: 4%;
-	margin-right: 65%;
-	margin-bottom: 5%;
-}
 
 .coding-button {
 	background-color: rgb(8, 37, 78);
-	width: 15vw;
-	height: 2.5vw;
 	color: white;
-	font-size: 1.1vw;
-	padding: 3.5%;
 }
 
 .coding-button:hover {
 	/* gold */
 	background-color: rgb(197, 158, 85);
 	color: rgb(8, 37, 78);
+}
+
+.coding-button:focus {
+	/* gold */
+	background-color: rgb(197, 158, 85);
+	color: rgb(8, 37, 78);
+	outline: none;
 }
 
 /* coding resource links */
