@@ -16,7 +16,7 @@ import PartnersContainer from "./features/about/partners/PartnersContainer";
 import ResearchContainer from "./features/resources/research/ResearchContainer";
 import Team from "./features/about/team/Team";
 import BoardOfDirectors from "./features/about/boardOfDirectors/boardOfDirectors";
-
+import Footer from './features/footer/Footer.js'
 
 class App extends Component {
   render() {
@@ -27,6 +27,7 @@ class App extends Component {
       <Router>
         <div>
           <Header />
+         
 
           <Switch>
             <Route exact path='/about' render={() => <About />}></Route>
