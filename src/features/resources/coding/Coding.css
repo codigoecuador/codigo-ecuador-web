@@ -28,6 +28,7 @@
 @media screen and (max-width: 699px) {
 	.showing {
 		margin-top: 5%;
+		margin-bottom: 10%;
 	}
 
 	.coding-button-group {

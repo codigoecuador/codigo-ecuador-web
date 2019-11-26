@@ -23,45 +23,41 @@ class ResearchContainer extends Component {
     };
 
     return (
-      <div className='research-container'>
-        <br />
+      <div className='main-container'>
 
-        <div className='research-banner'>
-          <div className='center'>
-            <span className='gold headline'>Research</span>
-          </div>
-
-          <div className='research-container-text'>
-            <h1 className='center'>
-              We model Código Ecuador on research and insights from reputable
-              economic development experts.
-            </h1>
-
-            <p>
-              Coding education is making a huge impact throughout the developing
-              world. People are learning the technical skills necessary to build
-              tomorrow's cutting-edge applications. From Colombia to Lebanon,
-              nonprofit education is opening doors in high paying technology
-              careers for thousands of women and individuals. The work our
-              organizations do are sparking a new wave of research in how we can
-              create a more equal world.
-            </p>
-          </div>
-
-          <br />
-          <Slider {...settings}>
-            {researchLinks.map((research, index) => (
-              <ResearchCard key={index} research={research} />
-            ))}
-
-            <br />
-          </Slider>
-
-          <br />
-          <br />
-          <br />
+        <div className='banner-headline center'>
+          <span className='gold headline'>Research</span>
         </div>
 
+        <div className='research-container-text'>
+          <div className='subhead center'>
+            We model Código Ecuador on research and insights from reputable
+            economic development experts.
+          </div >
+
+          <p>
+            Coding education is making a huge impact throughout the developing
+            world. People are learning the technical skills necessary to build
+            tomorrow's cutting-edge applications. From Colombia to Lebanon,
+            nonprofit education is opening doors in high paying technology
+            careers for thousands of women and individuals. The work our
+            organizations do are sparking a new wave of research in how we can
+            create a more equal world.
+          </p>
+        </div>
+
+        <br />
+        <Slider {...settings}>
+          {researchLinks.map((research, index) => (
+            <ResearchCard key={index} research={research} />
+          ))}
+
+          <br />
+        </Slider>
+
+        <br />
+        <br />
+        <br />
         <br />
       </div>
     );
