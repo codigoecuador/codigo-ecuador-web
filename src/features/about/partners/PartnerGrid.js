@@ -10,7 +10,7 @@ const PartnerGrid = ({ content, image, name }) => {
       </Grid.Column>
 
       <Grid.Column verticalAlign='center'>
-        <div className='partner-headline'>{name}</div>
+        <div className='headline'>{name}</div>
         <div className='partner-description'>
           {content.map(info => (
             <p>{info}</p>

@@ -1,35 +1,40 @@
 
+
+
+.partners-grid {
+  padding-top: 3em;
+  padding-bottom :4em;
+  background-color: rgb(191,158,96,0.5);
+}
+
 .partner-image {
-  height: 20vw;
+  height: 25vw;
+  padding-top: 2em;
   width: auto;
+  margin: auto;
 }
 
-.subhead {
+.partners-text {
   margin-bottom: 3em;
-}
-
-.partner-headline {
-  font-family: "Bree Serif", serif;
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 5%;
 }
 
 .partner-description {
   font-size: 1.3em;
   text-align: left;
-}
-
-.minor-partner-description {
-  padding: 1em;
-}
-
-.partners-grid {
-  padding-top: 4em;
-  margin-top: 5%;
+  padding: 2em;
 }
 
 .minor-partners {
-  margin-bottom: 5em;
+  margin-top: 5em;
+}
+
+.minor-partner-image {
+  margin: auto;
+}
+
+.minor-partner-description {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  text-align: left;
+  padding: 2em;
 }

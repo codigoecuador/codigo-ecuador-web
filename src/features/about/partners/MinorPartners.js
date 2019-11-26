@@ -15,13 +15,13 @@ const minorPartners = () => {
 				{minorPartnersData.map((partner) => (
 					<Card>
 						<a href={partner.link} class="ui medium image">
-							<img src={partner.image} alt="partner logo" />
+							<img className="minor-partner-image" src={partner.image} alt="partner logo" />
 						</a>
 
 						<div className="content">
-							<div className="header">{partner.name}</div>
+							<div className="subhead">{partner.name}</div>
 						</div>
-						<div className="minor-partners-description">{partner.content}</div>
+						<div className="minor-partner-description">{partner.content}</div>
 					</Card>
 				))}
 			</Card.Group>

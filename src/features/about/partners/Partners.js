@@ -13,7 +13,7 @@ const Partners = () => {
 				<span className="gold">Our Partners</span>
 			</div>
 
-			<div className="subhead">
+			<div className="subhead partners-text">
 				We are grateful to our partners who share expertise and
 				resources to help us succeed.
 			</div>
