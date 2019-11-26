@@ -9,8 +9,7 @@ class CodingContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showing: "",
-      width: window.innerWidth
+      showing: ""
     };
   }
 
@@ -56,7 +55,7 @@ class CodingContainer extends Component {
 }
 
 const mapStateToProps = state => {
-  return { size: state.size };
+  return { size: state.size.size };
 };
 
 export default connect(mapStateToProps)(CodingContainer);

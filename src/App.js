@@ -106,7 +106,7 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-	return { size: state.size }
+	return { size: state.size.size }
 }
 
 const mapDispatchToProps = (dispatch) => ({
