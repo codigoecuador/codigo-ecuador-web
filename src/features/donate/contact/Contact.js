@@ -4,7 +4,7 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <>
-      <div className='center large'>Contact us if you can help!</div>
+      <div className='contact-us center'>Contact us if you can help!</div>
       <br />
       <div className="social-text">
         <b>Email:</b> info@codigoecuador.com
