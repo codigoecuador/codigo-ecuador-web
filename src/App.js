@@ -13,7 +13,6 @@ import Home from "./features/home/Home";
 import Mentorship from "./features/services/mentorship/Mentorship";
 import PartnersContainer from "./features/about/partners/PartnersContainer";
 import ResearchContainer from "./features/resources/research/ResearchContainer";
-import Services from "./features/services/Services";
 import Team from "./features/about/team/Team";
 import BoardOfDirectors from "./features/about/boardOfDirectors/boardOfDirectors";
 
@@ -57,7 +56,6 @@ class App extends Component {
               path='/resources/research'
               render={() => <ResearchContainer />}
             ></Route>
-            <Route exact path='/services' render={() => <Services />}></Route>
             <Route exact path='/about/team' render={() => <Team />}></Route>
             <Route
               exact

@@ -44,9 +44,8 @@ function Classes(props) {
 	return (
 		<Container className={coursesStyle}>
 			<div className="courses-text">
-				<div className="center headline">
-					<span className="gold">{headline.goldTitle}</span>
-					<span className="navy">{headline.navyTitle}</span>
+				<div className="center headline banner-headline">
+					<span className="gold">Our Curriculum</span>
 				</div>
 				{headline.text}
 			</div>
