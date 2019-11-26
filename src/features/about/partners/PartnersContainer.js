@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import MinorPartners from "./MinorPartners";
 import Partners from "./Partners";
 
@@ -6,9 +7,13 @@ const PartnersContainer = () => {
   return (
     <div className='main-container'>
       <Partners />
-      <MinorPartners className="minor-partners"/>
+      <MinorPartners className='minor-partners' />
     </div>
   );
 };
 
-export default PartnersContainer;
+const mapStateToProps = state => {
+  return { language: state.language };
+};
+
+export default connect(mapStateToProps)(PartnersContainer);
