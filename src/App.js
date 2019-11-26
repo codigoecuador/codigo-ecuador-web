@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import { Sticky} from "semantic-ui-react"
-import About from "./features/about/About";
+import About from "./features/about/ourStory/About";
 import Blog from "./features/blog/Blog";
 import Classes from "./features/services/classes/Classes";
 import Internships from "./features/services/internships/Internships";
@@ -41,44 +41,44 @@ class App extends Component {
         <Header />
 
         <Switch>
-          <Route exact path="/about" render={() => <About />}></Route>
-          <Route exact path="/blog" render={() => <Blog />}></Route>
+          <Route exact path='/about' render={() => <About />}></Route>
+          <Route exact path='/blog' render={() => <Blog />}></Route>
           <Route
             exact
-            path="/services/classes"
+            path='/services/classes'
             render={() => <Classes />}
           ></Route>
           <Route
             exact
-            path="/services/internships"
+            path='/services/internships'
             render={() => <Internships />}
           ></Route>
           <Route
             exact
-            path="/resources"
+            path='/resources'
             render={() => <CodingContainer />}
           ></Route>
-          <Route exact path="/donate" render={() => <Donate />}></Route>
-          <Route exact path="/" render={() => <Home />}></Route>
+          <Route exact path='/donate' render={() => <Donate />}></Route>
+          <Route exact path='/' render={() => <Home />}></Route>
           <Route
             exact
-            path="/services/mentorship"
+            path='/services/mentorship'
             render={() => <Mentorship />}
           ></Route>
           <Route
             exact
-            path="/about/partners"
+            path='/about/partners'
             render={() => <PartnersContainer />}
           ></Route>
           <Route
             exact
-            path="/resources/research"
+            path='/resources/research'
             render={() => <ResearchContainer />}
           ></Route>
-          <Route exact path="/about/team" render={() => <Team />}></Route>
+          <Route exact path='/about/team' render={() => <Team />}></Route>
           <Route
             exact
-            path="/about/board"
+            path='/about/board'
             render={() => <BoardOfDirectors />}
           ></Route>
         </Switch>
