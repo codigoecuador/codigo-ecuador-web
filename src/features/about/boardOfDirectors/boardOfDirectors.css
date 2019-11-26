@@ -8,8 +8,11 @@
 	width: 80%;
 	height: auto;
 	overflow: hidden;
-	display: "block";
-	margin: "0 auto";
+	margin-left: auto;
+  margin-right: auto;
+  display: block;
+	margin-top: 2.5vw;
+	border-radius: 5%;
 }
 
 .board-column {

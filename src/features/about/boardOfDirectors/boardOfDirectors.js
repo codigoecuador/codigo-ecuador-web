@@ -28,7 +28,7 @@ class BoardOfDirectors extends Component {
 		width <= 700 ? (isMobile = true) : (isMobile = false)
 
 		let boardData
-		isMobile ? (boardData = boardDataMobile) : (boardData = boardDataDesktop)
+		isMobile ? boardData = boardDataMobile : boardData = boardDataDesktop
 
 		return (
 			<>
