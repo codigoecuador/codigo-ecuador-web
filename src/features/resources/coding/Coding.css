@@ -5,22 +5,10 @@
 	z-index: 1;
 }
 
-.headline-container {
-	background-color: rgb(8, 37, 78);
-	width: 90%;
-	margin: auto;
-	margin-bottom: 1%;
-}
-
-
 @media screen and (min-width: 700px) {
 	.coding-container {
-		margin-top: 5%;
-	}
-
-	.headline-container {
-		height: 2em;
-		line-height: 2em;
+		width: 80%;
+		margin: 1% auto
 	}
 
 	.showing {
@@ -38,10 +26,6 @@
 		margin-top: 0%;
 	}
 
-	.headline-container {
-		height: 1.5em;
-		line-height: 1.5em;
-	}
 
 	.showing {
 		position: absolute;

@@ -41,7 +41,7 @@ class CodingContainer extends Component {
 				<br />
 				<br />
 				<br />
-				<div className="headline headline-container">
+				<div className="headline banner-headline">
 					<span className="gold">
 						{this.state.showing || "Coding"} Resources
 					</span>

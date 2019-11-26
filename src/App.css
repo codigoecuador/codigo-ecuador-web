@@ -42,6 +42,11 @@
 	color: grey;
 }
 
+.banner-headline {
+  background-color: rgb(8, 37, 78);
+}
+
+
 @media screen and (min-width: 700px) {
 	.logo-wrapper {
 		width: 50%;
@@ -64,6 +69,12 @@
 	.subhead {
 		font-size: 2em;
 		line-height: 1.2em;
+	}
+
+	.banner-headline {
+		height: 2em;
+		line-height: 2em;
+		margin-bottom: 2em;
 	}
 
 	.language {
@@ -92,6 +103,12 @@
 	.subhead {
 		font-size: 1.5em;
 		line-height: 1.1em;
+	}
+
+	.banner-headline {
+		height: 1.5em;
+		line-height: 1.5em;
+		margin-bottom: 1em;
 	}
 
 	.language {

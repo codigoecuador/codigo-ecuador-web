@@ -3,15 +3,6 @@
 .blog-container {
 	margin: auto;
 }
-
-.blog-headline-container {
-	background-color: rgb(8, 37, 78);
-	width: 90%;
-	margin: auto;
-	margin-top: 10%;
-	margin-bottom: 5%;
-}
-
 .blog-card {
 	border: 1px solid black;
 	background-color: rgb(245, 244, 243);
@@ -44,10 +35,6 @@
 		margin-bottom: 1%;
 	}
 
-	.blog-headline-container {
-		height: 2em;
-		line-height: 2em;
-	}
 
 	.blog-card {
 		width: 30%;
@@ -67,11 +54,6 @@
 		width: 80%;
 		margin-top: 15%;
 		margin-bottom: 1%;
-	}
-
-	.blog-headline-container {
-		height: 1.5em;
-		line-height: 1.5em;
 	}
 
 	.blog-card {
