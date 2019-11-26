@@ -21,6 +21,10 @@
   text-align: left;
 }
 
+.minor-partner-description {
+  padding: 1em;
+}
+
 .partners-grid {
   padding-top: 4em;
   margin-top: 5%;

@@ -53,6 +53,7 @@ body {
 
 .banner-headline {
   background-color: rgb(8, 37, 78);
+	border-radius: 10px 20px;
 }
 
 .main-container {

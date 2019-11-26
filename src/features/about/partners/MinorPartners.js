@@ -11,7 +11,7 @@ const minorPartners = () => {
 		<>
 			<div class="ui divider"></div>
 			<br/>
-			<Card.Group itemsPerRow={4} className="center">
+			<Card.Group itemsPerRow={2} className="center">
 				{minorPartnersData.map((partner) => (
 					<Card>
 						<a href={partner.link} class="ui medium image">
@@ -21,7 +21,7 @@ const minorPartners = () => {
 						<div className="content">
 							<div className="header">{partner.name}</div>
 						</div>
-						<div className="description">{partner.content}</div>
+						<div className="minor-partners-description">{partner.content}</div>
 					</Card>
 				))}
 			</Card.Group>
