@@ -1,9 +1,11 @@
-/* about/partners */
-
 
 .partner-image {
-  height: 50%;
+  height: 20vw;
   width: auto;
+}
+
+.subhead {
+  margin-bottom: 3em;
 }
 
 .partner-headline {
@@ -17,4 +19,13 @@
 .partner-description {
   font-size: 1.3em;
   text-align: left;
+}
+
+.partners-grid {
+  padding-top: 4em;
+  margin-top: 5%;
+}
+
+.minor-partners {
+  margin-bottom: 5em;
 }

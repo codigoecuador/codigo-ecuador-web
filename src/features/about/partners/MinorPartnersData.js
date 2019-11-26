@@ -18,6 +18,7 @@ const kod = {
   ],
   link: "https://www.kodluyoruz.org/"
 };
+
 const partner3 = {
   name: "Placeholder 3",
   image:

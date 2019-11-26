@@ -5,7 +5,6 @@ const PartnerGrid = ({ content, image, name }) => {
   return (
     <Grid.Row columns={2}>
       <br />
-
       <Grid.Column verticalAlign='center'>
         <Image className='partner-image' src={image} />
       </Grid.Column>

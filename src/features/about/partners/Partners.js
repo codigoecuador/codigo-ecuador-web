@@ -6,10 +6,9 @@ import PartnerGrid from "./PartnerGrid"
 
 const Partners = () => {
 	return (
-		<Container className="main-container">
+		<>
 			<br />
 			<br />
-
 			<div className="headline banner-headline">
 				<span className="gold">Our Partners</span>
 			</div>
@@ -19,20 +18,12 @@ const Partners = () => {
 				resources to help us succeed.
 			</div>
 
-			<br />
-			<br />
-			<br />
-
 			<Grid divided="vertically" className="partners-grid">
-				<br />
-				<br />
-				<br />
-				<br />
 				{partnersData.map((partner) => (
 					<PartnerGrid {...partner} key={partner.name} />
 				))}
 			</Grid>
-		</Container>
+		</>
 	)
 }
 
