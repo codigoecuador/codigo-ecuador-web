@@ -36,13 +36,9 @@ function Classes(props) {
 		))
 	}
 
-	let coursesStyle
-	props.size === "mobile"
-		? (coursesStyle = "courses-mobile")
-		: (coursesStyle = "courses-desktop")
 
 	return (
-		<Container className={coursesStyle}>
+		<Container className="courses">
 			<div className="courses-text">
 				<div className="center headline banner-headline">
 					<span className="gold">Our Curriculum</span>
