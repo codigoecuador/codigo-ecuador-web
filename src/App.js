@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import { Sticky} from "semantic-ui-react"
-import About from "./features/about/About";
+import About from "./features/about/ourStory/About";
 import Blog from "./features/blog/Blog";
 import Classes from "./features/services/classes/Classes";
 import Internships from "./features/services/internships/Internships";

@@ -1,5 +1,5 @@
 import React from "react";
-import { ourStoryText } from "../../common/aboutText/ourStoryText";
+import { ourStoryText } from "../../../common/aboutText/ourStoryText";
 
 const OurStory = () => {
   return (
