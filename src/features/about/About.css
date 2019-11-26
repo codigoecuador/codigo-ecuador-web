@@ -43,12 +43,12 @@
 .ceo-letter {
 	background-color: rgb(255, 255, 255);
 	opacity: 0.7;
+	transition: opacity 2s;
 	border: 3px solid rgb(197, 158, 85);
 	padding: 3%;
 	z-index: 2;
 	font-family: "Cormorant Garamond", serif;
 	margin-bottom: 3em;
-	transition: opacity 2s;
 }
 
 .ceo-letter:hover {

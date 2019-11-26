@@ -27,6 +27,17 @@ body {
 	color: rgb(197, 158, 85);
 }
 
+/* font size */
+.large {
+	font-size: 3em;
+	line-height: 1.5em;
+}
+
+.medium {
+	font-size: 2em;
+	line-height: 1.5em;
+}
+
 /* headline/ container styles */
 
 .headline {
@@ -42,6 +53,7 @@ body {
 
 .banner-headline {
   background-color: rgb(8, 37, 78);
+	border-radius: 10px 20px;
 }
 
 .main-container {

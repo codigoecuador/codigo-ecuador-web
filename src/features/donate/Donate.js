@@ -28,13 +28,7 @@ const Donate = () => {
 				</Card.Group>
 
 				<Contact className="contact" />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
+			
 			</Container>
 		</>
 	)

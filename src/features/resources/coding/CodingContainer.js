@@ -39,9 +39,7 @@ class CodingContainer extends Component {
 		}
 		return (
 			<div className="main-container">
-				<br />
-				<br />
-				<br />
+		
 				<div className="headline banner-headline">
 					<span className="gold">
 						{this.state.showing || "Coding"} Resources
@@ -52,14 +50,6 @@ class CodingContainer extends Component {
 
 				<div className="showing">
 					<CodingLinks type={this.state.showing} />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
 				</div>
 			</div>
 		)

@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Container } from "semantic-ui-react"
+import { Container, Icon } from "semantic-ui-react"
 import "./boardOfDirectors.css"
 import { connect } from "react-redux"
 import { boardDataDesktop } from "./boardDataDesktop"
@@ -28,7 +28,7 @@ class BoardOfDirectors extends Component {
 		width <= 700 ? (isMobile = true) : (isMobile = false)
 
 		let boardData
-		isMobile ? (boardData = boardDataMobile) : (boardData = boardDataDesktop)
+		isMobile ? boardData = boardDataMobile : boardData = boardDataDesktop
 
 		return (
 			<>

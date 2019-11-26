@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from 'semantic-ui-react'
 
 export const boardDataMobile=
 <>
@@ -10,9 +11,13 @@ export const boardDataMobile=
         alt="headshot of board member Debra Ray" />
         <h1 className="board-header">Debra Ray</h1>
         <div className="board-subhead">Founder and CEO</div><br/>
-        <div class="description board-description">
+        <div className="description board-description">
           "I want to advance global economic development by sharing resources with women entering adulthood to help them become more independent."
         </div>
+        <br/>
+        <a href="https://www.linkedin.com/in/tom-sullivan-a925421a/">
+          <Icon name="linkedin" size="large" className="blue linked-in"/>
+        </a>
       </div>
 
     <div className="board-card">
@@ -26,6 +31,11 @@ export const boardDataMobile=
       <div class="description board-description">
         "I want to help the youth of tomorrow turn their creative ideas into reality with computer programming."
       </div>
+      <br/>
+      <a href="https://www.linkedin.com/in/tom-sullivan-a925421a/">
+        <Icon name="linkedin" size="large" className="blue linked-in"/>
+      </a>
+
     </div>
   </div>
 </>

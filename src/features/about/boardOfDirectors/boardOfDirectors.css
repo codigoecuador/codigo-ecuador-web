@@ -5,11 +5,12 @@
 }
 
 .board-photo {
-	width: 80%;
 	height: auto;
 	overflow: hidden;
-	display: "block";
-	margin: "0 auto";
+	margin-left: auto;
+  margin-right: auto;
+  display: block;
+	border-radius: 5%;
 }
 
 .board-column {
@@ -37,6 +38,11 @@
 		margin-right: 2em;
 	}
 
+	.board-photo {
+		margin-top: 1vw;
+		width: 90%;
+	}
+
 	.board-header {
 		font-size: 3em;
 	}
@@ -46,7 +52,7 @@
 	}
 	.board-description {
 		font-size: 1.8em;
-		line-height: normal;
+		line-height: 1.5em;
 	}
 }
 
@@ -65,19 +71,21 @@
 		margin-bottom: 2em;
 	}
 
+	.board-photo {
+		width: 70%;
+	}
+
 	.board-header {
 		font-size: 1.5em;
 	}
 
 	.board-subhead {
-		font-size: 1.2em;
+		font-size: 1em;
 		line-height: 1.2em;
-		margin-bottom: 1em;
 	}
 
 	.board-description {
 		font-size: 1.4em;
 		line-height: 1em;
-		margin-bottom: 2em;
 	}
 }

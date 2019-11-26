@@ -1,41 +1,40 @@
-/* resources/ research */
-
-.research-container {
-  position: absolute;
-  top: 25%;
-  left: 5%;
-  right: 5%;
+@media screen and (min-width: 700px) {
+  .research-image {
+    max-height: 30vw;
+    width: auto;
+  }
 }
 
-.research-banner {
-  background-color: rgb(197, 158, 85, 0.1);
-  padding: 2%;
-}
-
-.research-image {
-  max-height: 30vw;
-  width: auto;
-}
-
-.research-image-mobile {
-  max-height: 20vw;
-  width: auto;
-}
-
-.research-headline {
-  text-align: center;
-  line-height: 2vw;
+@media screen and (max-width: 699px) {
+  .research-image {
+    max-height: 20vw;
+    width: auto;
+  }
 }
 
 .research-container-text {
-  font-size: 1.3vw;
-  line-height: 1.3vw;
-  padding-bottom: 4vw;
-  padding-top: 3vw;
+  padding-top: 3em;
+}
+
+.research-container-text p {
+  font-size: 1.8em;
+  line-height: 1.5em;
+  margin-bottom: 5em;
+}
+
+.research-card {
+  width: 50%;
 }
 
 .research-description {
-  font-size: 1.2vw;
-  line-height: 1.3vw;
+  width: 90%;
+  margin: auto;
+  font-size: 1.2em;
+  line-height: 1em;
   padding: 5%;
+}
+
+.slick-track div {
+  min-width: 0!important;
+  max-width: 100%!important;
 }

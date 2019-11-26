@@ -3,7 +3,7 @@ import { internshipBlurbText } from "../../../common/activitiesText/internshipTe
 
 const InternshipBlurb = () => {
 	return (
-		<div className="activities">
+		<div className="activities internship">
 			<br />
 			<div className="sub-headline">
 				{internshipBlurbText[localStorage.getItem("language")].title}

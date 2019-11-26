@@ -1,16 +1,44 @@
-/* contact */
-.contact {
-  font-size: 1.1vw;
-}
 
 a.donate-button {
   background-color: rgb(8, 37, 78);
   color: white;
   display: inline-block;
-  height: 3em;
-  width: 11em;
-  font-size: 1em;
-  vertical-align: middle;
-  padding: 1em;
   border-radius: 5%;
+}
+
+
+@media screen and (min-width: 700px) {
+  .contact-us {
+    font-size: 4em;
+  }
+  a.donate-button {
+    height: 2em;
+    width: 20%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding-top: .3em;
+
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .contact-us {
+    font-size: 2em;
+  }
+
+  a.donate-button {
+    height: 2em;
+    width: 30%;
+    font-size: 1em;
+    line-height: 1em;
+    padding: .5em;
+  }
+}
+
+
+
+.social-text {
+  margin-top: 1em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
