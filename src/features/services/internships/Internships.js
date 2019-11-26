@@ -7,6 +7,7 @@ const Internships = () => {
       <div className="headline banner-headline">
         <span className="gold">Internships</span>
       </div>
+      <h1>Internships!</h1>
     </div>
   );
 };
