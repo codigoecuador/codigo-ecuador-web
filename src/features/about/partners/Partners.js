@@ -10,9 +10,8 @@ const Partners = () => {
 			<br />
 			<br />
 
-			<div className="headline">
-				<span className="gold">Our</span>
-				<span className="navy"> Partners</span>
+			<div className="headline banner-headline">
+				<span className="gold">Our Partners</span>
 			</div>
 
 			<div className="subhead">

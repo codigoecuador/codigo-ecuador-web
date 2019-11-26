@@ -35,9 +35,8 @@ class BoardOfDirectors extends Component {
 		return (
 			<>
 				<Container className="board-container">
-					<div className="headline board-headline">
-						<span className="gold">Board of</span>
-						<span className="navy"> Directors</span>
+					<div className="headline banner-headline">
+						<span className="gold">Board of Directors</span>
 					</div>
 					{boardData}
 				</Container>
