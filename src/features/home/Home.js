@@ -2,7 +2,7 @@ import React from "react"
 import "./Home.css"
 import AboutBlurb from "./AboutBlurb"
 import CoverPic from "./CoverPic"
-import Activities from "../activities/Activities"
+import Activities from "./activities/Activities"
 
 const Home = () => {
 	return (

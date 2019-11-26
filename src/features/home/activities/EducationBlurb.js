@@ -1,6 +1,6 @@
 import React from "react"
 import { connect } from "react-redux"
-import { educationBlurbText } from "../../common/activitiesText/educationText"
+import { educationBlurbText } from "../../../common/activitiesText/educationText"
 
 const EducationBlurb = () => {
 	return (

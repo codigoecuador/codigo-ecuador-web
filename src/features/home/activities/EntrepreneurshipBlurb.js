@@ -1,5 +1,5 @@
 import React from "react"
-import { entrepreneurshipBlurbText } from "../../common/activitiesText/entrepreneurshipText"
+import { entrepreneurshipBlurbText } from "../../../common/activitiesText/entrepreneurshipText"
 
 const EntrepreneurshipBlurb = () => {
 	return (

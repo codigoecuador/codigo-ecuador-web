@@ -1,5 +1,5 @@
 import React from "react"
-import { internshipBlurbText } from "../../common/activitiesText/internshipText"
+import { internshipBlurbText } from "../../../common/activitiesText/internshipText"
 
 const InternshipBlurb = () => {
 	return (

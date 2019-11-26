@@ -3,7 +3,7 @@ import "./Activities.css"
 import EducationBlurb from "./EducationBlurb"
 import InternshipBlurb from "./InternshipBlurb"
 import EntrpeneurshipBlurb from "./EntrepreneurshipBlurb"
-import "../home/Home.css"
+import "../Home.css"
 
 const Activities = () => {
 	return (
