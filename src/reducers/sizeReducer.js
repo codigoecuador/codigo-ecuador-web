@@ -1,12 +1,12 @@
-export default function sizeReducer(state = { size: "" }, action) {
-  switch (action.type) {
-    case "SET_SIZE":
-      debugger;
-      let x = { ...state, size: action.setSize };
+export default function sizeReducer(state = { size: "desktop" }, action) {
+	switch (action.type) {
+		case "SET_SIZE":
+			let newSize = action.size <= 700 ? "mobile" : "desktop"
+			let x = { ...state, size: newSize }
 
-      return x;
+			return x
 
-    default:
-      return state;
-  }
+		default:
+			return state
+	}
 }
