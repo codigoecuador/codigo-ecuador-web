@@ -25,7 +25,7 @@ class BoardOfDirectors extends Component {
 }
 
 const mapStateToProps = state => {
-  return { size: state.size };
+  return { language: state.language };
 };
 
 export default connect(mapStateToProps)(BoardOfDirectors);
