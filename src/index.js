@@ -23,11 +23,6 @@ ReactDOM.render(
   <BrowserRouter>
     <Provider store={store}>
       <App />
-<<<<<<< Updated upstream
-      {/* <Footer/> */}
-=======
-      <Footer />
->>>>>>> Stashed changes
     </Provider>
   </BrowserRouter>,
   document.getElementById("root")
