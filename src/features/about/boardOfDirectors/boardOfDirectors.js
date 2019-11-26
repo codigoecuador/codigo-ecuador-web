@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Container } from "semantic-ui-react"
+import { Container, Icon } from "semantic-ui-react"
 import "./boardOfDirectors.css"
 import { connect } from "react-redux"
 import { boardDataDesktop } from "./boardDataDesktop"
