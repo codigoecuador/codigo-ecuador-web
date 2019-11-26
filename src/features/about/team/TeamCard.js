@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, Feed, Image } from "semantic-ui-react"
+import { Card, Feed, Image, Icon } from "semantic-ui-react"
 
 const TeamCard = ({
 	name,
@@ -10,7 +10,7 @@ const TeamCard = ({
 	image
 }) => {
 	return (
-		<Card href={linkedin} raised>
+		<Card href={linkedin} raised className="team-card">
 			<Image src={image} alt="Profile Pic" />
 			<Card.Content>
 				<Card.Header>{name}</Card.Header>
@@ -23,7 +23,12 @@ const TeamCard = ({
 					<Feed.Event>{background}</Feed.Event>
 				</Feed>
 			</Card.Content>
-			<Card.Content extra>Find me on LinkedIn</Card.Content>
+			<Card.Content extra>
+			<div className="center">
+			<Icon name="linkedin" size="big" className="blue linked-in"/>
+				Find me on LinkedIn
+			</div>
+			</Card.Content>
 		</Card>
 	)
 }
