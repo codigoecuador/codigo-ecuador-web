@@ -6,8 +6,8 @@ import TeamCard from "./TeamCard"
 
 const Team = () => {
 	return (
-		<Container className="team center" justified>
-			<div className="headline team-headline">
+		<Container className="main-container">
+			<div className="headline banner-headline center">
 				<span className="gold">Our Team</span>
 			</div>
 

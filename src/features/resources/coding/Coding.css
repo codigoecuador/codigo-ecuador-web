@@ -1,39 +1,18 @@
-/* resources/coding  */
 
-.resources {
-	margin-top: 15%;
-	z-index: 1;
+.showing {
+	position: absolute;
+	margin-left: 25%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+	padding: 5%;
 }
 
 @media screen and (min-width: 700px) {
-	.coding-container {
-		width: 80%;
-		margin: 1% auto
-	}
-
-	.showing {
-		position: absolute;
-		margin-left: 25%;
-		/* margin-top: %; */
-		margin-right: 10%;
-		margin-bottom: 5%;
-		padding: 5%;
-	}
 }
 
 @media screen and (max-width: 699px) {
-	.coding-container {
-		margin-top: 0%;
-	}
-
-
 	.showing {
-		position: absolute;
-		margin-left: 25%;
 		margin-top: 5%;
-		margin-right: 10%;
-		margin-bottom: 5%;
-		padding: 5%;
 	}
 }
 

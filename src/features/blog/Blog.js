@@ -45,7 +45,7 @@ class Blog extends Component {
 
 			return (
 				<>
-					<div className="blog-container">
+					<div className="main-container">
 						<div className="headline banner-headline">
 							<span className="gold">Recent Blog Posts</span>
 						</div>

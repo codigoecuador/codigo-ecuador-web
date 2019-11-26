@@ -1,14 +1,4 @@
-@media screen and (min-width: 700px) {
-	.courses {
-		margin-top: 7%;
-	}
-}
 
-@media screen and (max-width: 699px) {
-	.courses {
-		margin-top: 15%;
-	}
-}
 
 .bg-navy {
 	background-color: rgb(8, 37, 78);

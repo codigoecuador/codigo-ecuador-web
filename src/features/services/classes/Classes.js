@@ -38,7 +38,7 @@ function Classes(props) {
 
 
 	return (
-		<Container className="courses">
+		<Container className="main-container">
 			<div className="courses-text">
 				<div className="center headline banner-headline">
 					<span className="gold">Our Curriculum</span>

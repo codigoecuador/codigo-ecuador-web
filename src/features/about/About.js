@@ -5,7 +5,7 @@ import CeoLetter from "./ceoLetter"
 
 const About = () => {
 	return (
-		<div className="about-container">
+		<div className="about-container main-container">
 			<div className="our-story">
 				<OurStory />
 			</div>

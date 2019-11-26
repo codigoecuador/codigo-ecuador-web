@@ -28,13 +28,11 @@ class BoardOfDirectors extends Component {
 		width <= 700 ? (isMobile = true) : (isMobile = false)
 
 		let boardData
-		isMobile
-			? (boardData = boardDataMobile)
-			: (boardData = boardDataDesktop)
+		isMobile ? (boardData = boardDataMobile) : (boardData = boardDataDesktop)
 
 		return (
 			<>
-				<Container className="board-container">
+				<Container className="main-container">
 					<div className="headline banner-headline">
 						<span className="gold">Board of Directors</span>
 					</div>

@@ -37,7 +37,7 @@ class CodingContainer extends Component {
 			)
 		}
 		return (
-			<div className="coding-container">
+			<div className="main-container">
 				<br />
 				<br />
 				<br />

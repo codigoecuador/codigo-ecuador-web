@@ -6,7 +6,6 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
 
-
     return (
       <Container className="dropdown-button-group">
       <div class="dropdown">

@@ -7,24 +7,21 @@ import { Link } from "react-router-dom"
 const Header = () => {
 	return (
 		<div className="header">
+			<div className='ui right item'>
+				<LanguageToggle />
+			</div>
+
 			<Link exact className="logo-wrapper" to="/">
 				<Logo className="logo" />
 			</Link>
 
-        <div className = "navbar" >
-          <Navbar / >
-        </div>
-
-        <div className='ui right item'>
-          <LanguageToggle />
-        </div>
-
-
+      <div className = "navbar" >
+        <Navbar / >
       </div>
-    );
 
+
+    </div>
+  );
 }
 
 export default Header
-
-//adding comment to see if commit works

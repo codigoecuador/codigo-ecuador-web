@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import { Container, Image } from "semantic-ui-react"
+import { Container } from "semantic-ui-react"
 import "./Mentorship.css"
 import { mentorshipData } from "./MentorshipData"
 import { mentorshipIntro } from "./MentorshipIntro"
@@ -8,16 +8,10 @@ import likeABoss from "./likeABoss.jpg"
 
 class Mentorship extends Component {
 	render() {
-		let mentorContainer
 
-		if (this.props.size === "mobile") {
-			mentorContainer = "mentor-container-mobile"
-		} else {
-			mentorContainer = "mentor-container-desktop"
-		}
 
 		return (
-			<Container className={mentorContainer}>
+			<Container className="main-container">
 				<div className="headline center">
 					<span className="dancing gold">Career</span>
 					<span className="dancing navy"> Mentorship</span>

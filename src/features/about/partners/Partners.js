@@ -6,7 +6,7 @@ import PartnerGrid from "./PartnerGrid"
 
 const Partners = () => {
 	return (
-		<Container className="partners">
+		<Container className="main-container">
 			<br />
 			<br />
 

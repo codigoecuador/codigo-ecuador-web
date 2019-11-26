@@ -8,7 +8,7 @@ import Contact from "../contact/Contact"
 const Donate = () => {
 	return (
 		<>
-			<Container className="donate center">
+			<Container className="main-container center">
 				<div className="headline banner-headline">
 					<span className="gold">Donate</span>
 				</div>
