@@ -25,7 +25,7 @@ class ResearchContainer extends Component {
     return (
       <div className='main-container'>
 
-        <div className='banner-headline center'>
+        <div className='headline banner-headline'>
           <span className='gold headline'>Research</span>
         </div>
 
@@ -46,7 +46,6 @@ class ResearchContainer extends Component {
           </p>
         </div>
 
-        <br />
         <Slider {...settings}>
           {researchLinks.map((research, index) => (
             <ResearchCard key={index} research={research} />
@@ -55,10 +54,6 @@ class ResearchContainer extends Component {
           <br />
         </Slider>
 
-        <br />
-        <br />
-        <br />
-        <br />
       </div>
     );
   }

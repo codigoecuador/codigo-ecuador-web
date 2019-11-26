@@ -13,7 +13,7 @@ class ResearchCard extends Component {
 
           <Card.Content className='card-content'>
             <Card.Header>
-              <div className='large research-headline'>{research.title}</div>
+              <div className='research-headline'>{research.title}</div>
               <br />
             </Card.Header>
 

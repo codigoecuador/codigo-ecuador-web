@@ -1,25 +1,36 @@
-/* resources/ research */
-
-.research-image {
-  max-height: 30vw;
-  width: auto;
+@media screen and (min-width: 700px) {
+  .research-image {
+    max-height: 30vw;
+    width: auto;
+  }
 }
 
-.research-image-mobile {
-  max-height: 20vw;
-  width: auto;
+@media screen and (max-width: 699px) {
+  .research-image {
+    max-height: 20vw;
+    width: auto;
+  }
 }
-
 
 .research-container-text {
-  font-size: 1.3em;
-  line-height: 1em;
-  padding-bottom: 4em;
   padding-top: 3em;
 }
 
+.research-container-text p {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin-bottom: 5em;
+}
+
 .research-description {
+  width: 90%;
+  margin: auto;
   font-size: 1.2em;
   line-height: 1em;
   padding: 5%;
+}
+
+.slick-track div {
+  min-width: 0!important;
+  max-width: 100%!important;
 }
