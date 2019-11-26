@@ -26,7 +26,7 @@ class ResearchContainer extends Component {
       <div className='main-container'>
 
         <div className='headline banner-headline'>
-          <span className='gold headline'>Research</span>
+          <span className='gold'>Research</span>
         </div>
 
         <div className='research-container-text'>
