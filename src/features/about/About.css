@@ -1,7 +1,7 @@
 /* about */
 
 .about-container {
-	margin-top: 5%;
+	margin-top: 9%;
 	background-image: url("./ecuadorLeaf.jpg");
 	background-size: cover;
 	padding-top: 3em;
@@ -29,7 +29,6 @@
 		height: auto;
 		padding: 3%;
 	}
-
 }
 
 @media screen and (max-width: 699px) {

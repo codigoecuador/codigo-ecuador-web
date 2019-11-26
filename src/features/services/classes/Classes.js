@@ -10,6 +10,7 @@ function Classes(props) {
 	const lang = localStorage.getItem("language")
 	const headline = classesText[lang]
 	const generatePythonClasses = () => {
+
 		return pythonText[lang].map((course) => (
 			<div className={`course-info ${course.color}`}>
 				<br />
@@ -36,13 +37,8 @@ function Classes(props) {
 		))
 	}
 
-	let coursesStyle
-	props.size === "mobile"
-		? (coursesStyle = "courses-mobile")
-		: (coursesStyle = "courses-desktop")
-
 	return (
-		<Container className={coursesStyle}>
+		<Container className="courses">
 			<div className="courses-text">
 				<div className="center headline">
 					<span className="gold">{headline.goldTitle}</span>

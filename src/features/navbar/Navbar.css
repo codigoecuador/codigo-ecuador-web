@@ -51,6 +51,10 @@
 		border: 3px solid rgb(197, 158, 85);
 		margin: 0.5em;
   }
+
+  .dropdown-content a {
+    font-size: 1.3em;
+  }
 }
 
 @media screen and (max-width: 499px) {
