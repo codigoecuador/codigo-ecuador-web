@@ -28,11 +28,10 @@ const Navbar = () => {
       </div>
 
       <div class="dropdown">
-        <button class="dropdown-button">Services</button>
+      <Link exact className="dropdown" to="/services">
+        <button className="dropdown-button">Services</button>
+      </Link>
         <div class="dropdown-content">
-          <a href='/services'>
-            Services
-          </a>
           <a href='/services/classes'>
             Curriculum
           </a>
