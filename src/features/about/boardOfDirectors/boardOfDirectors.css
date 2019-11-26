@@ -1,14 +1,6 @@
-<<<<<<< Updated upstream
-=======
-.board-bubble {
 
-}
-
-
->>>>>>> Stashed changes
 .board-container {
-	top: 20%;
-	padding-top: 10%;
+	padding-top: 5%;
 	margin-bottom: 10%;
 }
 
@@ -31,11 +23,6 @@
 }
 
 @media screen and (min-width: 700px) {
-	.board-headline {
-		padding: 5%;
-		margin-top: 1%;
-	}
-
 	.board-column {
 		float: left;
 		width: 50%;
@@ -64,11 +51,6 @@
 }
 
 @media screen and (max-width: 699px) {
-	.board-headline {
-		padding: 5%;
-		margin-top: 10%;
-	}
-
 	.board-column {
 		width: 100%;
 		padding: 40px;

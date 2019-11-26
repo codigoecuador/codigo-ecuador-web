@@ -7,7 +7,7 @@ import TeamCard from "./TeamCard"
 const Team = () => {
 	return (
 		<Container className="team center" justified>
-			<div className="headline">
+			<div className="headline team-headline">
 				<span className="gold">Our Team</span>
 			</div>
 
@@ -22,10 +22,6 @@ const Team = () => {
 
 			<Divider />
 			<br />
-
-			<div className="headline">
-				<span className="navy">Meet the Team</span>
-			</div>
 			<br />
 
 			<Card.Group centered justified>
