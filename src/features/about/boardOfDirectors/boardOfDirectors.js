@@ -16,6 +16,7 @@ class BoardOfDirectors extends Component {
           <div className='headline banner-headline'>
             <span className='gold'>Board of Directors</span>
           </div>
+
           {boardData}
         </Container>
       </div>

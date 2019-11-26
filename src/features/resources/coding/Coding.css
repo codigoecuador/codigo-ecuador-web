@@ -1,112 +1,109 @@
-
 .showing {
-	position: absolute;
-	margin-left: 25%;
-	margin-right: 10%;
-	margin-bottom: 5%;
-	padding: 5%;
+  position: relative;
+  margin-left: 25%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  padding: 5%;
 }
 
 @media screen and (min-width: 700px) {
-	.coding-button-group {
-		position: absolute;
-		margin-left: 5%;
-		margin-top: 4%;
-		margin-right: 65%;
-		margin-bottom: 5%;
-	}
+  .coding-button-group {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 4%;
+    margin-right: 65%;
+    margin-bottom: 5%;
+  }
 
-	.coding-button {
-		width: 15em;
-		height: 3em;
-		font-size: 1.1vw;
-		padding: 3.5%;
-	}
-
+  .coding-button {
+    width: 15em;
+    height: 3em;
+    font-size: 1.1vw;
+    padding: 3.5%;
+  }
 }
 
 @media screen and (max-width: 699px) {
-	.showing {
-		margin-top: 5%;
-		margin-bottom: 10%;
-		margin-left: 0%;
-	}
+  .showing {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 0%;
+  }
 
-	.coding-button-group {
-		position: absolute;
-		margin-top: 4%;
-		margin-bottom: 5%;
-	}
+  .coding-button-group {
+    position: absolute;
+    margin-top: 4%;
+    margin-bottom: 5%;
+  }
 
-	.coding-button {
-		width: 15em;
-		height: 3em;
-		font-size: 1.1vw;
-		padding: 3.5%;
-	}
+  .coding-button {
+    width: 15em;
+    height: 3em;
+    font-size: 1.1vw;
+    padding: 3.5%;
+  }
 }
 
-
 .coding-button {
-	background-color: rgb(8, 37, 78);
-	color: white;
+  background-color: rgb(8, 37, 78);
+  color: white;
 }
 
 .coding-button:hover {
-	/* gold */
-	background-color: rgb(197, 158, 85);
-	color: rgb(8, 37, 78);
+  /* gold */
+  background-color: rgb(197, 158, 85);
+  color: rgb(8, 37, 78);
 }
 
 .coding-button:focus {
-	/* gold */
-	background-color: rgb(197, 158, 85);
-	color: rgb(8, 37, 78);
-	outline: none;
+  /* gold */
+  background-color: rgb(197, 158, 85);
+  color: rgb(8, 37, 78);
+  outline: none;
 }
 
 /* coding resource links */
 
 .coding-item-title {
-	font-family: "Bree Serif", serif;
-	font-size: 2.5em;
-	line-height: 1em;
+  font-family: "Bree Serif", serif;
+  font-size: 2.5em;
+  line-height: 1em;
 }
 
 .coding-item-subtitle {
-	color: grey;
-	font-size: 1.2em;
-	line-height: 1.3em;
+  color: grey;
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 
 .coding-item-container {
-	background-color: rgb(198, 151, 86, 0.05);
+  background-color: rgb(198, 151, 86, 0.05);
 }
 
 .coding-item-button {
-	background-color: black;
-	width: 12em;
-	height: 2.5em;
-	font-size: 0.8em;
-	padding: 1%;
-	display: inline-block;
+  background-color: black;
+  width: 12em;
+  height: 2.5em;
+  font-size: 0.8em;
+  padding: 1%;
+  display: inline-block;
 }
 
 .coding-item-button a {
-	color: white;
+  color: white;
 }
 
 .coding-item-button:hover {
-	/* gold */
-	background-color: rgb(197, 158, 85);
-	color: rgb(8, 37, 78);
+  /* gold */
+  background-color: rgb(197, 158, 85);
+  color: rgb(8, 37, 78);
 }
 
 .coding-item-button:hover a {
-	color: rgb(8, 37, 78);
+  color: rgb(8, 37, 78);
 }
 
 .coding-item-divider {
-	color: black;
-	border: 3px;
+  color: black;
+  border: 3px;
 }
