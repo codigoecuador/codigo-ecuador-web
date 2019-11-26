@@ -12,33 +12,23 @@ const Navbar = () => {
         <Link exact className="dropdown" to="/">
           <button className="dropdown-button">Home</button>
         </Link>
+
         <div className="dropdown">
           <button className="dropdown-button">About</button>
           <div className="dropdown-content">
-            <a href='/about'>
-              Our Story
-            </a>
-            <a href='/about/partners'>
-              Partners
-            </a>
-            <a href= '/about/team'>
-              Team
-            </a>
-            <a href='/about/board'>
-              Board of Directors
-            </a>
+            <a href='/about'>Our Story</a>
+            <a href='/about/partners'>Partners</a>
+            <a href= '/about/team'>Team</a>
+            <a href='/about/board'>Board of Directors</a>
           </div>
         </div>
 
         <div className="dropdown">
           <button className="dropdown-button">Services</button>
           <div className="dropdown-content">
-            <a href='/services/classes'>
-              Curriculum
-            </a>
-            <a href= '/services/mentorship'>
-              Mentorship
-            </a>
+            <a href='/services/classes'>Curriculum</a>
+            <a href= '/services/mentorship'>Mentorship</a>
+            <a href= '/services/internships'>Internships</a>
           </div>
         </div>
 

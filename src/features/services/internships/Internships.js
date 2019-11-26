@@ -1,11 +1,13 @@
 import React from "react";
 import "./Internships.css";
 
-const Internship = () => {
+const Internships = () => {
   return (
-    <>
-      <h1> Internships page goes here!
-    </>
+    <div className="main-container">
+      <div className="headline banner-headline">
+        <span className="gold">Internships</span>
+      </div>
+    </div>
   );
 };
 
