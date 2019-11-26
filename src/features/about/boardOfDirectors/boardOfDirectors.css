@@ -1,91 +1,90 @@
-
 .board-container {
-	padding-top: 5%;
-	margin-bottom: 10%;
+  padding-top: 5%;
+  margin-bottom: 10%;
 }
 
 .board-photo {
-	height: auto;
-	overflow: hidden;
-	margin-left: auto;
+  height: auto;
+  overflow: hidden;
+  margin-left: auto;
   margin-right: auto;
   display: block;
-	border-radius: 5%;
+  border-radius: 5%;
 }
 
 .board-column {
-	text-align: center;
+  text-align: center;
 }
 
 .board-card {
-	vertical-align: middle;
-	background-color: rgb(255, 255, 255, 0.8);
-	border: 3px solid rgb(197, 158, 85);
+  vertical-align: middle;
+  background-color: rgb(255, 255, 255, 0.8);
+  border: 3px solid rgb(197, 158, 85);
 }
 
 @media screen and (min-width: 700px) {
-	.board-column {
-		float: left;
-		width: 50%;
-	}
+  .board-column {
+    float: left;
+    width: 50%;
+  }
 
-	.board-card {
-		padding: 3em;
-		height: 40em;
-		border-radius: 20%;
-		border: 3px solid rgb(197, 158, 85);
-		margin-bottom: 2em;
-		margin-right: 2em;
-	}
+  .board-card {
+    padding: 3em;
+    height: 40em;
+    border-radius: 20%;
+    border: 3px solid rgb(197, 158, 85);
+    margin-bottom: 2em;
+    margin-right: 2em;
+  }
 
-	.board-photo {
-		margin-top: 1vw;
-		width: 90%;
-	}
+  .board-photo {
+    margin-top: 1vw;
+    width: 90%;
+  }
 
-	.board-header {
-		font-size: 3em;
-	}
-	.board-subhead {
-		font-size: 2em;
-		margin-bottom: 2em;
-	}
-	.board-description {
-		font-size: 1.8em;
-		line-height: 1.5em;
-	}
+  .board-header {
+    font-size: 3em;
+  }
+  .board-subhead {
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+  .board-description {
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
 }
 
 @media screen and (max-width: 699px) {
-	.board-column {
-		width: 100%;
-		padding: 40px;
-		height: 500px;
-		border-radius: 5%;
-	}
+  .board-column {
+    width: 100%;
+    padding: 40px;
+    height: 500px;
+    border-radius: 5%;
+  }
 
-	.board-card {
-		padding: 40px;
-		height: 500px;
-		border-radius: 5%;
-		margin-bottom: 2em;
-	}
+  .board-card {
+    padding: 40px;
+    height: 500px;
+    border-radius: 5%;
+    margin-bottom: 2em;
+  }
 
-	.board-photo {
-		width: 70%;
-	}
+  .board-photo {
+    width: 70%;
+  }
 
-	.board-header {
-		font-size: 1.5em;
-	}
+  .board-header {
+    font-size: 1.5em;
+  }
 
-	.board-subhead {
-		font-size: 1em;
-		line-height: 1.2em;
-	}
+  .board-subhead {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
 
-	.board-description {
-		font-size: 1.4em;
-		line-height: 1em;
-	}
+  .board-description {
+    font-size: 1.4em;
+    line-height: 1em;
+  }
 }
