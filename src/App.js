@@ -19,31 +19,22 @@ import BoardOfDirectors from "./features/about/boardOfDirectors/boardOfDirectors
 import Footer from "./features/footer/Footer.js"
 
 class App extends Component {
-	constructor(props) {
-		super(props)
-		this.state = {
-			width: window.innerWidth
-		}
-	}
 	componentDidMount() {
 		window.addEventListener("resize", this.handleWindowSizeChange)
 	}
+
 	componentWillUnmount() {
 		window.removeEventListener("resize", this.handleWindowSizeChange)
 	}
+
 	handleWindowSizeChange = () => {
-		this.setState({ width: window.innerWidth })
+		this.props.setSize(window.innerWidth)
 	}
 
 	render() {
 		if (!localStorage.getItem("language")) {
 			localStorage.setItem("language", "EN")
 		}
-
-		let isMobile
-		const width = this.state.width
-		const setSize = this.props.setSize
-		width <= 700 ? setSize("mobile") : setSize("desktop")
 
 		return (
 			<Router>
