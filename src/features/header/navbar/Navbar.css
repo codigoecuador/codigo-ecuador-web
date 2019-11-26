@@ -1,7 +1,7 @@
 .navbar {
     font-weight: bolder;
     height: auto;
-    top: 10%;
+    top: 9%;
     z-index: 1;
     max-width: 100%;
     margin: auto;
@@ -48,7 +48,6 @@
 }
 
 @media screen and (min-width: 700px) {
-
   .dropdown-button {
     font-size: 1.4em;
 		padding: 0.8em;

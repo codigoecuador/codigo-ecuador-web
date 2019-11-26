@@ -27,25 +27,6 @@ body {
 	color: rgb(197, 158, 85);
 }
 
-/* contains logo, navbar and language toggle */
-.header {
-	position: relative;
-	width: 100%;
-	top: 0;
-	background-color: white;
-	z-index: 2;
-}
-
-.logo {
-	margin: 2em;
-	width: 90%;
-	height: auto;
-	z-index: 1;
-}
-
-.language {
-	top: 0;
-}
 
 
 

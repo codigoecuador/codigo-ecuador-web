@@ -1,6 +1,6 @@
 import React from "react"
-import Navbar from "../navbar/Navbar"
-import Logo from "../logo/Logo"
+import Navbar from "./navbar/Navbar"
+import Logo from "./logo/Logo"
 import LanguageToggle from "./LanguageToggle"
 import { Link } from "react-router-dom"
 

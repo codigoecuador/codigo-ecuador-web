@@ -3,7 +3,7 @@ import "./Donate.css"
 import { Container, Card } from "semantic-ui-react"
 import { donateData } from "./DonateData"
 import DonateCard from "./DonateCard"
-import Contact from "../contact/Contact"
+import Contact from "./contact/Contact"
 
 const Donate = () => {
 	return (
