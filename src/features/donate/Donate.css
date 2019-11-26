@@ -26,7 +26,6 @@
 }
 
 
-/* trying to center donate cards for mobile, not reaching element */
 @media screen and (max-width: 699px) {
 	.donate-headline {
 		height: 1.5em;

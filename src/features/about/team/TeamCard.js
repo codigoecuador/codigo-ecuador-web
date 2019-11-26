@@ -17,8 +17,9 @@ const TeamCard = ({
 				<Card.Description>{title}</Card.Description>
 			</Card.Content>
 			<Card.Content textAlign="left">
-				<Feed>
+				<Feed className="team-description">
 					<Feed.Event>{description}</Feed.Event>
+					<br/>
 					<Feed.Event>{background}</Feed.Event>
 				</Feed>
 			</Card.Content>
