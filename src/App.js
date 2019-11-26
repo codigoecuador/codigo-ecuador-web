@@ -16,32 +16,81 @@ import PartnersContainer from "./features/about/partners/PartnersContainer";
 import ResearchContainer from "./features/resources/research/ResearchContainer";
 import Team from "./features/about/team/Team";
 import BoardOfDirectors from "./features/about/boardOfDirectors/boardOfDirectors";
-import Footer from './features/footer/Footer.js'
+import Footer from "./features/footer/Footer.js";
+import { setSize } from "./actions";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      width: window.innerWidth
+    };
+  }
+  componentDidMount() {
+    window.addEventListener("resize", this.handleWindowSizeChange);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleWindowSizeChange);
+  }
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
+
   render() {
     if (!localStorage.getItem("language")) {
       localStorage.setItem("language", "EN");
     }
+
+    let isMobile;
+    const width = this.state.width;
+    width <= 700 ? setSize("mobile") : setSize("desktop");
+
     return (
       <Router>
         <div>
           <Header />
-         
 
           <Switch>
             <Route exact path='/about' render={() => <About />}></Route>
             <Route exact path='/blog' render={() => <Blog />}></Route>
-            <Route exact path='/services/classes'render={() => <Classes />}></Route>
-            <Route exact path='/services/internships'render={() => <Internships />}></Route>
-            <Route exact path='/resources' render={() => <CodingContainer />}></Route>
+            <Route
+              exact
+              path='/services/classes'
+              render={() => <Classes />}
+            ></Route>
+            <Route
+              exact
+              path='/services/internships'
+              render={() => <Internships />}
+            ></Route>
+            <Route
+              exact
+              path='/resources'
+              render={() => <CodingContainer />}
+            ></Route>
             <Route exact path='/donate' render={() => <Donate />}></Route>
             <Route exact path='/' render={() => <Home />}></Route>
-            <Route exact path='/services/mentorship' render={() => <Mentorship />}></Route>
-            <Route exact path='/about/partners' render={() => <PartnersContainer />}></Route>
-            <Route exact path='/resources/research' render={() => <ResearchContainer />}></Route>
+            <Route
+              exact
+              path='/services/mentorship'
+              render={() => <Mentorship />}
+            ></Route>
+            <Route
+              exact
+              path='/about/partners'
+              render={() => <PartnersContainer />}
+            ></Route>
+            <Route
+              exact
+              path='/resources/research'
+              render={() => <ResearchContainer />}
+            ></Route>
             <Route exact path='/about/team' render={() => <Team />}></Route>
-            <Route exact path='/about/board' render={() => <BoardOfDirectors />}></Route>
+            <Route
+              exact
+              path='/about/board'
+              render={() => <BoardOfDirectors />}
+            ></Route>
           </Switch>
         </div>
       </Router>
