@@ -9,7 +9,7 @@ const Internships = () => {
         <span className="gold">Internships</span>
       </div>
 
-      <div className="cod">Hello cod</div>
+      <div className="cod">internships</div>
     </div>
   );
 };
