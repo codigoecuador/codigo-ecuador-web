@@ -7,8 +7,7 @@ const Contact = () => {
     <>
       <div className="contact-us center">Contact us if you can help!</div>
       <br />
-
-      {social}
+      <br />
 
       <a
         className="donate-button"
