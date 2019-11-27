@@ -27,9 +27,11 @@ const Header = props => {
         <LanguageToggle />
       </div>
 
-      <Link exact className="logo-wrapper" to="/">
-        <Logo className="logo" />
-      </Link>
+      <div className="logo-wrapper">
+        <Link exact to="/">
+          <Logo className="logo" />
+        </Link>
+      </div>
 
       {navbar}
     </div>

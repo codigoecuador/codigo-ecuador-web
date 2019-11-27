@@ -1,9 +1,9 @@
 /* contains logo, navbar and language toggle */
 .header {
-  position: relative;
-  width: 100%;
-  top: 0;
-  background-color: white;
+  position: fixed;
+  width: 90%;
+  margin-top: 0;
+  background-color: red;
   z-index: 2;
 }
 

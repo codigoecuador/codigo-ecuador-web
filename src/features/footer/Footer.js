@@ -1,12 +1,10 @@
 import React from "react";
-import { Popup, Divider } from "semantic-ui-react";
+import { Popup } from "semantic-ui-react";
 import "./Footer.css";
-import { Grid } from "semantic-ui-react";
 
 const Footer = () => {
   return (
     <div className="footer center">
-      <Divider />
       <h3>Contact us</h3>
       <span className="social email">
         <Popup

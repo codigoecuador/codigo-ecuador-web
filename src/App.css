@@ -78,6 +78,10 @@ body {
     width: 90%;
   }
 
+  .main-container {
+    margin-top: 5em;
+  }
+
   .headline {
     font-size: 3em;
     line-height: 1em;
@@ -107,7 +111,7 @@ body {
   }
 
   .main-container {
-    margin-top: 1%;
+    margin-top: 5%;
   }
 
   .headline {
