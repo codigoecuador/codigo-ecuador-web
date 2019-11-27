@@ -4,8 +4,11 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <>
-      <div className="support-text center">
+      <div className="subhead center">
         <p>Would you like to support our efforts?</p>
+      </div>
+
+      <div className="get-in-touch">
         <p>
           Get in touch with Código Ecuador to learn more about our work and how
           you can get involved.

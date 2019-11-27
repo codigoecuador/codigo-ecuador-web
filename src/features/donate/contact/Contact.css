@@ -5,8 +5,9 @@ a.donate-button {
   border-radius: 5px 10px;
 }
 
-.support-text p {
+.get-in-touch p {
   font-size: 1.3em;
+  color: grey;
 }
 
 @media screen and (min-width: 700px) {

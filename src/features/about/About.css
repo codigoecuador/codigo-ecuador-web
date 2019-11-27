@@ -15,8 +15,10 @@
 }
 
 .our-story-headline {
+  font-family: "Dancing Script", cursive;
   margin: 0 2em;
-  line-height: 1em;
+  font-size: 3.2em;
+  line-height: 2em;
   margin-bottom: 5%;
 }
 
