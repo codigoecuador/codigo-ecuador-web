@@ -1,15 +1,18 @@
 import React from "react";
 import { connect } from "react-redux";
 import "./Internships.css";
+import { internshipsText } from "../../../common/servicesText/internshipsText";
 
-const Internships = () => {
+const Internships = props => {
   return (
     <div className="main-container">
       <div className="headline banner-headline">
-        <span className="gold">Internships</span>
+        <span className="gold">
+          {internshipsText[localStorage.getItem("language")].title}
+        </span>
       </div>
 
-      <div className="cod">internships</div>
+      <div>{internshipsText[localStorage.getItem("language")].text}</div>
     </div>
   );
 };
