@@ -1,10 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { Container } from "semantic-ui-react";
 import "./Mentorship.css";
-import { mentorshipData } from "./MentorshipData";
-import { mentorshipIntro } from "./MentorshipIntro";
-import { mentorshipText} from "../../../common/servicesText/mentorshipText";
+import { mentorshipText } from "../../../common/servicesText/mentorshipText";
 import likeABoss from "./likeABoss.jpg";
 
 const Mentorship = props => {
