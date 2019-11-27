@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import BlogCard from "./BlogCard";
+import BlogLoader from "./BlogLoader";
 
 class Blog extends Component {
   state = {
@@ -23,7 +24,11 @@ class Blog extends Component {
     let num = this.props.size === "mobile" ? 1 : 3;
 
     if (!this.state.blogs.items) {
-      return <div className="blog-container">No blog posts at the moment!</div>;
+      return (
+        <div className="blog-container">
+          <BlogLoader />
+        </div>
+      );
     } else {
       const { items } = this.state.blogs;
 
