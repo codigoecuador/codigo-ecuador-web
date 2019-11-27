@@ -1,4 +1,3 @@
-
 a.donate-button {
   background-color: rgb(8, 37, 78);
   color: white;
@@ -6,18 +5,16 @@ a.donate-button {
   border-radius: 5%;
 }
 
-
 @media screen and (min-width: 700px) {
   .contact-us {
-    font-size: 4em;
+    font-size: 3em;
   }
   a.donate-button {
     height: 2em;
     width: 20%;
     font-size: 1.5em;
     line-height: 1.5em;
-    padding-top: .3em;
-
+    padding-top: 0.3em;
   }
 }
 
@@ -31,11 +28,9 @@ a.donate-button {
     width: 30%;
     font-size: 1em;
     line-height: 1em;
-    padding: .5em;
+    padding: 0.5em;
   }
 }
-
-
 
 .social-text {
   margin-top: 1em;
