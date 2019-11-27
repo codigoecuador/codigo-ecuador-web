@@ -1,15 +1,12 @@
-
-
-
 .partners-grid {
   padding-top: 3em;
-  padding-bottom :4em;
-  background-color: rgb(191,158,96,0.5);
+  padding-bottom: 4em;
+  background-color: rgb(191, 158, 96, 0.5);
 }
 
 .partner-image {
   height: 25vw;
-  padding-top: 2em;
+  padding-top: 3em;
   width: auto;
   margin: auto;
 }
