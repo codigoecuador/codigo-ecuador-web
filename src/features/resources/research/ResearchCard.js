@@ -8,24 +8,24 @@ class ResearchCard extends Component {
 
     return (
       <>
-        <Card className='research-card'>
-          <Image src={research.image} className='research-image' />
+        <Card className="research-card">
+          <Image src={research.image} className="research-image" />
 
-          <Card.Content className='card-content'>
+          <Card.Content className="card-content">
             <Card.Header>
-              <div className='research-headline'>{research.title}</div>
+              <div className="research-headline">{research.title}</div>
               <br />
             </Card.Header>
 
             <Card.Description>
-              <div className='research-description'>
+              <div className="research-description">
                 {research.description}
                 <br />
               </div>
             </Card.Description>
           </Card.Content>
 
-          <Card.Content extra className='cardBottom right'>
+          <Card.Content extra className="cardBottom right">
             <h3>{research.subtitle}</h3>
           </Card.Content>
         </Card>

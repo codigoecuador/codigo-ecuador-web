@@ -34,7 +34,11 @@
   padding: 5%;
 }
 
+.research-subhead {
+  margin-bottom: 2em;
+}
+
 .slick-track div {
-  min-width: 0!important;
-  max-width: 100%!important;
+  min-width: 0 !important;
+  max-width: 100% !important;
 }
