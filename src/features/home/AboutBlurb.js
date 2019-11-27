@@ -8,10 +8,9 @@ class AboutBlurb extends Component {
       <div className="bubble">
         <br />
         <div className="home-headline">
-          {" "}
-          {aboutBlurbText[localStorage.getItem("language")].title}{" "}
-        </div>{" "}
-        {aboutBlurbText[localStorage.getItem("language")].text}{" "}
+          {aboutBlurbText[localStorage.getItem("language")].title}
+        </div>
+        {aboutBlurbText[localStorage.getItem("language")].text}
       </div>
     );
   }
