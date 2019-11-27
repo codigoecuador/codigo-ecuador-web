@@ -2,7 +2,7 @@ a.donate-button {
   background-color: rgb(8, 37, 78);
   color: white;
   display: inline-block;
-  border-radius: 5%;
+  border-radius: 5px 10px;
 }
 
 @media screen and (min-width: 700px) {
