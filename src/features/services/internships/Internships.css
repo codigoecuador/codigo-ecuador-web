@@ -1,0 +1,9 @@
+.cod {
+  height: 50%;
+  width: 100%;
+  padding: 5%;
+  font-size: 20em;
+  line-height: 2em;
+
+  background-image: url("https://unsplash.com/photos/YlVjrBkfXt8");
+}
