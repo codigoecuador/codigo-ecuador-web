@@ -27,9 +27,3 @@ const Footer = () => {
   );
 };
 export default Footer;
-
-// //   <div className="medium">
-// <a href="https://medium.com/código-ecuador">
-// <i class="small medium icon" />
-// </a>
-// </div>

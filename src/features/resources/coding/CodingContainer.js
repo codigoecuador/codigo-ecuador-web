@@ -9,12 +9,10 @@ const CodingContainer = props => {
   const [showing, setShowing] = useState("");
 
   const handleClick = event => {
-    // this.setState({ showing: event.target.value });
     setShowing(event.target.value);
   };
 
   const handleMobileClick = event => {
-    // this.setState({ showing: event });
     setShowing(event);
   };
 

@@ -1,0 +1,13 @@
+.social-icons-vertical {
+  position: fixed;
+  margin-top: 15%;
+  margin-left: 5%;
+  width: 20%;
+  height: 50%;
+  float: right;
+}
+
+.social {
+  margin: auto;
+  margin-bottom: 3em;
+}

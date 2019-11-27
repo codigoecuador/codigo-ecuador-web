@@ -5,6 +5,7 @@ import "./Classes.css";
 import { classesText } from "../../../common/servicesText/classesText";
 // import { labeledStatement } from "@babel/types";
 import { pythonText } from "../../../common/servicesText/pythonText";
+import Icons from "../../social/icons";
 
 function Classes(props) {
   const lang = localStorage.getItem("language");
@@ -13,17 +14,17 @@ function Classes(props) {
     return pythonText.map(course => (
       <div className={`course-info ${course.color}`}>
         <br />
-        <div className='large python-title'>{course[lang].title}</div>
+        <div className="large python-title">{course[lang].title}</div>
         <br />
 
-        <div className='python-duration'>
+        <div className="python-duration">
           <i>{course[lang].duration}</i>
         </div>
         <br />
 
-        <div className='python-description'>{course[lang].description}</div>
+        <div className="python-description">{course[lang].description}</div>
         <br />
-        <div className='python-bullets'>
+        <div className="python-bullets">
           {course[lang].bulletPoints.map(point => (
             <ul>
               <li>{point}</li>
@@ -37,18 +38,21 @@ function Classes(props) {
   };
 
   return (
-    <Container className='main-container'>
-      <div className='courses-text'>
-        <div className='center headline banner-headline'>
-          <span className='gold'>Our Curriculum</span>
+    <>
+      <Icons />
+      <Container className="main-container">
+        <div className="courses-text">
+          <div className="center headline banner-headline">
+            <span className="gold">Our Curriculum</span>
+          </div>
+          {headline.text}
         </div>
-        {headline.text}
-      </div>
-      <br />
-      <br />
+        <br />
+        <br />
 
-      {generatePythonClasses()}
-    </Container>
+        {generatePythonClasses()}
+      </Container>
+    </>
   );
 }
 
