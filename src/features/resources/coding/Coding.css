@@ -83,13 +83,14 @@
 .coding-item-button {
   background-color: black;
   width: 12em;
-  height: 2.5em;
+  height: 3em;
   font-size: 0.8em;
   padding: 1%;
   display: inline-block;
 }
 
 .coding-item-button a {
+  font-size: 1.5em;
   color: white;
 }
 
