@@ -13,6 +13,10 @@ export const social = (
     <div className="twitter">
       <a href="https://twitter.com/CodigoEC">
         <i class="twitter icon"></i>@CodigoEC
+      </a>{" "}
+      /
+      <a href="https://twitter.com/CodigoEC">
+        <i class="twitter icon"></i>@CodigoEC
       </a>
     </div>
     <br />

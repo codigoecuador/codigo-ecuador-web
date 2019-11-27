@@ -15,7 +15,7 @@
   visibility: hidden;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1525px) {
   .navbar {
     position: relative;
     width: 57%;
@@ -25,7 +25,7 @@
   }
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1524px) {
   .navbar {
     top: 8%;
     width: 100%;

@@ -44,6 +44,7 @@ class Blog extends Component {
             <div className="headline banner-headline">
               <span className="gold">Recent Blog Posts</span>
             </div>
+
             <br />
             <br />
 
