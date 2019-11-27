@@ -6,47 +6,19 @@
   padding: 5%;
 }
 
-@media screen and (min-width: 700px) {
-  .coding-button-group {
-    position: absolute;
-    margin-left: 1%;
-    margin-top: 4%;
-    margin-right: 65%;
-    margin-bottom: 5%;
-  }
-
-  .coding-button {
-    width: 15em;
-    height: 3em;
-    font-size: 1.1vw;
-    padding: 3.5%;
-  }
-}
-
-@media screen and (max-width: 699px) {
-  .showing {
-    margin-top: 5%;
-    margin-bottom: 10%;
-    margin-left: 0%;
-  }
-
-  .coding-button-group {
-    position: absolute;
-    margin-top: 4%;
-    margin-bottom: 5%;
-  }
-
-  .coding-button {
-    width: 15em;
-    height: 3em;
-    font-size: 1.1vw;
-    padding: 3.5%;
-  }
+.coding-button-group {
+  position: absolute;
+  margin-top: 4%;
+  margin-bottom: 5%;
 }
 
 .coding-button {
   background-color: rgb(8, 37, 78);
   color: white;
+  width: 17vw;
+  height: 3em;
+  padding: 3.5%;
+  border-radius: 5px 10px;
 }
 
 .coding-button:hover {
@@ -60,6 +32,25 @@
   background-color: rgb(197, 158, 85);
   color: rgb(8, 37, 78);
   outline: none;
+}
+
+@media screen and (min-width: 700px) {
+  .coding-button-group {
+    margin-left: 1%;
+    margin-right: 65%;
+  }
+
+  .coding-button {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .showing {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 0%;
+  }
 }
 
 /* coding resource links */
@@ -87,6 +78,7 @@
   font-size: 0.8em;
   padding: 1%;
   display: inline-block;
+  border-radius: 5px 10px;
 }
 
 .coding-item-button a {
