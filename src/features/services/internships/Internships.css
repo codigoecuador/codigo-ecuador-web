@@ -1,4 +1,25 @@
-.cod {
+.internships-container {
+  background-image: url("./internships-image.jpeg");
+  background-size: cover;
+}
+
+.internships-text {
+  width: 60%;
+  background-color: white;
+  opacity: 0.7;
+  transition: opacity 1s;
+  text-align: left !important;
+  padding: 2em;
+  color: rgb(85, 83, 83);
+  font-size: 2em;
+}
+
+.internships-text:hover {
+  opacity: 0.9;
+}
+
+/* experimenting with adding video as background of div/ not working */
+/* .cod {
   height: 50%;
   width: 100%;
   padding: 5%;
@@ -6,4 +27,4 @@
   line-height: 2em;
 
   background-image: url("https://unsplash.com/photos/YlVjrBkfXt8");
-}
+} */

@@ -12,7 +12,11 @@ const Internships = props => {
         </span>
       </div>
 
-      <div>{internshipsText[localStorage.getItem("language")].text}</div>
+      <div className="internships-container">
+        <div className="internships-text navy">
+          {internshipsText[localStorage.getItem("language")].text}
+        </div>
+      </div>
     </div>
   );
 };
