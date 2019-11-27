@@ -9,15 +9,27 @@ const Footer = () => {
       <Divider />
       <h3>Contact us</h3>
       <span className="social email">
-        <a href="mailto:info@codigoecuador.com">
-          <i class="envelope outline icon"></i>email{""}
-        </a>
+        <Popup
+          content="info@codigoecuador.com"
+          trigger={
+            <a href="mailto:info@codigoecuador.com">
+              <i class="envelope outline icon"></i>email{""}
+            </a>
+          }
+          position="bottom center"
+        />
       </span>
 
       <span className="social twitter">
-        <a href="https://twitter.com/CodigoEC">
-          <i class="twitter icon"></i>Twitter
-        </a>
+        <Popup
+          content="follow us on Twitter"
+          trigger={
+            <a href="https://twitter.com/CodigoEC">
+              <i class="twitter icon"></i>Twitter
+            </a>
+          }
+          position="bottom center"
+        />
       </span>
 
       <span className="social phone">
@@ -35,11 +47,10 @@ const Footer = () => {
 
       <span className="social linked-in">
         <Popup
-          content="Linked In"
+          content="follow us on LinkedIn"
           trigger={
             <a href="https://www.linkedin.com/company/codigo-ecuador">
               <i class="linkedin icon"></i>
-              Linked In
             </a>
           }
           position="bottom center"
