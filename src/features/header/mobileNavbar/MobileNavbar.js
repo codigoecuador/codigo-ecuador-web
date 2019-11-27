@@ -21,7 +21,7 @@ const MobileMenu = () => (
                 <a href="/about/team">Team</a>
               </Dropdown.Item>
               <Dropdown.Item>
-                <a href="/about/board">Board of Directors</a>
+                <a href="/about/board">Board</a>
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown.Item>
@@ -30,7 +30,7 @@ const MobileMenu = () => (
             Services
             <Dropdown.Menu>
               <Dropdown.Item>
-                <a href="/services/classes">Curriculum</a>
+                <a href="/services/classes">Classes</a>
               </Dropdown.Item>
 
               <Dropdown.Item>

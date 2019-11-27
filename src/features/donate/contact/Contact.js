@@ -5,7 +5,13 @@ import { social } from "./social";
 const Contact = () => {
   return (
     <>
-      <div className="contact-us center">Contact us if you can help!</div>
+      <div className="support-text center">
+        <p>Would you like to support our efforts?</p>
+        <p>
+          Get in touch with Código Ecuador to learn more about our work and how
+          you can get involved.
+        </p>
+      </div>
       <br />
       <br />
 

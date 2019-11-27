@@ -5,10 +5,11 @@ a.donate-button {
   border-radius: 5px 10px;
 }
 
+.support-text p {
+  font-size: 1.3em;
+}
+
 @media screen and (min-width: 700px) {
-  .contact-us {
-    font-size: 2.5em;
-  }
   a.donate-button {
     height: 2.2em;
     width: 20%;
@@ -19,10 +20,6 @@ a.donate-button {
 }
 
 @media screen and (max-width: 699px) {
-  .contact-us {
-    font-size: 2em;
-  }
-
   a.donate-button {
     height: 2em;
     width: 30%;

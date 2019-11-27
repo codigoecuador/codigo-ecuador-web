@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="dropdown">
         <button className="dropdown-button">Services</button>
         <div className="dropdown-content">
-          <a href="/services/classes">Curriculum</a>
+          <a href="/services/classes">Classes</a>
           <a href="/services/mentorship">Mentorship</a>
           <a href="/services/internships">Internships</a>
         </div>
