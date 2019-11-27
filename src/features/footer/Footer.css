@@ -9,3 +9,8 @@
   background-color: white;
   z-index: 2;
 }
+
+.social {
+  padding-right: 2em;
+  padding-left: 2em;
+}
