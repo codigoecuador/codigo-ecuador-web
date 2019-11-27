@@ -24,7 +24,7 @@
 
 @media screen and (min-width: 700px) {
   .board-column {
-    float: left;
+    margin-left: 0;
     width: 50%;
   }
 

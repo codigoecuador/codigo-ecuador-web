@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import { social } from "./social";
 
 const Contact = () => {
   return (
@@ -7,25 +8,7 @@ const Contact = () => {
       <div className="contact-us center">Contact us if you can help!</div>
       <br />
 
-      <div className="social-text">
-        <a href="mailto:info@codigoecuador.com">
-          <i class="envelope outline icon"></i>info@codigoecuador.com
-        </a>
-        <br />
-        <br />
-        <a href="https://twitter.com/CodigoEC">
-          <i class="twitter icon"></i>@CodigoEC
-        </a>
-        <br />
-        <br />
-
-        <a href="tel:+15712165441">
-          <i class="phone icon"></i>
-          +1 571-216-5441
-        </a>
-        <br />
-        <br />
-      </div>
+      {social}
 
       <a
         className="donate-button"
