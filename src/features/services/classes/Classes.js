@@ -13,17 +13,17 @@ function Classes(props) {
     return pythonText.map(course => (
       <div className={`course-info ${course.color}`}>
         <br />
-        <div className='large python-title'>{course[lang].title}</div>
+        <div className="large python-title">{course[lang].title}</div>
         <br />
 
-        <div className='python-duration'>
+        <div className="python-duration">
           <i>{course[lang].duration}</i>
         </div>
         <br />
 
-        <div className='python-description'>{course[lang].description}</div>
+        <div className="python-description">{course[lang].description}</div>
         <br />
-        <div className='python-bullets'>
+        <div className="python-bullets">
           {course[lang].bulletPoints.map(point => (
             <ul>
               <li>{point}</li>
@@ -37,10 +37,12 @@ function Classes(props) {
   };
 
   return (
-    <Container className='main-container'>
-      <div className='courses-text'>
-        <div className='center headline banner-headline'>
-          <span className='gold'>Our Curriculum</span>
+    <Container className="main-container">
+      <div className="courses-text">
+        <div className="center headline banner-headline">
+          <span className="gold">
+            {headline.goldTitle + " " + headline.navyTitle}
+          </span>
         </div>
         {headline.text}
       </div>
