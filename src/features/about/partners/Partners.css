@@ -5,8 +5,9 @@
 }
 
 .partner-image {
-  height: 25vw;
+  height: 26vw;
   padding-top: 3em;
+  margin-top: 2em;
   width: auto;
   margin: auto;
 }
@@ -22,12 +23,24 @@
 }
 
 .minor-partners {
-  margin-top: 5em;
+  margin-top: 10%;
 }
 
 .minor-partner-image {
-  margin: auto;
-  width: 100%;
+  size: cover;
+}
+
+@media screen and (min-width: 700px) {
+  .minor-partners {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .minor-partners {
+    width: 100%;
+  }
 }
 
 .minor-partner-description {

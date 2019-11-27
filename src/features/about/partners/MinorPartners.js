@@ -21,6 +21,7 @@ const minorPartners = props => {
                 className="minor-partner-image"
                 src={partner.image}
                 alt="partner logo"
+                size="cover"
               />
             </a>
 

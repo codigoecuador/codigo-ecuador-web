@@ -39,4 +39,6 @@ const partner4 = {
   link: "https://www.google.com/"
 };
 
-export const minorPartnersData = [partner1, kod, partner3, partner4];
+export const minorPartnersData = [kod, partner1];
+
+//to add new partners, populate partner 3 and 4 above, then add them to list on line 42
