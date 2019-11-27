@@ -6,6 +6,7 @@ import { boardDataDesktop } from "./boardDataDesktop";
 import { boardDataMobile } from "./boardDataMobile";
 
 class BoardOfDirectors extends Component {
+  debugger;
   render() {
     let boardData =
       this.props.size === "mobile" ? boardDataMobile : boardDataDesktop;
