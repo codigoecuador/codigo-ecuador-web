@@ -4,7 +4,7 @@ import Navbar from "./navbar/Navbar";
 import Logo from "./logo/Logo";
 import LanguageToggle from "./LanguageToggle";
 import { Link } from "react-router-dom";
-import MobileNavbar from "./MobileNavbar";
+import MobileNavbar from "./mobileNavbar/MobileNavbar";
 
 const Header = props => {
   let desktopNavbar = (
@@ -19,7 +19,7 @@ const Header = props => {
     </div>
   );
 
-  let navbar = props.size === "mobile" ? mobileNavbar : desktopNavBar;
+  let navbar = props.size === "mobile" ? mobileNavbar : desktopNavbar;
 
   return (
     <div className="header">
