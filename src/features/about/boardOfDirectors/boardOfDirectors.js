@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Icon } from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
 import "./boardOfDirectors.css";
 import { connect } from "react-redux";
 import { boardDataDesktop } from "./boardDataDesktop";
@@ -12,9 +12,9 @@ class BoardOfDirectors extends Component {
 
     return (
       <div>
-        <Container className='main-container'>
-          <div className='headline banner-headline'>
-            <span className='gold'>Board of Directors</span>
+        <Container className="main-container">
+          <div className="headline banner-headline">
+            <span className="gold">Board of Directors</span>
           </div>
 
           {boardData}
