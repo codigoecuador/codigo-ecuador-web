@@ -1,0 +1,44 @@
+/* contains logo, navbar and language toggle */
+.header {
+  position: fixed;
+  width: 90%;
+  margin-top: 0;
+  background-color: red;
+  z-index: 2;
+}
+
+.logo {
+  margin: 2em;
+  width: 80%;
+  height: auto;
+  z-index: 1;
+}
+
+.language {
+  top: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .logo-wrapper {
+    float: left;
+    max-width: 600px;
+    width: 50%;
+  }
+
+  .logo {
+    margin: 3em;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .logo-wrapper {
+    width: 100%;
+    padding: 5em;
+  }
+
+  .logo {
+    margin: 3em;
+    width: 90%;
+  }
+}

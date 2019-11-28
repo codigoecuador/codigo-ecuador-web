@@ -1,62 +1,67 @@
-import React from "react"
-import { connect } from "react-redux"
+import React, { Component } from "react"
 import { Divider } from "semantic-ui-react"
 import { studentLinks } from "./StudentLinks"
 import { entrepreneurLinks } from "./EntrepreneurLinks"
 import { educatorLinks } from "./EducatorLinks"
 import { parentLinks } from "./ParentLinks"
 
-function CodingLinks(props) {
-  let codingLinks
-  const lang = localStorage.getItem("language")
-  switch (props.type) {
-    case "Student":
-      codingLinks = studentLinks
-      break
-
-    case "Parent":
-      codingLinks = parentLinks
-      break
-
-    case "Educator":
-      codingLinks = educatorLinks
-      break
-
-    case "Entrepreneur":
-      codingLinks = entrepreneurLinks
-      break
-
-    default:
-      codingLinks = educatorLinks
+class CodingLinks extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      type: this.props.type,
+    }
   }
-  debugger
-  codingLinks = codingLinks[lang]
-  return (
-    <div>
-      {codingLinks.map(resource => (
-        <div className="resource">
-          <br />
-          <div className="large coding-item-title">{resource.title}</div>
-          <br />
-          <div className="coding-item-subtitle">{resource.subtitle}</div>
-          <br />
-          <br />
 
-          <div className="right">
-            <button className="coding-item-button">
-              <a href={resource.buttonLink}>Learn More</a>
-            </button>
+  render() {
+    console.log(this.props)
+
+    let codingItems
+
+    switch (this.props.type) {
+      case "Student":
+        codingItems = studentLinks
+        break
+
+      case "Parent":
+        codingItems = parentLinks
+        break
+
+      case "Educator":
+        codingItems = educatorLinks
+        break
+
+      case "Entrepreneur":
+        codingItems = entrepreneurLinks
+        break
+
+      default:
+        codingItems = studentLinks
+    }
+
+    return (
+      <div>
+        {codingItems.map(resource => (
+          <div className="resource">
+            <br />
+            <div className="large coding-item-title">{resource.title}</div>
+            <br />
+            <div className="coding-item-subtitle">{resource.subtitle}</div>
+            <br />
+            <br />
+
+            <div className="right">
+              <button className="coding-item-button">
+                <a href={resource.buttonLink}>Learn More</a>
+              </button>
+            </div>
+            <br />
+            <Divider className="coding-item-divider" />
           </div>
-          <br />
-          <Divider className="coding-item-divider" />
-        </div>
-      ))}
-    </div>
-  )
+        ))}
+      </div>
+    )
+  }
 }
 
-const mapStateToProps = state => {
-  return { language: state.language }
-}
-
-export default connect(mapStateToProps)(CodingLinks)
+export default CodingLinks

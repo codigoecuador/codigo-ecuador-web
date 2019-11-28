@@ -1,16 +1,21 @@
-import React from "react"
-import MinorPartners from "./MinorPartners"
-import Partners from "./Partners"
+import React from "react";
+import { connect } from "react-redux";
+import MinorPartners from "./MinorPartners";
+import Partners from "./Partners";
 
 const PartnersContainer = () => {
-
-	return (
-		<div className='allPartners'>
+  return (
+    <div className="main-container">
       <Partners />
-      <MinorPartners />
+      <div className="minor-partners">
+        <MinorPartners />
+      </div>
     </div>
+  );
+};
 
-	)
-}
+const mapStateToProps = state => {
+  return { language: state.language };
+};
 
-export default PartnersContainer
+export default connect(mapStateToProps)(PartnersContainer);

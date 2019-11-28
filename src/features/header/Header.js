@@ -1,37 +1,45 @@
-import React, { Component } from "react"
-import Navbar from '../navbar/Navbar'
-import Logo from '../logo/Logo'
-import { connect } from 'react-redux'
-import LanguageToggle from './LanguageToggle'
-import { Link } from "react-router-dom"
+import React from "react";
+import { connect } from "react-redux";
+import Navbar from "./navbar/Navbar";
+import Logo from "./logo/Logo";
+import LanguageToggle from "./LanguageToggle";
+import { Link } from "react-router-dom";
+import MobileNavbar from "./mobileNavbar/MobileNavbar";
 
+const Header = props => {
+  let desktopNavbar = (
+    <div className="navbar">
+      <Navbar />
+    </div>
+  );
 
-class Header extends Component  {
+  let mobileNavbar = (
+    <div className="mobile-navbar">
+      <MobileNavbar />
+    </div>
+  );
 
-  render(){
-    // let navStyle
-    // console.log('header props', this.props.size)
-    // this.props.size === "mobile" ? navStyle = "navbar navbar-mobile" : navStyle = "navbar navbar-desktop"
+  let navbar = props.size === "mobile" ? mobileNavbar : desktopNavbar;
 
+  return (
+    <div className="header">
+      <div className="ui right item">
+        <LanguageToggle />
+      </div>
 
-  	return (
-  		<div className="header">
-        <Link exact className="logo-wrapper" to='/' >
+      <div className="logo-wrapper">
+        <Link exact to="/">
           <Logo className="logo" />
         </Link>
+      </div>
 
-        <div className="navbar">
-  			   <Navbar/>
-        </div>
+      {navbar}
+    </div>
+  );
+};
 
-        <div>
-          <LanguageToggle />
-        </div>
-  		</div>
-  	)
-  }
-}
+const mapStateToProps = state => {
+  return { size: state.size.size };
+};
 
-
-const mapStateToProps = state => {  return {  size: state.size  } }
-export default connect(mapStateToProps)(Header)
+export default connect(mapStateToProps)(Header);

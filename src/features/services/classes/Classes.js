@@ -1,71 +1,69 @@
-import React,  { Component } from 'react'
-import { connect } from 'react-redux'
-import { Container, Divider } from "semantic-ui-react"
-import './Classes.css'
-import { pythonClasses } from './PythonData'
-import { text } from  './pythonClassesText.js'
+import React from "react";
+import { connect } from "react-redux";
+import { Container, Divider } from "semantic-ui-react";
+import "./Classes.css";
+import { classesText } from "../../../common/servicesText/classesText";
+// import { labeledStatement } from "@babel/types";
+import { pythonText } from "../../../common/servicesText/pythonText";
+import Icons from "../../social/icons";
 
-class Classes extends Component {
-
-  generatePythonClasses = () => {
-    return (
-    pythonClasses.map(course =>
-
-
+const Classes = props => {
+  const lang = localStorage.getItem("language");
+  const headline = classesText[lang];
+  const generatePythonClasses = () => {
+    return pythonText.map(course => (
       <div className={`course-info ${course.color}`}>
-        <br/>
-        <div className="large python-title">{course.title}</div>
-        <br/>
-        <h2>
-          {course.duration}
-        </h2>
+        <br />
+        <div className="large python-title">{course[lang].title}</div>
+        <br />
 
-        <div className="python-description">
-          {course.description}
+        <div className="python-duration">
+          <i>{course[lang].duration}</i>
         </div>
-        <br/>
+        <br />
+
+        <div className="python-description">{course[lang].description}</div>
+        <br />
         <div className="python-bullets">
-          {course.bulletPoints.map(point =>
+          {course[lang].bulletPoints.map(point => (
             <ul>
               <li>{point}</li>
             </ul>
-            )}
+          ))}
         </div>
-        <br/>
-        <Divider/>
+        <br />
+        <Divider />
       </div>
-      )
-    )
+    ));
+  };
+
+  let icons;
+
+  if (props.mobile === "desktop") {
+    icons = <Icons />;
   }
 
-
-  render(){
-    let coursesStyle
-    this.props.size === "mobile" ? coursesStyle = "courses-mobile" : coursesStyle = "courses-desktop"
-
-
-
-    return (
-      <Container className={coursesStyle}>
+  return (
+    <>
+      {icons}
+      <Container className="main-container">
         <div className="courses-text">
-          <div className="center headline">
-            <span className="gold">Our</span><span className="navy"> Curriculum</span>
+          <div className="center headline banner-headline">
+            <span className="gold">Our Curriculum</span>
           </div>
-          {text}
+          {headline.text}
         </div>
-        <br/>
-        <br/>
+        <br />
+        <br />
 
-        {this.generatePythonClasses()}
+        {generatePythonClasses()}
+      </Container>
+    </>
+  );
+};
 
-          </Container>
-        )
+const mapStateToProps = state => {
+  return { language: state.language, size: state.size.size };
+};
 
-  }
-
-
-}
-
-const mapStateToProps = state => {  return {  size: state.size  } }
-
-export default connect(mapStateToProps)(Classes)
+export default connect(mapStateToProps)(Classes);

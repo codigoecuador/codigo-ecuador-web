@@ -1,23 +1,51 @@
-/* about/partners */
-
-.partners {
-	margin-top: 10%;
+.partners-grid {
+  padding-top: 3em;
+  padding-bottom: 4em;
+  background-color: rgb(191, 158, 96, 0.5);
 }
 
 .partner-image {
-	height: 20vw;
-	width: auto;
+  height: 26vw;
+  padding-top: 3em;
+  margin-top: 2em;
+  width: auto;
+  margin: auto;
 }
 
-.partner-headline {
-	font-family: "Bree Serif", serif;
-	font-size: 2vw;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 5%;
+.partners-text {
+  margin-bottom: 3em;
 }
 
 .partner-description {
-	font-size: 1vw;
-	text-align: left;
+  font-size: 1.3em;
+  text-align: left;
+  padding: 2em;
+}
+
+.minor-partners {
+  margin-top: 10%;
+}
+
+.minor-partner-image {
+  size: cover;
+}
+
+@media screen and (min-width: 700px) {
+  .minor-partners {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .minor-partners {
+    width: 100%;
+  }
+}
+
+.minor-partner-description {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  text-align: left;
+  padding: 2em;
 }

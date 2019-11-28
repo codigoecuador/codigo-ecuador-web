@@ -1,21 +1,15 @@
-/* donate  */
-.donate {
-	position: absolute;
-	display: inline-block;
-	left: 5%;
-	top: 25%;
-	z-index: 3;
-}
 
 .donate-cards-group {
-	margin-left: 3%;
+	margin: auto;
 	padding: 2%;
 }
 
 .donate-card {
-	height: 10vw;
+	height: 10%;
 	width: auto;
+	margin: auto;
 }
+
 
 .hidden-content {
 	padding: 5%;

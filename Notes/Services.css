@@ -1,0 +1,31 @@
+.services-button-group {
+	margin-top: 14%;
+	margin-bottom: 5em;
+}
+
+@media screen and (min-width: 700px) {
+	.services-button {
+		width: 50%;
+		height: 3em;
+		font-size: 1.7em;
+	}
+}
+
+@media screen and (max-width: 699px) {
+	.services-button {
+		width: 50%;
+		height: 2.2em;
+		font-size: 1.4em;
+	}
+
+}
+
+.classes-button {
+	background-color: rgb(8, 37, 78);
+	color: white;
+}
+
+.mentorship-button {
+	background-color: rgb(197, 158, 85);
+	color: rgb(8, 37, 78);
+}

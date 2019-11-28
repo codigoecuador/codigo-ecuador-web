@@ -1,72 +1,52 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./Coding.css";
 import CodingLinks from "./CodingLinks";
 import { connect } from "react-redux";
 import CodingButtonGroup from "./CodingButtonGroup";
 import CodingMenu from "./CodingMenu";
 
-class CodingContainer extends Component {
-  state = {
-    showing: ""
+const CodingContainer = props => {
+  const [showing, setShowing] = useState("");
+
+  const handleClick = event => {
+    setShowing(event.target.value);
   };
 
-	handleClick = event => {
-		this.setState({ showing: event.target.value })
-	}
-
-  handleMobileClick = event => {
-    this.setState({ showing: event });
+  const handleMobileClick = event => {
+    setShowing(event);
   };
 
-  render() {
-    let showing;
-    let headlineContainer;
-    let codingButtonGroup;
-    if (this.props.size === "mobile") {
-      showing = "showing-mobile";
-      headlineContainer = "headline-container-mobile";
-      codingButtonGroup = (
-        <CodingMenu fluid handleMobileClick={this.handleMobileClick} showing={this.state.showing} />
-      );
-    } else {
-      showing = "showing-desktop";
-      headlineContainer = "headline-container-desktop";
-      codingButtonGroup = (
-        <CodingButtonGroup handleClick={this.handleClick} showing={showing} />
-      );
-    }
-    return (
-      <>
-        <div className={headlineContainer}>
-          <br />
-          <br />
-          <br />
-          <div className="headline">
-            <span className="gold">{this.state.showing || "Coding"}</span>
-            <span className="navy"> Resources</span>
-          </div>
-        </div>
-
-        {codingButtonGroup}
-
-        <div className={showing}>
-          <CodingLinks type={this.state.showing} />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-        </div>
-      </>
+  let codingButtonGroup;
+  if (props.size === "mobile") {
+    codingButtonGroup = (
+      <CodingMenu
+        fluid
+        handleMobileClick={handleMobileClick}
+        showing={showing}
+      />
+    );
+  } else {
+    codingButtonGroup = (
+      <CodingButtonGroup handleClick={handleClick} showing="showing" />
     );
   }
-}
+  return (
+    <div className="main-container">
+      <div className="headline banner-headline">
+        <span className="gold">{showing || "Coding"} Resources</span>
+      </div>
+
+      {codingButtonGroup}
+
+      <div className="showing">
+        <CodingLinks type={showing} />
+      </div>
+    </div>
+  );
+};
 
 const mapStateToProps = state => {
-  return { size: state.size };
+  return { size: state.size.size };
 };
 
 export default connect(mapStateToProps)(CodingContainer);

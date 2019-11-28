@@ -1,105 +1,102 @@
-/* resources/coding  */
-
-.resources {
-	position: absolute;
-	top: 35%;
-	z-index: 3;
-}
-
-.headline-container-desktop {
-	margin-top: 10%;
-	/* background-color: aqua; */
-}
-
-.headline-container-mobile {
-	/* top: 20%; */
-	margin-top: 20%;
-	/* background-color: aqua; */
+.showing {
+  position: relative;
+  margin-left: 25%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  padding: 5%;
 }
 
 .coding-button-group {
-	position: absolute;
-	margin-left: 5%;
-	margin-top: 4%;
-	margin-right: 65%;
-	margin-bottom: 5%;
+  position: absolute;
+  margin-top: 4%;
+  margin-bottom: 5%;
 }
 
 .coding-button {
-	background-color: rgb(8, 37, 78);
-	width: 15vw;
-	height: 2.5vw;
-	color: white;
-	font-size: 1.1vw;
-	padding: 3.5%;
+  background-color: rgb(8, 37, 78);
+  color: white;
+  width: 15vw;
+  height: 3em;
+  padding: 3.5%;
+  border-radius: 5px 10px;
 }
 
 .coding-button:hover {
-	/* gold */
-	background-color: rgb(197, 158, 85);
-	color: rgb(8, 37, 78);
+  /* gold */
+  background-color: rgb(197, 158, 85);
+  color: rgb(8, 37, 78);
 }
 
-.showing-desktop {
-	position: absolute;
-	margin-left: 25%;
-	/* margin-top: %; */
-	margin-right: 10%;
-	margin-bottom: 5%;
-	padding: 5%;
+.coding-button:focus {
+  /* gold */
+  background-color: rgb(197, 158, 85);
+  color: rgb(8, 37, 78);
+  outline: none;
 }
 
-.showing-mobile {
-	position: absolute;
-	margin-left: 25%;
-	margin-top: 10%;
-	margin-right: 10%;
-	margin-bottom: 5%;
-	padding: 5%;
+@media screen and (min-width: 700px) {
+  .coding-button-group {
+    margin-left: 1%;
+    margin-right: 65%;
+  }
+
+  .coding-button {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .showing {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 0%;
+  }
 }
 
 /* coding resource links */
 
 .coding-item-title {
-	font-family: "Bree Serif", serif;
-	font-size: 2.5em;
-	line-height: 1em;
+  font-family: "Bree Serif", serif;
+  font-size: 2.5em;
+  line-height: 1em;
 }
 
 .coding-item-subtitle {
-	color: grey;
-	font-size: 1.2em;
-	line-height: 1.3em;
+  color: grey;
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 
 .coding-item-container {
-	background-color: rgb(198, 151, 86, 0.05);
+  background-color: rgb(198, 151, 86, 0.05);
 }
 
 .coding-item-button {
-	background-color: black;
-	width: 12em;
-	height: 2.5em;
-	font-size: 0.8em;
-	padding: 1%;
-	display: inline-block;
+  background-color: black;
+  width: 12em;
+  height: 3em;
+  font-size: 0.8em;
+  padding: 1%;
+  display: inline-block;
+  border-radius: 5px 10px;
 }
 
 .coding-item-button a {
-	color: white;
+  font-size: 1.5em;
+  color: white;
 }
 
 .coding-item-button:hover {
-	/* gold */
-	background-color: rgb(197, 158, 85);
-	color: rgb(8, 37, 78);
+  /* gold */
+  background-color: rgb(197, 158, 85);
+  color: rgb(8, 37, 78);
 }
 
 .coding-item-button:hover a {
-	color: rgb(8, 37, 78);
+  color: rgb(8, 37, 78);
 }
 
 .coding-item-divider {
-	color: black;
-	border: 3px;
+  color: black;
+  border: 3px;
 }

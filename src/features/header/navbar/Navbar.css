@@ -1,0 +1,107 @@
+.navbar {
+  font-weight: bolder;
+  height: auto;
+  top: 9%;
+  z-index: 1;
+  max-width: 100%;
+  margin: auto;
+}
+
+.navbar:before {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1525px) {
+  .navbar {
+    position: relative;
+    width: 57%;
+    top: 2.4em;
+    float: right;
+    right: 5em;
+  }
+}
+
+@media screen and (max-width: 1524px) {
+  .navbar {
+    top: 8%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .dropdown-button-group {
+    padding: 1.4em;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(197, 158, 85);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5%;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.4em;
+    padding: 12px 16px;
+    font-weight: lighter;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(220, 206, 179);
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  .dropdown-button {
+    color: rgb(8, 37, 78);
+    background-color: white;
+    font-size: 1.4em;
+    padding: 0.8em;
+    border-radius: 10px 20px;
+    border: 3px solid rgb(197, 158, 85);
+    margin: 0.5em;
+  }
+
+  .dropdown-button:hover {
+    color: white;
+    background-color: rgb(8, 37, 78);
+  }
+
+  .dropdown-button:focus {
+    color: white;
+    background-color: rgb(8, 37, 78);
+    outline: none;
+  }
+}
+
+.mobile-menu {
+  margin-top: 10%;
+}

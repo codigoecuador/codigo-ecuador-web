@@ -1,79 +1,73 @@
-import React, { Component } from "react"
-import { connect } from 'react-redux'
-import "./Blog.css"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import Slider from "react-slick"
-import BlogCard from "./BlogCard"
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import "./Blog.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import BlogCard from "./BlogCard";
+import BlogLoader from "./BlogLoader";
 
 class Blog extends Component {
-	state = {
-		blogs: []
-	}
+  state = {
+    blogs: []
+  };
 
-	componentDidMount() {
-		return fetch(
-			`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@codigoecuador`
-		)
-			.then(response => response.json())
-			.then(blogs => this.setState({ blogs: blogs }))
-	}
-	//react carousel installed with < npm i @brainhubeu/react-carousel > in the terminal
+  componentDidMount() {
+    return fetch(
+      `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/código-ecuador`
+    )
+      .then(response => response.json())
+      .then(blogs => this.setState({ blogs: blogs }));
+  }
 
-	render() {
+  render() {
+    let num = this.props.size === "mobile" ? 1 : 3;
 
-		let blogContainerStyle
-		if(this.props.size === "mobile"){
-			blogContainerStyle = "blog-container-mobile"
-		} else {
-			blogContainerStyle = "blog-container-desktop"
+    if (!this.state.blogs.items) {
+      return (
+        <div className="blog-container">
+          <BlogLoader />
+        </div>
+      );
+    } else {
+      const { items } = this.state.blogs;
 
-		}
+      let settings = {
+        dots: true,
+        infinite: true,
+        speed: 4000,
+        slidesToShow: num,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplayspeed: 8000,
+        className: "blog-slider"
+      };
 
-		let num
-		this.props.size === "mobile" ?  num = 1 : num = 2
+      return (
+        <>
+          <div className="main-container">
+            <div className="headline banner-headline">
+              <span className="gold">Recent Blog Posts</span>
+            </div>
 
-		if (!this.state.blogs.items) {
-			return (
-				<div className="blog-container">No blog posts at the moment!</div>
-			)
-		} else {
-			const { items } = this.state.blogs
+            <br />
+            <br />
 
-			let settings = {
-				dots: true,
-				infinite: true,
-				speed: 4000,
-				slidesToShow: num,
-				slidesToScroll: 1,
-				autoplay: true,
-				autoplayspeed: 8000
-			}
-
-			return (
-				<>
-					<div className={blogContainerStyle}>
-						<div className="headline">
-							<span className="gold">Recent</span>
-							<span className="navy"> Blog Posts</span>
-						</div>
-						<br/>
-						<br/>
-
-						<Slider {...settings}>
-							{items.map((blog, index) => (
-								<BlogCard key={index} blog={blog} />
-							))}
-
-							<br />
-						</Slider>
-					</div>
-				</>
-			)
-		}
-	}
+            <Slider {...settings}>
+              {items.map((blog, index) => (
+                <BlogCard key={index} blog={blog} />
+              ))}
+              <br />
+            </Slider>
+          </div>
+        </>
+      );
+    }
+  }
 }
 
-const mapStateToProps = state => {  return {  size: state.size  } }
+const mapStateToProps = state => {
+  return { size: state.size.size };
+};
 
-export default connect(mapStateToProps)(Blog)
+export default connect(mapStateToProps)(Blog);

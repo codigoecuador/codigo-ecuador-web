@@ -1,98 +1,133 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 .right {
-	text-align: right;
+  text-align: right;
 }
 
 .left {
-	text-align: left;
+  text-align: left;
 }
-
 
 /* brand colors */
 
 .navy {
-	color: rgb(8, 37, 78);
+  color: rgb(8, 37, 78);
 }
 
 .gold {
-	color: rgb(197, 158, 85);
+  color: rgb(197, 158, 85);
 }
 
-
-/* headlines */
-
-.headline-container {
-	position: absolute;
-	margin-top: 10%;
-	margin-bottom: 45%;
-	height: 10vw;
-	width: 100%;
-	background-color: rgb(15,37,75,0.1);
+/* font size */
+.large {
+  font-size: 3em;
+  line-height: 1.5em;
 }
 
+.medium {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+/* headline/ container styles */
 
 .headline {
-	font-family: "Bree Serif", serif;
-	font-size: 3.5em;
-	font-weight: bold;
-	line-height: 1em;
-	text-align: center;
-	margin-bottom: 5%;
-	margin-top: 2%;
+  font-family: "Bree Serif", serif;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .subhead {
-	font-size: 1.2vw;
-	text-align: center;
-	line-height: 1.2vw;
-	color: grey;
+  text-align: center;
+  color: grey;
 }
 
-/* font-sizes */
-.huge {
-	font-size: 4.5vw;
+.banner-headline {
+  background-color: rgb(8, 37, 78);
+  border-radius: 10px 20px;
 }
 
-.massive {
-	font-size: 3vw;
+.main-container {
+  width: 80%;
+  margin: 0 auto 5em;
 }
 
-.big {
-	font-size: 2.8vw;
+@media screen and (min-width: 1525px) {
+  .main-container {
+    margin-top: 12%;
+  }
 }
 
-.large {
-	font-size: 1.5vw;
-	line-height: 1.6vw;
+@media screen and (min-width: 700px) {
+  .logo-wrapper {
+    width: 50%;
+    float: left;
+    max-width: 600px;
+  }
+
+  .logo {
+    margin: 3em;
+    width: 90%;
+  }
+
+  .main-container {
+    margin-top: 12%;
+  }
+
+  .headline {
+    font-size: 3em;
+    line-height: 1em;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+
+  .subhead {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+
+  .banner-headline {
+    height: 2em;
+    line-height: 2em;
+    margin-bottom: 2em;
+  }
 }
 
-.small {
-	font-size: 1vw;
-}
+@media screen and (max-width: 699px) {
+  .logo-wrapper {
+    width: 100%;
+  }
 
-.logo {
-	margin: 3em;
-	width: 100%;
-	height: auto;
-	z-index: 1;
-}
+  .logo {
+    width: 100%;
+  }
 
-.logo-wrapper {
-	width: 50%;
-	max-width: 600px;
-	float: left;
-}
+  .main-container {
+    margin-top: 5%;
+  }
 
-html,
-body {
-	margin: 0;
-	height: 100%;
-}
+  .headline {
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5%;
+  }
 
-.language-dropdown {
-	top: 40%;
-	right: 5%;
+  .subhead {
+    font-size: 1.5em;
+    line-height: 1.1em;
+  }
+
+  .banner-headline {
+    height: 1.5em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+  }
 }

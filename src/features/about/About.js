@@ -1,30 +1,24 @@
-import React, { Component } from "react"
-import { connect } from 'react-redux'
-import "./About.css"
-import LeafPic from "./LeafPic"
-import OurStory from "./OurStory"
-import CeoLetter from "./ceoLetter"
-import BoardOfDirectors from "./boardOfDirectors/boardOfDirectors"
+import React from "react";
+import { connect } from "react-redux";
+import "./About.css";
+import OurStory from "./ourStory/OurStory";
+import CeoLetter from "./ourStory/ceoLetter";
 
-class About extends Component {
-	render(){
+const About = () => {
+  return (
+    <div className="about-container main-container">
+      <div className="our-story">
+        <OurStory />
+      </div>
+      <div className="ceo-letter">
+        <CeoLetter />
+      </div>
+    </div>
+  );
+};
 
-		return (
-			<div className="about-container">
+const mapStateToProps = state => {
+  return { language: state.language };
+};
 
-				<div className="our-story">
-					<OurStory />
-				</div>
-				<div className="ceo-letter">
-					<CeoLetter />
-				</div>
-			</div>
-		)
-
-	}
-
-}
-
-const mapStateToProps = state => {  return {  size: state.size  } }
-
-export default connect(mapStateToProps)(About)
+export default connect(mapStateToProps)(About);
