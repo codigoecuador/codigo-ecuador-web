@@ -23,11 +23,16 @@
     width: 40vw;
     margin-left: 12vw;
   }
+
+  .dropdown-button-group {
+    max-height: 5vw;
+    mad-width: 10vw;
+  }
 }
 
 @media screen and (max-width: 699px) {
   .logo {
-    width: 80%;
+    width: 70%;
     margin-left: 9vw;
     margin-top: 2vw;
   }
