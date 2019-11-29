@@ -14,8 +14,9 @@
   z-index: 1;
 }
 
-.language {
-  top: 0;
+.language-dropdown {
+  width: 3vw;
+  height: auto;
 }
 
 @media screen and (min-width: 700px) {

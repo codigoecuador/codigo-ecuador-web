@@ -16,13 +16,13 @@ const LanguageToggle = props => {
   return (
     <Dropdown
       button
-      className='icon'
+      className="icon"
       floating
       labeled
-      icon='world'
+      icon="world"
       options={languageOptions}
       search
-      text='Select Language'
+      text="Select Language"
       onChange={handleChange}
     />
   );
