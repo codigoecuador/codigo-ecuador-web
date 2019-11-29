@@ -19,7 +19,7 @@
   .navbar {
     position: relative;
     width: 57%;
-    top: 2.4em;
+    margin-top: 1vw;
     float: right;
     right: 5em;
   }
@@ -27,7 +27,6 @@
 
 @media screen and (max-width: 1524px) {
   .navbar {
-    top: 8%;
     width: 100%;
   }
 }

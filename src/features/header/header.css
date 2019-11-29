@@ -3,15 +3,8 @@
   position: fixed;
   width: 90%;
   margin-top: 0;
-  background-color: red;
-  z-index: 2;
-}
 
-.logo {
-  margin: 2em;
-  width: 80%;
-  height: auto;
-  z-index: 1;
+  z-index: 2;
 }
 
 .language-dropdown {
@@ -27,19 +20,25 @@
   }
 
   .logo {
-    margin: 3em;
-    width: 90%;
+    width: 40vw;
+    margin-left: 12vw;
+  }
+
+  .dropdown-button-group {
+    max-height: 5vw;
+    mad-width: 10vw;
   }
 }
 
 @media screen and (max-width: 699px) {
-  .logo-wrapper {
-    width: 100%;
-    padding: 5em;
+  .logo {
+    width: 70%;
+    margin-left: 9vw;
+    margin-top: 2vw;
   }
 
-  .logo {
-    margin: 3em;
-    width: 90%;
+  .language-dropdown {
+    width: 2vw;
+    height: auto;
   }
 }
