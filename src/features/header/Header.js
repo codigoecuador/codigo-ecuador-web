@@ -23,7 +23,7 @@ const Header = props => {
 
   return (
     <div className="header">
-      <div className="ui right item">
+      <div className="ui right item language-dropdown">
         <LanguageToggle />
       </div>
 

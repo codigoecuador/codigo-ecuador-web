@@ -16,14 +16,9 @@ const minorPartners = props => {
       <Card.Group itemsPerRow={num} className="center">
         {minorPartnersData.map(partner => (
           <Card>
-            <a href={partner.link} class="ui medium image">
-              <img
-                className="minor-partner-image"
-                src={partner.image}
-                alt="partner logo"
-                size="cover"
-              />
-            </a>
+            <div className="minor-partner-image-wrapper">
+              <img src={partner.image} />
+            </div>
 
             <div className="content">
               <div className="subhead">{partner.name}</div>
