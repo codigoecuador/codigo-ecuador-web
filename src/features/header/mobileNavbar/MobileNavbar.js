@@ -1,7 +1,5 @@
 import React from "react";
-import { Dropdown, Icon, Menu, Segment, DropdownItem } from "semantic-ui-react";
-
-// TODO: Update <Search> usage after its will be implemented
+import { Dropdown, Menu, DropdownItem } from "semantic-ui-react";
 
 const MobileMenu = () => (
   <div className="mobile-menu">
