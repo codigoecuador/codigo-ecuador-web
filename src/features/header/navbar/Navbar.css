@@ -28,6 +28,7 @@
 @media screen and (max-width: 1524px) {
   .navbar {
     width: 100%;
+    margin: auto;
   }
 }
 

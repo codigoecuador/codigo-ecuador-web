@@ -23,7 +23,15 @@ class Blog extends Component {
 
   render() {
     let lang = localStorage.getItem("language");
-    let num = this.props.size === "mobile" ? 1 : 3;
+
+    let num;
+    if (window.innerWidth > 1200) {
+      num = 3;
+    } else if (window.innerWidth > 800) {
+      num = 2;
+    } else {
+      num = 1;
+    }
 
     if (!this.state.blogs.items) {
       return (
@@ -68,7 +76,7 @@ class Blog extends Component {
 }
 
 const mapStateToProps = state => {
-  return { size: state.size, language: state.language }
+  return { size: state.size, language: state.language };
 };
 
 export default connect(mapStateToProps)(Blog);
