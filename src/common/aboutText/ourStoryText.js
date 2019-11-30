@@ -43,9 +43,6 @@ export const ourStoryText = {
           está plagada de desigualdades. El avance de las habilidades
           tecnológicas en los países en desarrollo abrirá muchas oportunidades
           que de otro modo no serían posibles.
-          <a href="/resources/research">
-            <strong>Las Investigaciones</strong>
-          </a>
         </p>
         <br />
       </div>
