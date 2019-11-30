@@ -9,19 +9,9 @@ const Contact = props => {
     <>
       <div className="contact-us center">{contactText[lang].contact}</div>
       <br />
-      <div className="social-text">
-        <b>Email:</b> info@codigoecuador.com
-        <a href="mailto:info@codigoecuador.com">
-          <i class="envelope outline icon"></i>
-        </a>
-        <br />
-        <br />
-        <b>Twitter:</b> @CodigoEC
-        <a href="https://twitter.com/CodigoEC">
-          <i class="twitter icon"></i>
-        </a>
-
-      </div>
+      <a href="https://charity.gofundme.com/o/en/campaign/promote-women-in-tech-careers-in-ecuador/codigoecuador">
+        <h1>{contactText[lang].gofundme}</h1>
+      </a>
       <br />
       <br />
 
@@ -34,7 +24,6 @@ const Contact = props => {
       <br />
       <br />
       <div className="non-profit center">{contactText[lang].copyrightText}</div>
-
     </>
   );
 };

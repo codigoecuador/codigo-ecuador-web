@@ -60,6 +60,7 @@ export const donateText = {
         image:
           "https://static.wixstatic.com/media/11062b_271f0e3eeb0a49a393bd527bc95c79fa~mv2_d_3574_3794_s_4_2.jpg/v1/fill/w_612,h_452,al_c,q_80,usm_0.66_1.00_0.01/Orange%20Building.webp"
       },
+
       {
         topic: "Voluntarios",
         summary:
