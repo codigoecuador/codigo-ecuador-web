@@ -1,35 +1,34 @@
-import React, { Component } from "react"
+import React, { Component } from "react";
 
-import { Divider } from "semantic-ui-react"
-import { studentLinks } from "./StudentLinks"
-import { entrepreneurLinks } from "./EntrepreneurLinks"
-import { educatorLinks } from "./EducatorLinks"
-import { parentLinks } from "./ParentLinks"
+import { Divider } from "semantic-ui-react";
+import { studentLinks } from "./StudentLinks";
+import { entrepreneurLinks } from "./EntrepreneurLinks";
+import { educatorLinks } from "./EducatorLinks";
+import { parentLinks } from "./ParentLinks";
 
 const CodingLinks = props => {
-  let codingItems
-  const lang = props.language
-  debugger
+  let codingItems;
+  const lang = props.language;
 
   switch (props.type) {
     case "Student":
-      codingItems = studentLinks
-      break
+      codingItems = studentLinks;
+      break;
 
     case "Parent":
-      codingItems = parentLinks
-      break
+      codingItems = parentLinks;
+      break;
 
     case "Educator":
-      codingItems = educatorLinks
-      break
+      codingItems = educatorLinks;
+      break;
 
     case "Entrepreneur":
-      codingItems = entrepreneurLinks
-      break
+      codingItems = entrepreneurLinks;
+      break;
 
     default:
-      codingItems = studentLinks
+      codingItems = studentLinks;
   }
 
   return (
@@ -53,7 +52,7 @@ const CodingLinks = props => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default CodingLinks
+export default CodingLinks;
