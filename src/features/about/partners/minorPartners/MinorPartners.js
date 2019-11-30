@@ -13,7 +13,9 @@ const minorPartners = props => {
         {minorPartnersData.map(partner => (
           <Card>
             <div className="minor-partner-image-wrapper">
-              <img src={partner.image} className={partner.imageClassName} />
+              <div className={partner.imageClassName}>
+                <img src={partner.image} />
+              </div>
             </div>
 
             <div className="content">

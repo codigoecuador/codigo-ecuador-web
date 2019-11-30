@@ -37,13 +37,13 @@
 }
 
 .not-slackers-logo {
-  margin: 2em;
-  height: 70%;
+  margin: 3em;
+  height: 50%;
 }
 
 .kod-logo {
   margin: 2em;
-  height: 50%;
+  height: 70%;
 }
 
 @media screen and (min-width: 700px) {

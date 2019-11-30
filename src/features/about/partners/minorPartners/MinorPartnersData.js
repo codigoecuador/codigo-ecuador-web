@@ -1,5 +1,6 @@
 import kodluyoruzLogo from "./kodluyoruz.webp";
 import notSlackersLogo from "./notSlackersLogo.png";
+import React from "react";
 
 const partner1 = {
   name: "Become a Partner",
@@ -26,7 +27,21 @@ const notSlackers = {
   name: "!Slackers",
   image: notSlackersLogo,
   imageClassName: "not-slackers-logo",
-  content: ["All about the !Slackers."],
+  content: [
+    <p>
+      The !Slackers (aka 'The Not Slackers') learned to code together in the
+      same cohort at{" "}
+      <a href="https://flatironschool.com/career-courses/coding-bootcamp/online/north-america">
+        The Flatiron School.
+      </a>{" "}
+      After graduating in summer 2019, seven members of the cohort built our
+      website from the ground up. If you need full-stack developers, hire them!
+      <a href="https://github.com/joanrig/codigo-ecuador-web/graphs/contributors">
+        {" "}
+        You can see their Github profiles here.
+      </a>
+    </p>
+  ],
   link: "https://www.google.com/"
 };
 
