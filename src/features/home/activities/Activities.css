@@ -32,14 +32,16 @@
   }
 }
 
+.activities-subtitle {
+  font-size: 2em;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
 .activities-desription p {
   font-size: 1.2em;
 }
 
 .activities-button {
   margin-bottom: 2em;
-}
-
-.internship {
-  background-image: url("");
 }

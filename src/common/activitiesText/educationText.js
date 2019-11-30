@@ -48,7 +48,7 @@ export const educationBlurbText = {
         className="donate-button"
         href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@codigoecuador.com&item_name=Imagina%20C%C3%B3digo%20Ecuador&currency_code=USD"
       >
-        button in spanish
+        Información del Curso
       </a>
     )
   }
