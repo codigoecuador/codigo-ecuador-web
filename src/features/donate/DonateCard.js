@@ -5,7 +5,7 @@ const DonateCard = ({ topic, summary, image }) => {
   return (
     <div className='donate-cards-group'>
       <Card>
-        <div class='ui massive fade reveal image'>
+        <div className='ui massive fade reveal image'>
           <img
             className='visible content donate-card'
             src={image}
