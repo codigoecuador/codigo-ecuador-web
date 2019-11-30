@@ -3,6 +3,7 @@ import React from "react";
 export const internshipText = {
   EN: {
     title: "Internships",
+    photoCredit: "photo by ...",
     text: (
       <div>
         <p>
@@ -27,6 +28,7 @@ export const internshipText = {
   },
   ES: {
     title: "Las Pasantías",
+    photoCredit: "foto por ...",
     text: (
       <div>
         <p>

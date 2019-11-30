@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Popup } from "semantic-ui-react";
 import "./Internships.css";
 import { internshipText } from "../../../common/servicesText/internshipText.js";
 
@@ -12,9 +13,15 @@ const Internships = props => {
         <span className="gold">{internshipText[lang].title}</span>
       </div>
 
-      <div className="internships-container">
-        <div className="internships-text">{internshipText[lang].text}</div>
-      </div>
+      <Popup
+        content={internshipText[localStorage.getItem("language")].photoCredit}
+        trigger={
+          <div className="internships-container">
+            <div className="internships-text">{internshipText[lang].text}</div>
+          </div>
+        }
+        position="bottom right"
+      />
     </div>
   );
 };

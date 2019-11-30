@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Container } from "semantic-ui-react";
+import { Container, Popup } from "semantic-ui-react";
 import "./Classes.css";
 import { classesText } from "../../../common/servicesText/classesText";
 // import { labeledStatement } from "@babel/types";
@@ -52,11 +52,15 @@ const Classes = props => {
             {classesText[localStorage.getItem("language")].title}
           </span>
         </div>
-
-        <div className="courses-container">
-          <div className="courses-text">{headline.text}</div>
-        </div>
-
+        <Popup
+          content={classesText[localStorage.getItem("language")].photoCredit}
+          trigger={
+            <div className="courses-container">
+              <div className="courses-text">{headline.text}</div>
+            </div>
+          }
+          position="bottom right"
+        />
         <br />
         <br />
         {generatePythonClasses()}

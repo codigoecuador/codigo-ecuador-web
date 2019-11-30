@@ -3,6 +3,7 @@ import React from "react";
 export const classesText = {
   EN: {
     title: "Our Curriculum",
+    photoCredit: "photo by Christina @ wocintechchat.com on Unsplash.com",
     text: (
       <div>
         <p>
@@ -36,6 +37,7 @@ export const classesText = {
 
   ES: {
     title: "Nuestro Plan de Estudios",
+    photoCredit: "foto por Christina @ wocintechchat.com,  Unsplash.com",
     text: (
       <div>
         <p>
