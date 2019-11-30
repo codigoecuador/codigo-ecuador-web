@@ -25,7 +25,7 @@ export const mentorshipText = {
   },
 
   ES: {
-    titleGold: "Mentoría",
+    titleGold: "Mentoría ",
     titleNavy: "de Carrera",
     subtitle:
       "¡Brindamos a las mujeres los recursos que necesitan para tener éxito!",

@@ -11,7 +11,8 @@ const Mentorship = props => {
   return (
     <Container className="main-container">
       <div className="headline center">
-        <span className="dancing navy">{mentorshipText[lang].title}</span>
+        <span className="dancing gold">{mentorshipText[lang].titleGold}</span>
+        <span className="dancing navy">{mentorshipText[lang].titleNavy}</span>
       </div>
       <br />
       <img
