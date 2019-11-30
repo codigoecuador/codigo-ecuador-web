@@ -1,18 +1,31 @@
-
 .donate-cards-group {
-	margin: auto;
-	padding: 2%;
+  margin: auto;
+  padding: 2%;
+  margin-bottom: 5em;
 }
 
 .donate-card {
-	height: 10%;
-	width: auto;
-	margin: auto;
+  height: 10%;
+  width: auto;
+  margin: auto;
 }
 
+.donate-card img {
+  object-fit: fill;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
 
 .hidden-content {
-	padding: 5%;
-	background-color: rgb(8, 37, 78);
-	color: white;
+  padding: 5%;
+  background-color: rgb(8, 37, 78);
+  color: white;
+}
+
+.summary {
+  font-size: 1.1em;
 }
