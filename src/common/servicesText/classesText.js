@@ -36,11 +36,39 @@ export const classesText = {
   },
 
   ES: {
-    goldTitle: "Nuestro",
-    navyTitle: " Currículum",
+    goldTitle: "Nuestro Plan",
+    navyTitle: " de Estudios",
     text: (
       <div>
-        <p>Some spanish text about the curriculum</p>
+        <p>
+          <p>
+            Código Ecuador utiliza métodos probados por el tiempo y plan de
+            estudios de empresas tecnológicas líderes para entrenar a nuestros
+            estudiantes.
+          </p>
+
+          <p>
+            Probamos nuevos ejercicios, recopilamos datos, y vemos qué es lo que
+            prepara mejor a nuestros estudiantes para carreras en tecnología. En
+            Código Ecuador, queremos crear un entorno de aprendizaje atractivo
+            que inculque en nuestros estudiantes una pasión creativa por la
+            programación de computadoras.
+          </p>
+
+          <p>
+            Los cursos de Python de Código Ecuador preparan a los estudiantes
+            para ir más allá de Python básico para desarrollar aplicaciones
+            completas para raspar sitios web, vincular información a bases de
+            datos, y visualizar datos. Además, aprenderán a agudizar y afinar su
+            intuición para resolver acertijos algorítmicos comunes.
+          </p>
+
+          <p>
+            Al finalizar el curso, los estudiantes estarán facultados para usar
+            Python para ingeniería de software, ciencia de datos y
+            automatización diaria.
+          </p>
+        </p>
       </div>
     )
   }

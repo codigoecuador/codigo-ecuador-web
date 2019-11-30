@@ -44,14 +44,13 @@ const Classes = props => {
   }
 
   return (
-    <>
-      {icons}
-      <Container className="main-container">
-        <div className="courses-text">
-          <div className="center headline banner-headline">
-            <span className="gold">Our Curriculum</span>
-          </div>
-          {headline.text}
+    <Container className="main-container">
+      <div className="courses-text">
+        <div className="center headline banner-headline">
+          <span className="gold">
+            {headline.goldTitle + " " + headline.navyTitle}
+          </span>
+
         </div>
         <br />
         <br />

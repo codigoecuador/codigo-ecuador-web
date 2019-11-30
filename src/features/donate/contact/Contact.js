@@ -1,18 +1,26 @@
 import React from "react";
 import "./Contact.css";
+import { connect } from "react-redux";
+import { contactText } from "../../../common/donateText/contactText.js";
 
-const Contact = () => {
+const Contact = props => {
+  let lang = localStorage.getItem("language");
   return (
     <>
-      <div className="subhead center">
-        <p>Would you like to support our efforts?</p>
-      </div>
+      <div className="contact-us center">{contactText[lang].contact}</div>
+      <br />
+      <div className="social-text">
+        <b>Email:</b> info@codigoecuador.com
+        <a href="mailto:info@codigoecuador.com">
+          <i class="envelope outline icon"></i>
+        </a>
+        <br />
+        <br />
+        <b>Twitter:</b> @CodigoEC
+        <a href="https://twitter.com/CodigoEC">
+          <i class="twitter icon"></i>
+        </a>
 
-      <div className="get-in-touch">
-        <p>
-          Get in touch with Código Ecuador to learn more about our work and how
-          you can get involved.
-        </p>
       </div>
       <br />
       <br />
@@ -21,16 +29,18 @@ const Contact = () => {
         className="donate-button"
         href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=info@codigoecuador.com&item_name=Imagina%20C%C3%B3digo%20Ecuador&currency_code=USD"
       >
-        Donate Now
+        {contactText[lang].donateButtonText}
       </a>
       <br />
       <br />
-      <div className="non-profit center">
-        Código Ecuador is a 501(C)(3) organization under the International
-        Intellectual Exchange Initiative Inc.
-      </div>
+      <div className="non-profit center">{contactText[lang].copyrightText}</div>
+
     </>
   );
 };
 
-export default Contact;
+const mapStateToProps = state => {
+  return { language: state.language };
+};
+
+export default connect(mapStateToProps)(Contact);

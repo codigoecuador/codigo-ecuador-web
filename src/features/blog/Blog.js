@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import BlogCard from "./BlogCard";
+import { blogText } from "../../common/blogText/blogText";
 import BlogLoader from "./BlogLoader";
 
 class Blog extends Component {
@@ -21,6 +22,7 @@ class Blog extends Component {
   }
 
   render() {
+    let lang = localStorage.getItem("language");
     let num = this.props.size === "mobile" ? 1 : 3;
 
     if (!this.state.blogs.items) {
@@ -47,9 +49,8 @@ class Blog extends Component {
         <>
           <div className="main-container">
             <div className="headline banner-headline">
-              <span className="gold">Recent Blog Posts</span>
+              <span className="gold">{blogText[lang].title}</span>
             </div>
-
             <br />
             <br />
 
@@ -67,7 +68,9 @@ class Blog extends Component {
 }
 
 const mapStateToProps = state => {
-  return { size: state.size.size };
+  return { size: state.size, language: state.language }
 };
 
 export default connect(mapStateToProps)(Blog);
+
+//return <div className="blog-container">{blogText[lang].error}</div>;
