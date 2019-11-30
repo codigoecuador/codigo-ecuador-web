@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from "semantic-ui-react";
-import "./Partners.css";
+import "../Partners.css";
 import { partnersData } from "./PartnersData";
 import PartnerGrid from "./PartnerGrid";
 

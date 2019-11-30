@@ -36,6 +36,16 @@
   max-height: 100%;
 }
 
+.not-slackers-logo {
+  margin: 2em;
+  height: 70%;
+}
+
+.kod-logo {
+  margin: 2em;
+  height: 50%;
+}
+
 @media screen and (min-width: 700px) {
   .minor-partners {
     margin: auto;
