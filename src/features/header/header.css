@@ -12,10 +12,14 @@
   height: auto;
 }
 
+.dropdown-button-group {
+  max-width: 70%;
+}
+
 @media screen and (min-width: 700px) {
   .logo-wrapper {
     float: left;
-    max-width: 600px;
+    /* max-width: 600px; */
     width: 50%;
   }
 
@@ -25,8 +29,8 @@
   }
 
   .dropdown-button-group {
-    max-height: 5vw;
-    max-width: 10vw;
+    /* max-height: 5vw;
+    max-width: 10vw; */
   }
 }
 
@@ -35,6 +39,7 @@
     width: 70%;
     margin-left: 9vw;
     margin-top: 2vw;
+    padding: 2em !important;
   }
 
   .language-dropdown {

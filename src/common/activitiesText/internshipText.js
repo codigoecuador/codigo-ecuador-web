@@ -2,7 +2,8 @@ import React from "react";
 
 export const internshipBlurbText = {
   EN: {
-    title: "Internship Placement",
+    title: "Experiential Learning",
+    subtitle: "Internships & Intellectual Engagement",
     text: (
       <div>
         <p>
@@ -16,23 +17,31 @@ export const internshipBlurbText = {
       </div>
     ),
     button: (
-      <a className='donate-button' href='mailto:info@codigoecuador.com'>
+      <a className="donate-button" href="mailto:info@codigoecuador.com">
         Become a Partner
       </a>
     )
   },
 
   ES: {
-    title: "Title in Spanish",
+    title: "Aprendizaje Experiencial",
+    subtitle: "Pasantías y Compromiso Intelectual",
     text: (
       <div>
-        <p>text in spanish</p>
+        <p>
+          En Código de Ecuador, estamos dedicados a establecer una conexión
+          entre los estudiantes Ecuatorianos en secundaria y las experiencias
+          prácticas. A través de la cooperación y del empoderamiento de la
+          comunidad mundial, creemos que se puede facilitar el acceso a valiosas
+          oportunidades de aprendizaje. Siempre nos esforzamos para hacer la
+          diferencia, y lo invitamos a conocer más y prestar su apoyo.
+        </p>
         <br />
       </div>
     ),
     button: (
-      <a className='donate-button' href='mailto:info@codigoecuador.com'>
-        button in spanish
+      <a className="donate-button" href="mailto:info@codigoecuador.com">
+        Hazte Socio
       </a>
     )
   }
