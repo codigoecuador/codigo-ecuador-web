@@ -13,6 +13,7 @@ const Internships = props => {
         <span className="gold">{internshipText[lang].title}</span>
       </div>
       <h1>{internshipText[lang].text}</h1>
+
     </div>
   );
 };

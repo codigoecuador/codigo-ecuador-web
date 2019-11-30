@@ -7,10 +7,10 @@ import Activities from "./activities/Activities";
 
 const Home = () => {
   return (
-    <div className='home-container'>
+    <div className="home-container">
       <CoverPic />
 
-      <div className='about-blurb'>
+      <div className="about-blurb">
         <AboutBlurb />
       </div>
 

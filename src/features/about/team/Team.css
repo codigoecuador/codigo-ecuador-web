@@ -1,6 +1,6 @@
-
-
-
+.team-card {
+  width: 30%;
+}
 
 @media screen and (min-width: 700px) {
   .team-headline {
@@ -15,14 +15,12 @@
 }
 
 @media screen and (max-width: 699px) {
-	.team-headline {
-		height: 1.5em;
-		line-height: 1.5em;
-		margin-bottom: 1em;
-	}
+  .team-headline {
+    height: 1.5em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+  }
 }
-
-
 
 .team-description p {
   font-size: 1.2em;

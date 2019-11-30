@@ -1,15 +1,13 @@
-
-
-
 .partners-grid {
   padding-top: 3em;
-  padding-bottom :4em;
-  background-color: rgb(191,158,96,0.5);
+  padding-bottom: 4em;
+  background-color: rgb(191, 158, 96, 0.5);
 }
 
 .partner-image {
-  height: 25vw;
-  padding-top: 2em;
+  height: 26vw;
+  padding-top: 3em;
+  margin-top: 2em;
   width: auto;
   margin: auto;
 }
@@ -25,11 +23,33 @@
 }
 
 .minor-partners {
-  margin-top: 5em;
+  margin-top: 10%;
 }
 
-.minor-partner-image {
-  margin: auto;
+.minor-partner-image-wrapper {
+}
+
+.minor-partner-image-wrapper img {
+  object-fit: contain;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .minor-partners {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .minor-partners {
+    width: 100%;
+  }
 }
 
 .minor-partner-description {

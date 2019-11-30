@@ -60,6 +60,12 @@ body {
   margin: 0 auto 5em;
 }
 
+@media screen and (min-width: 1525px) {
+  .main-container {
+    margin-top: 12%;
+  }
+}
+
 @media screen and (min-width: 700px) {
   .logo-wrapper {
     width: 50%;
@@ -105,7 +111,7 @@ body {
   }
 
   .main-container {
-    margin-top: 20%;
+    margin-top: 5%;
   }
 
   .headline {

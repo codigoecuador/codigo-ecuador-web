@@ -5,8 +5,9 @@ import "./Classes.css";
 import { classesText } from "../../../common/servicesText/classesText";
 // import { labeledStatement } from "@babel/types";
 import { pythonText } from "../../../common/servicesText/pythonText";
+import Icons from "../../social/icons";
 
-function Classes(props) {
+const Classes = props => {
   const lang = localStorage.getItem("language");
   const headline = classesText[lang];
   const generatePythonClasses = () => {
@@ -36,6 +37,12 @@ function Classes(props) {
     ));
   };
 
+  let icons;
+
+  if (props.mobile === "desktop") {
+    icons = <Icons />;
+  }
+
   return (
     <Container className="main-container">
       <div className="courses-text">
@@ -43,19 +50,19 @@ function Classes(props) {
           <span className="gold">
             {headline.goldTitle + " " + headline.navyTitle}
           </span>
-        </div>
-        {headline.text}
-      </div>
-      <br />
-      <br />
 
-      {generatePythonClasses()}
-    </Container>
+        </div>
+        <br />
+        <br />
+
+        {generatePythonClasses()}
+      </Container>
+    </>
   );
-}
+};
 
 const mapStateToProps = state => {
-  return { language: state.language };
+  return { language: state.language, size: state.size.size };
 };
 
 export default connect(mapStateToProps)(Classes);

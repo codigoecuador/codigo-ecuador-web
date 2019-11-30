@@ -20,7 +20,10 @@ const Contact = props => {
         <a href="https://twitter.com/CodigoEC">
           <i class="twitter icon"></i>
         </a>
+
       </div>
+      <br />
+      <br />
 
       <a
         className="donate-button"
@@ -30,7 +33,8 @@ const Contact = props => {
       </a>
       <br />
       <br />
-      <div className="center">{contactText[lang].copyrightText}</div>
+      <div className="non-profit center">{contactText[lang].copyrightText}</div>
+
     </>
   );
 };

@@ -8,6 +8,7 @@ import Contact from "./contact/Contact";
 
 const Donate = props => {
   let lang = localStorage.getItem("language");
+
   return (
     <>
       <Container className="main-container center">
@@ -22,6 +23,9 @@ const Donate = props => {
             <DonateCard {...donate} padding="20px" />
           ))}
         </Card.Group>
+        <a href="https://charity.gofundme.com/o/en/campaign/promote-women-in-tech-careers-in-ecuador/codigoecuador">
+          <h1>See our GoFundMe page</h1>
+        </a>
         <Contact className="contact" />
       </Container>
     </>

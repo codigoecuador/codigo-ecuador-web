@@ -6,14 +6,9 @@
 .board-photo {
   height: auto;
   overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   display: block;
   border-radius: 5%;
-}
-
-.board-column {
-  text-align: center;
 }
 
 .board-card {
@@ -23,11 +18,6 @@
 }
 
 @media screen and (min-width: 700px) {
-  .board-column {
-    float: left;
-    width: 50%;
-  }
-
   .board-card {
     padding: 3em;
     height: 40em;
@@ -50,19 +40,12 @@
     margin-bottom: 2em;
   }
   .board-description {
-    font-size: 1.8em;
+    font-size: 1.5em;
     line-height: 1.5em;
   }
 }
 
 @media screen and (max-width: 699px) {
-  .board-column {
-    width: 100%;
-    padding: 40px;
-    height: 500px;
-    border-radius: 5%;
-  }
-
   .board-card {
     padding: 40px;
     height: 500px;

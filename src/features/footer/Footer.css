@@ -1,8 +1,16 @@
 .footer {
   position: relative;
-  width: 100%;
+  width: 80%;
+  margin: auto;
+  padding: 3em;
+  font-size: 1.5em;
+  line-height: 2em;
   bottom: 0;
-  background-color: black;
-  color: white;
+  background-color: white;
   z-index: 2;
+}
+
+.social {
+  padding-right: 1em;
+  padding-left: 1em;
 }

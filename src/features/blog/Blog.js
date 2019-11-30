@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import BlogCard from "./BlogCard";
 import { blogText } from "../../common/blogText/blogText";
+import BlogLoader from "./BlogLoader";
 
 class Blog extends Component {
   state = {
@@ -14,7 +15,7 @@ class Blog extends Component {
 
   componentDidMount() {
     return fetch(
-      `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@codigoecuador`
+      `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/código-ecuador`
     )
       .then(response => response.json())
       .then(blogs => this.setState({ blogs: blogs }));
@@ -22,9 +23,14 @@ class Blog extends Component {
 
   render() {
     let lang = localStorage.getItem("language");
+    let num = this.props.size === "mobile" ? 1 : 3;
 
     if (!this.state.blogs.items) {
-      return <div className="blog-container">{blogText[lang].error}</div>;
+      return (
+        <div className="blog-container">
+          <BlogLoader />
+        </div>
+      );
     } else {
       const { items } = this.state.blogs;
 
@@ -32,7 +38,7 @@ class Blog extends Component {
         dots: true,
         infinite: true,
         speed: 4000,
-        slidesToShow: 1,
+        slidesToShow: num,
         slidesToScroll: 1,
         autoplay: false,
         autoplayspeed: 8000,
@@ -62,7 +68,9 @@ class Blog extends Component {
 }
 
 const mapStateToProps = state => {
-  return { size: state.size, language: state.language };
+  return { size: state.size, language: state.language }
 };
 
 export default connect(mapStateToProps)(Blog);
+
+//return <div className="blog-container">{blogText[lang].error}</div>;

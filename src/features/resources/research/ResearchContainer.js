@@ -23,17 +23,16 @@ class ResearchContainer extends Component {
     };
 
     return (
-      <div className='main-container'>
-
-        <div className='headline banner-headline'>
-          <span className='gold'>Research</span>
+      <div className="main-container">
+        <div className="headline banner-headline">
+          <span className="gold">Research</span>
         </div>
 
-        <div className='research-container-text'>
-          <div className='subhead center'>
+        <div className="research-container-text">
+          <div className="subhead center research-subhead">
             We model Código Ecuador on research and insights from reputable
             economic development experts.
-          </div >
+          </div>
 
           <p>
             Coding education is making a huge impact throughout the developing
@@ -53,7 +52,6 @@ class ResearchContainer extends Component {
 
           <br />
         </Slider>
-
       </div>
     );
   }

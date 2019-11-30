@@ -1,37 +1,27 @@
-import React from "react";
-import { Menu } from "semantic-ui-react";
+import React from "react"
+import { Menu } from "semantic-ui-react"
+import { codingMenuText } from "../../../common/resourcesText/codingMenuText"
 
 const CodingMenu = props => {
+  const { lang } = props
+  const renderMenuItems = codingMenuText => {
+    return codingMenuText[lang].map(item => (
+      <Menu.Item
+        name={item}
+        active={props.showing === item}
+        onClick={() => props.handleMobileClick(item)}
+        value={item}
+      />
+    ))
+  }
+
   return (
     <div>
       <Menu pointing secondary>
-        <Menu.Item
-          name='Students'
-          active={props.showing === "Student"}
-          onClick={() => props.handleMobileClick("Student")}
-          value='Student'
-        />
-        <Menu.Item
-          name='Parents'
-          active={props.showing === "Parent"}
-          onClick={() => props.handleMobileClick("Parent")}
-          value='Parent'
-        />
-        <Menu.Item
-          name='Educators'
-          active={props.showing === "Educator"}
-          onClick={() => props.handleMobileClick("Educator")}
-          value='Educator'
-        />
-        <Menu.Item
-          name='Entrepeneurs'
-          active={props.showing === "Entrepeneur"}
-          onClick={() => props.handleMobileClick("Entrepeneur")}
-          value='Entrepeneur'
-        />
+        {renderMenuItems(codingMenuText)}
       </Menu>
     </div>
-  );
-};
+  )
+}
 
-export default CodingMenu;
+export default CodingMenu

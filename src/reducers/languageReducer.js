@@ -1,11 +1,9 @@
 export default function languageReducer(state = { language: "EN" }, action) {
   switch (action.type) {
     case "SET_LANGUAGE":
-      let x = { ...state, language: action.setLanguage };
-
-      return x;
+      return { ...state, language: action.language }
 
     default:
-      return state;
+      return state
   }
 }

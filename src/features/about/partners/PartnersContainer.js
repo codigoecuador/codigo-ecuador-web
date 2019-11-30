@@ -5,9 +5,11 @@ import Partners from "./Partners";
 
 const PartnersContainer = () => {
   return (
-    <div className='main-container'>
+    <div className="main-container">
       <Partners />
-      <MinorPartners className='minor-partners' />
+      <div className="minor-partners">
+        <MinorPartners />
+      </div>
     </div>
   );
 };
