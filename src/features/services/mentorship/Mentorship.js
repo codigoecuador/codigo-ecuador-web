@@ -1,56 +1,60 @@
-import React, { Component } from "react"
-import { connect } from "react-redux"
-import { Container } from "semantic-ui-react"
-import "./Mentorship.css"
-import { mentorshipData } from "./MentorshipData"
-import { mentorshipIntro } from "./MentorshipIntro"
-import likeABoss from "./likeABoss.jpg"
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { Container } from "semantic-ui-react";
+import "./Mentorship.css";
+import { mentorshipData } from "./MentorshipData";
+import likeABoss from "./likeABoss.jpg";
+import { mentorshipText } from "../../../common/servicesText/mentorshipText";
 
 class Mentorship extends Component {
-	render() {
+  render() {
+    return (
+      <Container className="main-container">
+        <div className="headline center">
+          <span className="dancing gold">
+            {mentorshipText[localStorage.getItem("language")].titleGold}
+          </span>
+          <span className="dancing navy">
+            {mentorshipText[localStorage.getItem("language")].titleNavy}
+          </span>
+        </div>
+        <br />
+        <img
+          className="boss-photo"
+          src={likeABoss}
+          alt="woman's hand's holding mug with the words 'like a boss' by Brooke Lark on unsplash.com"
+        />
 
+        <h2 className="center">
+          {mentorshipText[localStorage.getItem("language")].subhead}
+        </h2>
+        <br />
+        <div className="mentor-text">
+          <p>{mentorshipText[localStorage.getItem("language")].intro}</p>
+        </div>
 
-		return (
-			<Container className="main-container">
-				<div className="headline center">
-					<span className="dancing gold">Career</span>
-					<span className="dancing navy"> Mentorship</span>
-				</div>
-				<br />
-				<img
-					className="boss-photo"
-					src={likeABoss}
-					alt="woman's hand's holding mug with the words 'like a boss' by Brooke Lark on unsplash.com"
-				/>
+        {/* we are mapping over mentorshipData below, instead of common/services/mentorshipText */}
 
-				<h2 className="center">
-					We provide women with the resources they need to succeed!{" "}
-				</h2>
-				<br />
-				<div className="mentor-text">
-					<p>{mentorshipIntro.text}</p>
-				</div>
+        {mentorshipData.map(tip => (
+          <div className="tip-info">
+            <br />
 
-				{mentorshipData.map((tip) => (
-					<div className="tip-info">
-						<br />
-
-						<div className="tip-description">
-							<span>
-								<h1>{tip.id}.</h1>
-								<p>{tip.text}</p>
-							</span>
-						</div>
-						<br />
-					</div>
-				))}
-			</Container>
-		)
-	}
+            <div className="tip-description">
+              <span>
+                <h1>{tip.id}.</h1>
+                <p>{tip.text}</p>
+              </span>
+            </div>
+            <br />
+          </div>
+        ))}
+      </Container>
+    );
+  }
 }
 
-const mapStateToProps = (state) => {
-	return { size: state.size }
-}
+const mapStateToProps = state => {
+  return { language: state.language, size: state.size.size };
+};
 
-export default connect(mapStateToProps)(Mentorship)
+export default connect(mapStateToProps)(Mentorship);
