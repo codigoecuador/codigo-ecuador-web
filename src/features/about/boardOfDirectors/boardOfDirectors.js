@@ -2,17 +2,21 @@ import React from "react";
 import { Container } from "semantic-ui-react";
 import "./boardOfDirectors.css";
 import { connect } from "react-redux";
-import { boardDataDesktop } from "./boardDataDesktop";
-import { boardDataMobile } from "./boardDataMobile";
+import BoardDataDesktop from "./BoardDataDesktop";
+import BoardDataMobile from "./BoardDataMobile";
+import { boardText } from "../../../common/aboutText/boardText";
 
 const BoardOfDirectors = props => {
-  let boardData = props.size === "mobile" ? boardDataMobile : boardDataDesktop;
+  let boardData =
+    props.size === "mobile" ? <BoardDataMobile /> : <BoardDataDesktop />;
 
   return (
     <div>
       <Container className="main-container">
         <div className="headline banner-headline">
-          <span className="gold">Board of Directors</span>
+          <span className="gold">
+            {boardText[localStorage.getItem("language")].title}
+          </span>
         </div>
 
         {boardData}
