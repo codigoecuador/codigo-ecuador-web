@@ -10,6 +10,7 @@ import Icons from "../../social/icons";
 const Classes = props => {
   const lang = localStorage.getItem("language");
   const headline = classesText[lang];
+
   const generatePythonClasses = () => {
     return pythonText.map(course => (
       <div className={`course-info ${course.color}`}>
@@ -47,17 +48,18 @@ const Classes = props => {
     <>
       {icons}
       <Container className="main-container">
-        <div className="courses-text">
-          <div className="center headline banner-headline">
-            <span className="gold">
-              {classesText[localStorage.getItem("language")].title}
-            </span>
-          </div>
-          {headline.text}
+        <div className="center headline banner-headline">
+          <span className="gold">
+            {classesText[localStorage.getItem("language")].title}
+          </span>
         </div>
-        <br />
-        <br />
 
+        <div className="courses-container">
+          <div className="courses-text">{headline.text}</div>
+        </div>
+
+        <br />
+        <br />
         {generatePythonClasses()}
       </Container>
     </>

@@ -1,44 +1,62 @@
-
-
 .bg-navy {
-	background-color: rgb(8, 37, 78);
+  background-color: rgb(8, 37, 78);
 }
 
 .bg-yellow {
-	background-color: rgb(197, 158, 85);
-	color: rgb(8, 37, 78) !important;
+  background-color: rgb(197, 158, 85);
+  color: rgb(8, 37, 78) !important;
+}
+
+.courses-container {
+  background-image: url("./classes-image.jpg");
+  background-size: cover;
+}
+
+.courses-text {
+  width: 60%;
+  background-color: white;
+  opacity: 0.7;
+  transition: opacity 1s;
+  text-align: left !important;
+  padding: 2em;
+  color: rgb(85, 83, 83);
+  margin-bottom: 2em;
+}
+
+.courses-text:hover {
+  opacity: 0.9;
 }
 
 .courses-text p {
-	font-size: 1.3em;
-	line-height: 1.4em;
-	margin: 1.5em;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  margin: 1.5em;
 }
 
 .python-title {
-	font-weight: bold;
-	font-size: 2em;
-	line-height: 2.1em;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 2.1em;
 }
 
 .python-description {
-	font-size: 1.4em;
-	line-height: 1.4em;
+  font-size: 1.4em;
+  line-height: 1.4em;
 }
 
 .python-bullets {
-	font-size: 1.2em;
-	line-height: 1.2em;
+  font-size: 1.2em;
+  line-height: 1.2em;
 }
 
 .python-duration {
-	font-size: 1.2em;
-	line-height: 1.2em;
+  font-size: 1.2em;
+  line-height: 1.2em;
 }
 
 .course-info {
-	color: white;
-	padding: 5%;
-	margin-bottom: 5%;
-	border-radius: 4vw 8vw;
+  color: white;
+  padding: 5%;
+  margin-bottom: 5%;
+  border-radius: 4vw 8vw;
 }

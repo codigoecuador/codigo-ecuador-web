@@ -5,7 +5,7 @@ import { internshipText } from "../../../common/servicesText/internshipText.js";
 
 const Internships = props => {
   let lang = localStorage.getItem("language");
-  console.log();
+
   return (
     <div className="main-container">
       <div className="headline banner-headline">
