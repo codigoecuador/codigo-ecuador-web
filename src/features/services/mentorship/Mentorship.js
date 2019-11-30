@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Container } from "semantic-ui-react";
+import { Container, Popup } from "semantic-ui-react";
 import "./Mentorship.css";
 import { mentorshipText } from "../../../common/servicesText/mentorshipText";
 import likeABoss from "./likeABoss.jpg";
@@ -15,10 +15,16 @@ const Mentorship = props => {
         <span className="dancing navy">{mentorshipText[lang].titleNavy}</span>
       </div>
       <br />
-      <img
-        className="boss-photo"
-        src={likeABoss}
-        alt="woman's hand's holding mug with the words 'like a boss' by Brooke Lark on unsplash.com"
+      <Popup
+        content={mentorshipText[localStorage.getItem("language")].photoCredit}
+        trigger={
+          <img
+            className="boss-photo"
+            src={likeABoss}
+            alt="woman's hand's holding mug with the words 'like a boss' by photo by @BrookeLark on Unsplash.com"
+          />
+        }
+        position="right center"
       />
 
       <h2 className="center">{mentorshipText[lang].subtitle}</h2>

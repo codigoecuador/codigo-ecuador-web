@@ -2,6 +2,7 @@ export const mentorshipText = {
   EN: {
     titleGold: "Career",
     titleNavy: "Mentorship",
+    photoCredit: "photo by @brookelark on Unsplash.com",
     subhead: "We provide women with the resources they need to succeed!",
     intro:
       "Ecuador has a beautiful culture of entrepreneurship where families and individuals start their own businesses and innovate outside of the confines of big corporations and creativity stifling bureaucracies. That is why we want to do more than give them technology skills so they can find a good job. We want to help them do what they do already: Create their own opportunities and control their own destinies.",
@@ -27,6 +28,7 @@ export const mentorshipText = {
   ES: {
     titleGold: "Mentoría ",
     titleNavy: "de Carrera",
+    photoCredit: "foto por @brookelark on Unsplash.com",
     subtitle:
       "¡Brindamos a las mujeres los recursos que necesitan para tener éxito!",
     intro:
