@@ -35,8 +35,7 @@ export const classesText = {
   },
 
   ES: {
-    goldTitle: "Nuestro Plan",
-    navyTitle: " de Estudios",
+    title: "Nuestro Plan de Estudios",
     text: (
       <div>
         <p>
