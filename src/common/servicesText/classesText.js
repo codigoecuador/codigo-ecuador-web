@@ -2,8 +2,7 @@ import React from "react";
 
 export const classesText = {
   EN: {
-    goldTitle: "Our",
-    navyTitle: " Curriculum",
+    title: "Our Curriculum",
     text: (
       <div>
         <p>
@@ -36,8 +35,7 @@ export const classesText = {
   },
 
   ES: {
-    goldTitle: "Nuestro",
-    navyTitle: " Currículum",
+    title: "Nuestro Currículum",
     text: (
       <div>
         <p>Some spanish text about the curriculum</p>
