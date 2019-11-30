@@ -6,11 +6,9 @@ import CodingButtonGroup from "./CodingButtonGroup";
 import CodingMenu from "./CodingMenu";
 
 const CodingContainer = props => {
-  debugger;
   const [showing, setShowing] = useState("");
 
   const handleClick = event => {
-    debugger;
     setShowing(event.target.value);
   };
 
@@ -19,7 +17,7 @@ const CodingContainer = props => {
   };
 
   let codingButtonGroup;
-  if (props.size === "mobile") {
+  if (window.innerWidth < 900) {
     codingButtonGroup = (
       <CodingMenu
         fluid

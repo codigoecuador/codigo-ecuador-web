@@ -1,9 +1,9 @@
-import React from "react"
-import { Menu } from "semantic-ui-react"
-import { codingMenuText } from "../../../common/resourcesText/codingMenuText"
+import React from "react";
+import { Menu } from "semantic-ui-react";
+import { codingMenuText } from "../../../common/resourcesText/codingMenuText";
 
 const CodingMenu = props => {
-  const { lang } = props
+  const { lang } = props;
   const renderMenuItems = codingMenuText => {
     return codingMenuText[lang].map(item => (
       <Menu.Item
@@ -12,16 +12,16 @@ const CodingMenu = props => {
         onClick={() => props.handleMobileClick(item)}
         value={item}
       />
-    ))
-  }
+    ));
+  };
 
   return (
     <div>
-      <Menu pointing secondary>
+      <Menu pointing secondary className="mobile-coding-menu">
         {renderMenuItems(codingMenuText)}
       </Menu>
     </div>
-  )
-}
+  );
+};
 
-export default CodingMenu
+export default CodingMenu;

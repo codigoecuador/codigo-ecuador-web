@@ -6,6 +6,14 @@
   padding: 5%;
 }
 
+.resource {
+  padding: 1em;
+  transition: background-color 0.3s;
+}
+.resource:hover {
+  background-color: rgb(243, 233, 214);
+}
+
 .coding-button-group {
   position: absolute;
   margin-top: 4%;
@@ -15,9 +23,10 @@
 .coding-button {
   background-color: rgb(8, 37, 78);
   color: white;
-  width: 15vw;
+  width: 16vw;
   height: 3em;
   padding: 3.5%;
+  margin-bottom: 0.25em;
   border-radius: 5px 10px;
 }
 
@@ -41,7 +50,11 @@
   }
 
   .coding-button {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
+  }
+
+  .mobile-coding-menu a {
+    font-size: 1.5em;
   }
 }
 
@@ -50,6 +63,10 @@
     margin-top: 5%;
     margin-bottom: 10%;
     margin-left: 0%;
+  }
+
+  .mobile-coding-menu a {
+    font-size: 1em;
   }
 }
 
