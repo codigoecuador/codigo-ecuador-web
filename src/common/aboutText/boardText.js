@@ -10,7 +10,7 @@ export const boardText = {
         women entering adulthood to help them become more independent.
       </p>
     ),
-    presidentTitle: "President",
+    presTitle: "President",
     presQuote: (
       <p>
         I want to help the youth of tomorrow turn their creative ideas into
@@ -30,7 +30,7 @@ export const boardText = {
         independientes. ​
       </p>
     ),
-    presidentTitle: "President",
+    presTitle: "President",
     presQuote: (
       <p>
         Quiero ayudar a los jóvenes del mañana a convertir sus ideas creativas

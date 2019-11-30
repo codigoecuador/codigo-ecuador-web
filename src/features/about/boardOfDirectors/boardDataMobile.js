@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Popup, Icon } from "semantic-ui-react";
+import { boardText } from "../../../common/aboutText/boardText";
 
 const BoardDataMobile = () => {
   return (
@@ -12,11 +13,12 @@ const BoardDataMobile = () => {
           alt="headshot of board member Debra Ray"
         />
         <h1 className="board-header">Debra Ray</h1>
-        <div className="board-subhead">Founder and CEO</div>
+        <div className="board-subhead">
+          {boardText[localStorage.getItem("language")].ceoTitle}
+        </div>
         <br />
         <div class="description board-description">
-          "I want to advance global economic development by sharing resources
-          with women entering adulthood to help them become more independent."
+          {boardText[localStorage.getItem("language")].ceoQuote}
         </div>
         <br />
         <Popup
@@ -37,11 +39,12 @@ const BoardDataMobile = () => {
           alt="headshot of board member Tom Sullivan"
         />
         <h1 className="board-header">Tom Sullivan</h1>
-        <div className="board-subhead">President</div>
+        <div className="board-subhead">
+          {boardText[localStorage.getItem("language")].presTitle}
+        </div>
         <br />
         <div class="description board-description">
-          "I want to help the youth of tomorrow turn their creative ideas into
-          reality with computer programming."
+          {boardText[localStorage.getItem("language")].presQuote}
         </div>
         <br />
         <Popup

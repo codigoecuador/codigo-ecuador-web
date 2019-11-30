@@ -59,7 +59,7 @@ const BoardDataDesktop = () => {
           <div className="board-card center">
             <h1 className="board-header">Tom Sullivan</h1>
             <div className="board-subhead">
-              {boardText[localStorage.getItem("language")].ceoTitle}
+              {boardText[localStorage.getItem("language")].presTitle}
             </div>
             <br />
             <div class="description board-description">
