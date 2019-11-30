@@ -49,7 +49,9 @@ const Classes = props => {
       <Container className="main-container">
         <div className="courses-text">
           <div className="center headline banner-headline">
-            <span className="gold">Our Curriculum</span>
+            <span className="gold">
+              {classesText[localStorage.getItem("language")].title}
+            </span>
           </div>
           {headline.text}
         </div>
