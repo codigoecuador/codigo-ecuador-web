@@ -5,7 +5,6 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer center">
-      <h3>Contact us</h3>
       <span className="social email">
         <Popup
           content="info@codigoecuador.com"
