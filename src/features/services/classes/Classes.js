@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Container, Divider } from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
 import "./Classes.css";
 import { classesText } from "../../../common/servicesText/classesText";
 // import { labeledStatement } from "@babel/types";
@@ -33,7 +33,6 @@ const Classes = props => {
           ))}
         </div>
         <br />
-        <Divider />
       </div>
     ));
   };
