@@ -12,7 +12,7 @@ import Donate from "./features/donate/Donate";
 import Header from "./features/header/Header";
 import Home from "./features/home/Home";
 import Mentorship from "./features/services/mentorship/Mentorship";
-import PartnersContainer from "./features/about/partners/PartnersContainer";
+import PartnersContainer from "./features/about/partners/partners/PartnersContainer";
 import ResearchContainer from "./features/resources/research/ResearchContainer";
 import Team from "./features/about/team/Team";
 import BoardOfDirectors from "./features/about/boardOfDirectors/boardOfDirectors";

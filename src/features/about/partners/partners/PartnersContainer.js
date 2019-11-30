@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import MinorPartners from "./MinorPartners";
+import MinorPartners from "../minorPartners/MinorPartners";
 import Partners from "./Partners";
 
 const PartnersContainer = () => {

@@ -19,8 +19,8 @@ const kod = {
   link: "https://www.kodluyoruz.org/"
 };
 
-const partner3 = {
-  name: "Placeholder 3",
+const notSlackers = {
+  name: "!Slackers",
   image:
     "https://images.unsplash.com/photo-1573641287741-f6e223d81a0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
   content: [
