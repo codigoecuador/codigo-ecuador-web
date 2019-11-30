@@ -1,13 +1,12 @@
 import React from "react"
-import { connect } from "react-redux"
 import "./Coding.css"
 import { Button, Sticky } from "semantic-ui-react"
-import { codingText } from "../../../common/resourcesText/codingText"
+import { codingButtonsText } from "../../../common/resourcesText/codingButtonsText"
 
 const CodingButtonGroup = props => {
   //grabs language from localStorage and select text from codingText object
-  const language = localStorage.getItem("language")
-  const buttons = codingText[language].buttons
+  const { lang } = props
+  const buttons = codingButtonsText[lang]
 
   const renderButtons = buttons => {
     return buttons.map(b => (
@@ -34,10 +33,5 @@ const CodingButtonGroup = props => {
     </Sticky>
   )
 }
-const mapStateToProps = state => {
-  return {
-    language: state.language,
-  }
-}
 
-export default connect(mapStateToProps)(CodingButtonGroup)
+export default CodingButtonGroup
