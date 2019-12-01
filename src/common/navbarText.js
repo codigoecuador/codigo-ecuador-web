@@ -17,7 +17,7 @@ export const navbarText = {
     donate: "Donate"
   },
   ES: {
-    home: "Home",
+    home: "Inicio",
     about: "Sobre",
     ourStory: "Nuestra Historia",
     partners: "Nuestros Socios",
