@@ -34,10 +34,12 @@ const Navbar = () => {
       </div>
 
       <div className="dropdown">
-        <button className="dropdown-button">Resources</button>
+        <button className="dropdown-button">
+          {navbarText[lang].resources}
+        </button>
         <div className="dropdown-content">
-          <a href="/resources/coding">Coding</a>
-          <a href="/resources/research">Research</a>
+          <a href="/resources/coding">{navbarText[lang].coding}</a>
+          <a href="/resources/research">{navbarText[lang].research}</a>
         </div>
       </div>
 

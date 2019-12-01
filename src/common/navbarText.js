@@ -9,7 +9,10 @@ export const navbarText = {
     services: "Services",
     classes: "Computer Programming Courses",
     internships: "Experiential Learning",
-    mentorship: "Career Mentorship"
+    mentorship: "Career Mentorship",
+    resources: "Resources",
+    coding: "Coding",
+    research: "Research"
   },
   ES: {
     home: "Sp Home",
@@ -21,6 +24,9 @@ export const navbarText = {
     services: "Servicios",
     classes: "Cursos de Programación",
     internships: "Aprendizaje Experiencial",
-    mentorship: "Mentoría de Carrera"
+    mentorship: "Mentoría de Carrera",
+    resources: "Recursos",
+    coding: "Recursos de Codificación",
+    research: "Investigaciones"
   }
 };
