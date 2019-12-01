@@ -1,6 +1,4 @@
 import React from "react";
-import kodluyoruzLogo from "./kodluyoruz.webp";
-import notSlackersLogo from "./notSlackersLogo.png";
 
 export const partnersText = {
   EN: {
@@ -37,7 +35,6 @@ export const partnersText = {
     //minor partners
 
     kodName: "Juventud del Mañana",
-    kodImage: kodluyoruzLogo,
     kodText: (
       <p>
         Kodluyoruz.org is a software movement that promotes code literacy and
