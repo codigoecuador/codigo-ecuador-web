@@ -54,7 +54,7 @@
   }
 
   .board-photo {
-    width: 70%;
+    width: 40%;
   }
 
   .board-header {
@@ -67,7 +67,7 @@
   }
 
   .board-description {
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 1em;
   }
 }
