@@ -1,23 +1,26 @@
 import React from "react";
+import { connect } from "react-redux";
 import "./Navbar.css";
-// Capitalized B in above link to make it work
 import { Container } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import { navbarText } from "../../../common/navbarText";
 
 const Navbar = () => {
+  let lang = localStorage.getItem("language");
+
   return (
     <Container className="dropdown-button-group">
       <Link exact className="dropdown" to="/">
-        <button className="dropdown-button">Home</button>
+        <button className="dropdown-button">{navbarText[lang].home}</button>
       </Link>
 
       <div className="dropdown">
-        <button className="dropdown-button">About</button>
+        <button className="dropdown-button">{navbarText[lang].about}</button>
         <div className="dropdown-content">
-          <a href="/about">Our Story</a>
-          <a href="/about/partners">Partners</a>
-          <a href="/about/team">Team</a>
-          <a href="/about/board">Board</a>
+          <a href="/about">{navbarText[lang].ourStory}</a>
+          <a href="/about/partners">{navbarText[lang].partners}</a>
+          <a href="/about/team">{navbarText[lang].team}</a>
+          <a href="/about/board">{navbarText[lang].board}</a>
         </div>
       </div>
 
@@ -49,4 +52,8 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+const mapStateToProps = state => {
+  return { language: state.language };
+};
+
+export default connect(mapStateToProps)(Navbar);
