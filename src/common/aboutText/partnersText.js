@@ -36,8 +36,6 @@ export const partnersText = {
 
     //minor partners
 
-    kodName: "Juventud del Mañana",
-    kodImage: kodluyoruzLogo,
     kodText: (
       <p>
         Kodluyoruz.org is a software movement that promotes code literacy and
@@ -46,7 +44,6 @@ export const partnersText = {
       </p>
     ),
 
-    notSlackersName: "!Slackers",
     notSlackersText: (
       <>
         <p>
@@ -76,7 +73,7 @@ export const partnersText = {
       </p>
     ),
 
-    placeholder: "Placeholder",
+    placeholderName: "Placeholder",
     placeholderText: (
       <p>
         Here is some information about a potential partner. Here is some
@@ -87,12 +84,12 @@ export const partnersText = {
   },
 
   ES: {
-    goldTitle: "Our",
-    navyTitle: " Partners",
+    goldTitle: "Nuestros",
+    navyTitle: "  Socios",
     subtitle: (
       <p>
-        We are grateful to our partners who share expertise and resources to
-        help us succeed.
+        Agradecemos a nuestros socios que comparten experiencia para ayudarnos a
+        tener éxito.
       </p>
     ),
     juventudTitle: "Juventud del Mañana",
@@ -118,16 +115,53 @@ export const partnersText = {
     ),
 
     //minor partners
-    kodTitle: "Juventud del Mañana",
-    kodText: <p>kod text</p>,
 
-    notSlackersName: "!Slackers",
-    notSlackersText: <p>not slackers text</p>,
+    kodText: (
+      <p>
+        Kodluyoruz.org es un movimiento de software que promueve la
+        alfabetización de códigos y añade valor al futuro de los jóvenes en el
+        campo del software con el fin de mejorar cada segmento de la sociedad
+        mediante el uso de la tecnología.
+      </p>
+    ),
 
-    becomeAPartnerName: "Become a Partner",
-    becomeAPartnerText: <p>become a partner text</p>,
+    notSlackersText: (
+      <>
+        <p>
+          Los !Slackers (tambien conocidos como 'The Not Slackers) aprendieron a
+          programar juntos en el mismo grupo en
+          <a href="https://flatironschool.com/career-courses/coding-bootcamp/online/north-america">
+            The Flatiron School.
+          </a>{" "}
+          Despuès de graduarse en el verano de 2019, siete miembros del grupo
+          crearon nuestra pàgina web desde cero. Si necesitas desarrolladores
+          full-stack, ¡Contràtalos!
+          <a href="https://github.com/joanrig/codigo-ecuador-web/graphs/contributors">
+            {" "}
+            Puedes encontrar sus perfiles de Github aquì..
+          </a>
+        </p>
+      </>
+    ),
 
-    placeholderName: "Placeholder",
-    placeholderText: <p>placeholder text</p>
+    becomeAPartnerName: "Hazte Socio",
+    becomeAPartnerText: (
+      <p>
+        Si está buscando talento o desea tener un socio disponible para
+        compartir las mejoras prácticas y recursos, no dude en comunicarse con
+        nosotros con su información. ​ Siempre, buscamos establecer nuevas
+        conexiones con empresas y organizaciones que compartan nuestros valores.
+      </p>
+    ),
+
+    placeholderName: "Marcador de Posición",
+    placeholderText: (
+      <p>
+        Aquí hay información sobre un posible socio. Aquí hay información sobre
+        un posible socio. Aquí hay información sobre un posible socio. Aquí hay
+        información sobre un posible socio. Aquí hay información sobre un
+        posible socio. Aquí hay información sobre un posible socio.
+      </p>
+    )
   }
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import { Grid } from "semantic-ui-react";
 import "../Partners.css";
 import { partnersData } from "./PartnersData";
@@ -27,4 +28,8 @@ const Partners = () => {
   );
 };
 
-export default Partners;
+const mapStateToProps = state => {
+  return { language: state.language };
+};
+
+export default connect(mapStateToProps)(Partners);

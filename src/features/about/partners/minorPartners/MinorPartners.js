@@ -1,16 +1,16 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Card } from "semantic-ui-react";
-import { minorPartnersData } from "./MinorPartnersData";
+import { MinorPartnersData } from "./MinorPartnersData";
 
-const minorPartners = props => {
+const MinorPartners = props => {
   let num = props.size === "mobile" ? 1 : 2;
   return (
     <>
       <div class="ui divider"></div>
       <br />
       <Card.Group itemsPerRow={num} className="center">
-        {minorPartnersData.map(partner => (
+        {MinorPartnersData.map(partner => (
           <Card>
             <div className="minor-partner-image-wrapper">
               <div className={partner.imageClassName}>
@@ -28,8 +28,9 @@ const minorPartners = props => {
     </>
   );
 };
+
 const mapStateToProps = state => {
   return { size: state.size.size };
 };
 
-export default connect(mapStateToProps)(minorPartners);
+export default connect(mapStateToProps)(MinorPartners);

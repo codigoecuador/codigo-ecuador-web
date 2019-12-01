@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import kodluyoruzLogo from "./kodluyoruz.webp";
 import notSlackersLogo from "./notSlackersLogo.png";
 import { partnersText } from "../../../../common/aboutText/partnersText";
@@ -33,7 +34,7 @@ const becomeAPartner = {
 };
 
 const placeholder = {
-  name: "Placeholder",
+  name: <>{partnersText[localStorage.getItem("language")].placeholderName}</>,
   image:
     "https://images.unsplash.com/photo-1573641287741-f6e223d81a0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
   imageClassName: "placeholder4-logo",
@@ -43,11 +44,14 @@ const placeholder = {
   link: "https://www.google.com/"
 };
 
-export const minorPartnersData = [
-  kod,
-  notSlackers,
-  becomeAPartner,
-  placeholder
-];
+const MinorPartnersData = () => {
+  return [kod, notSlackers, becomeAPartner, placeholder];
+};
+
+const mapStateToProps = state => {
+  return { language: state.language };
+};
+
+export default connect(mapStateToProps)(MinorPartnersData);
 
 //to add new partners, populate partner 3 and 4 above, then add them to list on line 42
