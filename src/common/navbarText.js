@@ -12,6 +12,7 @@ export const navbarText = {
     mentorship: "Career Mentorship",
     resources: "Resources",
     coding: "Coding",
+    news: "News",
     research: "Research",
     blog: "Blog",
     donate: "Donate"
@@ -29,6 +30,7 @@ export const navbarText = {
     mentorship: "Mentoría de Carrera",
     resources: "Recursos",
     coding: "Recursos de Codificación",
+    news: "Noticias",
     research: "Investigaciones",
     blog: "Blog",
     donate: "Donar"

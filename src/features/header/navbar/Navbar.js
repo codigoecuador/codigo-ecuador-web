@@ -40,6 +40,9 @@ const Navbar = () => {
         <div className="dropdown-content">
           <a href="/resources/coding">{navbarText[lang].coding}</a>
           <a href="/resources/research">{navbarText[lang].research}</a>
+          <a href="https://flipboard.com/@joanindiana5duk/codigo-8ma7ouh6y">
+            {navbarText[lang].news}
+          </a>
         </div>
       </div>
 
