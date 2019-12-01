@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { Card, Image } from "semantic-ui-react";
+import { blogText } from "../../common/blogText/blogText";
 
 class BlogCard extends Component {
   render() {
+    let lang = localStorage.getItem("language");
     let blog = this.props.blog;
 
     blog.title = blog.title.replace("&amp;", "&");
@@ -39,10 +41,11 @@ class BlogCard extends Component {
               <span className="blog-title">{blog.title}</span>
             </Card.Description>
             <br />
-            <div>by {blog.author}</div>
+            <div>
+              {blogText[lang].by} {blog.author}
+            </div>
 
             <p>
-              Date:
               <span className="blog-date">
                 {monthName} {date}, {year}
               </span>
