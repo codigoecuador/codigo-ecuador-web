@@ -53,6 +53,12 @@ const Footer = () => {
           position="bottom center"
         />
       </span>
+
+      <div className="subscribe">
+        <a href="https://codigoecuador.us4.list-manage.com/subscribe?u=1acc27a779c93fd930d6c3e44&id=bb2f534a55">
+          <i class="envelope outline icon"></i>join our email list{""}
+        </a>
+      </div>
     </div>
   );
 };
