@@ -30,9 +30,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      <Link exact className="dropdown" to="/resources">
+      <div className="dropdown">
         <button className="dropdown-button">Resources</button>
-      </Link>
+        <div className="dropdown-content">
+          <a href="/resources/coding">Coding</a>
+          <a href="/resources/research">Research</a>
+        </div>
+      </div>
 
       <Link exact className="dropdown" to="/blog">
         <button className="dropdown-button">Blog</button>
