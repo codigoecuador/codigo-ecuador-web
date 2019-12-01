@@ -1,52 +1,61 @@
 import React from "react";
+import { connect } from "react-redux";
 import "./Navbar.css";
-// Capitalized B in above link to make it work
+import { navbarText } from "../../../common/navbarText";
 import { Container } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  let lang = localStorage.getItem("language");
+
   return (
     <Container className="dropdown-button-group">
       <Link exact className="dropdown" to="/">
-        <button className="dropdown-button">Home</button>
+        <button className="dropdown-button">{navbarText[lang].home}</button>
       </Link>
 
       <div className="dropdown">
-        <button className="dropdown-button">About</button>
+        <button className="dropdown-button">{navbarText[lang].about}</button>
         <div className="dropdown-content">
-          <a href="/about">Our Story</a>
-          <a href="/about/partners">Partners</a>
-          <a href="/about/team">Team</a>
-          <a href="/about/board">Board</a>
+          <a href="/about">{navbarText[lang].ourStory}</a>
+          <a href="/about/partners">{navbarText[lang].partners}</a>
+          <a href="/about/team">{navbarText[lang].team}</a>
+          <a href="/about/board">{navbarText[lang].board}</a>
         </div>
       </div>
 
       <div className="dropdown">
-        <button className="dropdown-button">Services</button>
+        <button className="dropdown-button">{navbarText[lang].services}</button>
         <div className="dropdown-content">
-          <a href="/services/classes">Classes</a>
-          <a href="/services/mentorship">Mentorship</a>
-          <a href="/services/internships">Internships</a>
+          <a href="/services/classes">{navbarText[lang].classes}</a>
+          <a href="/services/internships">{navbarText[lang].internships}</a>
+          <a href="/services/mentorship">{navbarText[lang].mentorship}</a>
         </div>
       </div>
 
       <div className="dropdown">
-        <button className="dropdown-button">Resources</button>
+        <button className="dropdown-button">
+          {navbarText[lang].resources}
+        </button>
         <div className="dropdown-content">
-          <a href="/resources/coding">Coding</a>
-          <a href="/resources/research">Research</a>
+          <a href="/resources/coding">{navbarText[lang].coding}</a>
+          <a href="/resources/research">{navbarText[lang].research}</a>
         </div>
       </div>
 
       <Link exact className="dropdown" to="/blog">
-        <button className="dropdown-button">Blog</button>
+        <button className="dropdown-button">{navbarText[lang].blog}</button>
       </Link>
 
       <Link exact className="dropdown" to="/donate">
-        <button className="dropdown-button">Donate</button>
+        <button className="dropdown-button">{navbarText[lang].donate}</button>
       </Link>
     </Container>
   );
 };
 
-export default Navbar;
+const mapStateToProps = state => {
+  return { size: state.size, language: state.language };
+};
+
+export default connect(mapStateToProps)(Navbar);
