@@ -5,7 +5,11 @@ export const navbarText = {
     ourStory: "Our Story",
     partners: "Our Partners",
     team: "Meet the Team",
-    board: "Board of Directors"
+    board: "Board of Directors",
+    services: "Services",
+    classes: "Computer Programming Courses",
+    internships: "Experiential Learning",
+    mentorship: "Career Mentorship"
   },
   ES: {
     home: "Sp Home",
@@ -13,6 +17,10 @@ export const navbarText = {
     ourStory: "Nuestra Historia",
     partners: "Nuestros Socios",
     team: "Conozca al Equipo",
-    board: "Junta Directiva"
+    board: "Junta Directiva",
+    services: "Servicios",
+    classes: "Cursos de Programación",
+    internships: "Aprendizaje Experiencial",
+    mentorship: "Mentoría de Carrera"
   }
 };

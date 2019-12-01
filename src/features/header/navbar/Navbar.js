@@ -25,11 +25,11 @@ const Navbar = () => {
       </div>
 
       <div className="dropdown">
-        <button className="dropdown-button">Services</button>
+        <button className="dropdown-button">{navbarText[lang].services}</button>
         <div className="dropdown-content">
-          <a href="/services/classes">Classes</a>
-          <a href="/services/mentorship">Mentorship</a>
-          <a href="/services/internships">Internships</a>
+          <a href="/services/classes">{navbarText[lang].classes}</a>
+          <a href="/services/internships">{navbarText[lang].internships}</a>
+          <a href="/services/mentorship">{navbarText[lang].mentorship}</a>
         </div>
       </div>
 
