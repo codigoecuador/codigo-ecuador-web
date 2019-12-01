@@ -1,7 +1,7 @@
 import React from "react";
+import { connect } from "react-redux";
 import { Container } from "semantic-ui-react";
 import "./boardOfDirectors.css";
-import { connect } from "react-redux";
 import BoardDataDesktop from "./BoardDataDesktop";
 import BoardDataMobile from "./BoardDataMobile";
 import { boardText } from "../../../common/aboutText/boardText";
