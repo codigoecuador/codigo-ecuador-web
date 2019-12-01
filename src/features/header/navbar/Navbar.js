@@ -44,11 +44,11 @@ const Navbar = () => {
       </div>
 
       <Link exact className="dropdown" to="/blog">
-        <button className="dropdown-button">Blog</button>
+        <button className="dropdown-button">{navbarText[lang].blog}</button>
       </Link>
 
       <Link exact className="dropdown" to="/donate">
-        <button className="dropdown-button">Donate</button>
+        <button className="dropdown-button">{navbarText[lang].donate}</button>
       </Link>
     </Container>
   );
