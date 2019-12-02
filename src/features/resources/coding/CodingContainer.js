@@ -38,7 +38,9 @@ const CodingContainer = props => {
   return (
     <div className="main-container">
       <div className="headline banner-headline">
-        <span className="gold">{showing || "Coding"} Resources</span>
+        <span className="gold">
+          Coding Resources for {showing || "Students"}{" "}
+        </span>
       </div>
 
       {codingButtonGroup}
