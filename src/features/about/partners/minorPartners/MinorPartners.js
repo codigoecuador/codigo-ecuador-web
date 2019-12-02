@@ -30,7 +30,7 @@ const MinorPartners = props => {
 };
 
 const mapStateToProps = state => {
-  return { size: state.size.size };
+  return { size: state.size.size, language: state.language };
 };
 
 export default connect(mapStateToProps)(MinorPartners);

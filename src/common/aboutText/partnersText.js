@@ -1,6 +1,6 @@
 import React from "react";
-import kodluyoruzLogo from "./kodluyoruz.webp";
-import notSlackersLogo from "./notSlackersLogo.png";
+// import kodluyoruzLogo from "./kodluyoruz.webp";
+// import notSlackersLogo from "./notSlackersLogo.png";
 
 export const partnersText = {
   EN: {

@@ -1,5 +1,4 @@
 import React from "react";
-import { connect } from "react-redux";
 import kodluyoruzLogo from "./kodluyoruz.webp";
 import notSlackersLogo from "./notSlackersLogo.png";
 import { partnersText } from "../../../../common/aboutText/partnersText";
@@ -44,14 +43,10 @@ const placeholder = {
   link: "https://www.google.com/"
 };
 
-const MinorPartnersData = () => {
+export const MinorPartnersData = () => {
   return [kod, notSlackers, becomeAPartner, placeholder];
 };
 
-const mapStateToProps = state => {
-  return { language: state.language };
-};
 
-export default connect(mapStateToProps)(MinorPartnersData);
 
 //to add new partners, populate partner 3 and 4 above, then add them to list on line 42
