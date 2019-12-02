@@ -8,19 +8,19 @@ export const codingButtonsText = {
 
   ES: [
     {
-      name: "for Students",
+      name: "Students",
       text: "para Estudiantes"
     },
     {
-      name: "for Parents",
+      name: "Parents",
       text: "para Padres"
     },
     {
-      name: "for Educators",
+      name: "Educators",
       text: "para Educadores"
     },
     {
-      name: "for Entrepreneurs",
+      name: "Entrepreneurs",
       text: "para Emprendedores"
     }
   ]
