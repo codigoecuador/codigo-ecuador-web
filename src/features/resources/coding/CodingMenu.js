@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu } from "semantic-ui-react";
-import { codingMenuText } from "../../../common/resourcesText/codingMenuText";
+import { codingMenuText } from "../../../common/resourcesText/coding/codingMenuText";
 
 const CodingMenu = props => {
   const { lang } = props;

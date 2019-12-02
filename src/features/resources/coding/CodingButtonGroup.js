@@ -1,7 +1,7 @@
 import React from "react";
 import "./Coding.css";
 import { Button, Sticky } from "semantic-ui-react";
-import { codingButtonsText } from "../../../common/resourcesText/codingButtonsText";
+import { codingButtonsText } from "../../../common/resourcesText/coding/codingButtonsText";
 
 const CodingButtonGroup = props => {
   //grabs language from localStorage and select text from codingText object
