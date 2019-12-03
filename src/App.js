@@ -15,7 +15,7 @@ import Mentorship from "./features/services/mentorship/Mentorship";
 import PartnersContainer from "./features/about/partners/partners/PartnersContainer";
 import ResearchContainer from "./features/resources/research/ResearchContainer";
 import Team from "./features/about/team/Team";
-import BoardOfDirectors from "./features/about/boardOfDirectors/boardOfDirectors";
+import BoardOfDirectors from "./features/about/boardOfDirectors/BoardOfDirectors";
 import Footer from "./features/footer/Footer.js";
 
 class App extends Component {

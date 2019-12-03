@@ -2,25 +2,23 @@ import React from "react";
 import { connect } from "react-redux";
 import { Grid } from "semantic-ui-react";
 import "../Partners.css";
-import { partnersData } from "./PartnersData";
+import { partnersText } from "./../../../../common/aboutText/partnersText";
 import PartnerGrid from "./PartnerGrid";
 
 const Partners = () => {
+  let lang = localStorage.getItem("language");
   return (
     <>
       <br />
       <br />
       <div className="headline banner-headline">
-        <span className="gold">Our Partners</span>
+        <span className="gold">{partnersText[lang].title}</span>
       </div>
 
-      <div className="subhead partners-text">
-        We are grateful to our partners who share expertise and resources to
-        help us succeed.
-      </div>
+      <div className="subhead partners-text">{partnersText[lang].subtitle}</div>
 
       <Grid divided="vertically" className="partners-grid">
-        {partnersData.map(partner => (
+        {partnersText[lang].partners.map(partner => (
           <PartnerGrid {...partner} key={partner.name} />
         ))}
       </Grid>

@@ -13,11 +13,7 @@ const PartnerGrid = props => {
 
       <Grid.Column verticalAlign="center">
         <div className="headline">{props.name}</div>
-        <div className="partner-description">
-          {props.content.map(info => (
-            <p>{info}</p>
-          ))}
-        </div>
+        <div className="partner-description">{props.content}</div>
       </Grid.Column>
     </Grid.Row>
   );
