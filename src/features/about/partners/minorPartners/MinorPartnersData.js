@@ -7,7 +7,7 @@ const kod = {
   name: "Kodluyoruz",
   image: kodluyoruzLogo,
   imageClassName: "kod-logo",
-  text: <>{partnersText[localStorage.getItem("language")].kodText}</>,
+  content: <>{partnersText[localStorage.getItem("language")].kodText}</>,
   link: "https://www.kodluyoruz.org/"
 };
 
@@ -15,7 +15,9 @@ const notSlackers = {
   name: "!Slackers",
   image: notSlackersLogo,
   imageClassName: "not-slackers-logo",
-  text: <>{partnersText[localStorage.getItem("language")].notSlackersText}</>,
+  content: (
+    <>{partnersText[localStorage.getItem("language")].notSlackersText}</>
+  ),
   link: "https://www.google.com/"
 };
 
