@@ -4,7 +4,7 @@ Welcome to the ReadMe for the new website for Codigo Ecuador, which is under con
 
 # collaborators
 
-Here is a list of tickets with priorities and estimated hours. If you'd like to help please contact <a href="mailto: joanrigdon@gmail.com">Joan Indiana Lyness</a>
+The !Slackers group is proudly working together to produce this new website. If you'd like to pitch in, please contact <a href="mailto: joanrigdon@gmail.com">Joan Indiana Lyness</a>
 
 ## Prerequisites
 
