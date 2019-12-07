@@ -1,3 +1,6 @@
+// import React from "react";
+import { partnersText } from "../../../../common/aboutText/partnersText";
+
 const juventud = {
   name: "Juventud del Mañana",
   image:
@@ -7,6 +10,8 @@ const juventud = {
     "It is a teen drop-in centre that provides a safe, drug-and-alcohol-free, place designed exclusively to meet their needs. It is a place to enjoy their activities, whether it be playing basketball, practicing with their band, playing games, listening to music, and holding dances.",
     "Beginning in October, Juventud del Mañana will provide educational programs and on the job experiences designed to help teens reach their full potential."
   ]
+  //need to replace above with this --- but doesn't work.
+  //content: <>{partnersText[localStorage.getItem("language")].juventudText}</>
 };
 
 export const partnersData = [juventud];
