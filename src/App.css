@@ -48,6 +48,8 @@ body {
 .subhead {
   text-align: center;
   color: grey;
+  font-size: 2em;
+  line-height: 1.5em;
 }
 
 .banner-headline {
