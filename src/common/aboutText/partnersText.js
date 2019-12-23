@@ -34,7 +34,7 @@ export const partnersText = {
 
     //minor partners
 
-    kodName: "Juventud del Mañana",
+    kodName: "Kodluyoruz",
     kodText: (
       <p>
         Kodluyoruz.org is a software movement that promotes code literacy and
