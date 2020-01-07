@@ -2,25 +2,20 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
 import Header from "./features/header/Header";
 import Home from "./features/home/Home";
-
 //about
 import About from "./features/about/About";
 import PartnersContainer from "./features/about/partners/partners/PartnersContainer";
 import Team from "./features/about/team/Team";
-import BoardOfDirectors from "./features/about/boardOfDirectors/boardOfDirectors";
-
+import BoardOfDirectors from "./features/about/boardOfDirectors/BoardOfDirectors";
 //services
 import Classes from "./features/services/classes/Classes";
 import Internships from "./features/services/internships/Internships";
 import Mentorship from "./features/services/mentorship/Mentorship";
-
 //research
 import CodingContainer from "./features/resources/coding/CodingContainer";
 import ResearchContainer from "./features/resources/research/ResearchContainer";
-
 import Blog from "./features/blog/Blog";
 import Donate from "./features/donate/Donate";
 import Footer from "./features/footer/Footer.js";
