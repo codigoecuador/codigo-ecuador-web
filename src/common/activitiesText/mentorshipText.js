@@ -17,7 +17,7 @@ export const mentorshipBlurbText = {
       </div>
     ),
     button: (
-      <a className="activities-button" href="/services/mentorship">
+      <a className="donate-button" href="/services/mentorship">
         Learn More
       </a>
     )

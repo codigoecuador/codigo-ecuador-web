@@ -2,18 +2,13 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import { Sticky} from "semantic-ui-react"
-import About from "./features/about/About";
-import Blog from "./features/blog/Blog";
-import Classes from "./features/services/classes/Classes";
-import Internships from "./features/services/internships/Internships";
-import CodingContainer from "./features/resources/coding/CodingContainer";
-import Donate from "./features/donate/Donate";
+
 import Header from "./features/header/Header";
 import Home from "./features/home/Home";
-import Mentorship from "./features/services/mentorship/Mentorship";
+
+//about
+import About from "./features/about/About";
 import PartnersContainer from "./features/about/partners/partners/PartnersContainer";
-import ResearchContainer from "./features/resources/research/ResearchContainer";
 import Team from "./features/about/team/Team";
 import BoardOfDirectors from "./features/about/boardOfDirectors/BoardOfDirectors";
 import Footer from "./features/footer/Footer.js";
@@ -41,8 +36,21 @@ class App extends Component {
         <Header />
 
         <Switch>
+          <Route exact path="/" render={() => <Home />}></Route>
+
           <Route exact path="/about" render={() => <About />}></Route>
-          <Route exact path="/blog" render={() => <Blog />}></Route>
+          <Route
+            exact
+            path="/about/partners"
+            render={() => <PartnersContainer />}
+          ></Route>
+          <Route exact path="/about/team" render={() => <Team />}></Route>
+          <Route
+            exact
+            path="/about/board"
+            render={() => <BoardOfDirectors />}
+          ></Route>
+
           <Route
             exact
             path="/services/classes"
@@ -55,32 +63,23 @@ class App extends Component {
           ></Route>
           <Route
             exact
-            path="/resources"
-            render={() => <CodingContainer />}
-          ></Route>
-          <Route exact path="/donate" render={() => <Donate />}></Route>
-          <Route exact path="/" render={() => <Home />}></Route>
-          <Route
-            exact
             path="/services/mentorship"
             render={() => <Mentorship />}
           ></Route>
+
           <Route
             exact
-            path="/about/partners"
-            render={() => <PartnersContainer />}
+            path="/resources/coding"
+            render={() => <CodingContainer />}
           ></Route>
           <Route
             exact
             path="/resources/research"
             render={() => <ResearchContainer />}
           ></Route>
-          <Route exact path="/about/team" render={() => <Team />}></Route>
-          <Route
-            exact
-            path="/about/board"
-            render={() => <BoardOfDirectors />}
-          ></Route>
+
+          <Route exact path="/blog" render={() => <Blog />}></Route>
+          <Route exact path="/donate" render={() => <Donate />}></Route>
         </Switch>
 
         <Footer />

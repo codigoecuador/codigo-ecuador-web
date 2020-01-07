@@ -2,6 +2,10 @@
 
 Welcome to the ReadMe for the new website for Codigo Ecuador, which is under construction.
 
+## collaborators
+
+The !Slackers group is proudly working together to produce this new website. If you'd like to pitch in, please contact <a href="mailto: joanrigdon@gmail.com">Joan Indiana Lyness</a>
+
 ## Prerequisites
 
 You will need npm installed. To install, go [here](https://www.npmjs.com/get-npm)

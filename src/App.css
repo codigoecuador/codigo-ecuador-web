@@ -48,6 +48,8 @@ body {
 .subhead {
   text-align: center;
   color: grey;
+  font-size: 2em;
+  line-height: 1.5em;
 }
 
 .banner-headline {
@@ -121,6 +123,7 @@ body {
 
   .logo {
     width: 100%;
+    padding: 2em;
   }
 
   .main-container {

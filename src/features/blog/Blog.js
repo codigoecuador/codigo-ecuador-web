@@ -59,6 +59,7 @@ class Blog extends Component {
             <div className="headline banner-headline">
               <span className="gold">{blogText[lang].title}</span>
             </div>
+
             <br />
             <br />
 
@@ -68,6 +69,12 @@ class Blog extends Component {
               ))}
               <br />
             </Slider>
+
+            <div className="blog-subtitle center">
+              <a href="https://medium.com/c%C3%B3digo-ecuador">
+                <p>{blogText[lang].subtitle}</p>
+              </a>
+            </div>
           </div>
         </>
       );

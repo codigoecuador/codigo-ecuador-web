@@ -4,8 +4,10 @@ import CodingLinks from "./CodingLinks";
 import { connect } from "react-redux";
 import CodingButtonGroup from "./CodingButtonGroup";
 import CodingMenu from "./CodingMenu";
+import { codingHeadlineText } from "../../../common/resourcesText/coding/codingHeadlineText";
 
 const CodingContainer = props => {
+  let lang = localStorage.getItem("language");
   const [showing, setShowing] = useState("");
 
   const handleClick = event => {
@@ -38,7 +40,9 @@ const CodingContainer = props => {
   return (
     <div className="main-container">
       <div className="headline banner-headline">
-        <span className="gold">{showing || "Coding"} Resources</span>
+        <span className="gold">
+          {codingHeadlineText[lang].codingResourcesFor} {showing || "Students"}{" "}
+        </span>
       </div>
 
       {codingButtonGroup}

@@ -17,6 +17,11 @@
   border: 3px solid rgb(197, 158, 85);
 }
 
+.board-subhead {
+  color: rgb(59, 59, 59);
+  font-style: italic;
+}
+
 @media screen and (min-width: 700px) {
   .board-card {
     padding: 3em;
@@ -54,20 +59,20 @@
   }
 
   .board-photo {
-    width: 70%;
+    width: 40%;
   }
 
   .board-header {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 
   .board-subhead {
-    font-size: 1em;
-    line-height: 1.2em;
+    font-size: 1.3em;
+    line-height: 1em;
   }
 
   .board-description {
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 1em;
   }
 }

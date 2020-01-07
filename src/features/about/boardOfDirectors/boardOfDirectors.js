@@ -1,9 +1,9 @@
 import React from "react";
+import { connect } from "react-redux";
 import { Container } from "semantic-ui-react";
 import "./boardOfDirectors.css";
-import { connect } from "react-redux";
-import BoardDataDesktop from "./BoardDataDesktop";
-import BoardDataMobile from "./BoardDataMobile";
+import BoardDataDesktop from "./boardDataDesktop";
+import BoardDataMobile from "./boardDataMobile";
 import { boardText } from "../../../common/aboutText/boardText";
 
 const BoardOfDirectors = props => {

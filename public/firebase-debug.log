@@ -1,0 +1,36 @@
+[debug] [2019-12-18T02:46:15.081Z] ----------------------------------------------------------------------
+[debug] [2019-12-18T02:46:15.083Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rayde\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-12-18T02:46:15.083Z] CLI Version:   7.10.0
+[debug] [2019-12-18T02:46:15.083Z] Platform:      win32
+[debug] [2019-12-18T02:46:15.083Z] Node Version:  v12.14.0
+[debug] [2019-12-18T02:46:15.084Z] Time:          Tue Dec 17 2019 21:46:15 GMT-0500 (Eastern Standard Time)
+[debug] [2019-12-18T02:46:15.084Z] ----------------------------------------------------------------------
+[debug] [2019-12-18T02:46:15.084Z] 
+[debug] [2019-12-18T02:46:15.094Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-18T02:46:15.095Z] > authorizing via signed-in user
+[debug] [2019-12-18T02:46:15.096Z] [iam] checking project codigo-ecuador for permissions ["firebase.projects.get"]
+[debug] [2019-12-18T02:46:15.097Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/codigo-ecuador:testIamPermissions  
+
+[debug] [2019-12-18T02:46:15.575Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-18T02:46:15.577Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/codigo-ecuador  
+ 
+[debug] [2019-12-18T02:46:16.115Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\rayde\iCloudDrive\GitHub\codigo-ecuador-web'...
+[info] 
+[debug] [2019-12-18T02:46:16.124Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/codigo-ecuador/webApps/-/config  
+ 
+[debug] [2019-12-18T02:46:16.896Z] <<< HTTP RESPONSE 200
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\rayde\iCloudDrive\GitHub\codigo-ecuador-web\functions" for Cloud Functions...
+[debug] [2019-12-18T02:46:17.649Z] [worker-~diagnostic~-266dc732-c971-4b75-b16f-b07cc7ac880d]: Assigning socketPath: \\?\pipe\C:\Users\rayde\iCloudDrive\GitHub\codigo-ecuador-web\functions\21104
+[debug] [2019-12-18T02:46:17.650Z] [worker-~diagnostic~-266dc732-c971-4b75-b16f-b07cc7ac880d]: BUSY
+[debug] [2019-12-18T02:46:18.024Z] [runtime-status] [21104] Functions runtime initialized. {"cwd":"C:\\Users\\rayde\\iCloudDrive\\GitHub\\codigo-ecuador-web\\functions","node_version":"12.14.0"}
+[debug] [2019-12-18T02:46:18.024Z] [runtime-status] [21104] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-18T02:46:18.027Z] [runtime-status] [21104] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"C:\\Users\\rayde\\iCloudDrive\\GitHub\\codigo-ecuador-web\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-12-18T02:46:18.029Z] [runtime-status] [21104] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\rayde\\iCloudDrive\\GitHub\\codigo-ecuador-web\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-12-18T02:46:18.030Z] [runtime-status] [21104] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\rayde\\iCloudDrive\\GitHub\\codigo-ecuador-web\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-12-18T02:46:18.109Z] [worker-~diagnostic~-266dc732-c971-4b75-b16f-b07cc7ac880d]: exited
+[debug] [2019-12-18T02:46:18.109Z] [worker-~diagnostic~-266dc732-c971-4b75-b16f-b07cc7ac880d]: FINISHED
